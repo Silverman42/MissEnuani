@@ -70,7 +70,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -87,15 +87,15 @@ var render = function() {
               attrs: {
                 color: "yellow",
                 disabled: _vm.hasCompleted,
-                fontColor: "text-black"
+                fontColor: "text-black",
               },
-              on: { click: _vm.updateProfile }
+              on: { click: _vm.updateProfile },
             },
             [_vm._v("Edit")]
-          )
+          ),
         ],
         1
-      )
+      ),
     ]),
     _vm._v(" "),
     _c(
@@ -104,75 +104,75 @@ var render = function() {
       [
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Name")
+            _vm._v("Name"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
             _vm._v(
               _vm._s(_vm.user.first_name) + " " + _vm._s(_vm.user.last_name)
-            )
-          ])
+            ),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Nationality")
+            _vm._v("Nationality"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.nationality || "No Nationality"))
-          ])
+            _vm._v(_vm._s(_vm.user.nationality || "No Nationality")),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Age")
+            _vm._v("Age"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.age || "No age"))
-          ])
+            _vm._v(_vm._s(_vm.user.age || "No age")),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Place of Birth")
+            _vm._v("Place of Birth"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.place_of_birth || "No place of birth"))
-          ])
+            _vm._v(_vm._s(_vm.user.place_of_birth || "No place of birth")),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Signature")
+            _vm._v("Signature"),
           ]),
           _vm._v(" "),
           _c("img", {
             staticClass: "w-full h-auto inline-block mt-1",
             attrs: {
               src: _vm.user.signature || "",
-              alt: _vm.user.signature ? "signature image" : "No signature"
-            }
-          })
+              alt: _vm.user.signature ? "signature image" : "No signature",
+            },
+          }),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Address")
+            _vm._v("Address"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.address || "No address"))
-          ])
-        ])
+            _vm._v(_vm._s(_vm.user.address || "No address")),
+          ]),
+        ]),
       ]
-    )
+    ),
   ])
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -180,10 +180,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Identity")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Information used to identify contestant")
-      ])
+        _vm._v("Information used to identify contestant"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

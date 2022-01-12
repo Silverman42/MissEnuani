@@ -86,7 +86,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -100,9 +100,9 @@ var render = function() {
             boardTitle: "Invoice",
             boardText: "Your payment information and status",
             hostName: _vm.$page.auth.settings.app_url,
-            boardImgLink: "img/board_img/dashboard.svg"
-          }
-        })
+            boardImgLink: "img/board_img/dashboard.svg",
+          },
+        }),
       ],
       1
     ),
@@ -115,8 +115,8 @@ var render = function() {
           { attrs: { extend: "mb-10" } },
           [
             _c("invoice-comp", {
-              attrs: { invoice: _vm.$page.invoice, auth: _vm.$page.auth }
-            })
+              attrs: { invoice: _vm.$page.invoice, auth: _vm.$page.auth },
+            }),
           ],
           1
         ),
@@ -127,7 +127,7 @@ var render = function() {
                 _c("p", { staticClass: "w-full md:w-8/12 mb-3" }, [
                   _vm._v(
                     "Congratulations. You are now permitted to update your profile. Please update your profile to qualify for auditions"
-                  )
+                  ),
                 ]),
                 _vm._v(" "),
                 _c(
@@ -140,29 +140,29 @@ var render = function() {
                         staticClass:
                           "inline-flex p-1 items-center text-yellow-500 hover:text-yellow-600",
                         attrs: {
-                          href: _vm.$route.relativePath("client.profile.index")
-                        }
+                          href: _vm.$route.relativePath("client.profile.index"),
+                        },
                       },
                       [
                         _c("span", { staticClass: "mr-2" }, [
-                          _vm._v("Update Profile")
+                          _vm._v("Update Profile"),
                         ]),
                         _vm._v(" "),
                         _c("iconify-icon", {
-                          attrs: { icon: _vm.icons.arrow_right }
-                        })
+                          attrs: { icon: _vm.icons.arrow_right },
+                        }),
                       ],
                       1
-                    )
+                    ),
                   ],
                   1
-                )
-              ])
+                ),
+              ]),
             ])
-          : _vm._e()
+          : _vm._e(),
       ],
       1
-    )
+    ),
   ])
 }
 var staticRenderFns = []

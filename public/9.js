@@ -182,7 +182,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -198,8 +198,8 @@ var render = function() {
               boardTitle: "Show Users",
               boardText: "View and edit user information",
               hostName: _vm.$page.auth.settings.app_url,
-              boardImgLink: "img/board_img/user.svg"
-            }
+              boardImgLink: "img/board_img/user.svg",
+            },
           },
           [
             _c(
@@ -209,7 +209,7 @@ var render = function() {
                   "inertia-link",
                   {
                     staticClass: "text-primary-100 hover:text-white",
-                    attrs: { href: _vm.$route.relativePath("users.view") }
+                    attrs: { href: _vm.$route.relativePath("users.view") },
                   },
                   [_vm._v("\n                    User")]
                 ),
@@ -220,13 +220,13 @@ var render = function() {
                   "a",
                   { staticClass: "hover:text-white", attrs: { href: "#" } },
                   [_vm._v("Show Users")]
-                )
+                ),
               ],
               1
-            )
+            ),
           ],
           1
-        )
+        ),
       ],
       1
     ),
@@ -246,8 +246,8 @@ var render = function() {
                   firstName: _vm.$page.user.first_name || "",
                   lastName: _vm.$page.user.last_name || "",
                   avatar: _vm.$page.user.avatar || "",
-                  active: _vm.$page.user.is_active == 1 ? true : false
-                }
+                  active: _vm.$page.user.is_active == 1 ? true : false,
+                },
               },
               [
                 _c(
@@ -258,13 +258,13 @@ var render = function() {
                       href: _vm.$page.user.twitter || "#",
                       title: "Twitter",
                       target: "_blank",
-                      rel: "noopener noreferrer"
-                    }
+                      rel: "noopener noreferrer",
+                    },
                   },
                   [
                     _c("iconify-icon", {
-                      attrs: { width: "15", icon: _vm.icons.twitter }
-                    })
+                      attrs: { width: "15", icon: _vm.icons.twitter },
+                    }),
                   ],
                   1
                 ),
@@ -277,13 +277,13 @@ var render = function() {
                       href: _vm.$page.user.facebook || "#",
                       title: "Facebook",
                       target: "_blank",
-                      rel: "noopener noreferrer"
-                    }
+                      rel: "noopener noreferrer",
+                    },
                   },
                   [
                     _c("iconify-icon", {
-                      attrs: { width: "15", icon: _vm.icons.facebook }
-                    })
+                      attrs: { width: "15", icon: _vm.icons.facebook },
+                    }),
                   ],
                   1
                 ),
@@ -294,13 +294,13 @@ var render = function() {
                     staticClass: "mr-2 hover:text-primary-500",
                     attrs: {
                       href: "mailto:" + (_vm.$page.user.email || ""),
-                      title: "phone"
-                    }
+                      title: "phone",
+                    },
                   },
                   [
                     _c("iconify-icon", {
-                      attrs: { width: "15", icon: _vm.icons.mail }
-                    })
+                      attrs: { width: "15", icon: _vm.icons.mail },
+                    }),
                   ],
                   1
                 ),
@@ -311,18 +311,18 @@ var render = function() {
                     staticClass: "hover:text-primary-500",
                     attrs: {
                       href: "tel:" + (_vm.$page.user.phone || ""),
-                      title: "Phone"
-                    }
+                      title: "Phone",
+                    },
                   },
                   [
                     _c("iconify-icon", {
-                      attrs: { width: "15", icon: _vm.icons.phone }
-                    })
+                      attrs: { width: "15", icon: _vm.icons.phone },
+                    }),
                   ],
                   1
-                )
+                ),
               ]
-            )
+            ),
           ],
           1
         ),
@@ -330,10 +330,10 @@ var render = function() {
         _c("div", {
           staticClass:
             "w-full md:flex-grow px-2 py-8 md:p-12 rounded-md bg-white shadow-sm reveal-left",
-          staticStyle: { "--delay": "0.3s" }
-        })
+          staticStyle: { "--delay": "0.3s" },
+        }),
       ]
-    )
+    ),
   ])
 }
 var staticRenderFns = []

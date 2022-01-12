@@ -14,16 +14,17 @@ class Transactions extends Migration
     public function up()
     {
         Schema::create('transactions', function (Blueprint $table) {
-            $table->foreignId('user_id')->nullable();
             $table->foreignId('competitions_id')->nullable();
-            $table->string('email',112)->nullable();
-            $table->enum('transaction_type',['deposit','withdrawal'])->default('deposit');
+            $table->string('email', 112)->nullable();
+            $table->enum('transaction_type', ['deposit', 'withdrawal'])->default('deposit');
             $table->boolean('is_completed')->default(false);
-            $table->string('reference_id',122)->nullable();
-            $table->enum('currency',['ngn','usd'])->default('ngn');
+            $table->string('reference_id', 122)->nullable();
+            $table->enum('currency', ['ngn', 'usd'])->default('ngn');
             $table->unsignedFloat('amount')->default(0.00);
             $table->unsignedFloat('balance')->default(0.00);
             $table->unsignedFloat('transaction_charge')->default(0.00);
+            $table->string("transactable_type", 224)->nullable();
+            $table->foreignId("transactable_id")->nullable();
             $table->id();
             $table->timestamps();
         });

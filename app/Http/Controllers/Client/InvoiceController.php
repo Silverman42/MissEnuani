@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Client;
 
+use App\Models\User;
 use Inertia\Inertia;
 use App\Models\Transactions;
 use Illuminate\Http\Request;
@@ -18,10 +19,11 @@ class InvoiceController extends Controller
     public function __invoke(Request $request)
     {
         $invoice = Transactions::where([
-                'user_id'=>$request->user()->id, 
-                'competitions_id' => $request->user()->competitions_id,
-                'is_completed'=> true
-            ])->with(['competitions'])->firstOrFail();
-        return Inertia::render('Client/Invoice',compact('invoice'));
+            'transactionable_id' => $request->user()->id,
+            'transactionable_type' => User::class,
+            'competitions_id' => $request->user()->competitions_id,
+            'is_completed' => true
+        ])->with(['competitions'])->firstOrFail();
+        return Inertia::render('Client/Invoice', compact('invoice'));
     }
 }

@@ -104,7 +104,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -112,11 +112,11 @@ var render = function() {
     _c("form", {
       attrs: { id: "user_interface_form" },
       on: {
-        submit: function($event) {
+        submit: function ($event) {
           $event.preventDefault()
           return _vm.updateUserInterface($event)
-        }
-      }
+        },
+      },
     }),
     _vm._v(" "),
     _c(
@@ -136,32 +136,32 @@ var render = function() {
                   form: "user_interface_form",
                   value: _vm.color_scheme,
                   label: "Choose a color scheme",
-                  error: _vm.$page.errors.color_scheme
+                  error: _vm.$page.errors.color_scheme,
                 },
                 model: {
                   value: _vm.color_scheme,
-                  callback: function($$v) {
+                  callback: function ($$v) {
                     _vm.color_scheme = $$v
                   },
-                  expression: "color_scheme"
-                }
+                  expression: "color_scheme",
+                },
               },
-              _vm._l(_vm.$page.color_schemes, function(color, index) {
+              _vm._l(_vm.$page.color_schemes, function (color, index) {
                 return _c(
                   "option",
                   {
                     key: index,
                     staticClass: "capitalize",
-                    domProps: { value: color }
+                    domProps: { value: color },
                   },
                   [_vm._v(_vm._s(color))]
                 )
               }),
               0
-            )
+            ),
           ],
           1
-        )
+        ),
       ]
     ),
     _vm._v(" "),
@@ -180,17 +180,17 @@ var render = function() {
                 form: "user_interface_form",
                 error: _vm.$page.errors.dashboard_logo || "",
                 label:
-                  "File should be 500kb max and should be one of the following formats : JPG, PNG, JPEG"
+                  "File should be 500kb max and should be one of the following formats : JPG, PNG, JPEG",
               },
               on: {
-                input: function($event) {
+                input: function ($event) {
                   return _vm.setFileInput($event, "dashboard_logo")
-                }
-              }
-            })
+                },
+              },
+            }),
           ],
           1
-        )
+        ),
       ]
     ),
     _vm._v(" "),
@@ -209,17 +209,17 @@ var render = function() {
                 form: "user_interface_form",
                 error: _vm.$page.errors.auth_logo || "",
                 label:
-                  "File should be 500kb max and should be one of the following formats : JPG, PNG, JPEG"
+                  "File should be 500kb max and should be one of the following formats : JPG, PNG, JPEG",
               },
               on: {
-                input: function($event) {
+                input: function ($event) {
                   return _vm.setFileInput($event, "auth_logo")
-                }
-              }
-            })
+                },
+              },
+            }),
           ],
           1
-        )
+        ),
       ]
     ),
     _vm._v(" "),
@@ -227,7 +227,7 @@ var render = function() {
       "div",
       {
         staticClass: "flex justify-end reveal-up",
-        staticStyle: { "--delay": "2.3s" }
+        staticStyle: { "--delay": "2.3s" },
       },
       [
         _c(
@@ -236,18 +236,18 @@ var render = function() {
             attrs: {
               form: "user_interface_form",
               width: "w-full md:w-auto",
-              type: "submit"
-            }
+              type: "submit",
+            },
           },
           [_vm._v("Update User Interface")]
-        )
+        ),
       ],
       1
-    )
+    ),
   ])
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -256,7 +256,7 @@ var staticRenderFns = [
         "h2",
         {
           staticClass: "text-lg font-bold mb-3 reveal-up",
-          staticStyle: { "--delay": "0.1s" }
+          staticStyle: { "--delay": "0.1s" },
         },
         [_vm._v("\n                Color Scheme Settings\n            ")]
       ),
@@ -267,12 +267,12 @@ var staticRenderFns = [
         [
           _vm._v(
             "Changing the color scheme of the software interface to suite your company branding"
-          )
+          ),
         ]
-      )
+      ),
     ])
   },
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -281,7 +281,7 @@ var staticRenderFns = [
         "h2",
         {
           staticClass: "text-lg font-bold mb-3 reveal-up",
-          staticStyle: { "--delay": "0.9s" }
+          staticStyle: { "--delay": "0.9s" },
         },
         [_vm._v("\n                Dashboard Logo\n            ")]
       ),
@@ -292,12 +292,12 @@ var staticRenderFns = [
         [
           _vm._v(
             "Please use an image type with a high contrast color for your dashboard logo as it will be used on a low contrast background"
-          )
+          ),
         ]
-      )
+      ),
     ])
   },
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -306,7 +306,7 @@ var staticRenderFns = [
         "h2",
         {
           staticClass: "text-lg font-bold reveal-up mb-3",
-          staticStyle: { "--delay": "1.7s" }
+          staticStyle: { "--delay": "1.7s" },
         },
         [_vm._v("\n                Authentication Logo\n            ")]
       ),
@@ -317,11 +317,11 @@ var staticRenderFns = [
         [
           _vm._v(
             "Please use an image type with a low contrast color for your authentication page logo as it will be used in all authentication pages which have a high contrast background"
-          )
+          ),
         ]
-      )
+      ),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

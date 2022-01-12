@@ -266,7 +266,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -278,36 +278,36 @@ var render = function() {
         {
           attrs: { isOpen: _vm.modalIsOpen },
           on: {
-            "update:isOpen": function($event) {
+            "update:isOpen": function ($event) {
               _vm.modalIsOpen = $event
             },
-            "update:is-open": function($event) {
+            "update:is-open": function ($event) {
               _vm.modalIsOpen = $event
-            }
-          }
+            },
+          },
         },
         [
           _c(
             "div",
             {
               staticClass: "mb-10 reveal-left",
-              staticStyle: { "--delay": "0.1s" }
+              staticStyle: { "--delay": "0.1s" },
             },
             [
               _c("h3", { staticClass: "text-lg font-extrabold" }, [
-                _vm._v("\n                Create New User\n            ")
+                _vm._v("\n                Create New User\n            "),
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "text-sm" }, [
-                _vm._v("Create user biodata, avatar, password and permissions")
-              ])
+                _vm._v("Create user biodata, avatar, password and permissions"),
+              ]),
             ]
           ),
           _vm._v(" "),
           _c("create-user", {
             attrs: { actionURLPath: _vm.$route.relativePath("users.create") },
-            on: { completeRegistration: _vm.refreshState }
-          })
+            on: { completeRegistration: _vm.refreshState },
+          }),
         ],
         1
       ),
@@ -321,9 +321,9 @@ var render = function() {
               boardTitle: "Users",
               boardText: "Add, delete and manage users and user persmissions",
               hostName: _vm.$page.auth.settings.app_url,
-              boardImgLink: "img/board_img/user.svg"
-            }
-          })
+              boardImgLink: "img/board_img/user.svg",
+            },
+          }),
         ],
         1
       ),
@@ -332,7 +332,7 @@ var render = function() {
         "section",
         {
           staticClass:
-            "rounded-md bg-white flex flex-col md:flex-row md:justify-between items-center shadow-sm p-8 md:p-12 reveal-up mb-10"
+            "rounded-md bg-white flex flex-col md:flex-row md:justify-between items-center shadow-sm p-8 md:p-12 reveal-up mb-10",
         },
         [
           _vm._m(0),
@@ -345,13 +345,13 @@ var render = function() {
                 "primary-btn",
                 {
                   attrs: { width: "w-full md:w-auto" },
-                  on: { click: _vm.openModal }
+                  on: { click: _vm.openModal },
                 },
                 [_vm._v("Create New User")]
-              )
+              ),
             ],
             1
-          )
+          ),
         ]
       ),
       _vm._v(" "),
@@ -360,7 +360,7 @@ var render = function() {
         {
           staticClass:
             "rounded-md bg-white shadow-sm px-2 py-8 md:p-12 reveal-up",
-          staticStyle: { "--delay": "0.5s" }
+          staticStyle: { "--delay": "0.5s" },
         },
         [
           _c(
@@ -370,11 +370,11 @@ var render = function() {
               _c("form", {
                 attrs: { action: "", id: "user_search" },
                 on: {
-                  submit: function($event) {
+                  submit: function ($event) {
                     $event.preventDefault()
                     return _vm.searchUsers($event)
-                  }
-                }
+                  },
+                },
               }),
               _vm._v(" "),
               _c(
@@ -385,12 +385,12 @@ var render = function() {
                     attrs: { type: "search", form: "user_search" },
                     model: {
                       value: _vm.searchText,
-                      callback: function($$v) {
+                      callback: function ($$v) {
                         _vm.searchText = $$v
                       },
-                      expression: "searchText"
-                    }
-                  })
+                      expression: "searchText",
+                    },
+                  }),
                 ],
                 1
               ),
@@ -409,8 +409,8 @@ var render = function() {
                     { attrs: { extraClass: "ml-2", color: "gray" } },
                     [
                       _c("iconify-icon", {
-                        attrs: { icon: _vm.icons.moreVertical }
-                      })
+                        attrs: { icon: _vm.icons.moreVertical },
+                      }),
                     ],
                     1
                   ),
@@ -426,17 +426,17 @@ var render = function() {
                             staticClass:
                               "mb-2 text-xs flex items-center text-gray-500 hover:text-gray-700",
                             attrs: {
-                              href: _vm.$route.relativePath("users.recycle")
-                            }
+                              href: _vm.$route.relativePath("users.recycle"),
+                            },
                           },
                           [
                             _c("iconify-icon", {
-                              attrs: { icon: _vm.icons.trash }
+                              attrs: { icon: _vm.icons.trash },
                             }),
                             _vm._v(" "),
                             _c("p", { staticClass: "ml-2" }, [
-                              _vm._v("Recycle Bin")
-                            ])
+                              _vm._v("Recycle Bin"),
+                            ]),
                           ],
                           1
                         ),
@@ -450,30 +450,30 @@ var render = function() {
                                 staticClass:
                                   "mb-2 text-xs flex items-center text-gray-500 hover:text-gray-700",
                                 attrs: {
-                                  href: _vm.$route.relativePath("users.view")
-                                }
+                                  href: _vm.$route.relativePath("users.view"),
+                                },
                               },
                               [
                                 _c("iconify-icon", {
-                                  attrs: { icon: _vm.icons.refresh }
+                                  attrs: { icon: _vm.icons.refresh },
                                 }),
                                 _vm._v(" "),
                                 _c("p", { staticClass: "ml-2" }, [
-                                  _vm._v("Refresh List")
-                                ])
+                                  _vm._v("Refresh List"),
+                                ]),
                               ],
                               1
-                            )
+                            ),
                           ],
                           1
-                        )
+                        ),
                       ],
                       1
-                    )
-                  ])
+                    ),
+                  ]),
                 ],
                 2
-              )
+              ),
             ],
             1
           ),
@@ -483,7 +483,7 @@ var render = function() {
                 _c(
                   "div",
                   { staticClass: "flex flex-wrap justify-center mb-5" },
-                  _vm._l(_vm.getUsers, function(user, index) {
+                  _vm._l(_vm.getUsers, function (user, index) {
                     return _c("user-list", {
                       key: index,
                       attrs: {
@@ -496,19 +496,19 @@ var render = function() {
                           "users.show",
                           user.id || 0
                         ),
-                        imageLink: user.avatar || ""
+                        imageLink: user.avatar || "",
                       },
                       on: {
-                        removeUser: function($event) {
+                        removeUser: function ($event) {
                           return _vm.removeUser(user.id)
                         },
-                        deactivateUser: function($event) {
+                        deactivateUser: function ($event) {
                           return _vm.deactivateUser(user.id)
                         },
-                        activateUser: function($event) {
+                        activateUser: function ($event) {
                           return _vm.activateUser(user.id)
-                        }
-                      }
+                        },
+                      },
                     })
                   }),
                   1
@@ -524,10 +524,10 @@ var render = function() {
                           {
                             attrs: { extraClass: "mr-2" },
                             on: {
-                              click: function($event) {
+                              click: function ($event) {
                                 return _vm.paginate(_vm.currentPageNumber - 1)
-                              }
-                            }
+                              },
+                            },
                           },
                           [_vm._v("Previous")]
                         )
@@ -538,17 +538,17 @@ var render = function() {
                           "secondary-btn",
                           {
                             on: {
-                              click: function($event) {
+                              click: function ($event) {
                                 return _vm.paginate(_vm.currentPageNumber + 1)
-                              }
-                            }
+                              },
+                            },
                           },
                           [_vm._v("Next\n                ")]
                         )
-                      : _vm._e()
+                      : _vm._e(),
                   ],
                   1
-                )
+                ),
               ]
             : [
                 _c(
@@ -556,7 +556,7 @@ var render = function() {
                   { staticClass: "p-5 text-center" },
                   [
                     _c("h4", { staticClass: "text-lg font-extrabold mb-5" }, [
-                      _vm._v("No user found")
+                      _vm._v("No user found"),
                     ]),
                     _vm._v(" "),
                     _c(
@@ -564,23 +564,23 @@ var render = function() {
                       {
                         staticClass:
                           "text-sm text-primary-400 hover:text-primary-600",
-                        attrs: { href: _vm.$route.relativePath("users.view") }
+                        attrs: { href: _vm.$route.relativePath("users.view") },
                       },
                       [_vm._v("Reload list")]
-                    )
+                    ),
                   ],
                   1
-                )
-              ]
+                ),
+              ],
         ],
         2
-      )
+      ),
     ],
     1
   )
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -588,10 +588,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-extrabold" }, [_vm._v("New User")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Create new users and grant them permissions")
-      ])
+        _vm._v("Create new users and grant them permissions"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

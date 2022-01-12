@@ -90,17 +90,17 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "flex flex-wrap" }, [
     _c("div", { staticClass: "w-full md:w-6/12 mb-6 md:mb-10 md:pr-2" }, [
       _c("h6", { staticClass: "text-2xl font-bold capitalize" }, [
-        _vm._v(_vm._s(_vm.auth.first_name) + " " + _vm._s(_vm.auth.last_name))
+        _vm._v(_vm._s(_vm.auth.first_name) + " " + _vm._s(_vm.auth.last_name)),
       ]),
       _vm._v(" "),
-      _c("p", { staticClass: "text-xs" }, [_vm._v(_vm._s(_vm.invoice.email))])
+      _c("p", { staticClass: "text-xs" }, [_vm._v(_vm._s(_vm.invoice.email))]),
     ]),
     _vm._v(" "),
     _c(
@@ -108,24 +108,24 @@ var render = function() {
       { staticClass: "w-full md:w-6/12 md:text-right md:mb-10 mb-6 md:pr-2" },
       [
         _c("h6", { staticClass: "uppercase text-xs tracking-widest" }, [
-          _vm._v("Amount")
+          _vm._v("Amount"),
         ]),
         _vm._v(" "),
         _c("p", { staticClass: "text-gray-900 text-3xl" }, [
           _c("sup", { staticClass: "text-xs text-yellow-600" }, [
-            _vm._v(_vm._s(_vm.getCurrency) + "\n            ")
+            _vm._v(_vm._s(_vm.getCurrency) + "\n            "),
           ]),
           _vm._v(_vm._s(_vm._f("changeNumberFormat")(_vm.invoice.amount))),
           _c("sup", { staticClass: "text-xs text-yellow-600" }, [
-            _vm._v(" .00")
-          ])
-        ])
+            _vm._v(" .00"),
+          ]),
+        ]),
       ]
     ),
     _vm._v(" "),
     _c("div", { staticClass: "w-full md:w-4/12 mb-6 md:pr-2" }, [
       _c("h6", { staticClass: "uppercase text-xs tracking-widest" }, [
-        _vm._v("Payment Status")
+        _vm._v("Payment Status"),
       ]),
       _vm._v(" "),
       _c(
@@ -134,67 +134,67 @@ var render = function() {
           staticClass: "inline-block w-auto px-4 py-1 rounded-md",
           class: {
             "bg-green-300": _vm.paymentWasCompleted === true,
-            "bg-red-300": _vm.paymentWasCompleted === false
-          }
+            "bg-red-300": _vm.paymentWasCompleted === false,
+          },
         },
         [
           _vm._v(
             "\n            " +
               _vm._s(_vm.paymentWasCompleted === true ? "Paid" : "Unpaid")
-          )
+          ),
         ]
-      )
+      ),
     ]),
     _vm._v(" "),
     _vm._m(0),
     _vm._v(" "),
     _c("div", { staticClass: "w-full md:w-4/12 mb-6 md:pr-2" }, [
       _c("h6", { staticClass: "uppercase text-xs tracking-widest" }, [
-        _vm._v("Transaction reference")
+        _vm._v("Transaction reference"),
       ]),
       _vm._v(" "),
       _c("p", { staticClass: "text-gray-900" }, [
-        _vm._v(_vm._s(_vm.invoice.reference_id))
-      ])
+        _vm._v(_vm._s(_vm.invoice.reference_id)),
+      ]),
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "w-full md:w-4/12 mb-6 md:pr-2" }, [
       _c("h6", { staticClass: "uppercase text-xs tracking-widest" }, [
-        _vm._v("Competition")
+        _vm._v("Competition"),
       ]),
       _vm._v(" "),
       _c("p", { staticClass: "text-gray-900" }, [
         _vm._v("Miss May Day Beauty Pageant "),
         _c("span", { staticClass: "text-yellow-600" }, [
-          _vm._v(_vm._s(_vm.invoice.competitions.year))
-        ])
-      ])
+          _vm._v(_vm._s(_vm.invoice.competitions.year)),
+        ]),
+      ]),
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "w-full md:w-4/12 mb-6  md:pr-2" }, [
       _c("h6", { staticClass: "uppercase text-xs tracking-widest" }, [
-        _vm._v("Date of Payment")
+        _vm._v("Date of Payment"),
       ]),
       _vm._v(" "),
       _c("p", { staticClass: "text-gray-900" }, [
-        _vm._v(_vm._s(_vm.invoice.human_date_of_payment))
-      ])
-    ])
+        _vm._v(_vm._s(_vm.invoice.human_date_of_payment)),
+      ]),
+    ]),
   ])
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "w-full md:w-4/12 mb-6 md:pr-2" }, [
       _c("h6", { staticClass: "uppercase text-xs tracking-widest" }, [
-        _vm._v("Payment Gateway")
+        _vm._v("Payment Gateway"),
       ]),
       _vm._v(" "),
-      _c("p", { staticClass: "text-gray-900" }, [_vm._v("Paystack")])
+      _c("p", { staticClass: "text-gray-900" }, [_vm._v("Paystack")]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

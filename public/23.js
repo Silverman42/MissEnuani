@@ -80,7 +80,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -92,11 +92,11 @@ var render = function() {
       _c("form", {
         attrs: { action: "", id: "emergency" },
         on: {
-          submit: function($event) {
+          submit: function ($event) {
             $event.preventDefault()
             return _vm.submitForm($event)
-          }
-        }
+          },
+        },
       }),
       _vm._v(" "),
       _c(
@@ -107,16 +107,16 @@ var render = function() {
             attrs: {
               label: "Name of Emergency Contact",
               error: _vm.$page.errors.emergency_name || "",
-              form: "emergency"
+              form: "emergency",
             },
             model: {
               value: _vm.emergency_name,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.emergency_name = $$v
               },
-              expression: "emergency_name"
-            }
-          })
+              expression: "emergency_name",
+            },
+          }),
         ],
         1
       ),
@@ -129,16 +129,16 @@ var render = function() {
             attrs: {
               label: "Emergency Phone Number",
               error: _vm.$page.errors.emergency_phone_number || "",
-              form: "emergency"
+              form: "emergency",
             },
             model: {
               value: _vm.emergency_phone_number,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.emergency_phone_number = $$v
               },
-              expression: "emergency_phone_number"
-            }
-          })
+              expression: "emergency_phone_number",
+            },
+          }),
         ],
         1
       ),
@@ -151,16 +151,16 @@ var render = function() {
             attrs: {
               label: "Relationship with Emergency Contact",
               error: _vm.$page.errors.emergency_relationship || "",
-              form: "emergency"
+              form: "emergency",
             },
             model: {
               value: _vm.emergency_relationship,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.emergency_relationship = $$v
               },
-              expression: "emergency_relationship"
-            }
-          })
+              expression: "emergency_relationship",
+            },
+          }),
         ],
         1
       ),
@@ -173,16 +173,16 @@ var render = function() {
             attrs: {
               label: "Emergency Contact Email",
               error: _vm.$page.errors.emergency_email || "",
-              form: "emergency"
+              form: "emergency",
             },
             model: {
               value: _vm.emergency_email,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.emergency_email = $$v
               },
-              expression: "emergency_email"
-            }
-          })
+              expression: "emergency_email",
+            },
+          }),
         ],
         1
       ),
@@ -195,17 +195,17 @@ var render = function() {
             color: "yellow",
             fontColor: "text-black",
             width: "w-full",
-            form: "emergency"
-          }
+            form: "emergency",
+          },
         },
         [_vm._v("Update Emergency")]
-      )
+      ),
     ],
     1
   )
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -213,10 +213,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Emergency")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Information about your emergency contact")
-      ])
+        _vm._v("Information about your emergency contact"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

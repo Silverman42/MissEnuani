@@ -525,7 +525,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -537,11 +537,11 @@ var render = function() {
       _c("form", {
         attrs: { action: "", id: "emergency" },
         on: {
-          submit: function($event) {
+          submit: function ($event) {
             $event.preventDefault()
             return _vm.submitForm($event)
-          }
-        }
+          },
+        },
       }),
       _vm._v(" "),
       _c(
@@ -552,16 +552,16 @@ var render = function() {
             attrs: {
               label: "Name of Emergency Contact",
               error: _vm.$page.errors.emergency_name || "",
-              form: "emergency"
+              form: "emergency",
             },
             model: {
               value: _vm.emergency_name,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.emergency_name = $$v
               },
-              expression: "emergency_name"
-            }
-          })
+              expression: "emergency_name",
+            },
+          }),
         ],
         1
       ),
@@ -574,16 +574,16 @@ var render = function() {
             attrs: {
               label: "Emergency Phone Number",
               error: _vm.$page.errors.emergency_phone_number || "",
-              form: "emergency"
+              form: "emergency",
             },
             model: {
               value: _vm.emergency_phone_number,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.emergency_phone_number = $$v
               },
-              expression: "emergency_phone_number"
-            }
-          })
+              expression: "emergency_phone_number",
+            },
+          }),
         ],
         1
       ),
@@ -596,16 +596,16 @@ var render = function() {
             attrs: {
               label: "Relationship with Emergency Contact",
               error: _vm.$page.errors.emergency_relationship || "",
-              form: "emergency"
+              form: "emergency",
             },
             model: {
               value: _vm.emergency_relationship,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.emergency_relationship = $$v
               },
-              expression: "emergency_relationship"
-            }
-          })
+              expression: "emergency_relationship",
+            },
+          }),
         ],
         1
       ),
@@ -618,16 +618,16 @@ var render = function() {
             attrs: {
               label: "Emergency Contact Email",
               error: _vm.$page.errors.emergency_email || "",
-              form: "emergency"
+              form: "emergency",
             },
             model: {
               value: _vm.emergency_email,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.emergency_email = $$v
               },
-              expression: "emergency_email"
-            }
-          })
+              expression: "emergency_email",
+            },
+          }),
         ],
         1
       ),
@@ -640,17 +640,17 @@ var render = function() {
             color: "yellow",
             fontColor: "text-black",
             width: "w-full",
-            form: "emergency"
-          }
+            form: "emergency",
+          },
         },
         [_vm._v("Update Emergency")]
-      )
+      ),
     ],
     1
   )
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -658,10 +658,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Emergency")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Information about your emergency contact")
-      ])
+        _vm._v("Information about your emergency contact"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 
@@ -680,7 +680,7 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -692,11 +692,11 @@ var render = function() {
       _c("form", {
         attrs: { action: "", id: "persona" },
         on: {
-          submit: function($event) {
+          submit: function ($event) {
             $event.preventDefault()
             return _vm.submitForm($event)
-          }
-        }
+          },
+        },
       }),
       _vm._v(" "),
       _c(
@@ -707,16 +707,16 @@ var render = function() {
             attrs: {
               label: "Hobbies",
               error: _vm.$page.errors.hobbies || "",
-              form: "persona"
+              form: "persona",
             },
             model: {
               value: _vm.hobbies,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.hobbies = $$v
               },
-              expression: "hobbies"
-            }
-          })
+              expression: "hobbies",
+            },
+          }),
         ],
         1
       ),
@@ -729,16 +729,16 @@ var render = function() {
             attrs: {
               label: "Profession",
               error: _vm.$page.errors.profession || "",
-              form: "persona"
+              form: "persona",
             },
             model: {
               value: _vm.profession,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.profession = $$v
               },
-              expression: "profession"
-            }
-          })
+              expression: "profession",
+            },
+          }),
         ],
         1
       ),
@@ -751,16 +751,16 @@ var render = function() {
             attrs: {
               label: "Ambition",
               error: _vm.$page.errors.ambition || "",
-              form: "persona"
+              form: "persona",
             },
             model: {
               value: _vm.ambition,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.ambition = $$v
               },
-              expression: "ambition"
-            }
-          })
+              expression: "ambition",
+            },
+          }),
         ],
         1
       ),
@@ -776,21 +776,21 @@ var render = function() {
                 label: "Educational Certificate",
                 value: _vm.educational_cert,
                 error: _vm.$page.errors.educational_cert || "",
-                form: "persona"
+                form: "persona",
               },
               on: {
-                input: function($event) {
+                input: function ($event) {
                   return _vm.changeCertificates($event)
-                }
-              }
+                },
+              },
             },
-            _vm._l(_vm.certificates, function(cert, index) {
+            _vm._l(_vm.certificates, function (cert, index) {
               return _c("option", { key: index, domProps: { value: cert } }, [
-                _vm._v("\n                " + _vm._s(cert) + "\n            ")
+                _vm._v("\n                " + _vm._s(cert) + "\n            "),
               ])
             }),
             0
-          )
+          ),
         ],
         1
       ),
@@ -803,17 +803,17 @@ var render = function() {
             type: "submit",
             color: "yellow",
             fontColor: "text-black",
-            width: "w-full"
-          }
+            width: "w-full",
+          },
         },
         [_vm._v("Update Persona")]
-      )
+      ),
     ],
     1
   )
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -821,10 +821,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Persona")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Work and Educational information")
-      ])
+        _vm._v("Work and Educational information"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 
@@ -843,7 +843,7 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -855,11 +855,11 @@ var render = function() {
       _c("form", {
         attrs: { action: "", id: "social" },
         on: {
-          submit: function($event) {
+          submit: function ($event) {
             $event.preventDefault()
             return _vm.submitForm($event)
-          }
-        }
+          },
+        },
       }),
       _vm._v(" "),
       _c(
@@ -870,16 +870,16 @@ var render = function() {
             attrs: {
               form: "social",
               error: _vm.$page.errors.facebook_url,
-              label: "Facebook link"
+              label: "Facebook link",
             },
             model: {
               value: _vm.facebook_url,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.facebook_url = $$v
               },
-              expression: "facebook_url"
-            }
-          })
+              expression: "facebook_url",
+            },
+          }),
         ],
         1
       ),
@@ -892,16 +892,16 @@ var render = function() {
             attrs: {
               form: "social",
               error: _vm.$page.errors.twitter_url,
-              label: "Twitter link"
+              label: "Twitter link",
             },
             model: {
               value: _vm.twitter_url,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.twitter_url = $$v
               },
-              expression: "twitter_url"
-            }
-          })
+              expression: "twitter_url",
+            },
+          }),
         ],
         1
       ),
@@ -915,16 +915,16 @@ var render = function() {
               type: "number",
               form: "social",
               error: _vm.$page.errors.phone_number,
-              label: "Phone Number (with call code)"
+              label: "Phone Number (with call code)",
             },
             model: {
               value: _vm.phone_number,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.phone_number = $$v
               },
-              expression: "phone_number"
-            }
-          })
+              expression: "phone_number",
+            },
+          }),
         ],
         1
       ),
@@ -937,17 +937,17 @@ var render = function() {
             form: "social",
             width: "w-full",
             color: "yellow",
-            fontColor: "text-black"
-          }
+            fontColor: "text-black",
+          },
         },
         [_vm._v("Update Social Data")]
-      )
+      ),
     ],
     1
   )
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -955,10 +955,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Social")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Social media links and contact")
-      ])
+        _vm._v("Social media links and contact"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 
@@ -977,7 +977,7 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -994,15 +994,15 @@ var render = function() {
               attrs: {
                 color: "yellow",
                 disabled: _vm.hasCompleted,
-                fontColor: "text-black"
+                fontColor: "text-black",
               },
-              on: { click: _vm.updateProfile }
+              on: { click: _vm.updateProfile },
             },
             [_vm._v("Edit")]
-          )
+          ),
         ],
         1
-      )
+      ),
     ]),
     _vm._v(" "),
     _c(
@@ -1011,54 +1011,54 @@ var render = function() {
       [
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Emergency name")
+            _vm._v("Emergency name"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.emergency_name || "None") + " ")
-          ])
+            _vm._v(_vm._s(_vm.user.emergency_name || "None") + " "),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Emergency Phone number")
+            _vm._v("Emergency Phone number"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.emergency_phone_number || "None"))
-          ])
+            _vm._v(_vm._s(_vm.user.emergency_phone_number || "None")),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Emergency Personel Relationship")
+            _vm._v("Emergency Personel Relationship"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.emergency_relationship || "None"))
-          ])
+            _vm._v(_vm._s(_vm.user.emergency_relationship || "None")),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Emergency Perosnel Email")
+            _vm._v("Emergency Perosnel Email"),
           ]),
           _vm._v(" "),
           _c(
             "a",
             {
               staticClass: "underscore",
-              attrs: { href: "mailto:" + (_vm.user.emergency_email || "#") }
+              attrs: { href: "mailto:" + (_vm.user.emergency_email || "#") },
             },
             [_vm._v(_vm._s(_vm.user.emergency_email || "None"))]
-          )
-        ])
+          ),
+        ]),
       ]
-    )
+    ),
   ])
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -1066,10 +1066,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Emergency")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Information about your emergency call line")
-      ])
+        _vm._v("Information about your emergency call line"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 
@@ -1088,7 +1088,7 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -1105,15 +1105,15 @@ var render = function() {
               attrs: {
                 color: "yellow",
                 disabled: _vm.hasCompleted,
-                fontColor: "text-black"
+                fontColor: "text-black",
               },
-              on: { click: _vm.updateProfile }
+              on: { click: _vm.updateProfile },
             },
             [_vm._v("Edit")]
-          )
+          ),
         ],
         1
-      )
+      ),
     ]),
     _vm._v(" "),
     _c(
@@ -1122,75 +1122,75 @@ var render = function() {
       [
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Name")
+            _vm._v("Name"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
             _vm._v(
               _vm._s(_vm.user.first_name) + " " + _vm._s(_vm.user.last_name)
-            )
-          ])
+            ),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Nationality")
+            _vm._v("Nationality"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.nationality || "No Nationality"))
-          ])
+            _vm._v(_vm._s(_vm.user.nationality || "No Nationality")),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Age")
+            _vm._v("Age"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.age || "No age"))
-          ])
+            _vm._v(_vm._s(_vm.user.age || "No age")),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Place of Birth")
+            _vm._v("Place of Birth"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.place_of_birth || "No place of birth"))
-          ])
+            _vm._v(_vm._s(_vm.user.place_of_birth || "No place of birth")),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Signature")
+            _vm._v("Signature"),
           ]),
           _vm._v(" "),
           _c("img", {
             staticClass: "w-full h-auto inline-block mt-1",
             attrs: {
               src: _vm.user.signature || "",
-              alt: _vm.user.signature ? "signature image" : "No signature"
-            }
-          })
+              alt: _vm.user.signature ? "signature image" : "No signature",
+            },
+          }),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Address")
+            _vm._v("Address"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.address || "No address"))
-          ])
-        ])
+            _vm._v(_vm._s(_vm.user.address || "No address")),
+          ]),
+        ]),
       ]
-    )
+    ),
   ])
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -1198,10 +1198,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Identity")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Information used to identify contestant")
-      ])
+        _vm._v("Information used to identify contestant"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 
@@ -1220,7 +1220,7 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -1237,15 +1237,15 @@ var render = function() {
               attrs: {
                 color: "yellow",
                 disabled: _vm.hasCompleted,
-                fontColor: "text-black"
+                fontColor: "text-black",
               },
-              on: { click: _vm.updateProfile }
+              on: { click: _vm.updateProfile },
             },
             [_vm._v("Edit")]
-          )
+          ),
         ],
         1
-      )
+      ),
     ]),
     _vm._v(" "),
     _c(
@@ -1254,49 +1254,49 @@ var render = function() {
       [
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Hobbies")
+            _vm._v("Hobbies"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.hobbies || "none") + " ")
-          ])
+            _vm._v(_vm._s(_vm.user.hobbies || "none") + " "),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Profession")
+            _vm._v("Profession"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.profession || "none"))
-          ])
+            _vm._v(_vm._s(_vm.user.profession || "none")),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Educational Certificate")
+            _vm._v("Educational Certificate"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.educational_cert || "none"))
-          ])
+            _vm._v(_vm._s(_vm.user.educational_cert || "none")),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Ambition")
+            _vm._v("Ambition"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.ambition || "none"))
-          ])
-        ])
+            _vm._v(_vm._s(_vm.user.ambition || "none")),
+          ]),
+        ]),
       ]
-    )
+    ),
   ])
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -1304,10 +1304,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Persona")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Work and Educational information")
-      ])
+        _vm._v("Work and Educational information"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 
@@ -1326,7 +1326,7 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -1343,15 +1343,15 @@ var render = function() {
               attrs: {
                 color: "yellow",
                 disabled: _vm.hasCompleted,
-                fontColor: "text-black"
+                fontColor: "text-black",
               },
-              on: { click: _vm.updateProfile }
+              on: { click: _vm.updateProfile },
             },
             [_vm._v("Edit")]
-          )
+          ),
         ],
         1
-      )
+      ),
     ]),
     _vm._v(" "),
     _c(
@@ -1360,37 +1360,37 @@ var render = function() {
       [
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Facebook handle")
+            _vm._v("Facebook handle"),
           ]),
           _vm._v(" "),
           _c(
             "a",
             {
               staticClass: "hover:text-yellow-500",
-              attrs: { target: "_blank", href: _vm.user.facebook_url || "#" }
+              attrs: { target: "_blank", href: _vm.user.facebook_url || "#" },
             },
             [_vm._v(_vm._s(_vm.user.facebook_url || "None") + " ")]
-          )
+          ),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("twitter handle")
+            _vm._v("twitter handle"),
           ]),
           _vm._v(" "),
           _c(
             "a",
             {
               staticClass: "hover:text-yellow-500",
-              attrs: { target: "_blank", href: _vm.user.facebook_url || "#" }
+              attrs: { target: "_blank", href: _vm.user.facebook_url || "#" },
             },
             [_vm._v(_vm._s(_vm.user.facebook_url || "None"))]
-          )
+          ),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Phone number")
+            _vm._v("Phone number"),
           ]),
           _vm._v(" "),
           _c(
@@ -1399,18 +1399,18 @@ var render = function() {
               staticClass: "hover:text-yellow-500",
               attrs: {
                 target: "_blank",
-                href: "tel:" + (_vm.user.phone_number || "")
-              }
+                href: "tel:" + (_vm.user.phone_number || ""),
+              },
             },
             [_vm._v(_vm._s(_vm.user.phone_number || "None"))]
-          )
-        ])
+          ),
+        ]),
       ]
-    )
+    ),
   ])
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -1418,10 +1418,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Social")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Social media links and contact")
-      ])
+        _vm._v("Social media links and contact"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 
@@ -1440,7 +1440,7 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -1457,15 +1457,15 @@ var render = function() {
               attrs: {
                 disabled: _vm.hasCompleted,
                 color: "yellow",
-                fontColor: "text-black"
+                fontColor: "text-black",
               },
-              on: { click: _vm.updateProfile }
+              on: { click: _vm.updateProfile },
             },
             [_vm._v("Edit")]
-          )
+          ),
         ],
         1
-      )
+      ),
     ]),
     _vm._v(" "),
     _c(
@@ -1474,29 +1474,29 @@ var render = function() {
       [
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Departure Airport Code")
+            _vm._v("Departure Airport Code"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.departure_airport_code || "none") + " ")
-          ])
+            _vm._v(_vm._s(_vm.user.departure_airport_code || "none") + " "),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Passport Number")
+            _vm._v("Passport Number"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "uppercase" }, [
-            _vm._v(_vm._s(_vm.user.passport_number || "------"))
-          ])
-        ])
+            _vm._v(_vm._s(_vm.user.passport_number || "------")),
+          ]),
+        ]),
       ]
-    )
+    ),
   ])
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -1504,10 +1504,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Travel")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Travel and flight information")
-      ])
+        _vm._v("Travel and flight information"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 
@@ -1526,7 +1526,7 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -1538,11 +1538,11 @@ var render = function() {
       _c("form", {
         attrs: { id: "travel_new" },
         on: {
-          submit: function($event) {
+          submit: function ($event) {
             $event.preventDefault()
             return _vm.submitTravelForm($event)
-          }
-        }
+          },
+        },
       }),
       _vm._v(" "),
       _c(
@@ -1553,16 +1553,16 @@ var render = function() {
             attrs: {
               label: "Depature Airport Code",
               error: _vm.$page.errors.departure_airport_code || "",
-              form: "travel_new"
+              form: "travel_new",
             },
             model: {
               value: _vm.departure_airport_code,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.departure_airport_code = $$v
               },
-              expression: "departure_airport_code"
-            }
-          })
+              expression: "departure_airport_code",
+            },
+          }),
         ],
         1
       ),
@@ -1575,16 +1575,16 @@ var render = function() {
             attrs: {
               label: "Passport Number",
               error: _vm.$page.errors.passport_number || "",
-              form: "travel_new"
+              form: "travel_new",
             },
             model: {
               value: _vm.passport_number,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.passport_number = $$v
               },
-              expression: "passport_number"
-            }
-          })
+              expression: "passport_number",
+            },
+          }),
         ],
         1
       ),
@@ -1597,17 +1597,17 @@ var render = function() {
             type: "submit",
             color: "yellow",
             fontColor: "text-black",
-            width: "w-full"
-          }
+            width: "w-full",
+          },
         },
         [_vm._v("Update Travel")]
-      )
+      ),
     ],
     1
   )
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -1615,10 +1615,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Travel")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Travel and flight information")
-      ])
+        _vm._v("Travel and flight information"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

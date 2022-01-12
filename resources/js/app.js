@@ -1,17 +1,17 @@
-import VueAxios from "./plugins/axios"
-import {BASEURL} from "./api_endpoint"
+// import VueAxios from "./plugins/axios"
+// import {BASEURL} from "./api_endpoint"
 import { InertiaApp } from '@inertiajs/inertia-vue'
 import Vue from 'vue'
 import GlobalComps from "./plugins/global_comps"
 /**
  * Import Vue progress bar to detect changes in the route
  */
-import VueProgress from "vue-progressbar"
+// import VueProgress from "vue-progressbar"
 //import "../sass/blank.scss"
 
-window.Vue = require('vue')
+// window.Vue = require('vue')
 Vue.use(InertiaApp)
-Vue.use(VueAxios,{baseURL: BASEURL})
+// Vue.use(VueAxios,{baseURL: BASEURL})
 Vue.use(GlobalComps)
 Vue.prototype.$route = {
   url: (...args)=>route(...args).url(),

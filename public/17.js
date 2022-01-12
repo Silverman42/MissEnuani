@@ -60,7 +60,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -77,15 +77,15 @@ var render = function() {
               attrs: {
                 color: "yellow",
                 disabled: _vm.hasCompleted,
-                fontColor: "text-black"
+                fontColor: "text-black",
               },
-              on: { click: _vm.updateProfile }
+              on: { click: _vm.updateProfile },
             },
             [_vm._v("Edit")]
-          )
+          ),
         ],
         1
-      )
+      ),
     ]),
     _vm._v(" "),
     _c(
@@ -94,37 +94,37 @@ var render = function() {
       [
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Facebook handle")
+            _vm._v("Facebook handle"),
           ]),
           _vm._v(" "),
           _c(
             "a",
             {
               staticClass: "hover:text-yellow-500",
-              attrs: { target: "_blank", href: _vm.user.facebook_url || "#" }
+              attrs: { target: "_blank", href: _vm.user.facebook_url || "#" },
             },
             [_vm._v(_vm._s(_vm.user.facebook_url || "None") + " ")]
-          )
+          ),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("twitter handle")
+            _vm._v("twitter handle"),
           ]),
           _vm._v(" "),
           _c(
             "a",
             {
               staticClass: "hover:text-yellow-500",
-              attrs: { target: "_blank", href: _vm.user.facebook_url || "#" }
+              attrs: { target: "_blank", href: _vm.user.facebook_url || "#" },
             },
             [_vm._v(_vm._s(_vm.user.facebook_url || "None"))]
-          )
+          ),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Phone number")
+            _vm._v("Phone number"),
           ]),
           _vm._v(" "),
           _c(
@@ -133,18 +133,18 @@ var render = function() {
               staticClass: "hover:text-yellow-500",
               attrs: {
                 target: "_blank",
-                href: "tel:" + (_vm.user.phone_number || "")
-              }
+                href: "tel:" + (_vm.user.phone_number || ""),
+              },
             },
             [_vm._v(_vm._s(_vm.user.phone_number || "None"))]
-          )
-        ])
+          ),
+        ]),
       ]
-    )
+    ),
   ])
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -152,10 +152,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Social")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Social media links and contact")
-      ])
+        _vm._v("Social media links and contact"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

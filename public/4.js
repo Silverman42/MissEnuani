@@ -156,7 +156,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -168,11 +168,11 @@ var render = function() {
       _c("form", {
         attrs: { action: "", id: "identity" },
         on: {
-          submit: function($event) {
+          submit: function ($event) {
             $event.preventDefault()
             return _vm.submitForm($event)
-          }
-        }
+          },
+        },
       }),
       _vm._v(" "),
       _c(
@@ -183,16 +183,16 @@ var render = function() {
             attrs: {
               label: "First Name",
               error: _vm.$page.errors.first_name,
-              form: "identity"
+              form: "identity",
             },
             model: {
               value: _vm.firstName,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.firstName = $$v
               },
-              expression: "firstName"
-            }
-          })
+              expression: "firstName",
+            },
+          }),
         ],
         1
       ),
@@ -205,16 +205,16 @@ var render = function() {
             attrs: {
               label: "Last Name",
               error: _vm.$page.errors.last_name,
-              form: "identity"
+              form: "identity",
             },
             model: {
               value: _vm.lastName,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.lastName = $$v
               },
-              expression: "lastName"
-            }
-          })
+              expression: "lastName",
+            },
+          }),
         ],
         1
       ),
@@ -230,17 +230,17 @@ var render = function() {
                 label: "Nationality",
                 error: _vm.$page.errors.nationality,
                 value: _vm.nationality,
-                form: "identity"
+                form: "identity",
               },
               model: {
                 value: _vm.nationality,
-                callback: function($$v) {
+                callback: function ($$v) {
                   _vm.nationality = $$v
                 },
-                expression: "nationality"
-              }
+                expression: "nationality",
+              },
             },
-            _vm._l(_vm.countries, function(country, index) {
+            _vm._l(_vm.countries, function (country, index) {
               return _c(
                 "option",
                 { key: index, domProps: { value: country.name } },
@@ -248,7 +248,7 @@ var render = function() {
               )
             }),
             0
-          )
+          ),
         ],
         1
       ),
@@ -261,16 +261,16 @@ var render = function() {
             attrs: {
               label: "Address",
               error: _vm.$page.errors.address,
-              form: "identity"
+              form: "identity",
             },
             model: {
               value: _vm.address,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.address = $$v
               },
-              expression: "address"
-            }
-          })
+              expression: "address",
+            },
+          }),
         ],
         1
       ),
@@ -284,16 +284,16 @@ var render = function() {
               type: "number",
               label: "Age",
               error: _vm.$page.errors.age,
-              form: "identity"
+              form: "identity",
             },
             model: {
               value: _vm.age,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.age = $$v
               },
-              expression: "age"
-            }
-          })
+              expression: "age",
+            },
+          }),
         ],
         1
       ),
@@ -307,14 +307,14 @@ var render = function() {
               type: "date",
               label: "Date of Birth",
               error: _vm.$page.errors.date_of_birth,
-              form: "identity"
+              form: "identity",
             },
             on: {
-              input: function($event) {
+              input: function ($event) {
                 return _vm.changeDateOfBirth($event)
-              }
-            }
-          })
+              },
+            },
+          }),
         ],
         1
       ),
@@ -327,16 +327,16 @@ var render = function() {
             attrs: {
               label: "Place of Birth",
               error: _vm.$page.errors.place_of_birth,
-              form: "identity"
+              form: "identity",
             },
             model: {
               value: _vm.placeOfBirth,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.placeOfBirth = $$v
               },
-              expression: "placeOfBirth"
-            }
-          })
+              expression: "placeOfBirth",
+            },
+          }),
         ],
         1
       ),
@@ -349,14 +349,14 @@ var render = function() {
             attrs: {
               form: "identity",
               error: _vm.$page.errors.avatar || "",
-              label: "Upload your Profile Picture"
+              label: "Upload your Profile Picture",
             },
             on: {
-              input: function($event) {
+              input: function ($event) {
                 return _vm.changeAvatar($event)
-              }
-            }
-          })
+              },
+            },
+          }),
         ],
         1
       ),
@@ -369,14 +369,14 @@ var render = function() {
             attrs: {
               form: "identity",
               error: _vm.$page.errors.signature || "",
-              label: "Upload an Image of your signtaure"
+              label: "Upload an Image of your signtaure",
             },
             on: {
-              input: function($event) {
+              input: function ($event) {
                 return _vm.changeSignature($event)
-              }
-            }
-          })
+              },
+            },
+          }),
         ],
         1
       ),
@@ -389,17 +389,17 @@ var render = function() {
             form: "identity",
             color: "yellow",
             fontColor: "text-black",
-            width: "w-full"
-          }
+            width: "w-full",
+          },
         },
         [_vm._v("Update\n        Identity ")]
-      )
+      ),
     ],
     1
   )
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -407,10 +407,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Identity")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Information used to identify contestant")
-      ])
+        _vm._v("Information used to identify contestant"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

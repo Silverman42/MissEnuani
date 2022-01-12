@@ -88,7 +88,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -100,11 +100,11 @@ var render = function() {
       _c("form", {
         attrs: { action: "", id: "persona" },
         on: {
-          submit: function($event) {
+          submit: function ($event) {
             $event.preventDefault()
             return _vm.submitForm($event)
-          }
-        }
+          },
+        },
       }),
       _vm._v(" "),
       _c(
@@ -115,16 +115,16 @@ var render = function() {
             attrs: {
               label: "Hobbies",
               error: _vm.$page.errors.hobbies || "",
-              form: "persona"
+              form: "persona",
             },
             model: {
               value: _vm.hobbies,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.hobbies = $$v
               },
-              expression: "hobbies"
-            }
-          })
+              expression: "hobbies",
+            },
+          }),
         ],
         1
       ),
@@ -137,16 +137,16 @@ var render = function() {
             attrs: {
               label: "Profession",
               error: _vm.$page.errors.profession || "",
-              form: "persona"
+              form: "persona",
             },
             model: {
               value: _vm.profession,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.profession = $$v
               },
-              expression: "profession"
-            }
-          })
+              expression: "profession",
+            },
+          }),
         ],
         1
       ),
@@ -159,16 +159,16 @@ var render = function() {
             attrs: {
               label: "Ambition",
               error: _vm.$page.errors.ambition || "",
-              form: "persona"
+              form: "persona",
             },
             model: {
               value: _vm.ambition,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.ambition = $$v
               },
-              expression: "ambition"
-            }
-          })
+              expression: "ambition",
+            },
+          }),
         ],
         1
       ),
@@ -184,21 +184,21 @@ var render = function() {
                 label: "Educational Certificate",
                 value: _vm.educational_cert,
                 error: _vm.$page.errors.educational_cert || "",
-                form: "persona"
+                form: "persona",
               },
               on: {
-                input: function($event) {
+                input: function ($event) {
                   return _vm.changeCertificates($event)
-                }
-              }
+                },
+              },
             },
-            _vm._l(_vm.certificates, function(cert, index) {
+            _vm._l(_vm.certificates, function (cert, index) {
               return _c("option", { key: index, domProps: { value: cert } }, [
-                _vm._v("\n                " + _vm._s(cert) + "\n            ")
+                _vm._v("\n                " + _vm._s(cert) + "\n            "),
               ])
             }),
             0
-          )
+          ),
         ],
         1
       ),
@@ -211,17 +211,17 @@ var render = function() {
             type: "submit",
             color: "yellow",
             fontColor: "text-black",
-            width: "w-full"
-          }
+            width: "w-full",
+          },
         },
         [_vm._v("Update Persona")]
-      )
+      ),
     ],
     1
   )
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -229,10 +229,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Persona")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Work and Educational information")
-      ])
+        _vm._v("Work and Educational information"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

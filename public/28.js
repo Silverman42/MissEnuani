@@ -90,7 +90,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -98,21 +98,21 @@ var render = function() {
     "div",
     {
       staticClass: "pb-8 md:w-7/12 mt-8 reveal-left",
-      staticStyle: { "--delay": "0.1s" }
+      staticStyle: { "--delay": "0.1s" },
     },
     [
       _c("form", {
         attrs: { id: "general_settings_form" },
         on: {
-          submit: function($event) {
+          submit: function ($event) {
             $event.preventDefault()
             return _vm.submitGeneralSetting($event)
-          }
-        }
+          },
+        },
       }),
       _vm._v(" "),
       _c("h2", { staticClass: "text-lg font-bold mb-8" }, [
-        _vm._v("\n        General Settings\n    ")
+        _vm._v("\n        General Settings\n    "),
       ]),
       _vm._v(" "),
       _c(
@@ -123,16 +123,16 @@ var render = function() {
             attrs: {
               error: _vm.$page.errors.app_name || "",
               form: "general_settings_form",
-              label: "Application Name"
+              label: "Application Name",
             },
             model: {
               value: _vm.general.app_name,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.$set(_vm.general, "app_name", $$v)
               },
-              expression: "general.app_name"
-            }
-          })
+              expression: "general.app_name",
+            },
+          }),
         ],
         1
       ),
@@ -145,16 +145,16 @@ var render = function() {
             attrs: {
               error: _vm.$page.errors.app_email || "",
               form: "general_settings_form",
-              label: "Application Email"
+              label: "Application Email",
             },
             model: {
               value: _vm.general.app_email,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.$set(_vm.general, "app_email", $$v)
               },
-              expression: "general.app_email"
-            }
-          })
+              expression: "general.app_email",
+            },
+          }),
         ],
         1
       ),
@@ -167,16 +167,16 @@ var render = function() {
             attrs: {
               error: _vm.$page.errors.app_url || "",
               form: "general_settings_form",
-              label: "Application URL"
+              label: "Application URL",
             },
             model: {
               value: _vm.general.app_url,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.$set(_vm.general, "app_url", $$v)
               },
-              expression: "general.app_url"
-            }
-          })
+              expression: "general.app_url",
+            },
+          }),
         ],
         1
       ),
@@ -190,16 +190,16 @@ var render = function() {
               type: "number",
               error: _vm.$page.errors.naira_charge || "",
               form: "general_settings_form",
-              label: "Payment Fee (Naira)"
+              label: "Payment Fee (Naira)",
             },
             model: {
               value: _vm.general.naira_charge,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.$set(_vm.general, "naira_charge", $$v)
               },
-              expression: "general.naira_charge"
-            }
-          })
+              expression: "general.naira_charge",
+            },
+          }),
         ],
         1
       ),
@@ -213,16 +213,16 @@ var render = function() {
               type: "number",
               error: _vm.$page.errors.dollar_charge || "",
               form: "general_settings_form",
-              label: "Payment Fee (Dollars)"
+              label: "Payment Fee (Dollars)",
             },
             model: {
               value: _vm.general.dollar_charge,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.$set(_vm.general, "dollar_charge", $$v)
               },
-              expression: "general.dollar_charge"
-            }
-          })
+              expression: "general.dollar_charge",
+            },
+          }),
         ],
         1
       ),
@@ -234,20 +234,20 @@ var render = function() {
           _c("switch-input", {
             attrs: {
               error: _vm.$page.errors.disable_client_profile_modification || "",
-              label: "Disable Client Profile Modification"
+              label: "Disable Client Profile Modification",
             },
             model: {
               value: _vm.general.disable_client_profile_modification,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.$set(
                   _vm.general,
                   "disable_client_profile_modification",
                   $$v
                 )
               },
-              expression: "general.disable_client_profile_modification"
-            }
-          })
+              expression: "general.disable_client_profile_modification",
+            },
+          }),
         ],
         1
       ),
@@ -259,16 +259,16 @@ var render = function() {
           _c("switch-input", {
             attrs: {
               error: _vm.$page.errors.disable_client_registration || "",
-              label: "Disable Client Modification"
+              label: "Disable Client Modification",
             },
             model: {
               value: _vm.general.disable_client_registration,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.$set(_vm.general, "disable_client_registration", $$v)
               },
-              expression: "general.disable_client_registration"
-            }
-          })
+              expression: "general.disable_client_registration",
+            },
+          }),
         ],
         1
       ),
@@ -280,16 +280,16 @@ var render = function() {
           _c("switch-input", {
             attrs: {
               error: _vm.$page.errors.recieve_client_emails || "",
-              label: "Recieve Client Emails"
+              label: "Recieve Client Emails",
             },
             model: {
               value: _vm.general.recieve_client_emails,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.$set(_vm.general, "recieve_client_emails", $$v)
               },
-              expression: "general.recieve_client_emails"
-            }
-          })
+              expression: "general.recieve_client_emails",
+            },
+          }),
         ],
         1
       ),
@@ -298,7 +298,7 @@ var render = function() {
         "div",
         {
           staticClass: "flex justify-end reveal-up",
-          staticStyle: { "--delay": "1.7s" }
+          staticStyle: { "--delay": "1.7s" },
         },
         [
           _c(
@@ -307,14 +307,14 @@ var render = function() {
               attrs: {
                 form: "general_settings_form",
                 width: "w-full md:w-auto",
-                type: "submit"
-              }
+                type: "submit",
+              },
             },
             [_vm._v("Save Changes")]
-          )
+          ),
         ],
         1
-      )
+      ),
     ]
   )
 }

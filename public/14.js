@@ -62,7 +62,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -79,15 +79,15 @@ var render = function() {
               attrs: {
                 color: "yellow",
                 disabled: _vm.hasCompleted,
-                fontColor: "text-black"
+                fontColor: "text-black",
               },
-              on: { click: _vm.updateProfile }
+              on: { click: _vm.updateProfile },
             },
             [_vm._v("Edit")]
-          )
+          ),
         ],
         1
-      )
+      ),
     ]),
     _vm._v(" "),
     _c(
@@ -96,54 +96,54 @@ var render = function() {
       [
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Emergency name")
+            _vm._v("Emergency name"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.emergency_name || "None") + " ")
-          ])
+            _vm._v(_vm._s(_vm.user.emergency_name || "None") + " "),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Emergency Phone number")
+            _vm._v("Emergency Phone number"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.emergency_phone_number || "None"))
-          ])
+            _vm._v(_vm._s(_vm.user.emergency_phone_number || "None")),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Emergency Personel Relationship")
+            _vm._v("Emergency Personel Relationship"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.emergency_relationship || "None"))
-          ])
+            _vm._v(_vm._s(_vm.user.emergency_relationship || "None")),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Emergency Perosnel Email")
+            _vm._v("Emergency Perosnel Email"),
           ]),
           _vm._v(" "),
           _c(
             "a",
             {
               staticClass: "underscore",
-              attrs: { href: "mailto:" + (_vm.user.emergency_email || "#") }
+              attrs: { href: "mailto:" + (_vm.user.emergency_email || "#") },
             },
             [_vm._v(_vm._s(_vm.user.emergency_email || "None"))]
-          )
-        ])
+          ),
+        ]),
       ]
-    )
+    ),
   ])
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -151,10 +151,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Emergency")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Information about your emergency call line")
-      ])
+        _vm._v("Information about your emergency call line"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

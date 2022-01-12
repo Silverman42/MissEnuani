@@ -10,15 +10,19 @@ class Transactions extends Model
 
     protected $appends = ["human_date_of_payment"];
 
-    public function competitions(){
-        return $this->belongsTo('App\Models\Competitions','competitions_id');
+    public function competitions()
+    {
+        return $this->belongsTo('App\Models\Competitions', 'competitions_id');
     }
 
-    public function getHumanDateOfPaymentAttribute(){
+    public function getHumanDateOfPaymentAttribute()
+    {
         return $this->created_at->format('jS F Y');
     }
 
-    public function users(){
-        return $this->belongsTo('App\Models\User','user_id');
+
+    public function transactable()
+    {
+        return $this->morphTo('transactable');
     }
 }

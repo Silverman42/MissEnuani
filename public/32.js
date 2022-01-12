@@ -39,7 +39,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -55,8 +55,8 @@ var render = function() {
               boardTitle: "Edit Users",
               boardText: "View and edit user information",
               hostName: _vm.$page.auth.settings.app_url,
-              boardImgLink: "img/board_img/user.svg"
-            }
+              boardImgLink: "img/board_img/user.svg",
+            },
           },
           [
             _c(
@@ -66,7 +66,7 @@ var render = function() {
                   "inertia-link",
                   {
                     staticClass: "text-primary-100 hover:text-white",
-                    attrs: { href: _vm.$route.relativePath("users.view") }
+                    attrs: { href: _vm.$route.relativePath("users.view") },
                   },
                   [_vm._v("User")]
                 ),
@@ -77,16 +77,16 @@ var render = function() {
                   "a",
                   { staticClass: "hover:text-white", attrs: { href: "#" } },
                   [_vm._v("Edit Users")]
-                )
+                ),
               ],
               1
-            )
+            ),
           ],
           1
-        )
+        ),
       ],
       1
-    )
+    ),
   ])
 }
 var staticRenderFns = []

@@ -1,8 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/currencies.css": "/css/currencies.css",
     "/css/app.css": "/css/app.css",
-    "/js/axios.js": "/js/axios.js",
     "/layout_comps.js": "/layout_comps.js",
     "/profile_comps.js": "/profile_comps.js",
     "/settings_page.js": "/settings_page.js",

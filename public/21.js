@@ -63,7 +63,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -76,12 +76,12 @@ var render = function() {
             boardTitle: "Dashboard",
             boardText: "Statistical data as at 20th September, 2020",
             hostName: _vm.$page.auth.settings.app_url,
-            boardImgLink: "img/board_img/dashboard.svg"
-          }
-        })
+            boardImgLink: "img/board_img/dashboard.svg",
+          },
+        }),
       ],
       1
-    )
+    ),
   ])
 }
 var staticRenderFns = []

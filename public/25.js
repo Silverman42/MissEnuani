@@ -73,7 +73,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -85,11 +85,11 @@ var render = function() {
       _c("form", {
         attrs: { action: "", id: "social" },
         on: {
-          submit: function($event) {
+          submit: function ($event) {
             $event.preventDefault()
             return _vm.submitForm($event)
-          }
-        }
+          },
+        },
       }),
       _vm._v(" "),
       _c(
@@ -100,16 +100,16 @@ var render = function() {
             attrs: {
               form: "social",
               error: _vm.$page.errors.facebook_url,
-              label: "Facebook link"
+              label: "Facebook link",
             },
             model: {
               value: _vm.facebook_url,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.facebook_url = $$v
               },
-              expression: "facebook_url"
-            }
-          })
+              expression: "facebook_url",
+            },
+          }),
         ],
         1
       ),
@@ -122,16 +122,16 @@ var render = function() {
             attrs: {
               form: "social",
               error: _vm.$page.errors.twitter_url,
-              label: "Twitter link"
+              label: "Twitter link",
             },
             model: {
               value: _vm.twitter_url,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.twitter_url = $$v
               },
-              expression: "twitter_url"
-            }
-          })
+              expression: "twitter_url",
+            },
+          }),
         ],
         1
       ),
@@ -145,16 +145,16 @@ var render = function() {
               type: "number",
               form: "social",
               error: _vm.$page.errors.phone_number,
-              label: "Phone Number (with call code)"
+              label: "Phone Number (with call code)",
             },
             model: {
               value: _vm.phone_number,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.phone_number = $$v
               },
-              expression: "phone_number"
-            }
-          })
+              expression: "phone_number",
+            },
+          }),
         ],
         1
       ),
@@ -167,17 +167,17 @@ var render = function() {
             form: "social",
             width: "w-full",
             color: "yellow",
-            fontColor: "text-black"
-          }
+            fontColor: "text-black",
+          },
         },
         [_vm._v("Update Social Data")]
-      )
+      ),
     ],
     1
   )
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -185,10 +185,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Social")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Social media links and contact")
-      ])
+        _vm._v("Social media links and contact"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

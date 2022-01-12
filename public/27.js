@@ -64,7 +64,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -72,17 +72,17 @@ var render = function() {
     "div",
     {
       staticClass: "pb-8 md:w-7/12 mt-8 reveal-left",
-      staticStyle: { "--delay": "0.1s" }
+      staticStyle: { "--delay": "0.1s" },
     },
     [
       _c("form", {
         attrs: { id: "factory_reset_form" },
         on: {
-          submit: function($event) {
+          submit: function ($event) {
             $event.preventDefault()
             return _vm.activateFactoryReset($event)
-          }
-        }
+          },
+        },
       }),
       _vm._v(" "),
       _vm._m(0),
@@ -96,16 +96,16 @@ var render = function() {
               label: "Confirm your password",
               error: _vm.$page.errors.password || "",
               type: "password",
-              form: "factory_reset_form"
+              form: "factory_reset_form",
             },
             model: {
               value: _vm.password,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.password = $$v
               },
-              expression: "password"
-            }
-          })
+              expression: "password",
+            },
+          }),
         ],
         1
       ),
@@ -114,7 +114,7 @@ var render = function() {
         "div",
         {
           staticClass: "flex justify-end reveal-up",
-          staticStyle: { "--delay": "0.7s" }
+          staticStyle: { "--delay": "0.7s" },
         },
         [
           _c(
@@ -124,19 +124,19 @@ var render = function() {
                 color: "red",
                 form: "factory_reset_form",
                 width: "w-full md:w-auto",
-                type: "submit"
-              }
+                type: "submit",
+              },
             },
             [_vm._v("Activate Factory Reset")]
-          )
+          ),
         ],
         1
-      )
+      ),
     ]
   )
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -145,7 +145,7 @@ var staticRenderFns = [
         "h2",
         {
           staticClass: "text-lg font-bold reveal-up mb-3",
-          staticStyle: { "--delay": "0.1s" }
+          staticStyle: { "--delay": "0.1s" },
         },
         [_vm._v("\n            Factory Reset Settings\n        ")]
       ),
@@ -156,11 +156,11 @@ var staticRenderFns = [
         [
           _vm._v(
             "Please be warned that this action is irreversible as all topics, subjects, questions and collections will be wiped off while all settings will be returned to their default state"
-          )
+          ),
         ]
-      )
+      ),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

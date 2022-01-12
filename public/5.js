@@ -210,7 +210,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -222,11 +222,11 @@ var render = function() {
       _c("form", {
         attrs: { action: "", id: "medicals" },
         on: {
-          submit: function($event) {
+          submit: function ($event) {
             $event.preventDefault()
             return _vm.submitForm($event)
-          }
-        }
+          },
+        },
       }),
       _vm._v(" "),
       _c(
@@ -234,29 +234,29 @@ var render = function() {
         { staticClass: "mb-3 grid grid-cols-2 col-gap-2" },
         [
           _c("p", { staticClass: "col-start-1 col-end-3 text-xs" }, [
-            _vm._v("Height (ft)")
+            _vm._v("Height (ft)"),
           ]),
           _vm._v(" "),
           _c("text-input", {
             attrs: { type: "number", form: "medicals" },
             model: {
               value: _vm.height.number,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.$set(_vm.height, "number", $$v)
               },
-              expression: "height.number"
-            }
+              expression: "height.number",
+            },
           }),
           _vm._v(" "),
           _c("text-input", {
             attrs: { type: "number", form: "medicals" },
             model: {
               value: _vm.height.decimal,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.$set(_vm.height, "decimal", $$v)
               },
-              expression: "height.decimal"
-            }
+              expression: "height.decimal",
+            },
           }),
           _vm._v(" "),
           _vm.$page.errors.height
@@ -265,7 +265,7 @@ var render = function() {
                 { staticClass: "col-start-1 col-end-3 text-xs text-red-500" },
                 [_vm._v(_vm._s(_vm.$page.errors.height))]
               )
-            : _vm._e()
+            : _vm._e(),
         ],
         1
       ),
@@ -275,29 +275,29 @@ var render = function() {
         { staticClass: "mb-3 grid grid-cols-2 col-gap-2" },
         [
           _c("p", { staticClass: "col-start-1 col-end-3 text-xs" }, [
-            _vm._v("Weight (kg)")
+            _vm._v("Weight (kg)"),
           ]),
           _vm._v(" "),
           _c("text-input", {
             attrs: { type: "number", form: "medicals" },
             model: {
               value: _vm.weight.number,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.$set(_vm.weight, "number", $$v)
               },
-              expression: "weight.number"
-            }
+              expression: "weight.number",
+            },
           }),
           _vm._v(" "),
           _c("text-input", {
             attrs: { type: "number", form: "medicals" },
             model: {
               value: _vm.weight.decimal,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.$set(_vm.weight, "decimal", $$v)
               },
-              expression: "weight.decimal"
-            }
+              expression: "weight.decimal",
+            },
           }),
           _vm._v(" "),
           _vm.$page.errors.weight
@@ -306,7 +306,7 @@ var render = function() {
                 { staticClass: "col-start-1 col-end-3 text-xs text-red-500" },
                 [_vm._v(_vm._s(_vm.$page.errors.weight))]
               )
-            : _vm._e()
+            : _vm._e(),
         ],
         1
       ),
@@ -320,16 +320,16 @@ var render = function() {
               type: "number",
               form: "medicals",
               error: _vm.$page.errors.shoe_size,
-              label: "Shoe Size (European measurement)"
+              label: "Shoe Size (European measurement)",
             },
             model: {
               value: _vm.shoeSize,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.shoeSize = $$v
               },
-              expression: "shoeSize"
-            }
-          })
+              expression: "shoeSize",
+            },
+          }),
         ],
         1
       ),
@@ -345,23 +345,23 @@ var render = function() {
                 label: "Dress Size",
                 error: _vm.$page.errors.dress_size,
                 value: _vm.dressSize,
-                form: "medicals"
+                form: "medicals",
               },
               model: {
                 value: _vm.dressSize,
-                callback: function($$v) {
+                callback: function ($$v) {
                   _vm.dressSize = $$v
                 },
-                expression: "dressSize"
-              }
+                expression: "dressSize",
+              },
             },
-            _vm._l(_vm.sizes, function(size, index) {
+            _vm._l(_vm.sizes, function (size, index) {
               return _c("option", { key: index, domProps: { value: size } }, [
-                _vm._v(_vm._s(size))
+                _vm._v(_vm._s(size)),
               ])
             }),
             0
-          )
+          ),
         ],
         1
       ),
@@ -377,23 +377,23 @@ var render = function() {
                 label: "Waist Size",
                 error: _vm.$page.errors.waist_size,
                 value: _vm.waistSize,
-                form: "medicals"
+                form: "medicals",
               },
               model: {
                 value: _vm.waistSize,
-                callback: function($$v) {
+                callback: function ($$v) {
                   _vm.waistSize = $$v
                 },
-                expression: "waistSize"
-              }
+                expression: "waistSize",
+              },
             },
-            _vm._l(_vm.sizes, function(size, index) {
+            _vm._l(_vm.sizes, function (size, index) {
               return _c("option", { key: index, domProps: { value: size } }, [
-                _vm._v(_vm._s(size))
+                _vm._v(_vm._s(size)),
               ])
             }),
             0
-          )
+          ),
         ],
         1
       ),
@@ -409,30 +409,30 @@ var render = function() {
                 label: "Burst Size",
                 error: _vm.$page.errors.bust_size,
                 value: _vm.bustSize,
-                form: "medicals"
+                form: "medicals",
               },
               model: {
                 value: _vm.bustSize,
-                callback: function($$v) {
+                callback: function ($$v) {
                   _vm.bustSize = $$v
                 },
-                expression: "bustSize"
-              }
+                expression: "bustSize",
+              },
             },
-            _vm._l(_vm.sizes, function(size, index) {
+            _vm._l(_vm.sizes, function (size, index) {
               return _c("option", { key: index, domProps: { value: size } }, [
-                _vm._v(_vm._s(size))
+                _vm._v(_vm._s(size)),
               ])
             }),
             0
-          )
+          ),
         ],
         1
       ),
       _vm._v(" "),
       _c("div", { staticClass: "mb-3 grid grid-cols-3 col-gap-2" }, [
         _c("div", { staticClass: "text-xs col-start-1 col-end-4" }, [
-          _vm._v("Skin Color")
+          _vm._v("Skin Color"),
         ]),
         _vm._v(" "),
         _c(
@@ -445,17 +445,17 @@ var render = function() {
                 attrs: {
                   error: _vm.$page.errors.skin_color,
                   value: _vm.skinColor,
-                  form: "medicals"
+                  form: "medicals",
                 },
                 model: {
                   value: _vm.skinColor,
-                  callback: function($$v) {
+                  callback: function ($$v) {
                     _vm.skinColor = $$v
                   },
-                  expression: "skinColor"
-                }
+                  expression: "skinColor",
+                },
               },
-              _vm._l(_vm.colors, function(color, index) {
+              _vm._l(_vm.colors, function (color, index) {
                 return _c(
                   "option",
                   { key: index, domProps: { value: color } },
@@ -463,15 +463,15 @@ var render = function() {
                 )
               }),
               0
-            )
+            ),
           ],
           1
         ),
         _vm._v(" "),
         _c("div", {
           staticClass: "col-start-3 col-end-4 rounded-md",
-          style: { background: _vm.colorMatch[_vm.skinColor] }
-        })
+          style: { background: _vm.colorMatch[_vm.skinColor] },
+        }),
       ]),
       _vm._v(" "),
       _c(
@@ -485,23 +485,23 @@ var render = function() {
                 label: "Blood Type",
                 error: _vm.$page.errors.blood_type,
                 value: _vm.bloodType,
-                form: "medicals"
+                form: "medicals",
               },
               model: {
                 value: _vm.bloodType,
-                callback: function($$v) {
+                callback: function ($$v) {
                   _vm.bloodType = $$v
                 },
-                expression: "bloodType"
-              }
+                expression: "bloodType",
+              },
             },
-            _vm._l(_vm.bloodTypes, function(type, index) {
+            _vm._l(_vm.bloodTypes, function (type, index) {
               return _c("option", { key: index, domProps: { value: type } }, [
-                _vm._v(_vm._s(type))
+                _vm._v(_vm._s(type)),
               ])
             }),
             0
-          )
+          ),
         ],
         1
       ),
@@ -518,13 +518,13 @@ var render = function() {
                 value: "1",
                 name: "canSmoke",
                 defaultValue: _vm.canSmoke,
-                title: "Yes"
+                title: "Yes",
               },
               on: {
-                input: function($event) {
+                input: function ($event) {
                   return _vm.changeSmokeStatus($event)
-                }
-              }
+                },
+              },
             }),
             _vm._v(" "),
             _c("radio-input", {
@@ -532,28 +532,28 @@ var render = function() {
                 value: "0",
                 name: "canSmoke",
                 defaultValue: _vm.canSmoke,
-                title: "No"
+                title: "No",
               },
               on: {
-                input: function($event) {
+                input: function ($event) {
                   return _vm.changeSmokeStatus($event)
-                }
-              }
-            })
+                },
+              },
+            }),
           ],
           1
         ),
         _vm._v(" "),
         _vm.$page.errors.can_smoke
           ? _c("div", { staticClass: "mt-2" }, [
-              _vm._v(_vm._s(_vm.$page.errors.can_smoke || ""))
+              _vm._v(_vm._s(_vm.$page.errors.can_smoke || "")),
             ])
-          : _vm._e()
+          : _vm._e(),
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "mb-3" }, [
         _c("span", { staticClass: "text-xs" }, [
-          _vm._v("Are you a vegetarian ?")
+          _vm._v("Are you a vegetarian ?"),
         ]),
         _vm._v(" "),
         _c(
@@ -565,13 +565,13 @@ var render = function() {
                 value: "1",
                 name: "isVege",
                 defaultValue: _vm.isVegetarian,
-                title: "Yes"
+                title: "Yes",
               },
               on: {
-                input: function($event) {
+                input: function ($event) {
                   return _vm.changeAllergiestatus($event)
-                }
-              }
+                },
+              },
             }),
             _vm._v(" "),
             _c("radio-input", {
@@ -579,23 +579,23 @@ var render = function() {
                 value: "0",
                 name: "isVege",
                 defaultValue: _vm.isVegetarian,
-                title: "No"
+                title: "No",
               },
               on: {
-                input: function($event) {
+                input: function ($event) {
                   return _vm.changeVegeStatus($event)
-                }
-              }
-            })
+                },
+              },
+            }),
           ],
           1
         ),
         _vm._v(" "),
         _vm.$page.errors.is_vegetarian
           ? _c("div", { staticClass: "mt-2" }, [
-              _vm._v(_vm._s(_vm.$page.errors.is_vegetarian || ""))
+              _vm._v(_vm._s(_vm.$page.errors.is_vegetarian || "")),
             ])
-          : _vm._e()
+          : _vm._e(),
       ]),
       _vm._v(" "),
       _c(
@@ -606,16 +606,16 @@ var render = function() {
             attrs: {
               error: _vm.$page.errors.dietary_needs,
               form: "medicals",
-              label: "Please list your Dietary Needs, if any"
+              label: "Please list your Dietary Needs, if any",
             },
             model: {
               value: _vm.dietaryNeeds,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.dietaryNeeds = $$v
               },
-              expression: "dietaryNeeds"
-            }
-          })
+              expression: "dietaryNeeds",
+            },
+          }),
         ],
         1
       ),
@@ -628,16 +628,16 @@ var render = function() {
             attrs: {
               error: _vm.$page.errors.recent_sickness,
               form: "medicals",
-              label: "Please list your Recent Sickness, if any"
+              label: "Please list your Recent Sickness, if any",
             },
             model: {
               value: _vm.recentSickness,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.recentSickness = $$v
               },
-              expression: "recentSickness"
-            }
-          })
+              expression: "recentSickness",
+            },
+          }),
         ],
         1
       ),
@@ -650,16 +650,16 @@ var render = function() {
             attrs: {
               error: _vm.$page.errors.surgeries,
               form: "medicals",
-              label: "Please list your Recent Surgeries, if any"
+              label: "Please list your Recent Surgeries, if any",
             },
             model: {
               value: _vm.surgeries,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.surgeries = $$v
               },
-              expression: "surgeries"
-            }
-          })
+              expression: "surgeries",
+            },
+          }),
         ],
         1
       ),
@@ -672,16 +672,16 @@ var render = function() {
             attrs: {
               error: _vm.$page.errors.medications,
               form: "medicals",
-              label: "Please list your Medications, if any"
+              label: "Please list your Medications, if any",
             },
             model: {
               value: _vm.medications,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.medications = $$v
               },
-              expression: "medications"
-            }
-          })
+              expression: "medications",
+            },
+          }),
         ],
         1
       ),
@@ -694,16 +694,16 @@ var render = function() {
             attrs: {
               error: _vm.$page.errors.allergies,
               form: "medicals",
-              label: "Please list your Allergies, if any"
+              label: "Please list your Allergies, if any",
             },
             model: {
               value: _vm.allergies,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.allergies = $$v
               },
-              expression: "allergies"
-            }
-          })
+              expression: "allergies",
+            },
+          }),
         ],
         1
       ),
@@ -716,17 +716,17 @@ var render = function() {
             form: "medicals",
             width: "w-full",
             color: "yellow",
-            fontColor: "text-black"
-          }
+            fontColor: "text-black",
+          },
         },
         [_vm._v("Update Medicals")]
-      )
+      ),
     ],
     1
   )
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -734,10 +734,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Medicals")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Your medical history and backlogs")
-      ])
+        _vm._v("Your medical history and backlogs"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

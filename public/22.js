@@ -55,7 +55,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -64,7 +64,7 @@ var render = function() {
     _vm._v(" "),
     _c("div", [_vm._v(_vm._s(_vm.description))]),
     _vm._v(" "),
-    _c("div", [_vm._v(_vm._s(_vm.previous_url))])
+    _c("div", [_vm._v(_vm._s(_vm.previous_url))]),
   ])
 }
 var staticRenderFns = []

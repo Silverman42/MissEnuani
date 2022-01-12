@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -100,9 +100,9 @@ var render = function() {
               "Customize the user interface and functionalities of " +
               _vm.$page.auth.settings.app_name,
             hostName: _vm.$page.auth.settings.app_url,
-            boardImgLink: "img/board_img/settings.svg"
-          }
-        })
+            boardImgLink: "img/board_img/settings.svg",
+          },
+        }),
       ],
       1
     ),
@@ -111,7 +111,7 @@ var render = function() {
       "section",
       {
         staticClass: "rounded-md bg-white shadow-lg p-6 md:p-12 reveal-up",
-        staticStyle: { "--delay": "0.5s" }
+        staticStyle: { "--delay": "0.5s" },
       },
       [
         _c("tabs", {
@@ -119,30 +119,30 @@ var render = function() {
           scopedSlots: _vm._u([
             {
               key: "tab-body-general",
-              fn: function() {
+              fn: function () {
                 return [_c("general")]
               },
-              proxy: true
+              proxy: true,
             },
             {
               key: "tab-body-user-interface",
-              fn: function() {
+              fn: function () {
                 return [_c("user-interface")]
               },
-              proxy: true
+              proxy: true,
             },
             {
               key: "tab-body-factory-reset",
-              fn: function() {
+              fn: function () {
                 return [_c("factory-reset")]
               },
-              proxy: true
-            }
-          ])
-        })
+              proxy: true,
+            },
+          ]),
+        }),
       ],
       1
-    )
+    ),
   ])
 }
 var staticRenderFns = []

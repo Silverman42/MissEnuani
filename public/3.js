@@ -114,7 +114,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -131,15 +131,15 @@ var render = function() {
               attrs: {
                 color: "yellow",
                 disabled: _vm.hasCompleted,
-                fontColor: "text-black"
+                fontColor: "text-black",
               },
-              on: { click: _vm.updateProfile }
+              on: { click: _vm.updateProfile },
             },
             [_vm._v("Edit")]
-          )
+          ),
         ],
         1
-      )
+      ),
     ]),
     _vm._v(" "),
     _c(
@@ -148,31 +148,31 @@ var render = function() {
       [
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Height")
+            _vm._v("Height"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
             _vm._v(
               _vm._s(_vm.user.height ? _vm.user.height + " ft" : "No height")
-            )
-          ])
+            ),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Weight")
+            _vm._v("Weight"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
             _vm._v(
               _vm._s(_vm.user.weight ? _vm.user.weight + " kg" : "No weight")
-            )
-          ])
+            ),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Shoe Size")
+            _vm._v("Shoe Size"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
@@ -180,13 +180,13 @@ var render = function() {
               _vm._s(
                 _vm.user.shoe_size ? "" + _vm.user.shoe_size : "No shoe size"
               )
-            )
-          ])
+            ),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Dress Size")
+            _vm._v("Dress Size"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "uppercase" }, [
@@ -194,13 +194,13 @@ var render = function() {
               _vm._s(
                 _vm.user.dress_size ? "" + _vm.user.dress_size : "No dress size"
               ) + "\n            "
-            )
-          ])
+            ),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Bust Size")
+            _vm._v("Bust Size"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "uppercase" }, [
@@ -208,13 +208,13 @@ var render = function() {
               _vm._s(
                 _vm.user.bust_size ? "" + _vm.user.bust_size : "No bust size"
               ) + "\n            "
-            )
-          ])
+            ),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Waist Size")
+            _vm._v("Waist Size"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "uppercase" }, [
@@ -225,13 +225,13 @@ var render = function() {
                     ? "" + _vm.user.waist_size
                     : "No waist size"
                 )
-            )
-          ])
+            ),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Skin Color")
+            _vm._v("Skin Color"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
@@ -239,13 +239,13 @@ var render = function() {
               _vm._s(
                 _vm.user.skin_color ? "" + _vm.user.skin_color : "No skin color"
               ) + "\n            "
-            )
-          ])
+            ),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Blood Type")
+            _vm._v("Blood Type"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
@@ -253,35 +253,35 @@ var render = function() {
               _vm._s(
                 _vm.user.blood_type ? "" + _vm.user.blood_type : "No blood type"
               ) + "\n            "
-            )
-          ])
+            ),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Vegetarian Status")
+            _vm._v("Vegetarian Status"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
             _vm._v(
               _vm._s(_vm.user.is_vegetarian == 1 ? "Positive" : "Negative")
-            )
-          ])
+            ),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Smoking Habit")
+            _vm._v("Smoking Habit"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.can_smoke == 1 ? "Positive" : "Negative"))
-          ])
+            _vm._v(_vm._s(_vm.user.can_smoke == 1 ? "Positive" : "Negative")),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Allergies")
+            _vm._v("Allergies"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
@@ -289,13 +289,13 @@ var render = function() {
               _vm._s(
                 _vm.user.allergies ? "" + _vm.user.allergies : "No Allergies"
               )
-            )
-          ])
+            ),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Surgeries")
+            _vm._v("Surgeries"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
@@ -303,13 +303,13 @@ var render = function() {
               _vm._s(
                 _vm.user.surgeries ? "" + _vm.user.surgeries : "No Surgeries"
               )
-            )
-          ])
+            ),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Dietary needs")
+            _vm._v("Dietary needs"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
@@ -320,13 +320,13 @@ var render = function() {
                     ? "" + _vm.user.dietary_needs
                     : "No Dietary needs"
                 )
-            )
-          ])
+            ),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Recent sickness")
+            _vm._v("Recent sickness"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
@@ -337,13 +337,13 @@ var render = function() {
                     ? "" + _vm.user.recent_sickness
                     : "No Recent Sickness"
                 )
-            )
-          ])
+            ),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Medications")
+            _vm._v("Medications"),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
@@ -354,15 +354,15 @@ var render = function() {
                     ? "" + _vm.user.medications
                     : "No medications"
                 )
-            )
-          ])
-        ])
+            ),
+          ]),
+        ]),
       ]
-    )
+    ),
   ])
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -370,10 +370,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Medicals")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Your medical history and backlogs")
-      ])
+        _vm._v("Your medical history and backlogs"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

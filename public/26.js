@@ -66,7 +66,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -78,11 +78,11 @@ var render = function() {
       _c("form", {
         attrs: { id: "travel_new" },
         on: {
-          submit: function($event) {
+          submit: function ($event) {
             $event.preventDefault()
             return _vm.submitTravelForm($event)
-          }
-        }
+          },
+        },
       }),
       _vm._v(" "),
       _c(
@@ -93,16 +93,16 @@ var render = function() {
             attrs: {
               label: "Depature Airport Code",
               error: _vm.$page.errors.departure_airport_code || "",
-              form: "travel_new"
+              form: "travel_new",
             },
             model: {
               value: _vm.departure_airport_code,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.departure_airport_code = $$v
               },
-              expression: "departure_airport_code"
-            }
-          })
+              expression: "departure_airport_code",
+            },
+          }),
         ],
         1
       ),
@@ -115,16 +115,16 @@ var render = function() {
             attrs: {
               label: "Passport Number",
               error: _vm.$page.errors.passport_number || "",
-              form: "travel_new"
+              form: "travel_new",
             },
             model: {
               value: _vm.passport_number,
-              callback: function($$v) {
+              callback: function ($$v) {
                 _vm.passport_number = $$v
               },
-              expression: "passport_number"
-            }
-          })
+              expression: "passport_number",
+            },
+          }),
         ],
         1
       ),
@@ -137,17 +137,17 @@ var render = function() {
             type: "submit",
             color: "yellow",
             fontColor: "text-black",
-            width: "w-full"
-          }
+            width: "w-full",
+          },
         },
         [_vm._v("Update Travel")]
-      )
+      ),
     ],
     1
   )
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -155,10 +155,10 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Travel")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Travel and flight information")
-      ])
+        _vm._v("Travel and flight information"),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

@@ -191,7 +191,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -203,31 +203,31 @@ var render = function() {
         {
           attrs: { isOpen: _vm.modalIsOpen },
           on: {
-            "update:isOpen": function($event) {
+            "update:isOpen": function ($event) {
               _vm.modalIsOpen = $event
             },
-            "update:is-open": function($event) {
+            "update:is-open": function ($event) {
               _vm.modalIsOpen = $event
-            }
-          }
+            },
+          },
         },
         [
           _c(
             "div",
             {
               staticClass: "mb-10 reveal-left",
-              staticStyle: { "--delay": "0.1s" }
+              staticStyle: { "--delay": "0.1s" },
             },
             [
               _c("h3", { staticClass: "text-lg font-extrabold" }, [
-                _vm._v("\n                Modify Recycled Users\n            ")
+                _vm._v("\n                Modify Recycled Users\n            "),
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "text-sm" }, [
                 _vm._v(
                   "Restore or permanently delete the data of recycled users"
-                )
-              ])
+                ),
+              ]),
             ]
           ),
           _vm._v(" "),
@@ -235,15 +235,15 @@ var render = function() {
             "div",
             {
               staticClass: "mb-10 reveal-left",
-              staticStyle: { "--delay": "0.3s" }
+              staticStyle: { "--delay": "0.3s" },
             },
             [
               _c("h3", { staticClass: "text-sm font-extrabold" }, [
-                _vm._v("\n                Restore User\n            ")
+                _vm._v("\n                Restore User\n            "),
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "text-xs mb-5" }, [
-                _vm._v("Restore all user data and permissions")
+                _vm._v("Restore all user data and permissions"),
               ]),
               _vm._v(" "),
               _c(
@@ -254,16 +254,16 @@ var render = function() {
                     "secondary-btn",
                     {
                       on: {
-                        click: function($event) {
+                        click: function ($event) {
                           return _vm.restoreUser(_vm.clickedUserId)
-                        }
-                      }
+                        },
+                      },
                     },
                     [_vm._v("Restore User")]
-                  )
+                  ),
                 ],
                 1
-              )
+              ),
             ]
           ),
           _vm._v(" "),
@@ -271,15 +271,15 @@ var render = function() {
             "div",
             {
               staticClass: "mb-10 reveal-left",
-              staticStyle: { "--delay": "0.3s" }
+              staticStyle: { "--delay": "0.3s" },
             },
             [
               _c("h3", { staticClass: "text-sm font-extrabold" }, [
-                _vm._v("\n                 Delete User\n            ")
+                _vm._v("\n                 Delete User\n            "),
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "text-xs mb-5" }, [
-                _vm._v("Permanently remove user data from database")
+                _vm._v("Permanently remove user data from database"),
               ]),
               _vm._v(" "),
               _c(
@@ -291,18 +291,18 @@ var render = function() {
                     {
                       attrs: { color: "red" },
                       on: {
-                        click: function($event) {
+                        click: function ($event) {
                           return _vm.deleteUser(_vm.clickedUserId)
-                        }
-                      }
+                        },
+                      },
                     },
                     [_vm._v("Delete User")]
-                  )
+                  ),
                 ],
                 1
-              )
+              ),
             ]
-          )
+          ),
         ]
       ),
       _vm._v(" "),
@@ -317,8 +317,8 @@ var render = function() {
                 boardTitle: "User Recyle Bin",
                 boardText: "Recycle Bin for all deleted users",
                 hostName: _vm.$page.auth.settings.app_url,
-                boardImgLink: "img/board_img/user.svg"
-              }
+                boardImgLink: "img/board_img/user.svg",
+              },
             },
             [
               _c(
@@ -328,7 +328,7 @@ var render = function() {
                     "inertia-link",
                     {
                       staticClass: "text-primary-100 hover:text-white",
-                      attrs: { href: _vm.$route.relativePath("users.view") }
+                      attrs: { href: _vm.$route.relativePath("users.view") },
                     },
                     [_vm._v("\n                    User")]
                   ),
@@ -339,13 +339,13 @@ var render = function() {
                     "a",
                     { staticClass: "hover:text-white", attrs: { href: "#" } },
                     [_vm._v("Users Recycle bin")]
-                  )
+                  ),
                 ],
                 1
-              )
+              ),
             ],
             1
-          )
+          ),
         ],
         1
       ),
@@ -355,7 +355,7 @@ var render = function() {
         {
           staticClass:
             "rounded-md bg-white shadow-sm px-2 py-8 md:p-12 reveal-up",
-          staticStyle: { "--delay": "0.5s" }
+          staticStyle: { "--delay": "0.5s" },
         },
         [
           _c(
@@ -368,7 +368,7 @@ var render = function() {
                 "div",
                 {
                   staticClass: "flex-grow mr-2",
-                  attrs: { form: "user_search" }
+                  attrs: { form: "user_search" },
                 },
                 [_c("text-input", { attrs: { type: "search" } })],
                 1
@@ -380,8 +380,8 @@ var render = function() {
                   attrs: {
                     type: "submit",
                     extraClass: "mr-2",
-                    form: "user_search"
-                  }
+                    form: "user_search",
+                  },
                 },
                 [_vm._v("\n                Search\n            ")]
               ),
@@ -391,7 +391,7 @@ var render = function() {
                 { attrs: { color: "gray" } },
                 [_c("iconify-icon", { attrs: { icon: _vm.icons.refresh } })],
                 1
-              )
+              ),
             ],
             1
           ),
@@ -401,7 +401,7 @@ var render = function() {
                 _c(
                   "div",
                   { staticClass: "flex flex-wrap justify-center mb-5" },
-                  _vm._l(_vm.getUsers, function(user, index) {
+                  _vm._l(_vm.getUsers, function (user, index) {
                     return _c("user-card", {
                       key: index,
                       attrs: {
@@ -409,19 +409,19 @@ var render = function() {
                         firstName: user.first_name,
                         lastName: user.last_name,
                         email: user.email,
-                        imageLink: user.avatar || ""
+                        imageLink: user.avatar || "",
                       },
                       on: {
-                        clickUser: function($event) {
+                        clickUser: function ($event) {
                           return _vm.openModal(user.id || 0)
                         },
-                        restoreUser: function($event) {
+                        restoreUser: function ($event) {
                           return _vm.restoreUser(user.id || 0)
                         },
-                        deleteUser: function($event) {
+                        deleteUser: function ($event) {
                           return _vm.deleteUser(user.id || 0)
-                        }
-                      }
+                        },
+                      },
                     })
                   }),
                   1
@@ -432,13 +432,13 @@ var render = function() {
                   { staticClass: "flex items-center justify-end" },
                   [
                     _c("secondary-btn", { attrs: { extraClass: "mr-3" } }, [
-                      _vm._v("Previous")
+                      _vm._v("Previous"),
                     ]),
                     _vm._v(" "),
-                    _c("primary-btn", [_vm._v("Next")])
+                    _c("primary-btn", [_vm._v("Next")]),
                   ],
                   1
-                )
+                ),
               ]
             : [
                 _c(
@@ -446,7 +446,7 @@ var render = function() {
                   { staticClass: "p-5 text-center" },
                   [
                     _c("h4", { staticClass: "text-lg font-extrabold mb-5" }, [
-                      _vm._v("No user found")
+                      _vm._v("No user found"),
                     ]),
                     _vm._v(" "),
                     _c(
@@ -455,18 +455,18 @@ var render = function() {
                         staticClass:
                           "text-sm text-primary-400 hover:text-primary-600",
                         attrs: {
-                          href: _vm.$route.relativePath("users.recycle")
-                        }
+                          href: _vm.$route.relativePath("users.recycle"),
+                        },
                       },
                       [_vm._v("Reload list")]
-                    )
+                    ),
                   ],
                   1
-                )
-              ]
+                ),
+              ],
         ],
         2
-      )
+      ),
     ],
     1
   )

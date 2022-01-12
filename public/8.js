@@ -90,6 +90,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _iconify_icons_feather_mail__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_iconify_icons_feather_mail__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _iconify_icons_feather_phone_call__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @iconify/icons-feather/phone-call */ "./node_modules/@iconify/icons-feather/phone-call.js");
 /* harmony import */ var _iconify_icons_feather_phone_call__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_iconify_icons_feather_phone_call__WEBPACK_IMPORTED_MODULE_4__);
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 //
 //
 //
@@ -236,28 +242,19 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {
     var permissions = this.$page.user.permissions;
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
+
+    var _iterator = _createForOfIteratorHelper(permissions),
+        _step;
 
     try {
-      for (var _iterator = permissions[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      for (_iterator.s(); !(_step = _iterator.n()).done;) {
         var permission = _step.value;
         this.$set(this.permissions, permission.name, true);
       }
     } catch (err) {
-      _didIteratorError = true;
-      _iteratorError = err;
+      _iterator.e(err);
     } finally {
-      try {
-        if (!_iteratorNormalCompletion && _iterator["return"] != null) {
-          _iterator["return"]();
-        }
-      } finally {
-        if (_didIteratorError) {
-          throw _iteratorError;
-        }
-      }
+      _iterator.f();
     }
   }
 });
@@ -275,7 +272,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -291,8 +288,8 @@ var render = function() {
               boardTitle: "Show Users",
               boardText: "View and edit user information",
               hostName: _vm.$page.auth.settings.app_url,
-              boardImgLink: "img/board_img/user.svg"
-            }
+              boardImgLink: "img/board_img/user.svg",
+            },
           },
           [
             _c(
@@ -302,7 +299,7 @@ var render = function() {
                   "inertia-link",
                   {
                     staticClass: "text-primary-100 hover:text-white",
-                    attrs: { href: _vm.$route.relativePath("users.view") }
+                    attrs: { href: _vm.$route.relativePath("users.view") },
                   },
                   [_vm._v("\n                    User")]
                 ),
@@ -313,13 +310,13 @@ var render = function() {
                   "a",
                   { staticClass: "hover:text-white", attrs: { href: "#" } },
                   [_vm._v("Show Users")]
-                )
+                ),
               ],
               1
-            )
+            ),
           ],
           1
-        )
+        ),
       ],
       1
     ),
@@ -339,8 +336,8 @@ var render = function() {
                   firstName: _vm.$page.user.first_name || "",
                   lastName: _vm.$page.user.last_name || "",
                   avatar: _vm.$page.user.avatar || "",
-                  active: _vm.$page.user.is_active == 1 ? true : false
-                }
+                  active: _vm.$page.user.is_active == 1 ? true : false,
+                },
               },
               [
                 _c(
@@ -351,13 +348,13 @@ var render = function() {
                       href: _vm.$page.user.twitter || "#",
                       title: "Twitter",
                       target: "_blank",
-                      rel: "noopener noreferrer"
-                    }
+                      rel: "noopener noreferrer",
+                    },
                   },
                   [
                     _c("iconify-icon", {
-                      attrs: { width: "15", icon: _vm.icons.twitter }
-                    })
+                      attrs: { width: "15", icon: _vm.icons.twitter },
+                    }),
                   ],
                   1
                 ),
@@ -370,13 +367,13 @@ var render = function() {
                       href: _vm.$page.user.facebook || "#",
                       title: "Facebook",
                       target: "_blank",
-                      rel: "noopener noreferrer"
-                    }
+                      rel: "noopener noreferrer",
+                    },
                   },
                   [
                     _c("iconify-icon", {
-                      attrs: { width: "15", icon: _vm.icons.facebook }
-                    })
+                      attrs: { width: "15", icon: _vm.icons.facebook },
+                    }),
                   ],
                   1
                 ),
@@ -387,13 +384,13 @@ var render = function() {
                     staticClass: "mr-2 hover:text-primary-500",
                     attrs: {
                       href: "mailto:" + (_vm.$page.user.email || ""),
-                      title: "phone"
-                    }
+                      title: "phone",
+                    },
                   },
                   [
                     _c("iconify-icon", {
-                      attrs: { width: "15", icon: _vm.icons.mail }
-                    })
+                      attrs: { width: "15", icon: _vm.icons.mail },
+                    }),
                   ],
                   1
                 ),
@@ -404,18 +401,18 @@ var render = function() {
                     staticClass: "hover:text-primary-500",
                     attrs: {
                       href: "tel:" + (_vm.$page.user.phone || ""),
-                      title: "Phone"
-                    }
+                      title: "Phone",
+                    },
                   },
                   [
                     _c("iconify-icon", {
-                      attrs: { width: "15", icon: _vm.icons.phone }
-                    })
+                      attrs: { width: "15", icon: _vm.icons.phone },
+                    }),
                   ],
                   1
-                )
+                ),
               ]
-            )
+            ),
           ],
           1
         ),
@@ -425,7 +422,7 @@ var render = function() {
           {
             staticClass:
               "w-full md:flex-grow px-2 py-8 md:p-12 rounded-md bg-white shadow-sm reveal-left",
-            staticStyle: { "--delay": "0.3s" }
+            staticStyle: { "--delay": "0.3s" },
           },
           [
             _c("tabs", {
@@ -433,7 +430,7 @@ var render = function() {
               scopedSlots: _vm._u([
                 {
                   key: "tab-body-profile-update",
-                  fn: function() {
+                  fn: function () {
                     return [
                       _c(
                         "section",
@@ -446,20 +443,20 @@ var render = function() {
                               socialSet: _vm.social,
                               biodataSet: _vm.biodata,
                               userRole: _vm.userRole,
-                              canResetValues: false
+                              canResetValues: false,
                             },
-                            on: { completeRegistration: _vm.refreshState }
-                          })
+                            on: { completeRegistration: _vm.refreshState },
+                          }),
                         ],
                         1
-                      )
+                      ),
                     ]
                   },
-                  proxy: true
+                  proxy: true,
                 },
                 {
                   key: "tab-body-user-presence",
-                  fn: function() {
+                  fn: function () {
                     return [
                       _vm.$page.user.is_active == 1
                         ? _c("section", { staticClass: " pt-8" }, [
@@ -471,11 +468,11 @@ var render = function() {
                             _vm._v(" "),
                             _c("p", { staticClass: "text-sm" }, [
                               _c("span", { staticClass: "capitalize" }, [
-                                _vm._v(_vm._s(_vm.$page.user.first_name))
+                                _vm._v(_vm._s(_vm.$page.user.first_name)),
                               ]),
                               _vm._v(
                                 " will not be permitted to access any of the functionalities of this software after deactivation"
-                              )
+                              ),
                             ]),
                             _vm._v(" "),
                             _c(
@@ -487,21 +484,21 @@ var render = function() {
                                   {
                                     attrs: {
                                       color: "red",
-                                      extraClass: "w-full md:w-auto"
+                                      extraClass: "w-full md:w-auto",
                                     },
                                     on: {
-                                      click: function($event) {
+                                      click: function ($event) {
                                         return _vm.deactivateUser(
                                           _vm.$page.user.id
                                         )
-                                      }
-                                    }
+                                      },
+                                    },
                                   },
                                   [_vm._v("Deactivate User")]
-                                )
+                                ),
                               ],
                               1
-                            )
+                            ),
                           ])
                         : _vm._e(),
                       _vm._v(" "),
@@ -515,11 +512,11 @@ var render = function() {
                             _vm._v(" "),
                             _c("p", { staticClass: "text-sm" }, [
                               _c("span", { staticClass: "capitalize" }, [
-                                _vm._v(_vm._s(_vm.$page.user.first_name))
+                                _vm._v(_vm._s(_vm.$page.user.first_name)),
                               ]),
                               _vm._v(
                                 " will be allowed to access all of the software's permitted functionalities after activation"
-                              )
+                              ),
                             ]),
                             _vm._v(" "),
                             _c(
@@ -531,43 +528,43 @@ var render = function() {
                                   {
                                     attrs: {
                                       color: "primary",
-                                      extraClass: "w-full md:w-auto"
+                                      extraClass: "w-full md:w-auto",
                                     },
                                     on: {
-                                      click: function($event) {
+                                      click: function ($event) {
                                         return _vm.activateUser(
                                           _vm.$page.user.id
                                         )
-                                      }
-                                    }
+                                      },
+                                    },
                                   },
                                   [_vm._v("Activate User")]
-                                )
+                                ),
                               ],
                               1
-                            )
+                            ),
                           ])
                         : _vm._e(),
                       _vm._v(" "),
                       _c("section", { staticClass: "pt-12" }, [
                         _c("h3", { staticClass: "text-md font-extrabold" }, [
-                          _vm._v("Remove User")
+                          _vm._v("Remove User"),
                         ]),
                         _vm._v(" "),
                         _c("p", [
                           _vm._v("All of "),
                           _c("span", { staticClass: "capitalize" }, [
-                            _vm._v(_vm._s(_vm.$page.user.first_name))
+                            _vm._v(_vm._s(_vm.$page.user.first_name)),
                           ]),
                           _vm._v(
                             "'s data will be moved to recycle bin. In other words, "
                           ),
                           _c("span", { staticClass: "capitalize" }, [
-                            _vm._v(_vm._s(_vm.$page.user.first_name))
+                            _vm._v(_vm._s(_vm.$page.user.first_name)),
                           ]),
                           _vm._v(
                             " will not be allowed to access this application"
-                          )
+                          ),
                         ]),
                         _vm._v(" "),
                         _c(
@@ -579,31 +576,31 @@ var render = function() {
                               {
                                 attrs: {
                                   color: "red",
-                                  extraClass: "w-full md:w-auto"
+                                  extraClass: "w-full md:w-auto",
                                 },
                                 on: {
-                                  click: function($event) {
+                                  click: function ($event) {
                                     return _vm.removeUser(_vm.$page.user.id)
-                                  }
-                                }
+                                  },
+                                },
                               },
                               [_vm._v("Remove User")]
-                            )
+                            ),
                           ],
                           1
-                        )
-                      ])
+                        ),
+                      ]),
                     ]
                   },
-                  proxy: true
-                }
-              ])
-            })
+                  proxy: true,
+                },
+              ]),
+            }),
           ],
           1
-        )
+        ),
       ]
-    )
+    ),
   ])
 }
 var staticRenderFns = []

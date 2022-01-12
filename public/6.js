@@ -281,7 +281,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -289,11 +289,11 @@ var render = function() {
     _c("form", {
       attrs: { id: "create-user" },
       on: {
-        submit: function($event) {
+        submit: function ($event) {
           $event.preventDefault()
           return _vm.modifyUser($event)
-        }
-      }
+        },
+      },
     }),
     _vm._v(" "),
     _c(
@@ -304,7 +304,7 @@ var render = function() {
           "h4",
           {
             staticClass:
-              "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2"
+              "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2",
           },
           [_vm._v("Biodata")]
         ),
@@ -317,16 +317,16 @@ var render = function() {
               attrs: {
                 form: "create-user",
                 error: _vm.$page.errors.first_name || "",
-                label: "First name"
+                label: "First name",
               },
               model: {
                 value: _vm.biodata.first_name,
-                callback: function($$v) {
+                callback: function ($$v) {
                   _vm.$set(_vm.biodata, "first_name", $$v)
                 },
-                expression: "biodata.first_name"
-              }
-            })
+                expression: "biodata.first_name",
+              },
+            }),
           ],
           1
         ),
@@ -339,16 +339,16 @@ var render = function() {
               attrs: {
                 form: "create-user",
                 error: _vm.$page.errors.last_name || "",
-                label: "Last name"
+                label: "Last name",
               },
               model: {
                 value: _vm.biodata.last_name,
-                callback: function($$v) {
+                callback: function ($$v) {
                   _vm.$set(_vm.biodata, "last_name", $$v)
                 },
-                expression: "biodata.last_name"
-              }
-            })
+                expression: "biodata.last_name",
+              },
+            }),
           ],
           1
         ),
@@ -362,16 +362,16 @@ var render = function() {
                 form: "create-user",
                 error: _vm.$page.errors.email || "",
                 type: "email",
-                label: "Email"
+                label: "Email",
               },
               model: {
                 value: _vm.biodata.email,
-                callback: function($$v) {
+                callback: function ($$v) {
                   _vm.$set(_vm.biodata, "email", $$v)
                 },
-                expression: "biodata.email"
-              }
-            })
+                expression: "biodata.email",
+              },
+            }),
           ],
           1
         ),
@@ -385,16 +385,16 @@ var render = function() {
                 type: "password",
                 error: _vm.$page.errors.password || "",
                 form: "create-user",
-                label: "Password"
+                label: "Password",
               },
               model: {
                 value: _vm.biodata.password,
-                callback: function($$v) {
+                callback: function ($$v) {
                   _vm.$set(_vm.biodata, "password", $$v)
                 },
-                expression: "biodata.password"
-              }
-            })
+                expression: "biodata.password",
+              },
+            }),
           ],
           1
         ),
@@ -407,19 +407,19 @@ var render = function() {
               attrs: {
                 type: "password",
                 form: "create-user",
-                label: "Confirm Password"
+                label: "Confirm Password",
               },
               model: {
                 value: _vm.biodata.password_confirmation,
-                callback: function($$v) {
+                callback: function ($$v) {
                   _vm.$set(_vm.biodata, "password_confirmation", $$v)
                 },
-                expression: "biodata.password_confirmation"
-              }
-            })
+                expression: "biodata.password_confirmation",
+              },
+            }),
           ],
           1
-        )
+        ),
       ]
     ),
     _vm._v(" "),
@@ -431,7 +431,7 @@ var render = function() {
           "h4",
           {
             staticClass:
-              "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2"
+              "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2",
           },
           [_vm._v("Social")]
         ),
@@ -446,22 +446,22 @@ var render = function() {
                 attrs: {
                   error: _vm.$page.errors.facebook_url || "",
                   form: "create-user",
-                  label: "Facebook URL"
+                  label: "Facebook URL",
                 },
                 model: {
                   value: _vm.social.facebook_url,
-                  callback: function($$v) {
+                  callback: function ($$v) {
                     _vm.$set(_vm.social, "facebook_url", $$v)
                   },
-                  expression: "social.facebook_url"
-                }
+                  expression: "social.facebook_url",
+                },
               },
               [
                 _c("span", { staticClass: "italic text-gray-500 text-xs" }, [
-                  _vm._v("Optional")
-                ])
+                  _vm._v("Optional"),
+                ]),
               ]
-            )
+            ),
           ],
           1
         ),
@@ -476,22 +476,22 @@ var render = function() {
                 attrs: {
                   error: _vm.$page.errors.twitter_url || "",
                   form: "create-user",
-                  label: "Twitter URL"
+                  label: "Twitter URL",
                 },
                 model: {
                   value: _vm.social.twitter_url,
-                  callback: function($$v) {
+                  callback: function ($$v) {
                     _vm.$set(_vm.social, "twitter_url", $$v)
                   },
-                  expression: "social.twitter_url"
-                }
+                  expression: "social.twitter_url",
+                },
               },
               [
                 _c("span", { staticClass: "italic text-gray-500 text-xs" }, [
-                  _vm._v("Optional")
-                ])
+                  _vm._v("Optional"),
+                ]),
               ]
-            )
+            ),
           ],
           1
         ),
@@ -507,25 +507,25 @@ var render = function() {
                   error: _vm.$page.errors.phone_number || "",
                   type: "number",
                   form: "create-user",
-                  label: "Phone Number"
+                  label: "Phone Number",
                 },
                 model: {
                   value: _vm.social.phone_number,
-                  callback: function($$v) {
+                  callback: function ($$v) {
                     _vm.$set(_vm.social, "phone_number", $$v)
                   },
-                  expression: "social.phone_number"
-                }
+                  expression: "social.phone_number",
+                },
               },
               [
                 _c("span", { staticClass: "italic text-gray-500 text-xs" }, [
-                  _vm._v("Optional")
-                ])
+                  _vm._v("Optional"),
+                ]),
               ]
-            )
+            ),
           ],
           1
-        )
+        ),
       ]
     ),
     _vm._v(" "),
@@ -537,7 +537,7 @@ var render = function() {
           "h4",
           {
             staticClass:
-              "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2"
+              "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2",
           },
           [_vm._v("Avatar")]
         ),
@@ -547,14 +547,14 @@ var render = function() {
             form: "create-user",
             error: _vm.$page.errors.avatar || "",
             label:
-              "Image should have a size of 800kb max and should be among the following file type: JPG, PNG"
+              "Image should have a size of 800kb max and should be among the following file type: JPG, PNG",
           },
           on: {
-            input: function($event) {
+            input: function ($event) {
               return _vm.changeAvatar($event)
-            }
-          }
-        })
+            },
+          },
+        }),
       ],
       1
     ),
@@ -567,7 +567,7 @@ var render = function() {
           "h4",
           {
             staticClass:
-              "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2"
+              "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2",
           },
           [_vm._v("Roles")]
         ),
@@ -581,13 +581,13 @@ var render = function() {
                 value: "super-admin",
                 defaultValue: _vm.roles,
                 name: "roles",
-                title: "Super Admin"
+                title: "Super Admin",
               },
               on: {
-                input: function($event) {
+                input: function ($event) {
                   return _vm.selectRole($event)
-                }
-              }
+                },
+              },
             }),
             _vm._v(" "),
             _c("radio-input", {
@@ -595,14 +595,14 @@ var render = function() {
                 value: "admin",
                 defaultValue: _vm.roles,
                 name: "roles",
-                title: "Admin"
+                title: "Admin",
               },
               on: {
-                input: function($event) {
+                input: function ($event) {
                   return _vm.selectRole($event)
-                }
-              }
-            })
+                },
+              },
+            }),
           ],
           1
         ),
@@ -613,9 +613,9 @@ var render = function() {
                 "\n                " +
                   _vm._s(_vm.$page.errors.roles) +
                   "\n            "
-              )
+              ),
             ])
-          : _vm._e()
+          : _vm._e(),
       ]
     ),
     _vm._v(" "),
@@ -624,14 +624,14 @@ var render = function() {
           "div",
           {
             staticClass: "mb-10 reveal-left",
-            staticStyle: { "--delay": "1.1s" }
+            staticStyle: { "--delay": "1.1s" },
           },
           [
             _c(
               "h4",
               {
                 staticClass:
-                  "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2"
+                  "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2",
               },
               [_vm._v("Permissions")]
             ),
@@ -646,20 +646,20 @@ var render = function() {
                     attrs: { layout: "widthFull" },
                     model: {
                       value: _vm.permissions.subjects,
-                      callback: function($$v) {
+                      callback: function ($$v) {
                         _vm.$set(_vm.permissions, "subjects", $$v)
                       },
-                      expression: "permissions.subjects"
-                    }
+                      expression: "permissions.subjects",
+                    },
                   },
                   [
                     _c("p", { staticClass: "ml-2 text-sm font-bold" }, [
-                      _vm._v("Subjects")
+                      _vm._v("Subjects"),
                     ]),
                     _vm._v(" "),
                     _c("p", { staticClass: "ml-2 text-xs" }, [
-                      _vm._v("Add, view, delete and update subjects")
-                    ])
+                      _vm._v("Add, view, delete and update subjects"),
+                    ]),
                   ]
                 ),
                 _vm._v(" "),
@@ -669,9 +669,9 @@ var render = function() {
                         "\n                    " +
                           _vm._s(_vm.$page.errors.subjects) +
                           "\n                "
-                      )
+                      ),
                     ])
-                  : _vm._e()
+                  : _vm._e(),
               ],
               1
             ),
@@ -686,20 +686,20 @@ var render = function() {
                     attrs: { layout: "widthFull" },
                     model: {
                       value: _vm.permissions.topics,
-                      callback: function($$v) {
+                      callback: function ($$v) {
                         _vm.$set(_vm.permissions, "topics", $$v)
                       },
-                      expression: "permissions.topics"
-                    }
+                      expression: "permissions.topics",
+                    },
                   },
                   [
                     _c("p", { staticClass: "ml-2 text-sm font-bold" }, [
-                      _vm._v("Topics")
+                      _vm._v("Topics"),
                     ]),
                     _vm._v(" "),
                     _c("p", { staticClass: "ml-2 text-xs" }, [
-                      _vm._v("Add, view, delete and update topics")
-                    ])
+                      _vm._v("Add, view, delete and update topics"),
+                    ]),
                   ]
                 ),
                 _vm._v(" "),
@@ -709,9 +709,9 @@ var render = function() {
                         "\n                    " +
                           _vm._s(_vm.$page.errors.topics) +
                           "\n                "
-                      )
+                      ),
                     ])
-                  : _vm._e()
+                  : _vm._e(),
               ],
               1
             ),
@@ -726,20 +726,20 @@ var render = function() {
                     attrs: { layout: "widthFull" },
                     model: {
                       value: _vm.permissions.questions,
-                      callback: function($$v) {
+                      callback: function ($$v) {
                         _vm.$set(_vm.permissions, "questions", $$v)
                       },
-                      expression: "permissions.questions"
-                    }
+                      expression: "permissions.questions",
+                    },
                   },
                   [
                     _c("p", { staticClass: "ml-2 text-sm font-bold" }, [
-                      _vm._v("Questions")
+                      _vm._v("Questions"),
                     ]),
                     _vm._v(" "),
                     _c("p", { staticClass: "ml-2 text-xs" }, [
-                      _vm._v("Add, view, delete and update questions")
-                    ])
+                      _vm._v("Add, view, delete and update questions"),
+                    ]),
                   ]
                 ),
                 _vm._v(" "),
@@ -749,9 +749,9 @@ var render = function() {
                         "\n                    " +
                           _vm._s(_vm.$page.errors.questions) +
                           "\n                "
-                      )
+                      ),
                     ])
-                  : _vm._e()
+                  : _vm._e(),
               ],
               1
             ),
@@ -766,20 +766,20 @@ var render = function() {
                     attrs: { layout: "widthFull" },
                     model: {
                       value: _vm.permissions.collections,
-                      callback: function($$v) {
+                      callback: function ($$v) {
                         _vm.$set(_vm.permissions, "collections", $$v)
                       },
-                      expression: "permissions.collections"
-                    }
+                      expression: "permissions.collections",
+                    },
                   },
                   [
                     _c("p", { staticClass: "ml-2 text-sm font-bold" }, [
-                      _vm._v("Collections")
+                      _vm._v("Collections"),
                     ]),
                     _vm._v(" "),
                     _c("p", { staticClass: "ml-2 text-xs" }, [
-                      _vm._v("Add, view, delete and update collections")
-                    ])
+                      _vm._v("Add, view, delete and update collections"),
+                    ]),
                   ]
                 ),
                 _vm._v(" "),
@@ -789,9 +789,9 @@ var render = function() {
                         "\n                    " +
                           _vm._s(_vm.$page.errors.collections) +
                           "\n                "
-                      )
+                      ),
                     ])
-                  : _vm._e()
+                  : _vm._e(),
               ],
               1
             ),
@@ -806,20 +806,20 @@ var render = function() {
                     attrs: { layout: "widthFull" },
                     model: {
                       value: _vm.permissions.users,
-                      callback: function($$v) {
+                      callback: function ($$v) {
                         _vm.$set(_vm.permissions, "users", $$v)
                       },
-                      expression: "permissions.users"
-                    }
+                      expression: "permissions.users",
+                    },
                   },
                   [
                     _c("p", { staticClass: "ml-2 text-sm font-bold" }, [
-                      _vm._v("Users")
+                      _vm._v("Users"),
                     ]),
                     _vm._v(" "),
                     _c("p", { staticClass: "ml-2 text-xs" }, [
-                      _vm._v("Add, view, delete and update users")
-                    ])
+                      _vm._v("Add, view, delete and update users"),
+                    ]),
                   ]
                 ),
                 _vm._v(" "),
@@ -829,9 +829,9 @@ var render = function() {
                         "\n                    " +
                           _vm._s(_vm.$page.errors.users) +
                           "\n                "
-                      )
+                      ),
                     ])
-                  : _vm._e()
+                  : _vm._e(),
               ],
               1
             ),
@@ -846,20 +846,20 @@ var render = function() {
                     attrs: { layout: "widthFull" },
                     model: {
                       value: _vm.permissions.settings,
-                      callback: function($$v) {
+                      callback: function ($$v) {
                         _vm.$set(_vm.permissions, "settings", $$v)
                       },
-                      expression: "permissions.settings"
-                    }
+                      expression: "permissions.settings",
+                    },
                   },
                   [
                     _c("p", { staticClass: "ml-2 text-sm font-bold" }, [
-                      _vm._v("Settings")
+                      _vm._v("Settings"),
                     ]),
                     _vm._v(" "),
                     _c("p", { staticClass: "ml-2 text-xs" }, [
-                      _vm._v("Add, view, delete and update settings")
-                    ])
+                      _vm._v("Add, view, delete and update settings"),
+                    ]),
                   ]
                 ),
                 _vm._v(" "),
@@ -869,9 +869,9 @@ var render = function() {
                         "\n                    " +
                           _vm._s(_vm.$page.errors.settings) +
                           "\n                "
-                      )
+                      ),
                     ])
-                  : _vm._e()
+                  : _vm._e(),
               ],
               1
             ),
@@ -886,20 +886,20 @@ var render = function() {
                     attrs: { layout: "widthFull" },
                     model: {
                       value: _vm.permissions.profile,
-                      callback: function($$v) {
+                      callback: function ($$v) {
                         _vm.$set(_vm.permissions, "profile", $$v)
                       },
-                      expression: "permissions.profile"
-                    }
+                      expression: "permissions.profile",
+                    },
                   },
                   [
                     _c("p", { staticClass: "ml-2 text-sm font-bold" }, [
-                      _vm._v("Profile")
+                      _vm._v("Profile"),
                     ]),
                     _vm._v(" "),
                     _c("p", { staticClass: "ml-2 text-xs" }, [
-                      _vm._v("Add, view, delete and update profile")
-                    ])
+                      _vm._v("Add, view, delete and update profile"),
+                    ]),
                   ]
                 ),
                 _vm._v(" "),
@@ -909,12 +909,12 @@ var render = function() {
                         "\n                    " +
                           _vm._s(_vm.$page.errors.profile) +
                           "\n                "
-                      )
+                      ),
                     ])
-                  : _vm._e()
+                  : _vm._e(),
               ],
               1
-            )
+            ),
           ]
         )
       : _vm._e(),
@@ -923,7 +923,7 @@ var render = function() {
       "div",
       {
         staticClass: "mb-10 reveal-left flex justify-end",
-        staticStyle: { "--delay": "1.3s" }
+        staticStyle: { "--delay": "1.3s" },
       },
       [
         _c(
@@ -933,14 +933,14 @@ var render = function() {
               width: "w-full md:w-auto",
               type: "submit",
               loading: _vm.loading,
-              form: "create-user"
-            }
+              form: "create-user",
+            },
           },
           [_vm._v(_vm._s(_vm.buttonTitle))]
-        )
+        ),
       ],
       1
-    )
+    ),
   ])
 }
 var staticRenderFns = []

@@ -286,7 +286,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -300,9 +300,9 @@ var render = function() {
             boardTitle: "Dashboard",
             boardText: "Statistical data as at 20th September, 2020",
             hostName: _vm.$page.auth.settings.app_url,
-            boardImgLink: "img/board_img/dashboard.svg"
-          }
-        })
+            boardImgLink: "img/board_img/dashboard.svg",
+          },
+        }),
       ],
       1
     ),
@@ -314,20 +314,20 @@ var render = function() {
         [
           _c("card-bg", [
             _c("h3", { staticClass: "text-lg font-bold mb-6" }, [
-              _vm._v("Statistics")
+              _vm._v("Statistics"),
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "mb-5" }, [
               _c("h6", { staticClass: "uppercase text-xs tracking-widest" }, [
-                _vm._v("Competition")
+                _vm._v("Competition"),
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "text-gray-900" }, [
                 _vm._v(
                   "Miss May Day Pageant " +
                     _vm._s(_vm.competitionData.year || "2020")
-                )
-              ])
+                ),
+              ]),
             ]),
             _vm._v(" "),
             _vm.$page.user.position !== null
@@ -342,8 +342,8 @@ var render = function() {
                     ),
                     _vm._v(" "),
                     _c("p", { staticClass: "text-gray-900" }, [
-                      _vm._v(_vm._s(_vm.$page.user.position))
-                    ])
+                      _vm._v(_vm._s(_vm.$page.user.position)),
+                    ]),
                   ]
                 )
               : _vm._e(),
@@ -362,8 +362,8 @@ var render = function() {
                   _c("p", { staticClass: "text-gray-900" }, [
                     _vm._v(
                       _vm._s(_vm.$page.user.has_paid === 1 ? "Paid" : "Unpaid")
-                    )
-                  ])
+                    ),
+                  ]),
                 ]),
                 _vm._v(" "),
                 _c(
@@ -374,20 +374,20 @@ var render = function() {
                     class: [
                       _vm.$page.user.has_paid == 1
                         ? "bg-yellow-200 text-yellow-500"
-                        : "bg-red-200 text-red-500"
-                    ]
+                        : "bg-red-200 text-red-500",
+                    ],
                   },
                   [
                     _c("iconify-icon", {
                       attrs: {
                         icon: _vm.$page.user.has_paid
                           ? _vm.icons.check
-                          : _vm.icons.fail
-                      }
-                    })
+                          : _vm.icons.fail,
+                      },
+                    }),
                   ],
                   1
-                )
+                ),
               ]
             ),
             _vm._v(" "),
@@ -403,25 +403,26 @@ var render = function() {
                   ),
                   _vm._v(" "),
                   _c("p", { staticClass: "text-gray-900 capitalize" }, [
-                    _vm._v(_vm._s(_vm.$page.user.profile_stage))
-                  ])
+                    _vm._v(_vm._s(_vm.$page.user.profile_stage)),
+                  ]),
                 ]
               ),
               _vm._v(" "),
               _c(
                 "div",
                 {
-                  staticClass: "h-3 rounded-lg overflow-hidden bg-primaryBg-300"
+                  staticClass:
+                    "h-3 rounded-lg overflow-hidden bg-primaryBg-300",
                 },
                 [
                   _c("div", {
                     class: ["h-8 bg-" + _vm.profileStage.color + "-500"],
-                    style: { width: _vm.profileStage.width + "%" }
-                  })
+                    style: { width: _vm.profileStage.width + "%" },
+                  }),
                 ]
-              )
-            ])
-          ])
+              ),
+            ]),
+          ]),
         ],
         1
       ),
@@ -436,14 +437,14 @@ var render = function() {
             [
               _c("div", { staticClass: "mb-6" }, [
                 _c("h3", { staticClass: "text-lg font-bold" }, [
-                  _vm._v("Registration Steps")
+                  _vm._v("Registration Steps"),
                 ]),
                 _vm._v(" "),
                 _c("p", { staticClass: "text-sm" }, [
                   _vm._v(
                     "Below is a list of profile update steps which should be completed to enable\n                        you\n                        stand a chance of being accpted for the competition"
-                  )
-                ])
+                  ),
+                ]),
               ]),
               _vm._v(" "),
               _c("step-detail", { attrs: { steps: _vm.profileSteps } }),
@@ -461,24 +462,24 @@ var render = function() {
                           attrs: {
                             href: _vm.$route.relativePath(
                               "client.profile.index"
-                            )
-                          }
+                            ),
+                          },
                         },
                         [
                           _c("span", { staticClass: "mr-2" }, [
-                            _vm._v("View Profile")
+                            _vm._v("View Profile"),
                           ]),
                           _vm._v(" "),
                           _c("iconify-icon", {
-                            attrs: { icon: _vm.icons.arrow_right }
-                          })
+                            attrs: { icon: _vm.icons.arrow_right },
+                          }),
                         ],
                         1
-                      )
+                      ),
                     ],
                     1
                   )
-                : _vm._e()
+                : _vm._e(),
             ],
             1
           ),
@@ -489,13 +490,13 @@ var render = function() {
                   attrs: {
                     action: _vm.$route.url("client.payment.initiate"),
                     method: "POST",
-                    id: "payment"
-                  }
+                    id: "payment",
+                  },
                 }),
                 _vm._v(" "),
                 _c("input", {
                   attrs: { type: "hidden", name: "_token", form: "payment" },
-                  domProps: { value: _vm.$page.token }
+                  domProps: { value: _vm.$page.token },
                 }),
                 _vm._v(" "),
                 _c(
@@ -506,8 +507,8 @@ var render = function() {
                       "background-image":
                         "url(" +
                         _vm.$page.auth.settings.app_url +
-                        "/img/background_1.svg)"
-                    }
+                        "/img/background_1.svg)",
+                    },
                   },
                   [
                     _c("div", { staticClass: "w-9/12" }, [
@@ -515,7 +516,7 @@ var render = function() {
                         "h3",
                         {
                           staticClass:
-                            "text-2xl md:text-3xl mb-1 text-black font-bold"
+                            "text-2xl md:text-3xl mb-1 text-black font-bold",
                         },
                         [_vm._v("Please Make Payment")]
                       ),
@@ -523,9 +524,9 @@ var render = function() {
                       _c("p", { staticClass: "text-black text-sm" }, [
                         _vm._v(
                           "Paying for the contest gives you access to update your profile\n                            which in turn increases your chances of being selected for the competition\n                        "
-                        )
-                      ])
-                    ])
+                        ),
+                      ]),
+                    ]),
                   ]
                 ),
                 _vm._v(" "),
@@ -540,15 +541,15 @@ var render = function() {
                           name: "nationality",
                           form: "payment",
                           value: _vm.selectedCountry,
-                          label: "Nationality"
+                          label: "Nationality",
                         },
                         on: {
-                          input: function($event) {
+                          input: function ($event) {
                             return _vm.selectCountry($event)
-                          }
-                        }
+                          },
+                        },
                       },
-                      _vm._l(_vm.countries, function(country, index) {
+                      _vm._l(_vm.countries, function (country, index) {
                         return _c(
                           "option",
                           { key: index, domProps: { value: country.name } },
@@ -556,12 +557,12 @@ var render = function() {
                             _vm._v(
                               "\n                            " +
                                 _vm._s(country.name)
-                            )
+                            ),
                           ]
                         )
                       }),
                       0
-                    )
+                    ),
                   ],
                   1
                 ),
@@ -575,7 +576,8 @@ var render = function() {
                     _c(
                       "span",
                       {
-                        staticClass: "text-2xl text-black font-bold md:text-4xl"
+                        staticClass:
+                          "text-2xl text-black font-bold md:text-4xl",
                       },
                       [
                         _vm._v(
@@ -585,9 +587,9 @@ var render = function() {
                                 _vm.getRegisterationFee
                               )
                             )
-                        )
+                        ),
                       ]
-                    )
+                    ),
                   ]
                 ),
                 _vm._v(" "),
@@ -602,25 +604,25 @@ var render = function() {
                           form: "payment",
                           color: "yellow",
                           fontColor: "text-black",
-                          width: "w-full"
-                        }
+                          width: "w-full",
+                        },
                       },
                       [
                         _vm._v(
                           "\n                        Pay and Update Profile"
-                        )
+                        ),
                       ]
-                    )
+                    ),
                   ],
                   1
-                )
+                ),
               ])
             : _vm._e(),
           _vm._v(" "),
           _vm.$page.user.has_paid === 1
             ? _c("card-bg", { attrs: { extend: "mb-10" } }, [
                 _c("h3", { staticClass: "text-lg font-bold mb-5" }, [
-                  _vm._v("Payment Summary")
+                  _vm._v("Payment Summary"),
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "flex flex-wrap mb-5" }, [
@@ -631,7 +633,9 @@ var render = function() {
                       [_vm._v("Payment Status")]
                     ),
                     _vm._v(" "),
-                    _c("p", { staticClass: "text-green-500" }, [_vm._v("Paid")])
+                    _c("p", { staticClass: "text-green-500" }, [
+                      _vm._v("Paid"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "w-full md:w-4/12 mb-4 md:pr-2" }, [
@@ -651,8 +655,8 @@ var render = function() {
                               _vm.transactionData.amount
                             )
                           )
-                      )
-                    ])
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "w-full md:w-4/12 mb-4 md:pr-2" }, [
@@ -663,8 +667,8 @@ var render = function() {
                     ),
                     _vm._v(" "),
                     _c("p", { staticClass: "text-gray-900" }, [
-                      _vm._v("Paystack")
-                    ])
+                      _vm._v("Paystack"),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "w-full md:w-4/12 mb-4 md:pr-2" }, [
@@ -675,9 +679,9 @@ var render = function() {
                     ),
                     _vm._v(" "),
                     _c("p", { staticClass: "text-gray-900" }, [
-                      _vm._v(_vm._s(_vm.transactionData.human_date_of_payment))
-                    ])
-                  ])
+                      _vm._v(_vm._s(_vm.transactionData.human_date_of_payment)),
+                    ]),
+                  ]),
                 ]),
                 _vm._v(" "),
                 _c(
@@ -690,29 +694,29 @@ var render = function() {
                         staticClass:
                           "inline-flex p-1 items-center text-yellow-500 hover:text-yellow-600",
                         attrs: {
-                          href: _vm.$route.relativePath("client.invoice")
-                        }
+                          href: _vm.$route.relativePath("client.invoice"),
+                        },
                       },
                       [
                         _c("span", { staticClass: "mr-2" }, [
-                          _vm._v("View Invoice")
+                          _vm._v("View Invoice"),
                         ]),
                         _vm._v(" "),
                         _c("iconify-icon", {
-                          attrs: { icon: _vm.icons.arrow_right }
-                        })
+                          attrs: { icon: _vm.icons.arrow_right },
+                        }),
                       ],
                       1
-                    )
+                    ),
                   ],
                   1
-                )
+                ),
               ])
-            : _vm._e()
+            : _vm._e(),
         ],
         1
-      )
-    ])
+      ),
+    ]),
   ])
 }
 var staticRenderFns = []
