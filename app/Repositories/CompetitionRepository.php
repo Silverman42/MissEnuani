@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Repository;
+namespace App\Repositories;
 
 use App\Models\Competitions;
-use App\Repository\BaseRepository;
+use App\Repositories\BaseRepository;
 
-class CompetitonRepository extends BaseRepository
+class CompetitionRepository extends BaseRepository
 {
 
     protected $modelClass = Competitions::class;

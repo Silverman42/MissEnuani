@@ -2,10 +2,9 @@
 
 namespace App\Http\Requests\User;
 
-use App\Rules\Boolean;
 use Illuminate\Foundation\Http\FormRequest;
 
-class CreateUsers extends FormRequest
+class CreateClient extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -30,15 +29,9 @@ class CreateUsers extends FormRequest
             'email' => 'required|unique:App\Models\User|email:rfc',
             'password' => 'required|confirmed|min:6',
             'avatar' => 'nullable|mimes:jpg,jpeg,png|mimetypes:image/jpg,image/jpeg,image/png|max:800',
-            'facebook_url' => 'nullable|url|max:100',
-            'twitter_url' => 'nullable|url|max:100',
+            'position' => 'required|number|digits:1',
+            'competition_id' => 'required|number',
             'phone_number' => 'nullable|digits_between:11,14',
-            'is_admin' => ['nullable', new Boolean],
-            'tickets' => ['nullable', new Boolean],
-            'transactions' => ['nullable', new Boolean],
-            'competitions' => ['nullable', new Boolean],
-            'users' => ['nullable', new Boolean],
-            'settings' => ['nullable', new Boolean]
         ];
     }
 }

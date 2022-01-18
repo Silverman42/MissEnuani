@@ -5,7 +5,7 @@ namespace App\Http\Requests\User;
 use App\Rules\Boolean;
 use Illuminate\Foundation\Http\FormRequest;
 
-class CreateUsers extends FormRequest
+class CreateAdmin extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -33,7 +33,6 @@ class CreateUsers extends FormRequest
             'facebook_url' => 'nullable|url|max:100',
             'twitter_url' => 'nullable|url|max:100',
             'phone_number' => 'nullable|digits_between:11,14',
-            'is_admin' => ['nullable', new Boolean],
             'tickets' => ['nullable', new Boolean],
             'transactions' => ['nullable', new Boolean],
             'competitions' => ['nullable', new Boolean],

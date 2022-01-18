@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/',function(){
+Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
@@ -26,30 +26,31 @@ Route::get('dashboard', 'DashboardController')->middleware(['auth'])->name('dash
  * Client Based Routes
  */
 Route::name('client.')
-->prefix('client')
-->namespace('Client')
-->middleware([
-    'auth',
-    'role:client',
-])
-->group(base_path('routes/app/client.php'));
+    ->prefix('client')
+    ->namespace('Client')
+    ->middleware([
+        'auth',
+        'role:client',
+    ])
+    ->group(base_path('routes/app/client.php'));
 
 /**
  * Admin Based Routes
  */
 Route::name('admin.')
-->prefix('admin')
-->middleware([
-    'auth',
-    'role:admin',
-])
-->group(base_path('routes/app/admin.php'));
+    ->prefix('admin')
+    ->namespace('Admin')
+    ->middleware([
+        'auth',
+        'role:admin',
+    ])
+    ->group(base_path('routes/app/admin.php'));
 
 
 /**
  * Settings routes
  */
-Route::group(['prefix' => 'settings','middleware'=>['auth','role:admin']], function () {
+Route::group(['prefix' => 'settings', 'middleware' => ['auth', 'role:admin']], function () {
     Route::get('/', 'Settings\GeneralController@view')->name('settings.view');
     Route::put('/update', 'Settings\GeneralController@update')->name('settings.update');
     Route::post('/update/user-interface', 'Settings\UserInterfaceController')->name('settings.user_interface');
@@ -59,24 +60,32 @@ Route::group(['prefix' => 'settings','middleware'=>['auth','role:admin']], funct
 /**
  * User routes
  */
-Route::group(['prefix' => 'users', 'middleware'=>['auth','role:admin']], function () {
-    Route::get('/', 'Users\ViewUsersController')->name('users.view');
+Route::group(['prefix' => 'users', 'middleware' => ['auth', 'role:admin']], function () {
+    Route::get('/', 'Users\ViewUsersController@index')->name('users.view');
+    Route::get('/{id}', 'Users\ViewUsersController@show')->name('users.show');
     Route::get('/trash', 'Users\RecycleViewController')->name('users.recycle');
-    Route::get('/{id}', 'Users\ResourceController@show')->name('users.show');
-    Route::post('remove/{id}', 'Users\ResourceController@remove')->name('users.remove');
-    Route::post('restore/{id}', 'Users\ResourceController@restore')->name('users.restore');
-    Route::post('destory/{id}', 'Users\ResourceController@forceDestroy')->name('users.destroy');
-    Route::post('deactivate/{id}', 'Users\ResourceController@deactivate')->name('users.deactivate');
-    Route::post('activate/{id}', 'Users\ResourceController@activate')->name('users.activate');
-    Route::post('/create', 'Users\CreateUserController')->name('users.create');
+    Route::post('remove/{id}', 'Users\UserPresenceController@remove')->name('users.remove');
+    Route::post('restore/{id}', 'Users\UserPresenceController@restore')->name('users.restore');
+    Route::post('destory/{id}', 'Users\UserPresenceController@forceDestroy')->name('users.destroy');
+    Route::post('deactivate/{id}', 'Users\UserPresenceController@deactivate')->name('users.deactivate');
+    Route::post('activate/{id}', 'Users\UserPresenceController@activate')->name('users.activate');
 });
 
-Route::group(['prefix' => 'client-profile','middleware'=>['auth','role:admin']], function () {
-    Route::post('update/emergency','Users\UpdateClientController@updateEmergencyData')->name('client-profile.update.emergency');
-    Route::post('update/medicals','Users\UpdateClientController@updateMedicalData')->name('client-profile.update.medicals');
-    Route::post('update/social','Users\UpdateClientController@updateSocialData')->name('client-profile.update.social');
-    Route::post('update/identity','Users\UpdateClientController@updateIdentityData')->name('client-profile.update.identity');
-    Route::post('update/persona','Users\UpdateClientController@updatePersonaData')->name('client-profile.update.persona');
-    Route::post('update/travel','Users\UpdateClientController@updateTravelData')->name('client-profile.update.travel');
+Route::group(['prefix' => 'users/contestant', 'middleware' => ['auth', 'role:admin']], function () {
+    Route::post('biodata/emergency', 'Users\Client\UpdateBiodata@updateEmergencyData')->name('users.contestant.biodata.emergency');
+    Route::post('biodata/medicals', 'Users\Client\UpdateBiodata@updateMedicalData')->name('users.contestant.biodata.medicals');
+    Route::post('biodata/social', 'Users\Client\UpdateBiodata@updateSocialData')->name('users.contestant.biodata.social');
+    Route::post('biodata/identity', 'Users\Client\UpdateBiodata@updateIdentityData')->name('users.contestant.biodata.identity');
+    Route::post('biodata/persona', 'Users\Client\UpdateBiodata@updatePersonaData')->name('users.contestant.biodata.persona');
+    Route::post('biodata/travel', 'Users\Client\UpdateBiodata@updateTravelData')->name('users.contestant.biodata.travel');
+    Route::post('competition-data', 'Users\Client\UpdateCompetitionData')->name('users.contestant.competition-data');
+    Route::post('access-data', 'Users\Client\UpdateAccessData')->name('users.contestant.access-data');
+    Route::post('/create', 'Users\CreateUserController@createContestants')->name('users.contestant.create');
+});
+
+Route::group(['prefix' => 'users/admin', 'middleware' => ['auth', 'role:admin']], function () {
+    Route::post('profile', 'Users\Admin\UpdateProfile')->name('users.admin.profile');
+    Route::post('permissions', 'Users\Admin\UpdatePermissions')->name('users.admin.permissions');
+    Route::post('/create', 'Users\CreateUserController@createAdmin')->name('users.admin.create');
 });
 Auth::routes();

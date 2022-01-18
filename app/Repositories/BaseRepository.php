@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repository;
+namespace App\Repositories;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
@@ -141,7 +141,7 @@ class BaseRepository
      * @param int $page
      * @param array $queryOptions
      */
-    public function paginate(int $page = 20, array $queryOptions)
+    public function paginate(int $page = 20, array $queryOptions = [])
     {
         $query = $this->model;
         if (count($queryOptions)) {

@@ -3,10 +3,15 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use App\Repositories\CompetitionRepository;
+use App\Http\Requests\CompetitionRequest as Request;
 
 class CompetitionController extends Controller
 {
+    public function __construct(CompetitionRepository $competition)
+    {
+        $this->competition = $competition;
+    }
     /**
      * Display a listing of the resource.
      *
@@ -14,17 +19,7 @@ class CompetitionController extends Controller
      */
     public function index()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+        dd($this->competition->paginate()->toArray());
     }
 
     /**
@@ -35,29 +30,8 @@ class CompetitionController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
+        $this->competition->create($request->all());
+        return $this->redirectBack('A competition has been succefully added', 'Competition added');
     }
 
     /**
@@ -69,7 +43,10 @@ class CompetitionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        if ($this->competition->update($request->all(), $id)) {
+            return $this->redirectBack('A competition has been succefully updated', 'Competition updated');
+        }
+        return $this->redirectBack('A competition could not be updated succefully', 'Competition update failed');
     }
 
     /**
@@ -78,8 +55,11 @@ class CompetitionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(int $id)
     {
-        //
+        if ($this->competition->destroy($id)) {
+            return $this->redirectBack('A competition has been succefully deleted', 'Competition deleted');
+        }
+        return $this->redirectBack('A competition could not be deleted succefully', 'Competition delete failed');
     }
 }

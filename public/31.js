@@ -130,16 +130,118 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'CreateUser',
+  name: "CreateUser",
   watch: {
     $page: {
       handler: function handler() {
         this.loading = false;
 
-        if (this.$page.auth.alert_type === 'success') {
+        if (this.$page.auth.alert_type === "success") {
           this.resetValues();
-          this.$emit('completeRegistration');
+          this.$emit("completeRegistration");
         }
       },
       deep: true
@@ -148,20 +250,21 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       loading: false,
-      roles: 'super-admin',
+      roles: "admin",
+      requestRoute: "users.admin.create",
       biodata: {
-        first_name: '',
-        last_name: '',
-        email: '',
-        password: '',
-        password_confirmation: ''
+        first_name: "",
+        last_name: "",
+        email: "",
+        password: "",
+        password_confirmation: ""
       },
       social: {
-        facebook_url: '',
-        twitter_url: '',
-        phone_number: ''
+        facebook_url: "",
+        twitter_url: "",
+        phone_number: ""
       },
-      avatar: '',
+      avatar: "",
       permissions: {
         subjects: true,
         topics: true,
@@ -176,6 +279,7 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     selectRole: function selectRole(role) {
       this.roles = role;
+      this.requestRoute = role === "admin" ? "users.admin.create" : "users.contestant.create";
     },
     changeAvatar: function changeAvatar(file) {
       this.avatar = file;
@@ -191,19 +295,19 @@ __webpack_require__.r(__webpack_exports__);
         profile: false
       };
       this.social = {
-        facebook_url: '',
-        twitter_url: '',
-        phone_number: ''
+        facebook_url: "",
+        twitter_url: "",
+        phone_number: ""
       };
       this.avatar = null;
-      this.roles = 'super-admin';
+      this.roles = "admin";
     },
     createUser: function createUser() {
       this.loading = true;
       console.log(this.permissions);
       var form = new FormData();
-      form.append('avatar', this.avatar);
-      form.append('roles', this.roles);
+      form.append("avatar", this.avatar);
+      form.append("roles", this.roles);
 
       for (var _i = 0, _Object$entries = Object.entries(this.biodata); _i < _Object$entries.length; _i++) {
         var key = _Object$entries[_i];
@@ -220,7 +324,7 @@ __webpack_require__.r(__webpack_exports__);
         form.append(_key2[0], this.permissions[_key2[0]]);
       }
 
-      this.$inertia.post(this.$route.relativePath('users.create'), form);
+      this.$inertia.post(this.$route.relativePath(this.requestRoute), form);
     }
   }
 });
@@ -263,7 +367,7 @@ var render = function () {
             staticClass:
               "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2",
           },
-          [_vm._v("Biodata")]
+          [_vm._v("\n            Biodata\n        ")]
         ),
         _vm._v(" "),
         _c(
@@ -390,7 +494,7 @@ var render = function () {
             staticClass:
               "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2",
           },
-          [_vm._v("Social")]
+          [_vm._v("\n            Social\n        ")]
         ),
         _vm._v(" "),
         _c(
@@ -496,7 +600,7 @@ var render = function () {
             staticClass:
               "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2",
           },
-          [_vm._v("Avatar")]
+          [_vm._v("\n            Avatar\n        ")]
         ),
         _vm._v(" "),
         _c("file-input", {
@@ -526,7 +630,7 @@ var render = function () {
             staticClass:
               "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2",
           },
-          [_vm._v("Roles")]
+          [_vm._v("\n            Roles\n        ")]
         ),
         _vm._v(" "),
         _c(
@@ -535,7 +639,7 @@ var render = function () {
           [
             _c("radio-input", {
               attrs: {
-                value: "super-admin",
+                value: "admin",
                 defaultValue: _vm.roles,
                 name: "roles",
                 title: "Super Admin",
@@ -549,7 +653,7 @@ var render = function () {
             _vm._v(" "),
             _c("radio-input", {
               attrs: {
-                value: "admin",
+                value: "client",
                 defaultValue: _vm.roles,
                 name: "roles",
                 title: "Admin",
@@ -567,9 +671,7 @@ var render = function () {
         _vm.$page.errors.roles
           ? _c("p", { staticClass: "text-xs text-red-500" }, [
               _vm._v(
-                "\n                " +
-                  _vm._s(_vm.$page.errors.roles) +
-                  "\n            "
+                "\n            " + _vm._s(_vm.$page.errors.roles) + "\n        "
               ),
             ])
           : _vm._e(),
@@ -590,7 +692,7 @@ var render = function () {
                 staticClass:
                   "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2",
               },
-              [_vm._v("Permissions")]
+              [_vm._v("\n            Permissions\n        ")]
             ),
             _vm._v(" "),
             _c(
@@ -615,7 +717,9 @@ var render = function () {
                     ]),
                     _vm._v(" "),
                     _c("p", { staticClass: "ml-2 text-xs" }, [
-                      _vm._v("Add, view, delete and update subjects"),
+                      _vm._v(
+                        "\n                    Add, view, delete and update subjects\n                "
+                      ),
                     ]),
                   ]
                 ),
@@ -623,9 +727,9 @@ var render = function () {
                 _vm.$page.errors.subjects
                   ? _c("p", { staticClass: "text-xs text-red-500" }, [
                       _vm._v(
-                        "\n                    " +
+                        "\n                " +
                           _vm._s(_vm.$page.errors.subjects) +
-                          "\n                "
+                          "\n            "
                       ),
                     ])
                   : _vm._e(),
@@ -655,7 +759,9 @@ var render = function () {
                     ]),
                     _vm._v(" "),
                     _c("p", { staticClass: "ml-2 text-xs" }, [
-                      _vm._v("Add, view, delete and update topics"),
+                      _vm._v(
+                        "\n                    Add, view, delete and update topics\n                "
+                      ),
                     ]),
                   ]
                 ),
@@ -663,9 +769,9 @@ var render = function () {
                 _vm.$page.errors.topics
                   ? _c("p", { staticClass: "text-xs text-red-500" }, [
                       _vm._v(
-                        "\n                    " +
+                        "\n                " +
                           _vm._s(_vm.$page.errors.topics) +
-                          "\n                "
+                          "\n            "
                       ),
                     ])
                   : _vm._e(),
@@ -695,7 +801,9 @@ var render = function () {
                     ]),
                     _vm._v(" "),
                     _c("p", { staticClass: "ml-2 text-xs" }, [
-                      _vm._v("Add, view, delete and update questions"),
+                      _vm._v(
+                        "\n                    Add, view, delete and update questions\n                "
+                      ),
                     ]),
                   ]
                 ),
@@ -703,9 +811,9 @@ var render = function () {
                 _vm.$page.errors.questions
                   ? _c("p", { staticClass: "text-xs text-red-500" }, [
                       _vm._v(
-                        "\n                    " +
+                        "\n                " +
                           _vm._s(_vm.$page.errors.questions) +
-                          "\n                "
+                          "\n            "
                       ),
                     ])
                   : _vm._e(),
@@ -735,7 +843,9 @@ var render = function () {
                     ]),
                     _vm._v(" "),
                     _c("p", { staticClass: "ml-2 text-xs" }, [
-                      _vm._v("Add, view, delete and update collections"),
+                      _vm._v(
+                        "\n                    Add, view, delete and update collections\n                "
+                      ),
                     ]),
                   ]
                 ),
@@ -743,9 +853,9 @@ var render = function () {
                 _vm.$page.errors.collections
                   ? _c("p", { staticClass: "text-xs text-red-500" }, [
                       _vm._v(
-                        "\n                    " +
+                        "\n                " +
                           _vm._s(_vm.$page.errors.collections) +
-                          "\n                "
+                          "\n            "
                       ),
                     ])
                   : _vm._e(),
@@ -775,7 +885,9 @@ var render = function () {
                     ]),
                     _vm._v(" "),
                     _c("p", { staticClass: "ml-2 text-xs" }, [
-                      _vm._v("Add, view, delete and update users"),
+                      _vm._v(
+                        "\n                    Add, view, delete and update users\n                "
+                      ),
                     ]),
                   ]
                 ),
@@ -783,9 +895,9 @@ var render = function () {
                 _vm.$page.errors.users
                   ? _c("p", { staticClass: "text-xs text-red-500" }, [
                       _vm._v(
-                        "\n                    " +
+                        "\n                " +
                           _vm._s(_vm.$page.errors.users) +
-                          "\n                "
+                          "\n            "
                       ),
                     ])
                   : _vm._e(),
@@ -815,7 +927,9 @@ var render = function () {
                     ]),
                     _vm._v(" "),
                     _c("p", { staticClass: "ml-2 text-xs" }, [
-                      _vm._v("Add, view, delete and update settings"),
+                      _vm._v(
+                        "\n                    Add, view, delete and update settings\n                "
+                      ),
                     ]),
                   ]
                 ),
@@ -823,9 +937,9 @@ var render = function () {
                 _vm.$page.errors.settings
                   ? _c("p", { staticClass: "text-xs text-red-500" }, [
                       _vm._v(
-                        "\n                    " +
+                        "\n                " +
                           _vm._s(_vm.$page.errors.settings) +
-                          "\n                "
+                          "\n            "
                       ),
                     ])
                   : _vm._e(),
