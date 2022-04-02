@@ -20,6 +20,16 @@ class BaseRepository
     }
 
     /**
+     * @method mixed all()
+     * 
+     * Get all collections of the model
+     */
+    public function all()
+    {
+        return $this->model->all();
+    }
+
+    /**
      * @method mixed with()
      * 
      * Eager load other related models

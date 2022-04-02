@@ -1,5 +1,5 @@
 {
     "polacode.backgroundColor": "#e7e02d",
     "python.pythonPath": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
-    "php.validate.executablePath": "C:\\laragon\\bin\\php\\php-8.0.6-Win32-vs16-x64\\php.exe"
+    "php.validate.executablePath": "//usr//bin//php8.0"
 }

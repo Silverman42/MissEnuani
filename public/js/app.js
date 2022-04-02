@@ -18915,309 +18915,6 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./resources/js/Pages lazy recursive ^\\.\\/.*$":
-/*!***********************************************************!*\
-  !*** ./resources/js/Pages lazy ^\.\/.*$ namespace object ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var map = {
-	"./Admin/Dashboard": [
-		"./resources/js/Pages/Admin/Dashboard.vue",
-		0,
-		19
-	],
-	"./Admin/Dashboard.vue": [
-		"./resources/js/Pages/Admin/Dashboard.vue",
-		0,
-		19
-	],
-	"./Client/Dashboard": [
-		"./resources/js/Pages/Client/Dashboard.vue",
-		2,
-		1,
-		12
-	],
-	"./Client/Dashboard.vue": [
-		"./resources/js/Pages/Client/Dashboard.vue",
-		2,
-		1,
-		12
-	],
-	"./Client/Invoice": [
-		"./resources/js/Pages/Client/Invoice.vue",
-		1,
-		13
-	],
-	"./Client/Invoice.vue": [
-		"./resources/js/Pages/Client/Invoice.vue",
-		1,
-		13
-	],
-	"./Client/InvoiceComp": [
-		"./resources/js/Pages/Client/InvoiceComp.vue",
-		20
-	],
-	"./Client/InvoiceComp.vue": [
-		"./resources/js/Pages/Client/InvoiceComp.vue",
-		20
-	],
-	"./Client/Profile": [
-		"./resources/js/Pages/Client/Profile.vue",
-		1,
-		7
-	],
-	"./Client/Profile.vue": [
-		"./resources/js/Pages/Client/Profile.vue",
-		1,
-		7
-	],
-	"./Dashboard": [
-		"./resources/js/Pages/Dashboard.vue",
-		0,
-		21
-	],
-	"./Dashboard.vue": [
-		"./resources/js/Pages/Dashboard.vue",
-		0,
-		21
-	],
-	"./Error": [
-		"./resources/js/Pages/Error.vue",
-		22
-	],
-	"./Error.vue": [
-		"./resources/js/Pages/Error.vue",
-		22
-	],
-	"./Profile/Emergency": [
-		"./resources/js/Pages/Profile/Emergency.vue",
-		23
-	],
-	"./Profile/Emergency.vue": [
-		"./resources/js/Pages/Profile/Emergency.vue",
-		23
-	],
-	"./Profile/Identity": [
-		"./resources/js/Pages/Profile/Identity.vue",
-		2,
-		4
-	],
-	"./Profile/Identity.vue": [
-		"./resources/js/Pages/Profile/Identity.vue",
-		2,
-		4
-	],
-	"./Profile/Medicals": [
-		"./resources/js/Pages/Profile/Medicals.vue",
-		5
-	],
-	"./Profile/Medicals.vue": [
-		"./resources/js/Pages/Profile/Medicals.vue",
-		5
-	],
-	"./Profile/Persona": [
-		"./resources/js/Pages/Profile/Persona.vue",
-		24
-	],
-	"./Profile/Persona.vue": [
-		"./resources/js/Pages/Profile/Persona.vue",
-		24
-	],
-	"./Profile/Social": [
-		"./resources/js/Pages/Profile/Social.vue",
-		25
-	],
-	"./Profile/Social.vue": [
-		"./resources/js/Pages/Profile/Social.vue",
-		25
-	],
-	"./Profile/Tabs/Emergency": [
-		"./resources/js/Pages/Profile/Tabs/Emergency.vue",
-		14
-	],
-	"./Profile/Tabs/Emergency.vue": [
-		"./resources/js/Pages/Profile/Tabs/Emergency.vue",
-		14
-	],
-	"./Profile/Tabs/Identity": [
-		"./resources/js/Pages/Profile/Tabs/Identity.vue",
-		15
-	],
-	"./Profile/Tabs/Identity.vue": [
-		"./resources/js/Pages/Profile/Tabs/Identity.vue",
-		15
-	],
-	"./Profile/Tabs/Medicals": [
-		"./resources/js/Pages/Profile/Tabs/Medicals.vue",
-		3
-	],
-	"./Profile/Tabs/Medicals.vue": [
-		"./resources/js/Pages/Profile/Tabs/Medicals.vue",
-		3
-	],
-	"./Profile/Tabs/Mixins": [
-		"./resources/js/Pages/Profile/Tabs/Mixins.js",
-		33
-	],
-	"./Profile/Tabs/Mixins.js": [
-		"./resources/js/Pages/Profile/Tabs/Mixins.js",
-		33
-	],
-	"./Profile/Tabs/Persona": [
-		"./resources/js/Pages/Profile/Tabs/Persona.vue",
-		16
-	],
-	"./Profile/Tabs/Persona.vue": [
-		"./resources/js/Pages/Profile/Tabs/Persona.vue",
-		16
-	],
-	"./Profile/Tabs/Social": [
-		"./resources/js/Pages/Profile/Tabs/Social.vue",
-		17
-	],
-	"./Profile/Tabs/Social.vue": [
-		"./resources/js/Pages/Profile/Tabs/Social.vue",
-		17
-	],
-	"./Profile/Tabs/Travel": [
-		"./resources/js/Pages/Profile/Tabs/Travel.vue",
-		18
-	],
-	"./Profile/Tabs/Travel.vue": [
-		"./resources/js/Pages/Profile/Tabs/Travel.vue",
-		18
-	],
-	"./Profile/Travel": [
-		"./resources/js/Pages/Profile/Travel.vue",
-		26
-	],
-	"./Profile/Travel.vue": [
-		"./resources/js/Pages/Profile/Travel.vue",
-		26
-	],
-	"./Settings/FactoryReset": [
-		"./resources/js/Pages/Settings/FactoryReset.vue",
-		27
-	],
-	"./Settings/FactoryReset.vue": [
-		"./resources/js/Pages/Settings/FactoryReset.vue",
-		27
-	],
-	"./Settings/General": [
-		"./resources/js/Pages/Settings/General.vue",
-		28
-	],
-	"./Settings/General.vue": [
-		"./resources/js/Pages/Settings/General.vue",
-		28
-	],
-	"./Settings/UserInterface": [
-		"./resources/js/Pages/Settings/UserInterface.vue",
-		29
-	],
-	"./Settings/UserInterface.vue": [
-		"./resources/js/Pages/Settings/UserInterface.vue",
-		29
-	],
-	"./Settings/View": [
-		"./resources/js/Pages/Settings/View.vue",
-		0,
-		30
-	],
-	"./Settings/View.vue": [
-		"./resources/js/Pages/Settings/View.vue",
-		0,
-		30
-	],
-	"./Users/CreateUser": [
-		"./resources/js/Pages/Users/CreateUser.vue",
-		31
-	],
-	"./Users/CreateUser.vue": [
-		"./resources/js/Pages/Users/CreateUser.vue",
-		31
-	],
-	"./Users/Edit": [
-		"./resources/js/Pages/Users/Edit.vue",
-		32
-	],
-	"./Users/Edit.vue": [
-		"./resources/js/Pages/Users/Edit.vue",
-		32
-	],
-	"./Users/List": [
-		"./resources/js/Pages/Users/List.vue",
-		0,
-		10
-	],
-	"./Users/List.vue": [
-		"./resources/js/Pages/Users/List.vue",
-		0,
-		10
-	],
-	"./Users/RecycleBin": [
-		"./resources/js/Pages/Users/RecycleBin.vue",
-		0,
-		11
-	],
-	"./Users/RecycleBin.vue": [
-		"./resources/js/Pages/Users/RecycleBin.vue",
-		0,
-		11
-	],
-	"./Users/ShowAdminUsers": [
-		"./resources/js/Pages/Users/ShowAdminUsers.vue",
-		0,
-		8
-	],
-	"./Users/ShowAdminUsers.vue": [
-		"./resources/js/Pages/Users/ShowAdminUsers.vue",
-		0,
-		8
-	],
-	"./Users/ShowClientUsers": [
-		"./resources/js/Pages/Users/ShowClientUsers.vue",
-		0,
-		9
-	],
-	"./Users/ShowClientUsers.vue": [
-		"./resources/js/Pages/Users/ShowClientUsers.vue",
-		0,
-		9
-	],
-	"./Users/UserModify": [
-		"./resources/js/Pages/Users/UserModify.vue",
-		6
-	],
-	"./Users/UserModify.vue": [
-		"./resources/js/Pages/Users/UserModify.vue",
-		6
-	]
-};
-function webpackAsyncContext(req) {
-	if(!__webpack_require__.o(map, req)) {
-		return Promise.resolve().then(function() {
-			var e = new Error("Cannot find module '" + req + "'");
-			e.code = 'MODULE_NOT_FOUND';
-			throw e;
-		});
-	}
-
-	var ids = map[req], id = ids[0];
-	return Promise.all(ids.slice(1).map(__webpack_require__.e)).then(function() {
-		return __webpack_require__(id);
-	});
-}
-webpackAsyncContext.keys = function webpackAsyncContextKeys() {
-	return Object.keys(map);
-};
-webpackAsyncContext.id = "./resources/js/Pages lazy recursive ^\\.\\/.*$";
-module.exports = webpackAsyncContext;
-
-/***/ }),
-
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -19274,7 +18971,7 @@ new vue__WEBPACK_IMPORTED_MODULE_1___default.a({
       props: {
         initialPage: JSON.parse(app.dataset.page),
         resolveComponent: function resolveComponent(name) {
-          return __webpack_require__("./resources/js/Pages lazy recursive ^\\.\\/.*$")("./".concat(name)).then(function (module) {
+          return __webpack_require__("./resources/js/pages lazy recursive ^\\.\\/.*$")("./".concat(name)).then(function (module) {
             return module["default"];
           });
         }
@@ -20482,6 +20179,309 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/pages lazy recursive ^\\.\\/.*$":
+/*!***********************************************************!*\
+  !*** ./resources/js/pages lazy ^\.\/.*$ namespace object ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./Admin/Dashboard": [
+		"./resources/js/pages/Admin/Dashboard.vue",
+		0,
+		19
+	],
+	"./Admin/Dashboard.vue": [
+		"./resources/js/pages/Admin/Dashboard.vue",
+		0,
+		19
+	],
+	"./Client/Dashboard": [
+		"./resources/js/pages/Client/Dashboard.vue",
+		2,
+		1,
+		12
+	],
+	"./Client/Dashboard.vue": [
+		"./resources/js/pages/Client/Dashboard.vue",
+		2,
+		1,
+		12
+	],
+	"./Client/Invoice": [
+		"./resources/js/pages/Client/Invoice.vue",
+		1,
+		13
+	],
+	"./Client/Invoice.vue": [
+		"./resources/js/pages/Client/Invoice.vue",
+		1,
+		13
+	],
+	"./Client/InvoiceComp": [
+		"./resources/js/pages/Client/InvoiceComp.vue",
+		20
+	],
+	"./Client/InvoiceComp.vue": [
+		"./resources/js/pages/Client/InvoiceComp.vue",
+		20
+	],
+	"./Client/Profile": [
+		"./resources/js/pages/Client/Profile.vue",
+		1,
+		7
+	],
+	"./Client/Profile.vue": [
+		"./resources/js/pages/Client/Profile.vue",
+		1,
+		7
+	],
+	"./Dashboard": [
+		"./resources/js/pages/Dashboard.vue",
+		0,
+		21
+	],
+	"./Dashboard.vue": [
+		"./resources/js/pages/Dashboard.vue",
+		0,
+		21
+	],
+	"./Error": [
+		"./resources/js/pages/Error.vue",
+		22
+	],
+	"./Error.vue": [
+		"./resources/js/pages/Error.vue",
+		22
+	],
+	"./Profile/Emergency": [
+		"./resources/js/pages/Profile/Emergency.vue",
+		23
+	],
+	"./Profile/Emergency.vue": [
+		"./resources/js/pages/Profile/Emergency.vue",
+		23
+	],
+	"./Profile/Identity": [
+		"./resources/js/pages/Profile/Identity.vue",
+		2,
+		4
+	],
+	"./Profile/Identity.vue": [
+		"./resources/js/pages/Profile/Identity.vue",
+		2,
+		4
+	],
+	"./Profile/Medicals": [
+		"./resources/js/pages/Profile/Medicals.vue",
+		5
+	],
+	"./Profile/Medicals.vue": [
+		"./resources/js/pages/Profile/Medicals.vue",
+		5
+	],
+	"./Profile/Persona": [
+		"./resources/js/pages/Profile/Persona.vue",
+		24
+	],
+	"./Profile/Persona.vue": [
+		"./resources/js/pages/Profile/Persona.vue",
+		24
+	],
+	"./Profile/Social": [
+		"./resources/js/pages/Profile/Social.vue",
+		25
+	],
+	"./Profile/Social.vue": [
+		"./resources/js/pages/Profile/Social.vue",
+		25
+	],
+	"./Profile/Tabs/Emergency": [
+		"./resources/js/pages/Profile/Tabs/Emergency.vue",
+		14
+	],
+	"./Profile/Tabs/Emergency.vue": [
+		"./resources/js/pages/Profile/Tabs/Emergency.vue",
+		14
+	],
+	"./Profile/Tabs/Identity": [
+		"./resources/js/pages/Profile/Tabs/Identity.vue",
+		15
+	],
+	"./Profile/Tabs/Identity.vue": [
+		"./resources/js/pages/Profile/Tabs/Identity.vue",
+		15
+	],
+	"./Profile/Tabs/Medicals": [
+		"./resources/js/pages/Profile/Tabs/Medicals.vue",
+		3
+	],
+	"./Profile/Tabs/Medicals.vue": [
+		"./resources/js/pages/Profile/Tabs/Medicals.vue",
+		3
+	],
+	"./Profile/Tabs/Mixins": [
+		"./resources/js/pages/Profile/Tabs/Mixins.js",
+		33
+	],
+	"./Profile/Tabs/Mixins.js": [
+		"./resources/js/pages/Profile/Tabs/Mixins.js",
+		33
+	],
+	"./Profile/Tabs/Persona": [
+		"./resources/js/pages/Profile/Tabs/Persona.vue",
+		16
+	],
+	"./Profile/Tabs/Persona.vue": [
+		"./resources/js/pages/Profile/Tabs/Persona.vue",
+		16
+	],
+	"./Profile/Tabs/Social": [
+		"./resources/js/pages/Profile/Tabs/Social.vue",
+		17
+	],
+	"./Profile/Tabs/Social.vue": [
+		"./resources/js/pages/Profile/Tabs/Social.vue",
+		17
+	],
+	"./Profile/Tabs/Travel": [
+		"./resources/js/pages/Profile/Tabs/Travel.vue",
+		18
+	],
+	"./Profile/Tabs/Travel.vue": [
+		"./resources/js/pages/Profile/Tabs/Travel.vue",
+		18
+	],
+	"./Profile/Travel": [
+		"./resources/js/pages/Profile/Travel.vue",
+		26
+	],
+	"./Profile/Travel.vue": [
+		"./resources/js/pages/Profile/Travel.vue",
+		26
+	],
+	"./Settings/FactoryReset": [
+		"./resources/js/pages/Settings/FactoryReset.vue",
+		27
+	],
+	"./Settings/FactoryReset.vue": [
+		"./resources/js/pages/Settings/FactoryReset.vue",
+		27
+	],
+	"./Settings/General": [
+		"./resources/js/pages/Settings/General.vue",
+		28
+	],
+	"./Settings/General.vue": [
+		"./resources/js/pages/Settings/General.vue",
+		28
+	],
+	"./Settings/UserInterface": [
+		"./resources/js/pages/Settings/UserInterface.vue",
+		29
+	],
+	"./Settings/UserInterface.vue": [
+		"./resources/js/pages/Settings/UserInterface.vue",
+		29
+	],
+	"./Settings/View": [
+		"./resources/js/pages/Settings/View.vue",
+		0,
+		30
+	],
+	"./Settings/View.vue": [
+		"./resources/js/pages/Settings/View.vue",
+		0,
+		30
+	],
+	"./Users/CreateUser": [
+		"./resources/js/pages/Users/CreateUser.vue",
+		31
+	],
+	"./Users/CreateUser.vue": [
+		"./resources/js/pages/Users/CreateUser.vue",
+		31
+	],
+	"./Users/Edit": [
+		"./resources/js/pages/Users/Edit.vue",
+		32
+	],
+	"./Users/Edit.vue": [
+		"./resources/js/pages/Users/Edit.vue",
+		32
+	],
+	"./Users/List": [
+		"./resources/js/pages/Users/List.vue",
+		0,
+		10
+	],
+	"./Users/List.vue": [
+		"./resources/js/pages/Users/List.vue",
+		0,
+		10
+	],
+	"./Users/RecycleBin": [
+		"./resources/js/pages/Users/RecycleBin.vue",
+		0,
+		11
+	],
+	"./Users/RecycleBin.vue": [
+		"./resources/js/pages/Users/RecycleBin.vue",
+		0,
+		11
+	],
+	"./Users/ShowAdminUsers": [
+		"./resources/js/pages/Users/ShowAdminUsers.vue",
+		0,
+		8
+	],
+	"./Users/ShowAdminUsers.vue": [
+		"./resources/js/pages/Users/ShowAdminUsers.vue",
+		0,
+		8
+	],
+	"./Users/ShowClientUsers": [
+		"./resources/js/pages/Users/ShowClientUsers.vue",
+		0,
+		9
+	],
+	"./Users/ShowClientUsers.vue": [
+		"./resources/js/pages/Users/ShowClientUsers.vue",
+		0,
+		9
+	],
+	"./Users/UserModify": [
+		"./resources/js/pages/Users/UserModify.vue",
+		6
+	],
+	"./Users/UserModify.vue": [
+		"./resources/js/pages/Users/UserModify.vue",
+		6
+	]
+};
+function webpackAsyncContext(req) {
+	if(!__webpack_require__.o(map, req)) {
+		return Promise.resolve().then(function() {
+			var e = new Error("Cannot find module '" + req + "'");
+			e.code = 'MODULE_NOT_FOUND';
+			throw e;
+		});
+	}
+
+	var ids = map[req], id = ids[0];
+	return Promise.all(ids.slice(1).map(__webpack_require__.e)).then(function() {
+		return __webpack_require__(id);
+	});
+}
+webpackAsyncContext.keys = function webpackAsyncContextKeys() {
+	return Object.keys(map);
+};
+webpackAsyncContext.id = "./resources/js/pages lazy recursive ^\\.\\/.*$";
+module.exports = webpackAsyncContext;
+
+/***/ }),
+
 /***/ "./resources/js/plugins/global_comps.js":
 /*!**********************************************!*\
   !*** ./resources/js/plugins/global_comps.js ***!
@@ -20554,8 +20554,8 @@ var GlobalComps = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laragon\www\BeautyPagent\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\laragon\www\BeautyPagent\resources\css\app.css */"./resources/css/app.css");
+__webpack_require__(/*! /home/silverman42/php/MissEnuani/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/silverman42/php/MissEnuani/resources/css/app.css */"./resources/css/app.css");
 
 
 /***/ })

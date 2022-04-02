@@ -5,6 +5,32 @@
             <h4
                 class="text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2"
             >
+                Roles
+            </h4>
+            <div class="flex items-center flex-wrap">
+                <radio-input
+                    value="admin"
+                    :defaultValue="roles"
+                    name="roles"
+                    @input="selectRole($event)"
+                    title="Admin"
+                />
+                <radio-input
+                    value="client"
+                    :defaultValue="roles"
+                    name="roles"
+                    @input="selectRole($event)"
+                    title="Contestant"
+                />
+            </div>
+            <p class="text-xs text-red-500" v-if="$page.errors.roles">
+                {{ $page.errors.roles }}
+            </p>
+        </div>
+        <div class="mb-10 reveal-left" style="--delay: 0.5s">
+            <h4
+                class="text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2"
+            >
                 Biodata
             </h4>
             <div class="mb-2">
@@ -49,9 +75,29 @@
                     label="Confirm Password"
                 />
             </div>
+            <div class="mb-2" v-if="roles === 'client'">
+                <text-input
+                    type="number"
+                    :error="$page.errors.position || ''"
+                    v-model="competition.position"
+                    form="create-user"
+                    label="Contestant position"
+                />
+            </div>
+            <div class="mb-2" v-if="roles === 'client'">
+                <select-input
+                    :value="competition.year"
+                    v-model="competition.year"
+                    form="create-user"
+                    label="Competition year"
+                    :error="$page.errors.competition_id || ''"
+                >
+                    <option value=""></option>
+                </select-input>
+            </div>
         </div>
 
-        <div class="mb-10 reveal-left" style="--delay: 0.5s">
+        <div class="mb-10 reveal-left" style="--delay: 0.7s">
             <h4
                 class="text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2"
             >
@@ -90,11 +136,11 @@
             </div>
         </div>
 
-        <div class="mb-10 reveal-left" style="--delay: 0.7s">
+        <div class="mb-10 reveal-left" style="--delay: 0.9s">
             <h4
                 class="text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2"
             >
-                Avatar
+                Avatars
             </h4>
             <file-input
                 form="create-user"
@@ -102,33 +148,6 @@
                 @input="changeAvatar($event)"
                 label="Image should have a size of 800kb max and should be among the following file type: JPG, PNG"
             />
-        </div>
-
-        <div class="mb-10 reveal-left" style="--delay: 0.9s">
-            <h4
-                class="text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2"
-            >
-                Roles
-            </h4>
-            <div class="flex items-center flex-wrap">
-                <radio-input
-                    value="admin"
-                    :defaultValue="roles"
-                    name="roles"
-                    @input="selectRole($event)"
-                    title="Super Admin"
-                />
-                <radio-input
-                    value="client"
-                    :defaultValue="roles"
-                    name="roles"
-                    @input="selectRole($event)"
-                    title="Admin"
-                />
-            </div>
-            <p class="text-xs text-red-500" v-if="$page.errors.roles">
-                {{ $page.errors.roles }}
-            </p>
         </div>
 
         <div
@@ -254,6 +273,10 @@ export default {
                 phone_number: "",
             },
             avatar: "",
+            competition: {
+                year: 1997,
+                position: 0,
+            },
             permissions: {
                 subjects: true,
                 topics: true,
@@ -264,6 +287,9 @@ export default {
                 profile: false,
             },
         };
+    },
+    mounted() {
+        this.selectRole(this.role);
     },
     methods: {
         selectRole(role) {

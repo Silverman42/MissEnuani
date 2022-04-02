@@ -15,5 +15,5 @@ mix.js('resources/js/app.js', 'public/js').postCss('resources/css/app.css','publ
   require('tailwindcss')
 ])
   // .sass('resources/sass/app.scss', 'public/css');
-mix.browserSync('beautypagent.local')
+mix.browserSync('enuani.test')
 

@@ -7,12 +7,24 @@ use App\Models\Settings;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Session;
+use App\Repositories\CompetitionRepository;
 
 class GeneralController extends Controller
 {
 
-    public function view(){
-        return Inertia::render('Settings/View',['color_schemes'=> config('user_interface.color_schemes')]);
+    protected $competition;
+
+    public function __construct(CompetitionRepository $competition)
+    {
+        $this->competition = $competition;
+    }
+
+    public function view()
+    {
+        return Inertia::render('Settings/View', [
+            'color_schemes' => config('user_interface.color_schemes'),
+            'competitions' => $this->competition->all()->toArray()
+        ]);
     }
 
     /**
@@ -26,15 +38,16 @@ class GeneralController extends Controller
     {
         $validated = $this->validateInput($request);
         $settings = Settings::first();
-        if(!$settings){
+        if (!$settings) {
             $settings->create($request->all());
-            return $this->redirectBack('You successfully added new settings','New Settings Added');
+            return $this->redirectBack('You successfully added new settings', 'New Settings Added');
         }
         $settings->update($request->all());
-        return $this->redirectBack('You successfully updated settings','Settings Updated');
+        return $this->redirectBack('You successfully updated settings', 'Settings Updated');
     }
 
-    private function validateInput(Request $request){
+    private function validateInput(Request $request)
+    {
         return $request->validate([
             'app_name' => 'string|required|max:30',
             'app_email' => 'email:rfc|required',

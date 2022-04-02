@@ -66,26 +66,30 @@ class StartUp extends Command
         $this->info('Your app is prepared and ready fly. Awesome !!');
     }
 
-    public function createPermissions(){
-        Permission::create(['name'=> 'update-personal-profile']);
-        Permission::create(['name'=>'modify-clients']);
-        Permission::create(['name'=>'modify-admins']);
-        Permission::create(['name'=>'modify-settings']);
-        Permission::create(['name'=>'modify-permissions']);
+    public function createPermissions()
+    {
+        Permission::create(['name' => 'update-personal-profile']);
+        Permission::create(['name' => 'modify-clients']);
+        Permission::create(['name' => 'modify-admins']);
+        Permission::create(['name' => 'modify-settings']);
+        Permission::create(['name' => 'modify-permissions']);
     }
 
-    public function initializeOtherModels(){
+    public function initializeOtherModels()
+    {
         $transaction = new Transactions();
         $transaction->id = 998867;
         $transaction->save();
     }
 
-    public function createStatistics(){
+    public function createStatistics()
+    {
         $statistics = new Statistics();
         $statistics->naira_balance = 0.00;
         $statistics->save();
     }
-    public function createSuperAdmin(){
+    public function createSuperAdmin()
+    {
         $admin = new User;
         $admin->password = Hash::make('secret2020');
         $admin->first_name = 'Joseph';
@@ -94,8 +98,8 @@ class StartUp extends Command
         $admin->email = 'joseph@gmail.com';
         $admin->id = 998867;
         $admin->save();
-        $admin_role = Role::create(['name'=> 'admin']);
-        Role::create(['name'=> 'client']);
+        $admin_role = Role::create(['name' => 'admin']);
+        Role::create(['name' => 'client']);
         $admin->assignRole($admin_role);
         $admin->givePermissionTo('modify-settings');
         $admin->givePermissionTo('modify-clients');
@@ -104,7 +108,8 @@ class StartUp extends Command
         $admin->givePermissionTo('update-personal-profile');
     }
 
-    public function createClient(int $competition_id){
+    public function createClient(int $competition_id)
+    {
         $client = new User;
         $client->password = Hash::make('secret2020');
         $client->first_name = 'Anita';
@@ -115,16 +120,19 @@ class StartUp extends Command
         $client->assignRole('client');
     }
 
-    public function createSettings(){
+    public function createSettings()
+    {
         $settings = new Settings;
         $settings->app_name = 'MMDBP';
         $settings->naira_charge = 1000;
         $settings->dollar_charge = 50;
+        $settings->app_url = config('app.url');
         $settings->save();
     }
 
-    public function createDefaultCompetition(){
-        $competition = new Competitions;   
+    public function createDefaultCompetition()
+    {
+        $competition = new Competitions;
         $competition->year = '2020';
         $competition->start_date = "2020-12-13";
         $competition->end_date = "2021-1-13";

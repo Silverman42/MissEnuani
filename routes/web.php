@@ -78,14 +78,14 @@ Route::group(['prefix' => 'users/contestant', 'middleware' => ['auth', 'role:adm
     Route::post('biodata/identity', 'Users\Client\UpdateBiodata@updateIdentityData')->name('users.contestant.biodata.identity');
     Route::post('biodata/persona', 'Users\Client\UpdateBiodata@updatePersonaData')->name('users.contestant.biodata.persona');
     Route::post('biodata/travel', 'Users\Client\UpdateBiodata@updateTravelData')->name('users.contestant.biodata.travel');
-    Route::post('competition-data', 'Users\Client\UpdateCompetitionData')->name('users.contestant.competition-data');
-    Route::post('access-data', 'Users\Client\UpdateAccessData')->name('users.contestant.access-data');
+    Route::post('competition-data/{id}', 'Users\Client\UpdateCompetitionData')->name('users.contestant.competition-data');
+    Route::post('access-data/{id}', 'Users\Client\UpdateAccessData')->name('users.contestant.access-data');
     Route::post('/create', 'Users\CreateUserController@createContestants')->name('users.contestant.create');
 });
 
 Route::group(['prefix' => 'users/admin', 'middleware' => ['auth', 'role:admin']], function () {
-    Route::post('profile', 'Users\Admin\UpdateProfile')->name('users.admin.profile');
-    Route::post('permissions', 'Users\Admin\UpdatePermissions')->name('users.admin.permissions');
+    Route::post('profile/{id}', 'Users\Admin\UpdateProfile')->name('users.admin.profile');
+    Route::post('permissions/{id}', 'Users\Admin\UpdatePermissions')->name('users.admin.permissions');
     Route::post('/create', 'Users\CreateUserController@createAdmin')->name('users.admin.create');
 });
 Auth::routes();

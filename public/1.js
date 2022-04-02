@@ -245,7 +245,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".nav-link[data-v-3f805f8c] {\n  color: var(--primary-100);\n  font-size: 0.875rem;\n  display: inline-block;\n  padding: 0.5rem;\n  border-radius: 0.375rem;\n  transition-property: all;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 200ms;\n}\n.nav-link[data-v-3f805f8c]:hover,\r\n.nav-link[data-v-3f805f8c]:focus,\r\n.nav-link.active[data-v-3f805f8c] {\n  color: #fff;\n  background-color: var(--primary-600);\n}\r\n", ""]);
+exports.push([module.i, ".nav-link[data-v-3f805f8c] {\n  color: var(--primary-100);\n  font-size: 0.875rem;\n  display: inline-block;\n  padding: 0.5rem;\n  border-radius: 0.375rem;\n  transition-property: all;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 200ms;\n}\n.nav-link[data-v-3f805f8c]:hover,\n.nav-link[data-v-3f805f8c]:focus,\n.nav-link.active[data-v-3f805f8c] {\n  color: #fff;\n  background-color: var(--primary-600);\n}\n", ""]);
 
 // exports
 

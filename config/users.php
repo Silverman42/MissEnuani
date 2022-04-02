@@ -46,6 +46,13 @@ return [
             'facebook_url',
             'twitter_url',
             'instagram_url',
+        ],
+        'permissions' => [
+            'modify_tickets',
+            'modify_transactions',
+            'modify_competitions',
+            'modify_users',
+            'modify_settings'
         ]
     ]
 ];

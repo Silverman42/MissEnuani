@@ -25,7 +25,7 @@ class CompetitionController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  App\Http\Requests\CompetitionRequest $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -37,7 +37,7 @@ class CompetitionController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  App\Http\Requests\CompetitionRequest $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */

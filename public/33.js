@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[33],{
 
-/***/ "./resources/js/Pages/Profile/Tabs/Mixins.js":
+/***/ "./resources/js/pages/Profile/Tabs/Mixins.js":
 /*!***************************************************!*\
-  !*** ./resources/js/Pages/Profile/Tabs/Mixins.js ***!
+  !*** ./resources/js/pages/Profile/Tabs/Mixins.js ***!
   \***************************************************/
 /*! exports provided: Tabs */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {

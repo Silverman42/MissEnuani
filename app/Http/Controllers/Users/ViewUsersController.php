@@ -6,9 +6,17 @@ use App\Models\User;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Repositories\CompetitionRepository;
 
 class ViewUsersController extends Controller
 {
+    protected $competition;
+
+    public function __construct(CompetitionRepository $competition)
+    {
+        $this->competition = $competition;
+    }
+
     /**
      * Handle the incoming request.
      *
@@ -19,7 +27,8 @@ class ViewUsersController extends Controller
     {
         $user = $this->builder($request);
         return Inertia::render('Users/List', [
-            'user' => $user
+            'user' => $user,
+            'competitions' => $this->competition->all()->toArray()
         ]);
     }
 
@@ -50,7 +59,8 @@ class ViewUsersController extends Controller
             ]);
         }
         return Inertia::render('Users/ShowClientUsers', [
-            'user' => $user
+            'user' => $user,
+            'competitions' => $this->competition->all()->toArray()
         ]);
     }
 }

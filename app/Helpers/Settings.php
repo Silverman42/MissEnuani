@@ -1,8 +1,10 @@
 <?php
+
 use App\Models\Settings;
 
-if(!function_exists('settings')){
-    function settings(bool $shouldReturnDefault = false):array{
+if (!function_exists('settings')) {
+    function settings(bool $shouldReturnDefault = false): array
+    {
         $app_url = config('app.url');
         $default = [
             'app_name' => 'MMBP',
@@ -19,7 +21,7 @@ if(!function_exists('settings')){
             'dashboard_logo' => "{$app_url}/img/dashboard_logo.svg",
             'dashboard_logo_id' => null
         ];
-        if(config('app_env') == 'local' || $shouldReturnDefault == true){
+        if (config('app.env') == 'default' || $shouldReturnDefault == true) {
             return $default;
         }
         $settings = Settings::first();

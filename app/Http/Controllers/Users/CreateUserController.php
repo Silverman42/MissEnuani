@@ -6,11 +6,13 @@ use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
+use App\Traits\AdminPermissionSetting;
 use App\Http\Requests\User\CreateAdmin;
 use App\Http\Requests\User\CreateClient;
 
 class CreateUserController extends Controller
 {
+    use AdminPermissionSetting;
     /**
      * Handle the incoming request.
      *
@@ -53,11 +55,7 @@ class CreateUserController extends Controller
             return $user->assignRole('client');
         }
         $user->assignRole('admin');
-        (filter_var($request->tickets, FILTER_VALIDATE_BOOLEAN) === true) ? $user->givePermissionTo('modify-tickets') : $user->revokePermissionTo('modify-tickets');
-        (filter_var($request->transactions, FILTER_VALIDATE_BOOLEAN) === true) ? $user->givePermissionTo('modify-transactions') : $user->revokePermissionTo('modify-transactions');
-        (filter_var($request->competitions, FILTER_VALIDATE_BOOLEAN) === true) ? $user->givePermissionTo('modify-compettions') : $user->revokePermissionTo('modify-competitions');
-        (filter_var($request->settings, FILTER_VALIDATE_BOOLEAN) === true) ? $user->givePermissionTo('modify-settings') : $user->revokePermissionTo('modify-settings');
-        (filter_var($request->users, FILTER_VALIDATE_BOOLEAN) === true) ? $user->givePermissionTo('modify-users') : $user->revokePermissionTo('modify-users');
+        $this->addPermissions($request->only(config('user.admin.permissions')), $user);
         return;
     }
 }

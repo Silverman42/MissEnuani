@@ -19,8 +19,8 @@ class InvoiceController extends Controller
     public function __invoke(Request $request)
     {
         $invoice = Transactions::where([
-            'transactionable_id' => $request->user()->id,
-            'transactionable_type' => User::class,
+            'transactable_id' => $request->user()->id,
+            'transactable_type' => User::class,
             'competitions_id' => $request->user()->competitions_id,
             'is_completed' => true
         ])->with(['competitions'])->firstOrFail();
