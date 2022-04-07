@@ -7,6 +7,6 @@ return [
      * 
      */
     'color_schemes' => [
-        'blue','red','orange','green','indigo','gray'
+        'blue', 'red', 'orange', 'green', 'indigo', 'gray', 'pink'
     ]
 ];

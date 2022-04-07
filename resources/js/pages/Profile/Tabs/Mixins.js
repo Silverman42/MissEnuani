@@ -9,6 +9,10 @@ export const Tabs = {
         hasCompleted:{
             default: false,
             type: Boolean
+        },
+        canEdit:{
+            default: true,
+            type: Boolean
         }
     },
     methods:{

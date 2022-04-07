@@ -5,13 +5,12 @@ namespace App\Console\Commands;
 use App\Models\User;
 use App\Models\Settings;
 use App\Models\Statistics;
+use App\Models\Permissions;
 use App\Models\Competitions;
 use App\Models\Transactions;
 use Illuminate\Console\Command;
-use Spatie\Permission\Models\Role;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Artisan;
-use Spatie\Permission\Models\Permission;
 
 class StartUp extends Command
 {
@@ -49,8 +48,6 @@ class StartUp extends Command
         $this->info('New migrations are been fired up, relax while you get served...');
         Artisan::call('key:generate');
         Artisan::call('migrate:fresh');
-        $this->info('Creating app permissions ....');
-        $this->createPermissions();
         $this->info('Creating super admin ....');
         $this->createSuperAdmin();
         $this->info('Creating app setting ....');
@@ -66,15 +63,6 @@ class StartUp extends Command
         $this->info('Your app is prepared and ready fly. Awesome !!');
     }
 
-    public function createPermissions()
-    {
-        Permission::create(['name' => 'update-personal-profile']);
-        Permission::create(['name' => 'modify-clients']);
-        Permission::create(['name' => 'modify-admins']);
-        Permission::create(['name' => 'modify-settings']);
-        Permission::create(['name' => 'modify-permissions']);
-    }
-
     public function initializeOtherModels()
     {
         $transaction = new Transactions();
@@ -88,24 +76,30 @@ class StartUp extends Command
         $statistics->naira_balance = 0.00;
         $statistics->save();
     }
+
+    public function setAdminPermissions($user)
+    {
+        Permissions::create([
+            'modify_tickets' => true,
+            'modify_transactions' => true,
+            'modify_competitions' => true,
+            'modify_users' => true,
+            'modify_settings' => true,
+            'user_id' => $user->id
+        ]);
+    }
+
     public function createSuperAdmin()
     {
         $admin = new User;
         $admin->password = Hash::make('secret2020');
-        $admin->first_name = 'Joseph';
-        $admin->last_name = 'Mark';
+        $admin->first_name = 'Super';
+        $admin->last_name = 'Admin';
         $admin->is_admin = true;
-        $admin->email = 'joseph@gmail.com';
+        $admin->email = 'admin@enuani.com';
         $admin->id = 998867;
         $admin->save();
-        $admin_role = Role::create(['name' => 'admin']);
-        Role::create(['name' => 'client']);
-        $admin->assignRole($admin_role);
-        $admin->givePermissionTo('modify-settings');
-        $admin->givePermissionTo('modify-clients');
-        $admin->givePermissionTo('modify-admins');
-        $admin->givePermissionTo('modify-permissions');
-        $admin->givePermissionTo('update-personal-profile');
+        $this->setAdminPermissions($admin);
     }
 
     public function createClient(int $competition_id)
@@ -116,8 +110,8 @@ class StartUp extends Command
         $client->last_name = 'James';
         $client->email = 'anita@gmail.com';
         $client->competitions_id = $competition_id;
+        $client->is_admin = false;
         $client->save();
-        $client->assignRole('client');
     }
 
     public function createSettings()

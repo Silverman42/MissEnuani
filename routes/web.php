@@ -15,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/competitions', 'HomeController@competition_list')->name('landing.competition_list');
+Route::get('/competition/{competition_id}/', 'HomeController@competition_view')->name('landing.competition_view');
+Route::get('/contestant/{id}', 'HomeController@one_contestant')->name('landing.one_contestant');
+Route::get('/vote_success', 'HomeController@vote_success')->name('landing.vote_success');
 
 
 Route::get('dashboard', 'DashboardController')->middleware(['auth'])->name('dashboard');
@@ -30,7 +32,7 @@ Route::name('client.')
     ->namespace('Client')
     ->middleware([
         'auth',
-        'role:client',
+        'is_client',
     ])
     ->group(base_path('routes/app/client.php'));
 
@@ -42,7 +44,7 @@ Route::name('admin.')
     ->namespace('Admin')
     ->middleware([
         'auth',
-        'role:admin',
+        'is_admin',
     ])
     ->group(base_path('routes/app/admin.php'));
 
@@ -50,7 +52,7 @@ Route::name('admin.')
 /**
  * Settings routes
  */
-Route::group(['prefix' => 'settings', 'middleware' => ['auth', 'role:admin']], function () {
+Route::group(['prefix' => 'settings', 'middleware' => ['auth', 'is_admin']], function () {
     Route::get('/', 'Settings\GeneralController@view')->name('settings.view');
     Route::put('/update', 'Settings\GeneralController@update')->name('settings.update');
     Route::post('/update/user-interface', 'Settings\UserInterfaceController')->name('settings.user_interface');
@@ -60,7 +62,7 @@ Route::group(['prefix' => 'settings', 'middleware' => ['auth', 'role:admin']], f
 /**
  * User routes
  */
-Route::group(['prefix' => 'users', 'middleware' => ['auth', 'role:admin']], function () {
+Route::group(['prefix' => 'users', 'middleware' => ['auth', 'is_admin']], function () {
     Route::get('/', 'Users\ViewUsersController@index')->name('users.view');
     Route::get('/{id}', 'Users\ViewUsersController@show')->name('users.show');
     Route::get('/trash', 'Users\RecycleViewController')->name('users.recycle');
@@ -71,7 +73,7 @@ Route::group(['prefix' => 'users', 'middleware' => ['auth', 'role:admin']], func
     Route::post('activate/{id}', 'Users\UserPresenceController@activate')->name('users.activate');
 });
 
-Route::group(['prefix' => 'users/contestant', 'middleware' => ['auth', 'role:admin']], function () {
+Route::group(['prefix' => 'users/contestant', 'middleware' => ['auth', 'is_admin']], function () {
     Route::post('biodata/emergency', 'Users\Client\UpdateBiodata@updateEmergencyData')->name('users.contestant.biodata.emergency');
     Route::post('biodata/medicals', 'Users\Client\UpdateBiodata@updateMedicalData')->name('users.contestant.biodata.medicals');
     Route::post('biodata/social', 'Users\Client\UpdateBiodata@updateSocialData')->name('users.contestant.biodata.social');
@@ -83,7 +85,7 @@ Route::group(['prefix' => 'users/contestant', 'middleware' => ['auth', 'role:adm
     Route::post('/create', 'Users\CreateUserController@createContestants')->name('users.contestant.create');
 });
 
-Route::group(['prefix' => 'users/admin', 'middleware' => ['auth', 'role:admin']], function () {
+Route::group(['prefix' => 'users/admin', 'middleware' => ['auth', 'is_admin']], function () {
     Route::post('profile/{id}', 'Users\Admin\UpdateProfile')->name('users.admin.profile');
     Route::post('permissions/{id}', 'Users\Admin\UpdatePermissions')->name('users.admin.permissions');
     Route::post('/create', 'Users\CreateUserController@createAdmin')->name('users.admin.create');

@@ -1,5 +1,5 @@
 @extends('layouts.dashboard')
-@section('title','EasyQ')
+@section('title','MEBP')
 @section('content')
 @inertia
 @endsection

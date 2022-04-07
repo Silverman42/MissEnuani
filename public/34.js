@@ -1,744 +1,396 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[34],{
 
-/***/ "./resources/js/plugins/countries.js":
-/*!*******************************************!*\
-  !*** ./resources/js/plugins/countries.js ***!
-  \*******************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Settings/General.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Settings/General.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ([{
-  name: 'Afghanistan',
-  code: 'AF'
-}, {
-  name: 'Åland Islands',
-  code: 'AX'
-}, {
-  name: 'Albania',
-  code: 'AL'
-}, {
-  name: 'Algeria',
-  code: 'DZ'
-}, {
-  name: 'American Samoa',
-  code: 'AS'
-}, {
-  name: 'AndorrA',
-  code: 'AD'
-}, {
-  name: 'Angola',
-  code: 'AO'
-}, {
-  name: 'Anguilla',
-  code: 'AI'
-}, {
-  name: 'Antarctica',
-  code: 'AQ'
-}, {
-  name: 'Antigua and Barbuda',
-  code: 'AG'
-}, {
-  name: 'Argentina',
-  code: 'AR'
-}, {
-  name: 'Armenia',
-  code: 'AM'
-}, {
-  name: 'Aruba',
-  code: 'AW'
-}, {
-  name: 'Australia',
-  code: 'AU'
-}, {
-  name: 'Austria',
-  code: 'AT'
-}, {
-  name: 'Azerbaijan',
-  code: 'AZ'
-}, {
-  name: 'Bahamas',
-  code: 'BS'
-}, {
-  name: 'Bahrain',
-  code: 'BH'
-}, {
-  name: 'Bangladesh',
-  code: 'BD'
-}, {
-  name: 'Barbados',
-  code: 'BB'
-}, {
-  name: 'Belarus',
-  code: 'BY'
-}, {
-  name: 'Belgium',
-  code: 'BE'
-}, {
-  name: 'Belize',
-  code: 'BZ'
-}, {
-  name: 'Benin',
-  code: 'BJ'
-}, {
-  name: 'Bermuda',
-  code: 'BM'
-}, {
-  name: 'Bhutan',
-  code: 'BT'
-}, {
-  name: 'Bolivia',
-  code: 'BO'
-}, {
-  name: 'Bosnia and Herzegovina',
-  code: 'BA'
-}, {
-  name: 'Botswana',
-  code: 'BW'
-}, {
-  name: 'Bouvet Island',
-  code: 'BV'
-}, {
-  name: 'Brazil',
-  code: 'BR'
-}, {
-  name: 'British Indian Ocean Territory',
-  code: 'IO'
-}, {
-  name: 'Brunei Darussalam',
-  code: 'BN'
-}, {
-  name: 'Bulgaria',
-  code: 'BG'
-}, {
-  name: 'Burkina Faso',
-  code: 'BF'
-}, {
-  name: 'Burundi',
-  code: 'BI'
-}, {
-  name: 'Cambodia',
-  code: 'KH'
-}, {
-  name: 'Cameroon',
-  code: 'CM'
-}, {
-  name: 'Canada',
-  code: 'CA'
-}, {
-  name: 'Cape Verde',
-  code: 'CV'
-}, {
-  name: 'Cayman Islands',
-  code: 'KY'
-}, {
-  name: 'Central African Republic',
-  code: 'CF'
-}, {
-  name: 'Chad',
-  code: 'TD'
-}, {
-  name: 'Chile',
-  code: 'CL'
-}, {
-  name: 'China',
-  code: 'CN'
-}, {
-  name: 'Christmas Island',
-  code: 'CX'
-}, {
-  name: 'Cocos (Keeling) Islands',
-  code: 'CC'
-}, {
-  name: 'Colombia',
-  code: 'CO'
-}, {
-  name: 'Comoros',
-  code: 'KM'
-}, {
-  name: 'Congo',
-  code: 'CG'
-}, {
-  name: 'Congo, The Democratic Republic of the',
-  code: 'CD'
-}, {
-  name: 'Cook Islands',
-  code: 'CK'
-}, {
-  name: 'Costa Rica',
-  code: 'CR'
-}, {
-  name: 'Cote D\'Ivoire',
-  code: 'CI'
-}, {
-  name: 'Croatia',
-  code: 'HR'
-}, {
-  name: 'Cuba',
-  code: 'CU'
-}, {
-  name: 'Cyprus',
-  code: 'CY'
-}, {
-  name: 'Czech Republic',
-  code: 'CZ'
-}, {
-  name: 'Denmark',
-  code: 'DK'
-}, {
-  name: 'Djibouti',
-  code: 'DJ'
-}, {
-  name: 'Dominica',
-  code: 'DM'
-}, {
-  name: 'Dominican Republic',
-  code: 'DO'
-}, {
-  name: 'Ecuador',
-  code: 'EC'
-}, {
-  name: 'Egypt',
-  code: 'EG'
-}, {
-  name: 'El Salvador',
-  code: 'SV'
-}, {
-  name: 'Equatorial Guinea',
-  code: 'GQ'
-}, {
-  name: 'Eritrea',
-  code: 'ER'
-}, {
-  name: 'Estonia',
-  code: 'EE'
-}, {
-  name: 'Ethiopia',
-  code: 'ET'
-}, {
-  name: 'Falkland Islands (Malvinas)',
-  code: 'FK'
-}, {
-  name: 'Faroe Islands',
-  code: 'FO'
-}, {
-  name: 'Fiji',
-  code: 'FJ'
-}, {
-  name: 'Finland',
-  code: 'FI'
-}, {
-  name: 'France',
-  code: 'FR'
-}, {
-  name: 'French Guiana',
-  code: 'GF'
-}, {
-  name: 'French Polynesia',
-  code: 'PF'
-}, {
-  name: 'French Southern Territories',
-  code: 'TF'
-}, {
-  name: 'Gabon',
-  code: 'GA'
-}, {
-  name: 'Gambia',
-  code: 'GM'
-}, {
-  name: 'Georgia',
-  code: 'GE'
-}, {
-  name: 'Germany',
-  code: 'DE'
-}, {
-  name: 'Ghana',
-  code: 'GH'
-}, {
-  name: 'Gibraltar',
-  code: 'GI'
-}, {
-  name: 'Greece',
-  code: 'GR'
-}, {
-  name: 'Greenland',
-  code: 'GL'
-}, {
-  name: 'Grenada',
-  code: 'GD'
-}, {
-  name: 'Guadeloupe',
-  code: 'GP'
-}, {
-  name: 'Guam',
-  code: 'GU'
-}, {
-  name: 'Guatemala',
-  code: 'GT'
-}, {
-  name: 'Guernsey',
-  code: 'GG'
-}, {
-  name: 'Guinea',
-  code: 'GN'
-}, {
-  name: 'Guinea-Bissau',
-  code: 'GW'
-}, {
-  name: 'Guyana',
-  code: 'GY'
-}, {
-  name: 'Haiti',
-  code: 'HT'
-}, {
-  name: 'Heard Island and Mcdonald Islands',
-  code: 'HM'
-}, {
-  name: 'Holy See (Vatican City State)',
-  code: 'VA'
-}, {
-  name: 'Honduras',
-  code: 'HN'
-}, {
-  name: 'Hong Kong',
-  code: 'HK'
-}, {
-  name: 'Hungary',
-  code: 'HU'
-}, {
-  name: 'Iceland',
-  code: 'IS'
-}, {
-  name: 'India',
-  code: 'IN'
-}, {
-  name: 'Indonesia',
-  code: 'ID'
-}, {
-  name: 'Iran, Islamic Republic Of',
-  code: 'IR'
-}, {
-  name: 'Iraq',
-  code: 'IQ'
-}, {
-  name: 'Ireland',
-  code: 'IE'
-}, {
-  name: 'Isle of Man',
-  code: 'IM'
-}, {
-  name: 'Israel',
-  code: 'IL'
-}, {
-  name: 'Italy',
-  code: 'IT'
-}, {
-  name: 'Jamaica',
-  code: 'JM'
-}, {
-  name: 'Japan',
-  code: 'JP'
-}, {
-  name: 'Jersey',
-  code: 'JE'
-}, {
-  name: 'Jordan',
-  code: 'JO'
-}, {
-  name: 'Kazakhstan',
-  code: 'KZ'
-}, {
-  name: 'Kenya',
-  code: 'KE'
-}, {
-  name: 'Kiribati',
-  code: 'KI'
-}, {
-  name: 'Korea, Democratic People\'S Republic of',
-  code: 'KP'
-}, {
-  name: 'Korea, Republic of',
-  code: 'KR'
-}, {
-  name: 'Kuwait',
-  code: 'KW'
-}, {
-  name: 'Kyrgyzstan',
-  code: 'KG'
-}, {
-  name: 'Lao People\'S Democratic Republic',
-  code: 'LA'
-}, {
-  name: 'Latvia',
-  code: 'LV'
-}, {
-  name: 'Lebanon',
-  code: 'LB'
-}, {
-  name: 'Lesotho',
-  code: 'LS'
-}, {
-  name: 'Liberia',
-  code: 'LR'
-}, {
-  name: 'Libyan Arab Jamahiriya',
-  code: 'LY'
-}, {
-  name: 'Liechtenstein',
-  code: 'LI'
-}, {
-  name: 'Lithuania',
-  code: 'LT'
-}, {
-  name: 'Luxembourg',
-  code: 'LU'
-}, {
-  name: 'Macao',
-  code: 'MO'
-}, {
-  name: 'Macedonia, The Former Yugoslav Republic of',
-  code: 'MK'
-}, {
-  name: 'Madagascar',
-  code: 'MG'
-}, {
-  name: 'Malawi',
-  code: 'MW'
-}, {
-  name: 'Malaysia',
-  code: 'MY'
-}, {
-  name: 'Maldives',
-  code: 'MV'
-}, {
-  name: 'Mali',
-  code: 'ML'
-}, {
-  name: 'Malta',
-  code: 'MT'
-}, {
-  name: 'Marshall Islands',
-  code: 'MH'
-}, {
-  name: 'Martinique',
-  code: 'MQ'
-}, {
-  name: 'Mauritania',
-  code: 'MR'
-}, {
-  name: 'Mauritius',
-  code: 'MU'
-}, {
-  name: 'Mayotte',
-  code: 'YT'
-}, {
-  name: 'Mexico',
-  code: 'MX'
-}, {
-  name: 'Micronesia, Federated States of',
-  code: 'FM'
-}, {
-  name: 'Moldova, Republic of',
-  code: 'MD'
-}, {
-  name: 'Monaco',
-  code: 'MC'
-}, {
-  name: 'Mongolia',
-  code: 'MN'
-}, {
-  name: 'Montserrat',
-  code: 'MS'
-}, {
-  name: 'Morocco',
-  code: 'MA'
-}, {
-  name: 'Mozambique',
-  code: 'MZ'
-}, {
-  name: 'Myanmar',
-  code: 'MM'
-}, {
-  name: 'Namibia',
-  code: 'NA'
-}, {
-  name: 'Nauru',
-  code: 'NR'
-}, {
-  name: 'Nepal',
-  code: 'NP'
-}, {
-  name: 'Netherlands',
-  code: 'NL'
-}, {
-  name: 'Netherlands Antilles',
-  code: 'AN'
-}, {
-  name: 'New Caledonia',
-  code: 'NC'
-}, {
-  name: 'New Zealand',
-  code: 'NZ'
-}, {
-  name: 'Nicaragua',
-  code: 'NI'
-}, {
-  name: 'Niger',
-  code: 'NE'
-}, {
-  name: 'Nigeria',
-  code: 'NG'
-}, {
-  name: 'Niue',
-  code: 'NU'
-}, {
-  name: 'Norfolk Island',
-  code: 'NF'
-}, {
-  name: 'Northern Mariana Islands',
-  code: 'MP'
-}, {
-  name: 'Norway',
-  code: 'NO'
-}, {
-  name: 'Oman',
-  code: 'OM'
-}, {
-  name: 'Pakistan',
-  code: 'PK'
-}, {
-  name: 'Palau',
-  code: 'PW'
-}, {
-  name: 'Palestinian Territory, Occupied',
-  code: 'PS'
-}, {
-  name: 'Panama',
-  code: 'PA'
-}, {
-  name: 'Papua New Guinea',
-  code: 'PG'
-}, {
-  name: 'Paraguay',
-  code: 'PY'
-}, {
-  name: 'Peru',
-  code: 'PE'
-}, {
-  name: 'Philippines',
-  code: 'PH'
-}, {
-  name: 'Pitcairn',
-  code: 'PN'
-}, {
-  name: 'Poland',
-  code: 'PL'
-}, {
-  name: 'Portugal',
-  code: 'PT'
-}, {
-  name: 'Puerto Rico',
-  code: 'PR'
-}, {
-  name: 'Qatar',
-  code: 'QA'
-}, {
-  name: 'Reunion',
-  code: 'RE'
-}, {
-  name: 'Romania',
-  code: 'RO'
-}, {
-  name: 'Russian Federation',
-  code: 'RU'
-}, {
-  name: 'RWANDA',
-  code: 'RW'
-}, {
-  name: 'Saint Helena',
-  code: 'SH'
-}, {
-  name: 'Saint Kitts and Nevis',
-  code: 'KN'
-}, {
-  name: 'Saint Lucia',
-  code: 'LC'
-}, {
-  name: 'Saint Pierre and Miquelon',
-  code: 'PM'
-}, {
-  name: 'Saint Vincent and the Grenadines',
-  code: 'VC'
-}, {
-  name: 'Samoa',
-  code: 'WS'
-}, {
-  name: 'San Marino',
-  code: 'SM'
-}, {
-  name: 'Sao Tome and Principe',
-  code: 'ST'
-}, {
-  name: 'Saudi Arabia',
-  code: 'SA'
-}, {
-  name: 'Senegal',
-  code: 'SN'
-}, {
-  name: 'Serbia and Montenegro',
-  code: 'CS'
-}, {
-  name: 'Seychelles',
-  code: 'SC'
-}, {
-  name: 'Sierra Leone',
-  code: 'SL'
-}, {
-  name: 'Singapore',
-  code: 'SG'
-}, {
-  name: 'Slovakia',
-  code: 'SK'
-}, {
-  name: 'Slovenia',
-  code: 'SI'
-}, {
-  name: 'Solomon Islands',
-  code: 'SB'
-}, {
-  name: 'Somalia',
-  code: 'SO'
-}, {
-  name: 'South Africa',
-  code: 'ZA'
-}, {
-  name: 'South Georgia and the South Sandwich Islands',
-  code: 'GS'
-}, {
-  name: 'Spain',
-  code: 'ES'
-}, {
-  name: 'Sri Lanka',
-  code: 'LK'
-}, {
-  name: 'Sudan',
-  code: 'SD'
-}, {
-  name: 'Suriname',
-  code: 'SR'
-}, {
-  name: 'Svalbard and Jan Mayen',
-  code: 'SJ'
-}, {
-  name: 'Swaziland',
-  code: 'SZ'
-}, {
-  name: 'Sweden',
-  code: 'SE'
-}, {
-  name: 'Switzerland',
-  code: 'CH'
-}, {
-  name: 'Syrian Arab Republic',
-  code: 'SY'
-}, {
-  name: 'Taiwan, Province of China',
-  code: 'TW'
-}, {
-  name: 'Tajikistan',
-  code: 'TJ'
-}, {
-  name: 'Tanzania, United Republic of',
-  code: 'TZ'
-}, {
-  name: 'Thailand',
-  code: 'TH'
-}, {
-  name: 'Timor-Leste',
-  code: 'TL'
-}, {
-  name: 'Togo',
-  code: 'TG'
-}, {
-  name: 'Tokelau',
-  code: 'TK'
-}, {
-  name: 'Tonga',
-  code: 'TO'
-}, {
-  name: 'Trinidad and Tobago',
-  code: 'TT'
-}, {
-  name: 'Tunisia',
-  code: 'TN'
-}, {
-  name: 'Turkey',
-  code: 'TR'
-}, {
-  name: 'Turkmenistan',
-  code: 'TM'
-}, {
-  name: 'Turks and Caicos Islands',
-  code: 'TC'
-}, {
-  name: 'Tuvalu',
-  code: 'TV'
-}, {
-  name: 'Uganda',
-  code: 'UG'
-}, {
-  name: 'Ukraine',
-  code: 'UA'
-}, {
-  name: 'United Arab Emirates',
-  code: 'AE'
-}, {
-  name: 'United Kingdom',
-  code: 'GB'
-}, {
-  name: 'United States',
-  code: 'US'
-}, {
-  name: 'United States Minor Outlying Islands',
-  code: 'UM'
-}, {
-  name: 'Uruguay',
-  code: 'UY'
-}, {
-  name: 'Uzbekistan',
-  code: 'UZ'
-}, {
-  name: 'Vanuatu',
-  code: 'VU'
-}, {
-  name: 'Venezuela',
-  code: 'VE'
-}, {
-  name: 'Viet Nam',
-  code: 'VN'
-}, {
-  name: 'Virgin Islands, British',
-  code: 'VG'
-}, {
-  name: 'Virgin Islands, U.S.',
-  code: 'VI'
-}, {
-  name: 'Wallis and Futuna',
-  code: 'WF'
-}, {
-  name: 'Western Sahara',
-  code: 'EH'
-}, {
-  name: 'Yemen',
-  code: 'YE'
-}, {
-  name: 'Zambia',
-  code: 'ZM'
-}, {
-  name: 'Zimbabwe',
-  code: 'ZW'
-}]);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'General',
+  data: function data() {
+    return {
+      general: {
+        app_name: this.$page.auth.settings.app_name,
+        app_email: this.$page.auth.settings.app_email,
+        app_url: this.$page.auth.settings.app_url,
+        color_scheme: this.$page.auth.settings.color_scheme,
+        disable_client_profile_modification: this.$page.auth.settings.disable_client_profile_modification == 1 ? true : false,
+        disable_client_registration: this.$page.auth.settings.disable_client_registration == 1 ? true : false,
+        recieve_client_emails: this.$page.auth.settings.recieve_client_emails == 1 ? true : false,
+        naira_charge: this.$page.auth.settings.naira_charge || 0,
+        dollar_charge: this.$page.auth.settings.dollar_charge || 0
+      }
+    };
+  },
+  methods: {
+    submitGeneralSetting: function submitGeneralSetting() {
+      this.$inertia.put(this.$route.relativePath('settings.update'), this.general);
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Settings/General.vue?vue&type=template&id=75d58265&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Settings/General.vue?vue&type=template&id=75d58265& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "pb-8 md:w-7/12 mt-8 reveal-left",
+      staticStyle: { "--delay": "0.1s" },
+    },
+    [
+      _c("form", {
+        attrs: { id: "general_settings_form" },
+        on: {
+          submit: function ($event) {
+            $event.preventDefault()
+            return _vm.submitGeneralSetting($event)
+          },
+        },
+      }),
+      _vm._v(" "),
+      _c("h2", { staticClass: "text-lg font-bold mb-8" }, [
+        _vm._v("\n        General Settings\n    "),
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mb-6 reveal-up", staticStyle: { "--delay": "0.1s" } },
+        [
+          _c("text-input", {
+            attrs: {
+              error: _vm.$page.errors.app_name || "",
+              form: "general_settings_form",
+              label: "Application Name",
+            },
+            model: {
+              value: _vm.general.app_name,
+              callback: function ($$v) {
+                _vm.$set(_vm.general, "app_name", $$v)
+              },
+              expression: "general.app_name",
+            },
+          }),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mb-6 reveal-up", staticStyle: { "--delay": "0.3s" } },
+        [
+          _c("text-input", {
+            attrs: {
+              error: _vm.$page.errors.app_email || "",
+              form: "general_settings_form",
+              label: "Application Email",
+            },
+            model: {
+              value: _vm.general.app_email,
+              callback: function ($$v) {
+                _vm.$set(_vm.general, "app_email", $$v)
+              },
+              expression: "general.app_email",
+            },
+          }),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mb-6 reveal-up", staticStyle: { "--delay": "0.5s" } },
+        [
+          _c("text-input", {
+            attrs: {
+              error: _vm.$page.errors.app_url || "",
+              form: "general_settings_form",
+              label: "Application URL",
+            },
+            model: {
+              value: _vm.general.app_url,
+              callback: function ($$v) {
+                _vm.$set(_vm.general, "app_url", $$v)
+              },
+              expression: "general.app_url",
+            },
+          }),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mb-6 reveal-up", staticStyle: { "--delay": "0.5s" } },
+        [
+          _c("text-input", {
+            attrs: {
+              type: "number",
+              error: _vm.$page.errors.naira_charge || "",
+              form: "general_settings_form",
+              label: "Payment Fee (Naira)",
+            },
+            model: {
+              value: _vm.general.naira_charge,
+              callback: function ($$v) {
+                _vm.$set(_vm.general, "naira_charge", $$v)
+              },
+              expression: "general.naira_charge",
+            },
+          }),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mb-6 reveal-up", staticStyle: { "--delay": "0.5s" } },
+        [
+          _c("text-input", {
+            attrs: {
+              type: "number",
+              error: _vm.$page.errors.dollar_charge || "",
+              form: "general_settings_form",
+              label: "Payment Fee (Dollars)",
+            },
+            model: {
+              value: _vm.general.dollar_charge,
+              callback: function ($$v) {
+                _vm.$set(_vm.general, "dollar_charge", $$v)
+              },
+              expression: "general.dollar_charge",
+            },
+          }),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mb-6 reveal-up", staticStyle: { "--delay": "1s" } },
+        [
+          _c("switch-input", {
+            attrs: {
+              error: _vm.$page.errors.disable_client_profile_modification || "",
+              label: "Disable Client Profile Modification",
+            },
+            model: {
+              value: _vm.general.disable_client_profile_modification,
+              callback: function ($$v) {
+                _vm.$set(
+                  _vm.general,
+                  "disable_client_profile_modification",
+                  $$v
+                )
+              },
+              expression: "general.disable_client_profile_modification",
+            },
+          }),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mb-6 reveal-up", staticStyle: { "--delay": "1.3s" } },
+        [
+          _c("switch-input", {
+            attrs: {
+              error: _vm.$page.errors.disable_client_registration || "",
+              label: "Disable Client Modification",
+            },
+            model: {
+              value: _vm.general.disable_client_registration,
+              callback: function ($$v) {
+                _vm.$set(_vm.general, "disable_client_registration", $$v)
+              },
+              expression: "general.disable_client_registration",
+            },
+          }),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mb-6 reveal-up", staticStyle: { "--delay": "1.5s" } },
+        [
+          _c("switch-input", {
+            attrs: {
+              error: _vm.$page.errors.recieve_client_emails || "",
+              label: "Recieve Client Emails",
+            },
+            model: {
+              value: _vm.general.recieve_client_emails,
+              callback: function ($$v) {
+                _vm.$set(_vm.general, "recieve_client_emails", $$v)
+              },
+              expression: "general.recieve_client_emails",
+            },
+          }),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "flex justify-end reveal-up",
+          staticStyle: { "--delay": "1.7s" },
+        },
+        [
+          _c(
+            "primary-btn",
+            {
+              attrs: {
+                form: "general_settings_form",
+                width: "w-full md:w-auto",
+                type: "submit",
+              },
+            },
+            [_vm._v("Save Changes")]
+          ),
+        ],
+        1
+      ),
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./resources/js/pages/Settings/General.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/pages/Settings/General.vue ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _General_vue_vue_type_template_id_75d58265___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./General.vue?vue&type=template&id=75d58265& */ "./resources/js/pages/Settings/General.vue?vue&type=template&id=75d58265&");
+/* harmony import */ var _General_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./General.vue?vue&type=script&lang=js& */ "./resources/js/pages/Settings/General.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _General_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _General_vue_vue_type_template_id_75d58265___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _General_vue_vue_type_template_id_75d58265___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/pages/Settings/General.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/pages/Settings/General.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/pages/Settings/General.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_General_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./General.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Settings/General.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_General_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/pages/Settings/General.vue?vue&type=template&id=75d58265&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/pages/Settings/General.vue?vue&type=template&id=75d58265& ***!
+  \********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_General_vue_vue_type_template_id_75d58265___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./General.vue?vue&type=template&id=75d58265& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Settings/General.vue?vue&type=template&id=75d58265&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_General_vue_vue_type_template_id_75d58265___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_General_vue_vue_type_template_id_75d58265___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ })
 

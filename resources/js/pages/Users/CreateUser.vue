@@ -86,14 +86,30 @@
             </div>
             <div class="mb-2" v-if="roles === 'client'">
                 <select-input
-                    :value="competition.year"
-                    v-model="competition.year"
+                    :value="competition.competition_id"
+                    v-model="competition.competition_id"
                     form="create-user"
                     label="Competition year"
                     :error="$page.errors.competition_id || ''"
                 >
-                    <option value=""></option>
+                    <option value="">Select year</option>
+                    <option
+                        v-for="(year, index) in $page.competitions"
+                        :key="index"
+                        :value="year.id"
+                    >
+                        {{ year.year }}
+                    </option>
                 </select-input>
+            </div>
+            <div class="mb-2" v-if="roles === 'client'">
+                <text-input
+                    type="text"
+                    :error="$page.errors.youtube_link || ''"
+                    v-model="biodata.youtube_link"
+                    form="create-user"
+                    label="Link to Youtube profile video"
+                />
             </div>
         </div>
 
@@ -150,80 +166,90 @@
             />
         </div>
 
-        <div
-            v-if="roles === 'admin'"
-            class="mb-10 reveal-left"
-            style="--delay: 1.1s"
-        >
+        <div v-if="roles === 'admin'" class="mb-10 reveal-left">
             <h4
                 class="text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2"
             >
                 Permissions
             </h4>
             <div class="mb-4">
-                <checkbox v-model="permissions.subjects" layout="widthFull">
-                    <p class="ml-2 text-sm font-bold">Subjects</p>
+                <checkbox
+                    v-model="permissions.modify_tickets"
+                    layout="widthFull"
+                >
+                    <p class="ml-2 text-sm font-bold">Tickets</p>
                     <p class="ml-2 text-xs">
-                        Add, view, delete and update subjects
+                        Create, delete and update tickets
                     </p>
                 </checkbox>
-                <p class="text-xs text-red-500" v-if="$page.errors.subjects">
-                    {{ $page.errors.subjects }}
+                <p
+                    class="text-xs text-red-500"
+                    v-if="$page.errors.modify_tickets"
+                >
+                    {{ $page.errors.modify_tickets }}
                 </p>
             </div>
             <div class="mb-4">
-                <checkbox v-model="permissions.topics" layout="widthFull">
-                    <p class="ml-2 text-sm font-bold">Topics</p>
-                    <p class="ml-2 text-xs">
-                        Add, view, delete and update topics
-                    </p>
+                <checkbox
+                    v-model="permissions.modify_transactions"
+                    layout="widthFull"
+                >
+                    <p class="ml-2 text-sm font-bold">Transaction</p>
+                    <p class="ml-2 text-xs">View transactions</p>
                 </checkbox>
-                <p class="text-xs text-red-500" v-if="$page.errors.topics">
-                    {{ $page.errors.topics }}
+                <p
+                    class="text-xs text-red-500"
+                    v-if="$page.errors.modify_transactions"
+                >
+                    {{ $page.errors.modify_transactions }}
                 </p>
             </div>
             <div class="mb-4">
-                <checkbox v-model="permissions.questions" layout="widthFull">
-                    <p class="ml-2 text-sm font-bold">Questions</p>
+                <checkbox
+                    v-model="permissions.modify_competitions"
+                    layout="widthFull"
+                >
+                    <p class="ml-2 text-sm font-bold">Competition</p>
                     <p class="ml-2 text-xs">
-                        Add, view, delete and update questions
+                        Add, view, delete and update competitions
                     </p>
                 </checkbox>
-                <p class="text-xs text-red-500" v-if="$page.errors.questions">
-                    {{ $page.errors.questions }}
+                <p
+                    class="text-xs text-red-500"
+                    v-if="$page.errors.modify_competitions"
+                >
+                    {{ $page.errors.modify_competitions }}
                 </p>
             </div>
             <div class="mb-4">
-                <checkbox v-model="permissions.collections" layout="widthFull">
-                    <p class="ml-2 text-sm font-bold">Collections</p>
-                    <p class="ml-2 text-xs">
-                        Add, view, delete and update collections
-                    </p>
-                </checkbox>
-                <p class="text-xs text-red-500" v-if="$page.errors.collections">
-                    {{ $page.errors.collections }}
-                </p>
-            </div>
-            <div class="mb-4">
-                <checkbox v-model="permissions.users" layout="widthFull">
+                <checkbox v-model="permissions.modify_users" layout="widthFull">
                     <p class="ml-2 text-sm font-bold">Users</p>
                     <p class="ml-2 text-xs">
                         Add, view, delete and update users
                     </p>
                 </checkbox>
-                <p class="text-xs text-red-500" v-if="$page.errors.users">
-                    {{ $page.errors.users }}
+                <p
+                    class="text-xs text-red-500"
+                    v-if="$page.errors.modify_users"
+                >
+                    {{ $page.errors.modify_users }}
                 </p>
             </div>
             <div class="mb-4">
-                <checkbox v-model="permissions.settings" layout="widthFull">
+                <checkbox
+                    v-model="permissions.modify_settings"
+                    layout="widthFull"
+                >
                     <p class="ml-2 text-sm font-bold">Settings</p>
                     <p class="ml-2 text-xs">
                         Add, view, delete and update settings
                     </p>
                 </checkbox>
-                <p class="text-xs text-red-500" v-if="$page.errors.settings">
-                    {{ $page.errors.settings }}
+                <p
+                    class="text-xs text-red-500"
+                    v-if="$page.errors.modify_settings"
+                >
+                    {{ $page.errors.modify_settings }}
                 </p>
             </div>
         </div>
@@ -266,6 +292,7 @@ export default {
                 email: "",
                 password: "",
                 password_confirmation: "",
+                youtube_link: "",
             },
             social: {
                 facebook_url: "",
@@ -274,25 +301,22 @@ export default {
             },
             avatar: "",
             competition: {
-                year: 1997,
+                competition_id: 1,
                 position: 0,
             },
             permissions: {
-                subjects: true,
-                topics: true,
-                questions: true,
-                collections: true,
-                users: false,
-                settings: false,
-                profile: false,
+                modify_tickets: true,
+                modify_transactions: true,
+                modify_competitions: true,
+                modify_users: true,
+                modify_settings: false,
             },
         };
     },
-    mounted() {
-        this.selectRole(this.role);
-    },
+    mounted() {},
     methods: {
         selectRole(role) {
+            console.log(role);
             this.roles = role;
             this.requestRoute =
                 role === "admin"
@@ -304,13 +328,11 @@ export default {
         },
         resetValues() {
             this.permissions = {
-                subjects: true,
-                topics: true,
-                questions: true,
-                collections: true,
-                users: false,
-                settings: false,
-                profile: false,
+                modify_tickets: true,
+                modify_transactions: true,
+                modify_competitions: true,
+                modify_users: true,
+                modify_settings: false,
             };
             this.social = {
                 facebook_url: "",
@@ -322,10 +344,14 @@ export default {
         },
         createUser() {
             this.loading = true;
-            console.log(this.permissions);
             const form = new FormData();
             form.append("avatar", this.avatar);
             form.append("roles", this.roles);
+            if (this.roles === "client") {
+                for (let key of Object.entries(this.competition)) {
+                    form.append(key[0], this.competition[key[0]]);
+                }
+            }
             for (let key of Object.entries(this.biodata)) {
                 form.append(key[0], this.biodata[key[0]]);
             }

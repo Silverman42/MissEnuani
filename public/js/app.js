@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"user_page":"user_page","layout_comps":"layout_comps","settings_page~user_list_comps":"settings_page~user_list_comps","settings_page":"settings_page","user_list_comps":"user_list_comps","profile_comps":"profile_comps"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"user_page":"user_page","layout_comps":"layout_comps","settings_page~user_list_comps":"settings_page~user_list_comps","user_list_comps":"user_list_comps","profile_comps":"profile_comps","settings_page":"settings_page"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -20190,274 +20190,322 @@ var map = {
 	"./Admin/Dashboard": [
 		"./resources/js/pages/Admin/Dashboard.vue",
 		0,
-		19
+		21
 	],
 	"./Admin/Dashboard.vue": [
 		"./resources/js/pages/Admin/Dashboard.vue",
 		0,
-		19
+		21
 	],
 	"./Client/Dashboard": [
 		"./resources/js/pages/Client/Dashboard.vue",
+		3,
 		2,
-		1,
-		12
+		14
 	],
 	"./Client/Dashboard.vue": [
 		"./resources/js/pages/Client/Dashboard.vue",
+		3,
 		2,
-		1,
-		12
+		14
 	],
 	"./Client/Invoice": [
 		"./resources/js/pages/Client/Invoice.vue",
-		1,
-		13
+		2,
+		15
 	],
 	"./Client/Invoice.vue": [
 		"./resources/js/pages/Client/Invoice.vue",
-		1,
-		13
+		2,
+		15
 	],
 	"./Client/InvoiceComp": [
 		"./resources/js/pages/Client/InvoiceComp.vue",
-		20
+		22
 	],
 	"./Client/InvoiceComp.vue": [
 		"./resources/js/pages/Client/InvoiceComp.vue",
-		20
+		22
 	],
 	"./Client/Profile": [
 		"./resources/js/pages/Client/Profile.vue",
-		1,
-		7
+		2,
+		9
 	],
 	"./Client/Profile.vue": [
 		"./resources/js/pages/Client/Profile.vue",
-		1,
-		7
+		2,
+		9
 	],
 	"./Dashboard": [
 		"./resources/js/pages/Dashboard.vue",
 		0,
-		21
+		23
 	],
 	"./Dashboard.vue": [
 		"./resources/js/pages/Dashboard.vue",
 		0,
-		21
+		23
 	],
 	"./Error": [
 		"./resources/js/pages/Error.vue",
-		22
+		24
 	],
 	"./Error.vue": [
 		"./resources/js/pages/Error.vue",
-		22
+		24
+	],
+	"./Landing/CompetitionList": [
+		"./resources/js/pages/Landing/CompetitionList.vue",
+		1,
+		25
+	],
+	"./Landing/CompetitionList.vue": [
+		"./resources/js/pages/Landing/CompetitionList.vue",
+		1,
+		25
+	],
+	"./Landing/CompetitionView": [
+		"./resources/js/pages/Landing/CompetitionView.vue",
+		1,
+		26
+	],
+	"./Landing/CompetitionView.vue": [
+		"./resources/js/pages/Landing/CompetitionView.vue",
+		1,
+		26
+	],
+	"./Landing/Index": [
+		"./resources/js/pages/Landing/Index.vue",
+		1,
+		27
+	],
+	"./Landing/Index.vue": [
+		"./resources/js/pages/Landing/Index.vue",
+		1,
+		27
+	],
+	"./Landing/SingleContestant": [
+		"./resources/js/pages/Landing/SingleContestant.vue",
+		1,
+		28
+	],
+	"./Landing/SingleContestant.vue": [
+		"./resources/js/pages/Landing/SingleContestant.vue",
+		1,
+		28
+	],
+	"./Landing/VoteSuccess": [
+		"./resources/js/pages/Landing/VoteSuccess.vue",
+		40
+	],
+	"./Landing/VoteSuccess.vue": [
+		"./resources/js/pages/Landing/VoteSuccess.vue",
+		40
 	],
 	"./Profile/Emergency": [
 		"./resources/js/pages/Profile/Emergency.vue",
-		23
+		29
 	],
 	"./Profile/Emergency.vue": [
 		"./resources/js/pages/Profile/Emergency.vue",
-		23
+		29
 	],
 	"./Profile/Identity": [
 		"./resources/js/pages/Profile/Identity.vue",
-		2,
-		4
+		3,
+		5
 	],
 	"./Profile/Identity.vue": [
 		"./resources/js/pages/Profile/Identity.vue",
-		2,
-		4
+		3,
+		5
 	],
 	"./Profile/Medicals": [
 		"./resources/js/pages/Profile/Medicals.vue",
-		5
+		6
 	],
 	"./Profile/Medicals.vue": [
 		"./resources/js/pages/Profile/Medicals.vue",
-		5
+		6
 	],
 	"./Profile/Persona": [
 		"./resources/js/pages/Profile/Persona.vue",
-		24
+		30
 	],
 	"./Profile/Persona.vue": [
 		"./resources/js/pages/Profile/Persona.vue",
-		24
+		30
 	],
 	"./Profile/Social": [
 		"./resources/js/pages/Profile/Social.vue",
-		25
+		31
 	],
 	"./Profile/Social.vue": [
 		"./resources/js/pages/Profile/Social.vue",
-		25
+		31
 	],
 	"./Profile/Tabs/Emergency": [
 		"./resources/js/pages/Profile/Tabs/Emergency.vue",
-		14
+		16
 	],
 	"./Profile/Tabs/Emergency.vue": [
 		"./resources/js/pages/Profile/Tabs/Emergency.vue",
-		14
+		16
 	],
 	"./Profile/Tabs/Identity": [
 		"./resources/js/pages/Profile/Tabs/Identity.vue",
-		15
+		17
 	],
 	"./Profile/Tabs/Identity.vue": [
 		"./resources/js/pages/Profile/Tabs/Identity.vue",
-		15
+		17
 	],
 	"./Profile/Tabs/Medicals": [
 		"./resources/js/pages/Profile/Tabs/Medicals.vue",
-		3
+		4
 	],
 	"./Profile/Tabs/Medicals.vue": [
 		"./resources/js/pages/Profile/Tabs/Medicals.vue",
-		3
+		4
 	],
 	"./Profile/Tabs/Mixins": [
 		"./resources/js/pages/Profile/Tabs/Mixins.js",
-		33
+		38
 	],
 	"./Profile/Tabs/Mixins.js": [
 		"./resources/js/pages/Profile/Tabs/Mixins.js",
-		33
+		38
 	],
 	"./Profile/Tabs/Persona": [
 		"./resources/js/pages/Profile/Tabs/Persona.vue",
-		16
+		18
 	],
 	"./Profile/Tabs/Persona.vue": [
 		"./resources/js/pages/Profile/Tabs/Persona.vue",
-		16
+		18
 	],
 	"./Profile/Tabs/Social": [
 		"./resources/js/pages/Profile/Tabs/Social.vue",
-		17
+		19
 	],
 	"./Profile/Tabs/Social.vue": [
 		"./resources/js/pages/Profile/Tabs/Social.vue",
-		17
+		19
 	],
 	"./Profile/Tabs/Travel": [
 		"./resources/js/pages/Profile/Tabs/Travel.vue",
-		18
+		20
 	],
 	"./Profile/Tabs/Travel.vue": [
 		"./resources/js/pages/Profile/Tabs/Travel.vue",
-		18
+		20
 	],
 	"./Profile/Travel": [
 		"./resources/js/pages/Profile/Travel.vue",
-		26
+		32
 	],
 	"./Profile/Travel.vue": [
 		"./resources/js/pages/Profile/Travel.vue",
-		26
+		32
 	],
 	"./Settings/FactoryReset": [
 		"./resources/js/pages/Settings/FactoryReset.vue",
-		27
+		33
 	],
 	"./Settings/FactoryReset.vue": [
 		"./resources/js/pages/Settings/FactoryReset.vue",
-		27
+		33
 	],
 	"./Settings/General": [
 		"./resources/js/pages/Settings/General.vue",
-		28
+		34
 	],
 	"./Settings/General.vue": [
 		"./resources/js/pages/Settings/General.vue",
-		28
+		34
 	],
 	"./Settings/UserInterface": [
 		"./resources/js/pages/Settings/UserInterface.vue",
-		29
+		35
 	],
 	"./Settings/UserInterface.vue": [
 		"./resources/js/pages/Settings/UserInterface.vue",
-		29
+		35
 	],
 	"./Settings/View": [
 		"./resources/js/pages/Settings/View.vue",
 		0,
-		30
+		36
 	],
 	"./Settings/View.vue": [
 		"./resources/js/pages/Settings/View.vue",
 		0,
-		30
+		36
 	],
 	"./Users/CreateUser": [
 		"./resources/js/pages/Users/CreateUser.vue",
-		31
+		7
 	],
 	"./Users/CreateUser.vue": [
 		"./resources/js/pages/Users/CreateUser.vue",
-		31
+		7
 	],
 	"./Users/Edit": [
 		"./resources/js/pages/Users/Edit.vue",
-		32
+		37
 	],
 	"./Users/Edit.vue": [
 		"./resources/js/pages/Users/Edit.vue",
-		32
+		37
 	],
 	"./Users/List": [
 		"./resources/js/pages/Users/List.vue",
 		0,
-		10
+		12
 	],
 	"./Users/List.vue": [
 		"./resources/js/pages/Users/List.vue",
 		0,
-		10
+		12
 	],
 	"./Users/RecycleBin": [
 		"./resources/js/pages/Users/RecycleBin.vue",
 		0,
-		11
+		13
 	],
 	"./Users/RecycleBin.vue": [
 		"./resources/js/pages/Users/RecycleBin.vue",
 		0,
-		11
+		13
 	],
 	"./Users/ShowAdminUsers": [
 		"./resources/js/pages/Users/ShowAdminUsers.vue",
 		0,
-		8
+		10
 	],
 	"./Users/ShowAdminUsers.vue": [
 		"./resources/js/pages/Users/ShowAdminUsers.vue",
 		0,
-		8
+		10
 	],
 	"./Users/ShowClientUsers": [
 		"./resources/js/pages/Users/ShowClientUsers.vue",
 		0,
-		9
+		11
 	],
 	"./Users/ShowClientUsers.vue": [
 		"./resources/js/pages/Users/ShowClientUsers.vue",
 		0,
-		9
+		11
 	],
 	"./Users/UserModify": [
 		"./resources/js/pages/Users/UserModify.vue",
-		6
+		8
 	],
 	"./Users/UserModify.vue": [
 		"./resources/js/pages/Users/UserModify.vue",
-		6
+		8
 	]
 };
 function webpackAsyncContext(req) {

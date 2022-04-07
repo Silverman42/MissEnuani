@@ -65,17 +65,19 @@ class RegisterController extends Controller
      * @return \App\Models\User
      */
     protected function create(array $data)
-    {   $user = new User;
+    {
+        $user = new User;
         $user->first_name = $data['first_name'];
         $user->last_name = $data['last_name'];
         $user->email = $data['email'];
         $user->password = Hash::make($data['password']);
         $user->competitions_id = settings()['current_competition_id'];
+        $user->is_admin = false;
         $user->save();
         return $user;
     }
 
-     /**
+    /**
      * The user has been registered.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -84,8 +86,6 @@ class RegisterController extends Controller
      */
     protected function registered(Request $request, $user)
     {
-        $user->assignRole('client');
         return redirect()->route('client.dashboard');
     }
-
 }

@@ -1,101 +1,14 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[8],{
 
-/***/ "./node_modules/@iconify/icons-feather/facebook.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/@iconify/icons-feather/facebook.js ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var data = {
-	"body": "<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z\"/></g>",
-	"width": 24,
-	"height": 24
-};
-exports.__esModule = true;
-exports.default = data;
-
-
-/***/ }),
-
-/***/ "./node_modules/@iconify/icons-feather/mail.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/@iconify/icons-feather/mail.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var data = {
-	"body": "<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"/><path d=\"M22 6l-10 7L2 6\"/></g>",
-	"width": 24,
-	"height": 24
-};
-exports.__esModule = true;
-exports.default = data;
-
-
-/***/ }),
-
-/***/ "./node_modules/@iconify/icons-feather/phone-call.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/@iconify/icons-feather/phone-call.js ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var data = {
-	"body": "<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2a19.79 19.79 0 0 1-8.63-3.07a19.5 19.5 0 0 1-6-6a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72a12.84 12.84 0 0 0 .7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45a12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"/></g>",
-	"width": 24,
-	"height": 24
-};
-exports.__esModule = true;
-exports.default = data;
-
-
-/***/ }),
-
-/***/ "./node_modules/@iconify/icons-feather/twitter.js":
-/*!********************************************************!*\
-  !*** ./node_modules/@iconify/icons-feather/twitter.js ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var data = {
-	"body": "<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M23 3a10.9 10.9 0 0 1-3.14 1.53a4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z\"/></g>",
-	"width": 24,
-	"height": 24
-};
-exports.__esModule = true;
-exports.default = data;
-
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Users/ShowAdminUsers.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Users/ShowAdminUsers.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Users/UserModify.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Users/UserModify.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Layout_Layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Layout/Layout */ "./resources/js/Layout/Layout.vue");
-/* harmony import */ var _iconify_icons_feather_twitter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @iconify/icons-feather/twitter */ "./node_modules/@iconify/icons-feather/twitter.js");
-/* harmony import */ var _iconify_icons_feather_twitter__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_iconify_icons_feather_twitter__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _iconify_icons_feather_facebook__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @iconify/icons-feather/facebook */ "./node_modules/@iconify/icons-feather/facebook.js");
-/* harmony import */ var _iconify_icons_feather_facebook__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_iconify_icons_feather_facebook__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _iconify_icons_feather_mail__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @iconify/icons-feather/mail */ "./node_modules/@iconify/icons-feather/mail.js");
-/* harmony import */ var _iconify_icons_feather_mail__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_iconify_icons_feather_mail__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _iconify_icons_feather_phone_call__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @iconify/icons-feather/phone-call */ "./node_modules/@iconify/icons-feather/phone-call.js");
-/* harmony import */ var _iconify_icons_feather_phone_call__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_iconify_icons_feather_phone_call__WEBPACK_IMPORTED_MODULE_4__);
-function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
 //
 //
 //
@@ -168,103 +81,199 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 //
 //
 //
-
-
-
-
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "ShowUsers",
-  layout: _Layout_Layout__WEBPACK_IMPORTED_MODULE_0__["default"],
+  name: 'UserModify',
+  watch: {
+    $page: {
+      handler: function handler() {
+        this.loading = false;
+
+        if (this.$page.auth.alert_type === 'success') {
+          this.resetValues();
+          this.$emit('completeRegistration');
+        }
+      },
+      deep: true
+    }
+  },
+  props: {
+    permissionSet: {
+      type: Object,
+      "default": function _default() {
+        return {};
+      }
+    },
+    biodataSet: {
+      type: Object,
+      "default": function _default() {
+        return {};
+      }
+    },
+    socialSet: {
+      type: Object,
+      "default": function _default() {
+        return {};
+      }
+    },
+    buttonTitle: {
+      type: String,
+      "default": 'Create Users'
+    },
+    actionURLPath: String,
+    canResetValues: {
+      type: Boolean,
+      "default": true
+    },
+    userRole: {
+      type: String,
+      "default": 'super-admin'
+    }
+  },
   data: function data() {
     return {
-      tabs: ['profile-update', 'user-presence'],
-      icons: {
-        twitter: _iconify_icons_feather_twitter__WEBPACK_IMPORTED_MODULE_1___default.a,
-        facebook: _iconify_icons_feather_facebook__WEBPACK_IMPORTED_MODULE_2___default.a,
-        mail: _iconify_icons_feather_mail__WEBPACK_IMPORTED_MODULE_3___default.a,
-        phone: _iconify_icons_feather_phone_call__WEBPACK_IMPORTED_MODULE_4___default.a
-      },
+      loading: false,
+      roles: this.userRole,
       biodata: {
-        first_name: this.$page.user.first_name || '',
-        last_name: this.$page.user.last_name || '',
-        email: this.$page.user.email
+        first_name: this.biodataSet.first_name || '',
+        last_name: this.biodataSet.last_name || '',
+        email: this.biodataSet.email || '',
+        password: '',
+        password_confirmation: ''
       },
       social: {
-        facebook_url: this.$page.user.facebook_url,
-        twitter_url: this.$page.user.twitter_url,
-        phone_number: this.$page.user.phone_number
+        facebook_url: this.socialSet.facebook_url || '',
+        twitter_url: this.socialSet.twitter_url || '',
+        phone_number: this.socialSet.phone_number || ''
       },
+      avatar: '',
       permissions: {
-        'modify-subjects': false,
-        'modify-topics': false,
-        'modify-questions': false,
-        'modify-collection': false,
-        'modify-users': false,
-        'modify-settings': false
-      },
-      userRole: 'admin'
+        subjects: this.permissionSet['modify-subjects'] || false,
+        topics: this.permissionSet['modify-topics'] || false,
+        questions: this.permissionSet['modify-questions'] || false,
+        collections: this.permissionSet['modify-collection'] || false,
+        users: this.permissionSet['modify-users'] || false,
+        settings: this.permissionSet['modify-settings'] || false,
+        profile: this.permissionSet['modify-profile'] || false
+      }
     };
   },
   methods: {
-    refreshState: function refreshState() {},
-    deactivateUser: function deactivateUser(userId) {
-      var result = confirm("Are you sure you want to deactivate the user ?");
-
-      if (result === true) {
-        this.$inertia.post(this.$route.relativePath('users.deactivate', userId));
+    selectRole: function selectRole(role) {
+      this.roles = role;
+    },
+    changeAvatar: function changeAvatar(file) {
+      this.avatar = file;
+    },
+    resetValues: function resetValues() {
+      if (this.canResetValues === true) {
+        this.permissions = {
+          subjects: true,
+          topics: true,
+          questions: true,
+          collections: true,
+          users: false,
+          settings: false,
+          profile: false
+        };
+        this.social = {
+          facebook_url: '',
+          twitter_url: '',
+          phone_number: ''
+        };
+        this.avatar = null;
+        this.roles = 'super-admin';
       }
     },
-    activateUser: function activateUser(userId) {
-      var result = confirm("Are you sure you want to activate the user ?");
+    modifyUser: function modifyUser() {
+      this.loading = true;
+      var form = new FormData();
+      form.append('avatar', this.avatar);
+      form.append('roles', this.roles);
 
-      if (result === true) {
-        this.$inertia.post(this.$route.relativePath('users.activate', userId));
+      for (var _i = 0, _Object$entries = Object.entries(this.biodata); _i < _Object$entries.length; _i++) {
+        var key = _Object$entries[_i];
+        form.append(key[0], this.biodata[key[0]]);
       }
-    },
-    removeUser: function removeUser(userId) {
-      var result = confirm("Are you sure you want to send this user to the recycle bin ?");
 
-      if (result === true) {
-        this.$inertia.post(this.$route.relativePath('users.remove', userId), {
-          'should_redirect': 1
-        });
+      for (var _i2 = 0, _Object$entries2 = Object.entries(this.social); _i2 < _Object$entries2.length; _i2++) {
+        var _key = _Object$entries2[_i2];
+        form.append(_key[0], this.social[_key[0]]);
       }
-    }
-  },
-  components: {
-    ProfileCard: function ProfileCard() {
-      return Promise.all(/*! import() | user_list_comps */[__webpack_require__.e("settings_page~user_list_comps"), __webpack_require__.e("user_list_comps")]).then(__webpack_require__.bind(null, /*! ../../components/ProfileCard2 */ "./resources/js/components/ProfileCard2.vue"));
-    },
-    UpdateUser: function UpdateUser() {
-      return Promise.all(/*! import() | user_page */[__webpack_require__.e(31), __webpack_require__.e(6), __webpack_require__.e("user_page")]).then(__webpack_require__.bind(null, /*! ./UserModify */ "./resources/js/pages/Users/UserModify.vue"));
-    }
-  },
-  mounted: function mounted() {
-    var permissions = this.$page.user.permissions;
 
-    var _iterator = _createForOfIteratorHelper(permissions),
-        _step;
-
-    try {
-      for (_iterator.s(); !(_step = _iterator.n()).done;) {
-        var permission = _step.value;
-        this.$set(this.permissions, permission.name, true);
+      for (var _i3 = 0, _Object$entries3 = Object.entries(this.permissions); _i3 < _Object$entries3.length; _i3++) {
+        var _key2 = _Object$entries3[_i3];
+        form.append(_key2[0], this.permissions[_key2[0]]);
       }
-    } catch (err) {
-      _iterator.e(err);
-    } finally {
-      _iterator.f();
+
+      this.$inertia.post(this.actionURLPath, form);
     }
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Users/ShowAdminUsers.vue?vue&type=template&id=11c09466&":
-/*!******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Users/ShowAdminUsers.vue?vue&type=template&id=11c09466& ***!
-  \******************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Users/UserModify.vue?vue&type=template&id=4430ca75&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Users/UserModify.vue?vue&type=template&id=4430ca75& ***!
+  \**************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -277,140 +286,180 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
+    _c("form", {
+      attrs: { id: "create-user" },
+      on: {
+        submit: function ($event) {
+          $event.preventDefault()
+          return _vm.modifyUser($event)
+        },
+      },
+    }),
+    _vm._v(" "),
     _c(
-      "section",
-      { staticClass: "mb-10" },
+      "div",
+      { staticClass: "mb-10 reveal-left", staticStyle: { "--delay": "0.3s" } },
       [
         _c(
-          "title-board",
+          "h4",
           {
-            attrs: {
-              boardTitle: "Show Users",
-              boardText: "View and edit user information",
-              hostName: _vm.$page.auth.settings.app_url,
-              boardImgLink: "img/board_img/user.svg",
-            },
+            staticClass:
+              "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2",
           },
+          [_vm._v("Biodata")]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "mb-2" },
           [
-            _c(
-              "breadcrumb",
-              [
-                _c(
-                  "inertia-link",
-                  {
-                    staticClass: "text-primary-100 hover:text-white",
-                    attrs: { href: _vm.$route.relativePath("users.view") },
-                  },
-                  [_vm._v("\n                    User")]
-                ),
-                _vm._v(" "),
-                _c("b-seperator"),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  { staticClass: "hover:text-white", attrs: { href: "#" } },
-                  [_vm._v("Show Users")]
-                ),
-              ],
-              1
-            ),
+            _c("text-input", {
+              attrs: {
+                form: "create-user",
+                error: _vm.$page.errors.first_name || "",
+                label: "First name",
+              },
+              model: {
+                value: _vm.biodata.first_name,
+                callback: function ($$v) {
+                  _vm.$set(_vm.biodata, "first_name", $$v)
+                },
+                expression: "biodata.first_name",
+              },
+            }),
           ],
           1
         ),
-      ],
-      1
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "mb-2" },
+          [
+            _c("text-input", {
+              attrs: {
+                form: "create-user",
+                error: _vm.$page.errors.last_name || "",
+                label: "Last name",
+              },
+              model: {
+                value: _vm.biodata.last_name,
+                callback: function ($$v) {
+                  _vm.$set(_vm.biodata, "last_name", $$v)
+                },
+                expression: "biodata.last_name",
+              },
+            }),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "mb-2" },
+          [
+            _c("text-input", {
+              attrs: {
+                form: "create-user",
+                error: _vm.$page.errors.email || "",
+                type: "email",
+                label: "Email",
+              },
+              model: {
+                value: _vm.biodata.email,
+                callback: function ($$v) {
+                  _vm.$set(_vm.biodata, "email", $$v)
+                },
+                expression: "biodata.email",
+              },
+            }),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "mb-2" },
+          [
+            _c("text-input", {
+              attrs: {
+                type: "password",
+                error: _vm.$page.errors.password || "",
+                form: "create-user",
+                label: "Password",
+              },
+              model: {
+                value: _vm.biodata.password,
+                callback: function ($$v) {
+                  _vm.$set(_vm.biodata, "password", $$v)
+                },
+                expression: "biodata.password",
+              },
+            }),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "mb-2" },
+          [
+            _c("text-input", {
+              attrs: {
+                type: "password",
+                form: "create-user",
+                label: "Confirm Password",
+              },
+              model: {
+                value: _vm.biodata.password_confirmation,
+                callback: function ($$v) {
+                  _vm.$set(_vm.biodata, "password_confirmation", $$v)
+                },
+                expression: "biodata.password_confirmation",
+              },
+            }),
+          ],
+          1
+        ),
+      ]
     ),
     _vm._v(" "),
     _c(
-      "section",
-      { staticClass: "flex flex-wrap md:flex-no-wrap justify-between" },
+      "div",
+      { staticClass: "mb-10 reveal-left", staticStyle: { "--delay": "0.5s" } },
       [
         _c(
+          "h4",
+          {
+            staticClass:
+              "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2",
+          },
+          [_vm._v("Social")]
+        ),
+        _vm._v(" "),
+        _c(
           "div",
-          { staticClass: "w-full mb-10 md:w-4/12 md:mr-10" },
+          { staticClass: "mb-2" },
           [
             _c(
-              "profile-card",
+              "text-input",
               {
                 attrs: {
-                  firstName: _vm.$page.user.first_name || "",
-                  lastName: _vm.$page.user.last_name || "",
-                  avatar: _vm.$page.user.avatar || "",
-                  active: _vm.$page.user.is_active == 1 ? true : false,
+                  error: _vm.$page.errors.facebook_url || "",
+                  form: "create-user",
+                  label: "Facebook URL",
+                },
+                model: {
+                  value: _vm.social.facebook_url,
+                  callback: function ($$v) {
+                    _vm.$set(_vm.social, "facebook_url", $$v)
+                  },
+                  expression: "social.facebook_url",
                 },
               },
               [
-                _c(
-                  "a",
-                  {
-                    staticClass: "mr-2 hover:text-primary-500",
-                    attrs: {
-                      href: _vm.$page.user.twitter || "#",
-                      title: "Twitter",
-                      target: "_blank",
-                      rel: "noopener noreferrer",
-                    },
-                  },
-                  [
-                    _c("iconify-icon", {
-                      attrs: { width: "15", icon: _vm.icons.twitter },
-                    }),
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "mr-2 hover:text-primary-500",
-                    attrs: {
-                      href: _vm.$page.user.facebook || "#",
-                      title: "Facebook",
-                      target: "_blank",
-                      rel: "noopener noreferrer",
-                    },
-                  },
-                  [
-                    _c("iconify-icon", {
-                      attrs: { width: "15", icon: _vm.icons.facebook },
-                    }),
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "mr-2 hover:text-primary-500",
-                    attrs: {
-                      href: "mailto:" + (_vm.$page.user.email || ""),
-                      title: "phone",
-                    },
-                  },
-                  [
-                    _c("iconify-icon", {
-                      attrs: { width: "15", icon: _vm.icons.mail },
-                    }),
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "hover:text-primary-500",
-                    attrs: {
-                      href: "tel:" + (_vm.$page.user.phone || ""),
-                      title: "Phone",
-                    },
-                  },
-                  [
-                    _c("iconify-icon", {
-                      attrs: { width: "15", icon: _vm.icons.phone },
-                    }),
-                  ],
-                  1
-                ),
+                _c("span", { staticClass: "italic text-gray-500 text-xs" }, [
+                  _vm._v("Optional"),
+                ]),
               ]
             ),
           ],
@@ -419,187 +468,478 @@ var render = function () {
         _vm._v(" "),
         _c(
           "div",
-          {
-            staticClass:
-              "w-full md:flex-grow px-2 py-8 md:p-12 rounded-md bg-white shadow-sm reveal-left",
-            staticStyle: { "--delay": "0.3s" },
-          },
+          { staticClass: "mb-2" },
           [
-            _c("tabs", {
-              attrs: { tabs: _vm.tabs, defaultActiveTab: "profile-update" },
-              scopedSlots: _vm._u([
-                {
-                  key: "tab-body-profile-update",
-                  fn: function () {
-                    return [
-                      _c(
-                        "section",
-                        { staticClass: " pt-8" },
-                        [
-                          _c("update-user", {
-                            attrs: {
-                              buttonTitle: "Update Profile",
-                              permissionSet: _vm.permissions,
-                              socialSet: _vm.social,
-                              biodataSet: _vm.biodata,
-                              userRole: _vm.userRole,
-                              canResetValues: false,
-                            },
-                            on: { completeRegistration: _vm.refreshState },
-                          }),
-                        ],
-                        1
-                      ),
-                    ]
-                  },
-                  proxy: true,
+            _c(
+              "text-input",
+              {
+                attrs: {
+                  error: _vm.$page.errors.twitter_url || "",
+                  form: "create-user",
+                  label: "Twitter URL",
                 },
-                {
-                  key: "tab-body-user-presence",
-                  fn: function () {
-                    return [
-                      _vm.$page.user.is_active == 1
-                        ? _c("section", { staticClass: " pt-8" }, [
-                            _c(
-                              "h3",
-                              { staticClass: "text-md font-extrabold" },
-                              [_vm._v("Deactivate User")]
-                            ),
-                            _vm._v(" "),
-                            _c("p", { staticClass: "text-sm" }, [
-                              _c("span", { staticClass: "capitalize" }, [
-                                _vm._v(_vm._s(_vm.$page.user.first_name)),
-                              ]),
-                              _vm._v(
-                                " will not be permitted to access any of the functionalities of this software after deactivation"
-                              ),
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              { staticClass: "mt-8 flex justify-end" },
-                              [
-                                _c(
-                                  "secondary-btn",
-                                  {
-                                    attrs: {
-                                      color: "red",
-                                      extraClass: "w-full md:w-auto",
-                                    },
-                                    on: {
-                                      click: function ($event) {
-                                        return _vm.deactivateUser(
-                                          _vm.$page.user.id
-                                        )
-                                      },
-                                    },
-                                  },
-                                  [_vm._v("Deactivate User")]
-                                ),
-                              ],
-                              1
-                            ),
-                          ])
-                        : _vm._e(),
-                      _vm._v(" "),
-                      _vm.$page.user.is_active == 0
-                        ? _c("section", { staticClass: " pt-8" }, [
-                            _c(
-                              "h3",
-                              { staticClass: "text-md font-extrabold" },
-                              [_vm._v("Activate User")]
-                            ),
-                            _vm._v(" "),
-                            _c("p", { staticClass: "text-sm" }, [
-                              _c("span", { staticClass: "capitalize" }, [
-                                _vm._v(_vm._s(_vm.$page.user.first_name)),
-                              ]),
-                              _vm._v(
-                                " will be allowed to access all of the software's permitted functionalities after activation"
-                              ),
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              { staticClass: "mt-8 flex justify-end" },
-                              [
-                                _c(
-                                  "secondary-btn",
-                                  {
-                                    attrs: {
-                                      color: "primary",
-                                      extraClass: "w-full md:w-auto",
-                                    },
-                                    on: {
-                                      click: function ($event) {
-                                        return _vm.activateUser(
-                                          _vm.$page.user.id
-                                        )
-                                      },
-                                    },
-                                  },
-                                  [_vm._v("Activate User")]
-                                ),
-                              ],
-                              1
-                            ),
-                          ])
-                        : _vm._e(),
-                      _vm._v(" "),
-                      _c("section", { staticClass: "pt-12" }, [
-                        _c("h3", { staticClass: "text-md font-extrabold" }, [
-                          _vm._v("Remove User"),
-                        ]),
-                        _vm._v(" "),
-                        _c("p", [
-                          _vm._v("All of "),
-                          _c("span", { staticClass: "capitalize" }, [
-                            _vm._v(_vm._s(_vm.$page.user.first_name)),
-                          ]),
-                          _vm._v(
-                            "'s data will be moved to recycle bin. In other words, "
-                          ),
-                          _c("span", { staticClass: "capitalize" }, [
-                            _vm._v(_vm._s(_vm.$page.user.first_name)),
-                          ]),
-                          _vm._v(
-                            " will not be allowed to access this application"
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "mt-8 flex justify-end" },
-                          [
-                            _c(
-                              "secondary-btn",
-                              {
-                                attrs: {
-                                  color: "red",
-                                  extraClass: "w-full md:w-auto",
-                                },
-                                on: {
-                                  click: function ($event) {
-                                    return _vm.removeUser(_vm.$page.user.id)
-                                  },
-                                },
-                              },
-                              [_vm._v("Remove User")]
-                            ),
-                          ],
-                          1
-                        ),
-                      ]),
-                    ]
+                model: {
+                  value: _vm.social.twitter_url,
+                  callback: function ($$v) {
+                    _vm.$set(_vm.social, "twitter_url", $$v)
                   },
-                  proxy: true,
+                  expression: "social.twitter_url",
                 },
-              ]),
-            }),
+              },
+              [
+                _c("span", { staticClass: "italic text-gray-500 text-xs" }, [
+                  _vm._v("Optional"),
+                ]),
+              ]
+            ),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "mb-2" },
+          [
+            _c(
+              "text-input",
+              {
+                attrs: {
+                  error: _vm.$page.errors.phone_number || "",
+                  type: "number",
+                  form: "create-user",
+                  label: "Phone Number",
+                },
+                model: {
+                  value: _vm.social.phone_number,
+                  callback: function ($$v) {
+                    _vm.$set(_vm.social, "phone_number", $$v)
+                  },
+                  expression: "social.phone_number",
+                },
+              },
+              [
+                _c("span", { staticClass: "italic text-gray-500 text-xs" }, [
+                  _vm._v("Optional"),
+                ]),
+              ]
+            ),
           ],
           1
         ),
       ]
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "mb-10 reveal-left", staticStyle: { "--delay": "0.7s" } },
+      [
+        _c(
+          "h4",
+          {
+            staticClass:
+              "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2",
+          },
+          [_vm._v("Avatar")]
+        ),
+        _vm._v(" "),
+        _c("file-input", {
+          attrs: {
+            form: "create-user",
+            error: _vm.$page.errors.avatar || "",
+            label:
+              "Image should have a size of 800kb max and should be among the following file type: JPG, PNG",
+          },
+          on: {
+            input: function ($event) {
+              return _vm.changeAvatar($event)
+            },
+          },
+        }),
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "mb-10 reveal-left", staticStyle: { "--delay": "0.9s" } },
+      [
+        _c(
+          "h4",
+          {
+            staticClass:
+              "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2",
+          },
+          [_vm._v("Roles")]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "flex items-center flex-wrap" },
+          [
+            _c("radio-input", {
+              attrs: {
+                value: "super-admin",
+                defaultValue: _vm.roles,
+                name: "roles",
+                title: "Super Admin",
+              },
+              on: {
+                input: function ($event) {
+                  return _vm.selectRole($event)
+                },
+              },
+            }),
+            _vm._v(" "),
+            _c("radio-input", {
+              attrs: {
+                value: "admin",
+                defaultValue: _vm.roles,
+                name: "roles",
+                title: "Admin",
+              },
+              on: {
+                input: function ($event) {
+                  return _vm.selectRole($event)
+                },
+              },
+            }),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _vm.$page.errors.roles
+          ? _c("p", { staticClass: "text-xs text-red-500" }, [
+              _vm._v(
+                "\n                " +
+                  _vm._s(_vm.$page.errors.roles) +
+                  "\n            "
+              ),
+            ])
+          : _vm._e(),
+      ]
+    ),
+    _vm._v(" "),
+    _vm.roles === "admin"
+      ? _c(
+          "div",
+          {
+            staticClass: "mb-10 reveal-left",
+            staticStyle: { "--delay": "1.1s" },
+          },
+          [
+            _c(
+              "h4",
+              {
+                staticClass:
+                  "text-sm font-bold mb-4 border border-primaryBg-300 rounded-md inline-block p-2",
+              },
+              [_vm._v("Permissions")]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "mb-4" },
+              [
+                _c(
+                  "checkbox",
+                  {
+                    attrs: { layout: "widthFull" },
+                    model: {
+                      value: _vm.permissions.subjects,
+                      callback: function ($$v) {
+                        _vm.$set(_vm.permissions, "subjects", $$v)
+                      },
+                      expression: "permissions.subjects",
+                    },
+                  },
+                  [
+                    _c("p", { staticClass: "ml-2 text-sm font-bold" }, [
+                      _vm._v("Subjects"),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "ml-2 text-xs" }, [
+                      _vm._v("Add, view, delete and update subjects"),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _vm.$page.errors.subjects
+                  ? _c("p", { staticClass: "text-xs text-red-500" }, [
+                      _vm._v(
+                        "\n                    " +
+                          _vm._s(_vm.$page.errors.subjects) +
+                          "\n                "
+                      ),
+                    ])
+                  : _vm._e(),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "mb-4" },
+              [
+                _c(
+                  "checkbox",
+                  {
+                    attrs: { layout: "widthFull" },
+                    model: {
+                      value: _vm.permissions.topics,
+                      callback: function ($$v) {
+                        _vm.$set(_vm.permissions, "topics", $$v)
+                      },
+                      expression: "permissions.topics",
+                    },
+                  },
+                  [
+                    _c("p", { staticClass: "ml-2 text-sm font-bold" }, [
+                      _vm._v("Topics"),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "ml-2 text-xs" }, [
+                      _vm._v("Add, view, delete and update topics"),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _vm.$page.errors.topics
+                  ? _c("p", { staticClass: "text-xs text-red-500" }, [
+                      _vm._v(
+                        "\n                    " +
+                          _vm._s(_vm.$page.errors.topics) +
+                          "\n                "
+                      ),
+                    ])
+                  : _vm._e(),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "mb-4" },
+              [
+                _c(
+                  "checkbox",
+                  {
+                    attrs: { layout: "widthFull" },
+                    model: {
+                      value: _vm.permissions.questions,
+                      callback: function ($$v) {
+                        _vm.$set(_vm.permissions, "questions", $$v)
+                      },
+                      expression: "permissions.questions",
+                    },
+                  },
+                  [
+                    _c("p", { staticClass: "ml-2 text-sm font-bold" }, [
+                      _vm._v("Questions"),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "ml-2 text-xs" }, [
+                      _vm._v("Add, view, delete and update questions"),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _vm.$page.errors.questions
+                  ? _c("p", { staticClass: "text-xs text-red-500" }, [
+                      _vm._v(
+                        "\n                    " +
+                          _vm._s(_vm.$page.errors.questions) +
+                          "\n                "
+                      ),
+                    ])
+                  : _vm._e(),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "mb-4" },
+              [
+                _c(
+                  "checkbox",
+                  {
+                    attrs: { layout: "widthFull" },
+                    model: {
+                      value: _vm.permissions.collections,
+                      callback: function ($$v) {
+                        _vm.$set(_vm.permissions, "collections", $$v)
+                      },
+                      expression: "permissions.collections",
+                    },
+                  },
+                  [
+                    _c("p", { staticClass: "ml-2 text-sm font-bold" }, [
+                      _vm._v("Collections"),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "ml-2 text-xs" }, [
+                      _vm._v("Add, view, delete and update collections"),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _vm.$page.errors.collections
+                  ? _c("p", { staticClass: "text-xs text-red-500" }, [
+                      _vm._v(
+                        "\n                    " +
+                          _vm._s(_vm.$page.errors.collections) +
+                          "\n                "
+                      ),
+                    ])
+                  : _vm._e(),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "mb-4" },
+              [
+                _c(
+                  "checkbox",
+                  {
+                    attrs: { layout: "widthFull" },
+                    model: {
+                      value: _vm.permissions.users,
+                      callback: function ($$v) {
+                        _vm.$set(_vm.permissions, "users", $$v)
+                      },
+                      expression: "permissions.users",
+                    },
+                  },
+                  [
+                    _c("p", { staticClass: "ml-2 text-sm font-bold" }, [
+                      _vm._v("Users"),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "ml-2 text-xs" }, [
+                      _vm._v("Add, view, delete and update users"),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _vm.$page.errors.users
+                  ? _c("p", { staticClass: "text-xs text-red-500" }, [
+                      _vm._v(
+                        "\n                    " +
+                          _vm._s(_vm.$page.errors.users) +
+                          "\n                "
+                      ),
+                    ])
+                  : _vm._e(),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "mb-4" },
+              [
+                _c(
+                  "checkbox",
+                  {
+                    attrs: { layout: "widthFull" },
+                    model: {
+                      value: _vm.permissions.settings,
+                      callback: function ($$v) {
+                        _vm.$set(_vm.permissions, "settings", $$v)
+                      },
+                      expression: "permissions.settings",
+                    },
+                  },
+                  [
+                    _c("p", { staticClass: "ml-2 text-sm font-bold" }, [
+                      _vm._v("Settings"),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "ml-2 text-xs" }, [
+                      _vm._v("Add, view, delete and update settings"),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _vm.$page.errors.settings
+                  ? _c("p", { staticClass: "text-xs text-red-500" }, [
+                      _vm._v(
+                        "\n                    " +
+                          _vm._s(_vm.$page.errors.settings) +
+                          "\n                "
+                      ),
+                    ])
+                  : _vm._e(),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "mb-4" },
+              [
+                _c(
+                  "checkbox",
+                  {
+                    attrs: { layout: "widthFull" },
+                    model: {
+                      value: _vm.permissions.profile,
+                      callback: function ($$v) {
+                        _vm.$set(_vm.permissions, "profile", $$v)
+                      },
+                      expression: "permissions.profile",
+                    },
+                  },
+                  [
+                    _c("p", { staticClass: "ml-2 text-sm font-bold" }, [
+                      _vm._v("Profile"),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "ml-2 text-xs" }, [
+                      _vm._v("Add, view, delete and update profile"),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _vm.$page.errors.settings
+                  ? _c("p", { staticClass: "text-xs text-red-500" }, [
+                      _vm._v(
+                        "\n                    " +
+                          _vm._s(_vm.$page.errors.profile) +
+                          "\n                "
+                      ),
+                    ])
+                  : _vm._e(),
+              ],
+              1
+            ),
+          ]
+        )
+      : _vm._e(),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "mb-10 reveal-left flex justify-end",
+        staticStyle: { "--delay": "1.3s" },
+      },
+      [
+        _c(
+          "primary-btn",
+          {
+            attrs: {
+              width: "w-full md:w-auto",
+              type: "submit",
+              loading: _vm.loading,
+              form: "create-user",
+            },
+          },
+          [_vm._v(_vm._s(_vm.buttonTitle))]
+        ),
+      ],
+      1
     ),
   ])
 }
@@ -610,17 +950,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/pages/Users/ShowAdminUsers.vue":
-/*!*****************************************************!*\
-  !*** ./resources/js/pages/Users/ShowAdminUsers.vue ***!
-  \*****************************************************/
+/***/ "./resources/js/pages/Users/UserModify.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/pages/Users/UserModify.vue ***!
+  \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _ShowAdminUsers_vue_vue_type_template_id_11c09466___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ShowAdminUsers.vue?vue&type=template&id=11c09466& */ "./resources/js/pages/Users/ShowAdminUsers.vue?vue&type=template&id=11c09466&");
-/* harmony import */ var _ShowAdminUsers_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ShowAdminUsers.vue?vue&type=script&lang=js& */ "./resources/js/pages/Users/ShowAdminUsers.vue?vue&type=script&lang=js&");
+/* harmony import */ var _UserModify_vue_vue_type_template_id_4430ca75___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UserModify.vue?vue&type=template&id=4430ca75& */ "./resources/js/pages/Users/UserModify.vue?vue&type=template&id=4430ca75&");
+/* harmony import */ var _UserModify_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./UserModify.vue?vue&type=script&lang=js& */ "./resources/js/pages/Users/UserModify.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -630,9 +970,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _ShowAdminUsers_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _ShowAdminUsers_vue_vue_type_template_id_11c09466___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _ShowAdminUsers_vue_vue_type_template_id_11c09466___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _UserModify_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _UserModify_vue_vue_type_template_id_4430ca75___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _UserModify_vue_vue_type_template_id_4430ca75___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -642,38 +982,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/pages/Users/ShowAdminUsers.vue"
+component.options.__file = "resources/js/pages/Users/UserModify.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/pages/Users/ShowAdminUsers.vue?vue&type=script&lang=js&":
-/*!******************************************************************************!*\
-  !*** ./resources/js/pages/Users/ShowAdminUsers.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************/
+/***/ "./resources/js/pages/Users/UserModify.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/pages/Users/UserModify.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ShowAdminUsers_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./ShowAdminUsers.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Users/ShowAdminUsers.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ShowAdminUsers_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_UserModify_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./UserModify.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Users/UserModify.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_UserModify_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/pages/Users/ShowAdminUsers.vue?vue&type=template&id=11c09466&":
-/*!************************************************************************************!*\
-  !*** ./resources/js/pages/Users/ShowAdminUsers.vue?vue&type=template&id=11c09466& ***!
-  \************************************************************************************/
+/***/ "./resources/js/pages/Users/UserModify.vue?vue&type=template&id=4430ca75&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/pages/Users/UserModify.vue?vue&type=template&id=4430ca75& ***!
+  \********************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ShowAdminUsers_vue_vue_type_template_id_11c09466___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./ShowAdminUsers.vue?vue&type=template&id=11c09466& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Users/ShowAdminUsers.vue?vue&type=template&id=11c09466&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ShowAdminUsers_vue_vue_type_template_id_11c09466___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UserModify_vue_vue_type_template_id_4430ca75___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./UserModify.vue?vue&type=template&id=4430ca75& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Users/UserModify.vue?vue&type=template&id=4430ca75&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UserModify_vue_vue_type_template_id_4430ca75___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ShowAdminUsers_vue_vue_type_template_id_11c09466___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UserModify_vue_vue_type_template_id_4430ca75___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

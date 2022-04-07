@@ -1,14 +1,15 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[25],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Profile/Social.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Profile/Social.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Landing/CompetitionList.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Landing/CompetitionList.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Layout_Landing_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Layout/Landing.vue */ "./resources/js/Layout/Landing.vue");
 //
 //
 //
@@ -29,43 +30,63 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Social',
-  data: function data() {
-    return {
-      facebook_url: '',
-      twitter_url: '',
-      phone_number: ''
-    };
-  },
-  methods: {
-    assignDefault: function assignDefault() {
-      this.facebook_url = this.$page.user.facebook_url || '';
-      this.twitter_url = this.$page.user.twitter_url || '';
-      this.phone_number = this.$page.user.phone_number || '';
-    },
-    submitForm: function submitForm() {
-      var facebook_url = this.facebook_url,
-          twitter_url = this.twitter_url,
-          phone_number = this.phone_number;
-      this.$inertia.post(this.$route.relativePath('client.profile.update.social'), {
-        facebook_url: facebook_url,
-        twitter_url: twitter_url,
-        phone_number: phone_number
-      });
-    }
-  },
-  mounted: function mounted() {
-    this.assignDefault();
-  }
+  layout: _Layout_Landing_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+  name: "CompetitionList"
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Profile/Social.vue?vue&type=template&id=6847dafc&":
-/*!************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Profile/Social.vue?vue&type=template&id=6847dafc& ***!
-  \************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Landing/CompetitionList.vue?vue&type=template&id=0f40beec&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Landing/CompetitionList.vue?vue&type=template&id=0f40beec& ***!
+  \*********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -77,115 +98,136 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _vm._m(0),
-      _vm._v(" "),
-      _c("form", {
-        attrs: { action: "", id: "social" },
-        on: {
-          submit: function ($event) {
-            $event.preventDefault()
-            return _vm.submitForm($event)
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass:
+          "grid grid-cols-1 md:grid-cols-3 gap-5 lg:grid-cols-5 mt-16",
+      },
+      _vm._l(20, function (count, index) {
+        return _c(
+          "inertia-link",
+          {
+            key: index,
+            staticClass:
+              "border border-gray-500 hover:shadow-lg hover:border-yellow-600 p-3 py-8 flex flex-col items-center",
+            attrs: {
+              href: _vm.$route.relativePath("landing.competition_view", 10001),
+            },
           },
-        },
+          [
+            _c("img", {
+              staticClass: "w-12 mb-4",
+              attrs: {
+                src: _vm.$page.auth.settings.app_url + "/assets/img/crown.png",
+                alt: "crown",
+              },
+            }),
+            _vm._v(" "),
+            _c(
+              "p",
+              {
+                staticClass:
+                  "text-center text-sm uppercase tracking-wider text-gray-800",
+              },
+              [
+                _vm._v(
+                  "\n                Miss Enuani Beauty Pageant\n            "
+                ),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "p",
+              { staticClass: "text-center text-primary-700 text-xl font-bold" },
+              [_vm._v("\n                2022\n            ")]
+            ),
+          ]
+        )
       }),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "mb-3" },
-        [
-          _c("text-input", {
-            attrs: {
-              form: "social",
-              error: _vm.$page.errors.facebook_url,
-              label: "Facebook link",
-            },
-            model: {
-              value: _vm.facebook_url,
-              callback: function ($$v) {
-                _vm.facebook_url = $$v
-              },
-              expression: "facebook_url",
-            },
-          }),
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "mb-3" },
-        [
-          _c("text-input", {
-            attrs: {
-              form: "social",
-              error: _vm.$page.errors.twitter_url,
-              label: "Twitter link",
-            },
-            model: {
-              value: _vm.twitter_url,
-              callback: function ($$v) {
-                _vm.twitter_url = $$v
-              },
-              expression: "twitter_url",
-            },
-          }),
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "mb-10" },
-        [
-          _c("text-input", {
-            attrs: {
-              type: "number",
-              form: "social",
-              error: _vm.$page.errors.phone_number,
-              label: "Phone Number (with call code)",
-            },
-            model: {
-              value: _vm.phone_number,
-              callback: function ($$v) {
-                _vm.phone_number = $$v
-              },
-              expression: "phone_number",
-            },
-          }),
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "primary-btn",
-        {
-          attrs: {
-            type: "submit",
-            form: "social",
-            width: "w-full",
-            color: "yellow",
-            fontColor: "text-black",
-          },
-        },
-        [_vm._v("Update Social Data")]
-      ),
-    ],
-    1
-  )
+      1
+    ),
+    _vm._v(" "),
+    _vm._m(1),
+  ])
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mb-5" }, [
-      _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Social")]),
-      _vm._v(" "),
-      _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Social media links and contact"),
+    return _c(
+      "section",
+      {
+        staticClass:
+          "mt-16 px-5 py-10 shadow-offset shadow-offset_yellow bg-primary-800",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "inline-block text-gray-500 uppercase tracking-widest text-xs",
+          },
+          [_vm._v("\n            Competitions\n        ")]
+        ),
+        _vm._v(" "),
+        _c(
+          "h1",
+          { staticClass: "text-3xl md:text-6xl text-white secondary-font" },
+          [
+            _vm._v("\n            All beauty pageants "),
+            _c("br"),
+            _vm._v("\n            till present\n        "),
+          ]
+        ),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mt-16" }, [
+      _c("div", { staticClass: "mx-auto flex justify-between w-56" }, [
+        _c(
+          "button",
+          {
+            staticClass:
+              "bg-gray-800 p-4 py-2 text-white hover:text-yellow-500",
+          },
+          [_vm._v("\n                Previous\n            ")]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "p-4 py-2 border border-transparent hover:border-gray-600",
+          },
+          [_vm._v("\n                1\n            ")]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "p-4 py-2 border border-transparent hover:border-gray-600",
+          },
+          [_vm._v("\n                2\n            ")]
+        ),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass:
+              "bg-gray-800 p-4 py-2 text-white hover:text-yellow-500",
+          },
+          [_vm._v("\n                Next\n            ")]
+        ),
       ]),
     ])
   },
@@ -196,17 +238,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/pages/Profile/Social.vue":
-/*!***********************************************!*\
-  !*** ./resources/js/pages/Profile/Social.vue ***!
-  \***********************************************/
+/***/ "./resources/js/pages/Landing/CompetitionList.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/pages/Landing/CompetitionList.vue ***!
+  \********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Social_vue_vue_type_template_id_6847dafc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Social.vue?vue&type=template&id=6847dafc& */ "./resources/js/pages/Profile/Social.vue?vue&type=template&id=6847dafc&");
-/* harmony import */ var _Social_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Social.vue?vue&type=script&lang=js& */ "./resources/js/pages/Profile/Social.vue?vue&type=script&lang=js&");
+/* harmony import */ var _CompetitionList_vue_vue_type_template_id_0f40beec___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CompetitionList.vue?vue&type=template&id=0f40beec& */ "./resources/js/pages/Landing/CompetitionList.vue?vue&type=template&id=0f40beec&");
+/* harmony import */ var _CompetitionList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CompetitionList.vue?vue&type=script&lang=js& */ "./resources/js/pages/Landing/CompetitionList.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -216,9 +258,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Social_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Social_vue_vue_type_template_id_6847dafc___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Social_vue_vue_type_template_id_6847dafc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _CompetitionList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CompetitionList_vue_vue_type_template_id_0f40beec___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CompetitionList_vue_vue_type_template_id_0f40beec___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -228,38 +270,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/pages/Profile/Social.vue"
+component.options.__file = "resources/js/pages/Landing/CompetitionList.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/pages/Profile/Social.vue?vue&type=script&lang=js&":
-/*!************************************************************************!*\
-  !*** ./resources/js/pages/Profile/Social.vue?vue&type=script&lang=js& ***!
-  \************************************************************************/
+/***/ "./resources/js/pages/Landing/CompetitionList.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/pages/Landing/CompetitionList.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Social_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Social.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Profile/Social.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Social_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CompetitionList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./CompetitionList.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Landing/CompetitionList.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CompetitionList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/pages/Profile/Social.vue?vue&type=template&id=6847dafc&":
-/*!******************************************************************************!*\
-  !*** ./resources/js/pages/Profile/Social.vue?vue&type=template&id=6847dafc& ***!
-  \******************************************************************************/
+/***/ "./resources/js/pages/Landing/CompetitionList.vue?vue&type=template&id=0f40beec&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/pages/Landing/CompetitionList.vue?vue&type=template&id=0f40beec& ***!
+  \***************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Social_vue_vue_type_template_id_6847dafc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Social.vue?vue&type=template&id=6847dafc& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Profile/Social.vue?vue&type=template&id=6847dafc&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Social_vue_vue_type_template_id_6847dafc___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CompetitionList_vue_vue_type_template_id_0f40beec___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./CompetitionList.vue?vue&type=template&id=0f40beec& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Landing/CompetitionList.vue?vue&type=template&id=0f40beec&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CompetitionList_vue_vue_type_template_id_0f40beec___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Social_vue_vue_type_template_id_6847dafc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CompetitionList_vue_vue_type_template_id_0f40beec___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

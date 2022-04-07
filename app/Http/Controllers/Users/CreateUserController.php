@@ -21,12 +21,12 @@ class CreateUserController extends Controller
      */
     public function createAdmin(CreateAdmin $request)
     {
-        return $this->createUser(config('user.admin.create'), $request, 'admin');
+        return $this->createUser(config('users.admin.create'), $request, 'admin');
     }
 
     public function createContestants(CreateClient $request)
     {
-        return $this->createUser(config('user.clients.create'), $request, 'client');
+        return $this->createUser(config('users.client.create'), $request, 'client');
     }
 
     private function createUser(array $userData, $request, string $role)
@@ -52,10 +52,12 @@ class CreateUserController extends Controller
     private function addRoleAndPermissions(User $user, $request, $role)
     {
         if ($role === 'client') {
-            return $user->assignRole('client');
+            $user->is_admin = false;
+            return $user->save();
         }
-        $user->assignRole('admin');
-        $this->addPermissions($request->only(config('user.admin.permissions')), $user);
+        $user->is_admin = true;
+        $user->save();
+        $this->addPermissions($request->only(config('users.admin.permissions')), $user);
         return;
     }
 }

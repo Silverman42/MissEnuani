@@ -251,9 +251,32 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Emergency',
+  name: "Emergency",
   mixins: [_Mixins__WEBPACK_IMPORTED_MODULE_0__["Tabs"]]
 });
 
@@ -310,9 +333,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Identity',
+  name: "Identity",
   mixins: [_Mixins__WEBPACK_IMPORTED_MODULE_0__["Tabs"]]
 });
 
@@ -360,9 +400,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Persona',
+  name: "Persona",
   mixins: [_Mixins__WEBPACK_IMPORTED_MODULE_0__["Tabs"]]
 });
 
@@ -409,9 +457,31 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Social',
+  name: "Social",
   mixins: [_Mixins__WEBPACK_IMPORTED_MODULE_0__["Tabs"]]
 });
 
@@ -451,9 +521,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Travel',
+  name: "Travel",
   mixins: [_Mixins__WEBPACK_IMPORTED_MODULE_0__["Tabs"]]
 });
 
@@ -985,24 +1067,26 @@ var render = function () {
     _c("div", { staticClass: "my-5 flex justify-between" }, [
       _vm._m(0),
       _vm._v(" "),
-      _c(
-        "div",
-        [
-          _c(
-            "primary-btn",
-            {
-              attrs: {
-                color: "yellow",
-                disabled: _vm.hasCompleted,
-                fontColor: "text-black",
-              },
-              on: { click: _vm.updateProfile },
-            },
-            [_vm._v("Edit")]
-          ),
-        ],
-        1
-      ),
+      _vm.canEdit === true
+        ? _c(
+            "div",
+            [
+              _c(
+                "primary-btn",
+                {
+                  attrs: {
+                    color: "yellow",
+                    disabled: _vm.hasCompleted,
+                    fontColor: "text-black",
+                  },
+                  on: { click: _vm.updateProfile },
+                },
+                [_vm._v("Edit")]
+              ),
+            ],
+            1
+          )
+        : _vm._e(),
     ]),
     _vm._v(" "),
     _c(
@@ -1011,37 +1095,47 @@ var render = function () {
       [
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Emergency name"),
+            _vm._v("\n                Emergency name\n            "),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.emergency_name || "None") + " "),
+            _vm._v(_vm._s(_vm.user.emergency_name || "None")),
           ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Emergency Phone number"),
+            _vm._v("\n                Emergency Phone number\n            "),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.emergency_phone_number || "None")),
+            _vm._v(
+              "\n                " +
+                _vm._s(_vm.user.emergency_phone_number || "None") +
+                "\n            "
+            ),
           ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Emergency Personel Relationship"),
+            _vm._v(
+              "\n                Emergency Personel Relationship\n            "
+            ),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.emergency_relationship || "None")),
+            _vm._v(
+              "\n                " +
+                _vm._s(_vm.user.emergency_relationship || "None") +
+                "\n            "
+            ),
           ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Emergency Perosnel Email"),
+            _vm._v("\n                Emergency Perosnel Email\n            "),
           ]),
           _vm._v(" "),
           _c(
@@ -1066,7 +1160,9 @@ var staticRenderFns = [
       _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Emergency")]),
       _vm._v(" "),
       _c("p", { staticClass: "text-sm" }, [
-        _vm._v("Information about your emergency call line"),
+        _vm._v(
+          "\n                Information about your emergency call line\n            "
+        ),
       ]),
     ])
   },
@@ -1096,24 +1192,26 @@ var render = function () {
     _c("div", { staticClass: "my-5 flex justify-between" }, [
       _vm._m(0),
       _vm._v(" "),
-      _c(
-        "div",
-        [
-          _c(
-            "primary-btn",
-            {
-              attrs: {
-                color: "yellow",
-                disabled: _vm.hasCompleted,
-                fontColor: "text-black",
-              },
-              on: { click: _vm.updateProfile },
-            },
-            [_vm._v("Edit")]
-          ),
-        ],
-        1
-      ),
+      _vm.canEdit === true
+        ? _c(
+            "div",
+            [
+              _c(
+                "primary-btn",
+                {
+                  attrs: {
+                    color: "yellow",
+                    disabled: _vm.hasCompleted,
+                    fontColor: "text-black",
+                  },
+                  on: { click: _vm.updateProfile },
+                },
+                [_vm._v("Edit")]
+              ),
+            ],
+            1
+          )
+        : _vm._e(),
     ]),
     _vm._v(" "),
     _c(
@@ -1127,7 +1225,11 @@ var render = function () {
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
             _vm._v(
-              _vm._s(_vm.user.first_name) + " " + _vm._s(_vm.user.last_name)
+              "\n                " +
+                _vm._s(_vm.user.first_name) +
+                " " +
+                _vm._s(_vm.user.last_name) +
+                "\n            "
             ),
           ]),
         ]),
@@ -1138,7 +1240,11 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.nationality || "No Nationality")),
+            _vm._v(
+              "\n                " +
+                _vm._s(_vm.user.nationality || "No Nationality") +
+                "\n            "
+            ),
           ]),
         ]),
         _vm._v(" "),
@@ -1154,11 +1260,15 @@ var render = function () {
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Place of Birth"),
+            _vm._v("\n                Place of Birth\n            "),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.place_of_birth || "No place of birth")),
+            _vm._v(
+              "\n                " +
+                _vm._s(_vm.user.place_of_birth || "No place of birth") +
+                "\n            "
+            ),
           ]),
         ]),
         _vm._v(" "),
@@ -1228,24 +1338,26 @@ var render = function () {
     _c("div", { staticClass: "my-5 flex justify-between" }, [
       _vm._m(0),
       _vm._v(" "),
-      _c(
-        "div",
-        [
-          _c(
-            "primary-btn",
-            {
-              attrs: {
-                color: "yellow",
-                disabled: _vm.hasCompleted,
-                fontColor: "text-black",
-              },
-              on: { click: _vm.updateProfile },
-            },
-            [_vm._v("Edit")]
-          ),
-        ],
-        1
-      ),
+      _vm.canEdit === true
+        ? _c(
+            "div",
+            [
+              _c(
+                "primary-btn",
+                {
+                  attrs: {
+                    color: "yellow",
+                    disabled: _vm.hasCompleted,
+                    fontColor: "text-black",
+                  },
+                  on: { click: _vm.updateProfile },
+                },
+                [_vm._v("Edit")]
+              ),
+            ],
+            1
+          )
+        : _vm._e(),
     ]),
     _vm._v(" "),
     _c(
@@ -1258,7 +1370,7 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.hobbies || "none") + " "),
+            _vm._v(_vm._s(_vm.user.hobbies || "none")),
           ]),
         ]),
         _vm._v(" "),
@@ -1274,7 +1386,7 @@ var render = function () {
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Educational Certificate"),
+            _vm._v("\n                Educational Certificate\n            "),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
@@ -1334,24 +1446,26 @@ var render = function () {
     _c("div", { staticClass: "my-5 flex justify-between" }, [
       _vm._m(0),
       _vm._v(" "),
-      _c(
-        "div",
-        [
-          _c(
-            "primary-btn",
-            {
-              attrs: {
-                color: "yellow",
-                disabled: _vm.hasCompleted,
-                fontColor: "text-black",
-              },
-              on: { click: _vm.updateProfile },
-            },
-            [_vm._v("Edit")]
-          ),
-        ],
-        1
-      ),
+      _vm.canEdit === true
+        ? _c(
+            "div",
+            [
+              _c(
+                "primary-btn",
+                {
+                  attrs: {
+                    color: "yellow",
+                    disabled: _vm.hasCompleted,
+                    fontColor: "text-black",
+                  },
+                  on: { click: _vm.updateProfile },
+                },
+                [_vm._v("Edit")]
+              ),
+            ],
+            1
+          )
+        : _vm._e(),
     ]),
     _vm._v(" "),
     _c(
@@ -1360,7 +1474,7 @@ var render = function () {
       [
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Facebook handle"),
+            _vm._v("\n                Facebook handle\n            "),
           ]),
           _vm._v(" "),
           _c(
@@ -1369,13 +1483,13 @@ var render = function () {
               staticClass: "hover:text-yellow-500",
               attrs: { target: "_blank", href: _vm.user.facebook_url || "#" },
             },
-            [_vm._v(_vm._s(_vm.user.facebook_url || "None") + " ")]
+            [_vm._v(_vm._s(_vm.user.facebook_url || "None") + "\n            ")]
           ),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("twitter handle"),
+            _vm._v("\n                twitter handle\n            "),
           ]),
           _vm._v(" "),
           _c(
@@ -1448,24 +1562,26 @@ var render = function () {
     _c("div", { staticClass: "my-5 flex justify-between" }, [
       _vm._m(0),
       _vm._v(" "),
-      _c(
-        "div",
-        [
-          _c(
-            "primary-btn",
-            {
-              attrs: {
-                disabled: _vm.hasCompleted,
-                color: "yellow",
-                fontColor: "text-black",
-              },
-              on: { click: _vm.updateProfile },
-            },
-            [_vm._v("Edit")]
-          ),
-        ],
-        1
-      ),
+      _vm.canEdit === true
+        ? _c(
+            "div",
+            [
+              _c(
+                "primary-btn",
+                {
+                  attrs: {
+                    disabled: _vm.hasCompleted,
+                    color: "yellow",
+                    fontColor: "text-black",
+                  },
+                  on: { click: _vm.updateProfile },
+                },
+                [_vm._v("Edit")]
+              ),
+            ],
+            1
+          )
+        : _vm._e(),
     ]),
     _vm._v(" "),
     _c(
@@ -1474,17 +1590,21 @@ var render = function () {
       [
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Departure Airport Code"),
+            _vm._v("\n                Departure Airport Code\n            "),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "capitalize" }, [
-            _vm._v(_vm._s(_vm.user.departure_airport_code || "none") + " "),
+            _vm._v(
+              "\n                " +
+                _vm._s(_vm.user.departure_airport_code || "none") +
+                "\n            "
+            ),
           ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "break-words" }, [
           _c("h3", { staticClass: "uppercase text-xs tracking-widest" }, [
-            _vm._v("Passport Number"),
+            _vm._v("\n                Passport Number\n            "),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "uppercase" }, [

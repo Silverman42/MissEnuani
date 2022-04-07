@@ -27,10 +27,11 @@ class CreateClient extends FormRequest
             'first_name' => 'required|string|max:20',
             'last_name' => 'required|string|max:20',
             'email' => 'required|unique:App\Models\User|email:rfc',
+            'youtube_link' => 'url|required',
             'password' => 'required|confirmed|min:6',
             'avatar' => 'nullable|mimes:jpg,jpeg,png|mimetypes:image/jpg,image/jpeg,image/png|max:800',
-            'position' => 'required|number|digits:1',
-            'competition_id' => 'required|number',
+            'position' => 'required|numeric|digits:1',
+            'competition_id' => 'required|numeric',
             'phone_number' => 'nullable|digits_between:11,14',
         ];
     }

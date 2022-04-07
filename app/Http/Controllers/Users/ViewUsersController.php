@@ -50,10 +50,8 @@ class ViewUsersController extends Controller
      */
     public function show($id)
     {
-        $user = User::findOrFail($id);
-        $user->getDirectPermissions();
-        $user->roles;
-        if ($user->hasRole('admin')) {
+        $user = User::with('permissions')->findOrFail($id);
+        if ($user->is_admin === 1) {
             return Inertia::render('Users/ShowAdminUsers', [
                 'user' => $user
             ]);

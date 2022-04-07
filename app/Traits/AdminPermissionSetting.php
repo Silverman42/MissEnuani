@@ -3,6 +3,7 @@
 namespace App\Traits;
 
 use App\Models\User;
+use App\Models\Permissions;
 
 /**
  * @trait AssignAdminPermission
@@ -15,10 +16,11 @@ trait AdminPermissionSetting
 {
     protected function addPermissions(array $permissionSet, User $user)
     {
-        foreach ($permissionSet as $name => $value) {
-            (filter_var($value, FILTER_VALIDATE_BOOLEAN) === true) ?
-                $user->givePermissionTo($name)
-                : $user->revokePermissionTo($name);
-        }
+        $filteredPermissionValues = array_map(function ($value) {
+            return filter_var($value, FILTER_VALIDATE_BOOLEAN);
+        }, $permissionSet);
+        Permissions::updateOrCreate([
+            'user_id' => $user->id,
+        ], $filteredPermissionValues);
     }
 }

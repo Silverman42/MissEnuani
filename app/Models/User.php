@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Permissions;
 use Illuminate\Support\Str;
 use App\Models\Transactions;
 use Laravel\Airlock\HasApiTokens;
@@ -25,7 +26,7 @@ class User extends Authenticatable
         //Emergency
         'emergency_name', 'emergency_phone_number', 'emergency_email', 'emergency_relationship',
         // Identity
-        'nationality', 'address', 'age', 'date_of_birth', 'place_of_birth', 'signature',
+        'nationality', 'address', 'youtube_link', 'age', 'date_of_birth', 'place_of_birth', 'signature',
         // Medicals
         'height', 'weight', 'shoe_size', 'dress_size', 'hip_size', 'waist_size', 'bust_size', 'skin_color', 'blood_type',
         'is_vegetarian', 'can_smoke', 'dietary_needs', 'surgeries', 'recent_sickness', 'medications', 'allergies',
@@ -44,6 +45,7 @@ class User extends Authenticatable
         'password', 'remember_token'
     ];
 
+    protected $guard_name = 'web';
     /**
      * The attributes that should be cast to native types.
      *
@@ -62,5 +64,10 @@ class User extends Authenticatable
     public function transactions()
     {
         return $this->morphMany(Transactions::class, 'transactable');
+    }
+
+    public function permissions()
+    {
+        return $this->hasOne(Permissions::class, 'user_id');
     }
 }

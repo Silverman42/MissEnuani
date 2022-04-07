@@ -65,10 +65,12 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'user_active' => \App\Http\Middleware\UserIsActive::class,
-        'role' => \Spatie\Permission\Middlewares\RoleMiddleware::class,
-        'permission' => \Spatie\Permission\Middlewares\PermissionMiddleware::class,
-        'role_or_permission' => \Spatie\Permission\Middlewares\RoleOrPermissionMiddleware::class,
+        // 'role' => \Spatie\Permission\Middlewares\RoleMiddleware::class,
+        // 'permission' => \Spatie\Permission\Middlewares\PermissionMiddleware::class,
+        // 'role_or_permission' => \Spatie\Permission\Middlewares\RoleOrPermissionMiddleware::class,
         'allow_paid_client' => \App\Http\Middleware\PermitIfPaid::class,
-        'disallow_paid_client'=> \App\Http\Middleware\ObstructIfPaid::class
+        'disallow_paid_client' => \App\Http\Middleware\ObstructIfPaid::class,
+        'is_admin' => \App\Http\Middleware\UserIsAdmin::class,
+        'is_client' => \App\Http\Middleware\UserIsClient::class,
     ];
 }
