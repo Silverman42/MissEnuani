@@ -117,8 +117,9 @@ class StartUp extends Command
     public function createSettings()
     {
         $settings = new Settings;
-        $settings->app_name = 'MMDBP';
-        $settings->naira_charge = 1000;
+        $settings->app_name = 'MEBP';
+        $settings->naira_charge = 5000;
+        $settings->color_scheme = "pink";
         $settings->dollar_charge = 50;
         $settings->app_url = config('app.url');
         $settings->save();
@@ -127,10 +128,12 @@ class StartUp extends Command
     public function createDefaultCompetition()
     {
         $competition = new Competitions;
-        $competition->year = '2020';
-        $competition->start_date = "2020-12-13";
-        $competition->end_date = "2021-1-13";
+        $competition->year = '2022';
+        $competition->reg_start_date = "2022-1-13";
+        $competition->reg_end_date = "2022-6-13";
+        $competition->event_date = "2022-8-13";
         $competition->is_current = true;
+        $competition->free_slot = 0;
         $competition->id = 998867;
         $competition->save();
         $setting = Settings::first();

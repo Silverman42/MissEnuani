@@ -11,12 +11,12 @@ class Competitions extends Model
     protected $appends = ['has_expired'];
 
     protected $fillable = [
-        'start_date', 'end_date', 'is_current', 'year'
+        'reg_start_date', 'reg_end_date', 'event_date', 'free_slot', 'is_current', 'year'
     ];
 
     public function getHasExpiredAttribute(): bool
     {
-        $end_date = Carbon::createFromFormat('Y-m-d', $this->end_date);
+        $end_date = Carbon::createFromFormat('Y-m-d', $this->reg_end_date);
         if (Carbon::now()->gt($end_date)) {
             return true;
         }

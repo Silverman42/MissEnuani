@@ -7,6 +7,14 @@
         You will be redirected to your profile page where you could complete your registeration shortly after paying your registration fee
     </p>  
 </div>
+@if(session("error"))
+<div class=" mb-10 bg-red-100 border border-red-400 rounded-lg p-3">
+    <h4 class="text-base text-red-500 font-bold mb-3">Registration failed</h4>
+    <p class="text-gray-700 text-xs">
+        {{ session('error')}}
+    </p>
+</div>
+@endif
 <form action="{{url('/register')}}" method="POST" class="mb-10">
     @csrf
     <div class="flex justify-between flex-wrap md:flex-no-wrap">

@@ -21,7 +21,7 @@
             </div>
             <div class="w-full md:w-6/12">
                 <img
-                    :src="`${$page.auth.settings.app_url}/assets/img/hero.jpg`"
+                    :src="`${$page.auth.settings.app_url}/assets/img/hero_2.jpeg`"
                     class="w-full"
                     alt=""
                 />
@@ -50,7 +50,7 @@
             </div>
             <div class="w-full md:w-6/12 shadow-offset shadow-offset_yellow">
                 <img
-                    :src="`${$page.auth.settings.app_url}/assets/img/about.jpg`"
+                    :src="`${$page.auth.settings.app_url}/assets/img/home_1.jpg`"
                     class="w-full"
                     alt=""
                 />
@@ -63,7 +63,7 @@
                 class="w-full md:w-6/12 mb-10 shadow-offset shadow-offset_yellow"
             >
                 <img
-                    :src="`${$page.auth.settings.app_url}/assets/img/events.jpg`"
+                    :src="`${$page.auth.settings.app_url}/assets/img/home_2.jpg`"
                     class="w-full inline-block shadow-offset shadow-offset_yellow"
                     alt="events"
                 />

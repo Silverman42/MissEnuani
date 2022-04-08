@@ -31,7 +31,7 @@
             </div>
             <div class="w-full md:w-6/12">
                 <img
-                    :src="`${$page.auth.settings.app_url}/assets/img/hero.jpg`"
+                    :src="`${$page.auth.settings.app_url}/assets/img/home_5.jpg`"
                     class="w-full"
                     alt=""
                 />

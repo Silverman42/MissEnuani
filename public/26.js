@@ -156,7 +156,7 @@ var render = function () {
           _c("img", {
             staticClass: "w-full",
             attrs: {
-              src: _vm.$page.auth.settings.app_url + "/assets/img/hero.jpg",
+              src: _vm.$page.auth.settings.app_url + "/assets/img/home_5.jpg",
               alt: "",
             },
           }),

@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('instagram_url', 120)->nullable();
             $table->string('phone_number', 16)->nullable();
             $table->string('nationality', 120)->nullable();
+            $table->string('town', 120)->nullable();
             $table->longText('address')->nullable();
             $table->string('avatar')->nullable();
             $table->string('avatar_id', 120)->nullable();

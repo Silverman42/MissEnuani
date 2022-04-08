@@ -26,7 +26,7 @@ class User extends Authenticatable
         //Emergency
         'emergency_name', 'emergency_phone_number', 'emergency_email', 'emergency_relationship',
         // Identity
-        'nationality', 'address', 'youtube_link', 'age', 'date_of_birth', 'place_of_birth', 'signature',
+        'nationality', 'town', 'address', 'youtube_link', 'age', 'date_of_birth', 'place_of_birth', 'signature',
         // Medicals
         'height', 'weight', 'shoe_size', 'dress_size', 'hip_size', 'waist_size', 'bust_size', 'skin_color', 'blood_type',
         'is_vegetarian', 'can_smoke', 'dietary_needs', 'surgeries', 'recent_sickness', 'medications', 'allergies',

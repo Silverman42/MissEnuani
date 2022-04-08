@@ -16,8 +16,13 @@ class Competitions extends Migration
         Schema::create('competitions', function (Blueprint $table) {
             $table->id();
             $table->year('year')->nullable();
-            $table->date('start_date')->nullable();
-            $table->date('end_date')->nullable();
+            $table->date('reg_start_date')->nullable();
+            $table->date('reg_end_date')->nullable();
+            $table->date('event_date')->nullable();
+            $table->text('venue')->nullable();
+            $table->string('thumbnail')->nullable();
+            $table->string('thumbnail_id', 120)->nullable();
+            $table->unsignedInteger('free_slot')->default(0);
             $table->boolean('is_current')->default(false);
             $table->timestamps();
         });

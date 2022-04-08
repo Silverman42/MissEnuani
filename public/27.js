@@ -258,7 +258,7 @@ var render = function () {
           _c("img", {
             staticClass: "w-full",
             attrs: {
-              src: _vm.$page.auth.settings.app_url + "/assets/img/hero.jpg",
+              src: _vm.$page.auth.settings.app_url + "/assets/img/hero_2.jpeg",
               alt: "",
             },
           }),
@@ -283,7 +283,7 @@ var render = function () {
             _c("img", {
               staticClass: "w-full",
               attrs: {
-                src: _vm.$page.auth.settings.app_url + "/assets/img/about.jpg",
+                src: _vm.$page.auth.settings.app_url + "/assets/img/home_1.jpg",
                 alt: "",
               },
             }),
@@ -309,7 +309,7 @@ var render = function () {
               staticClass:
                 "w-full inline-block shadow-offset shadow-offset_yellow",
               attrs: {
-                src: _vm.$page.auth.settings.app_url + "/assets/img/events.jpg",
+                src: _vm.$page.auth.settings.app_url + "/assets/img/home_2.jpg",
                 alt: "events",
               },
             }),

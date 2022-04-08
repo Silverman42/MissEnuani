@@ -161,6 +161,113 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -186,50 +293,50 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         arrow_right: _iconify_icons_feather_arrow_right__WEBPACK_IMPORTED_MODULE_5___default.a
       },
       countries: [],
-      selectedCountry: 'Nigeria',
+      selectedCountry: "Nigeria",
       profileSteps: {}
     };
   },
   computed: {
     profileStage: function profileStage() {
-      if (this.$page.user.profile_stage === 'payment') {
+      if (this.$page.user.profile_stage === "payment") {
         return {
           width: 30.33,
-          color: 'gray'
+          color: "gray"
         };
       }
 
-      if (this.$page.user.profile_stage === 'audition') {
+      if (this.$page.user.profile_stage === "audition") {
         return {
           width: 60.66,
-          color: 'yellow'
+          color: "yellow"
         };
       }
 
       return {
         width: 100,
-        color: 'green'
+        color: "green"
       };
     },
     getCurrencySymbol: function getCurrencySymbol() {
-      return this.selectedCountry === 'Nigeria' ? '₦' : '$';
+      return this.selectedCountry === "Nigeria" ? "₦" : "$";
     },
     getRegisterationFee: function getRegisterationFee() {
-      return this.selectedCountry === 'Nigeria' ? parseFloat(this.$page.auth.settings.naira_charge) : parseFloat(this.$page.auth.settings.dollar_charge);
+      return this.selectedCountry === "Nigeria" ? parseFloat(this.$page.auth.settings.naira_charge) : parseFloat(this.$page.auth.settings.dollar_charge);
     },
     transactionData: function transactionData() {
-      return this.$page.user.transactions ? this.$page.user.transactions[0] : {};
+      return this.$page.user.transactions.length > 0 && this.$page.user.transactions[0];
     },
     competitionData: function competitionData() {
-      return this.$page.user.competitions || {};
+      return this.$page.user.competitions;
     }
   },
   filters: {
     changeNumberFormat: function changeNumberFormat(number) {
       var fractionUnit = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 2;
-      return new Intl.NumberFormat('en-US', {
+      return new Intl.NumberFormat("en-US", {
         minimumFractionDigits: 0
-      }).format(number);
+      }).format(isNaN(number) ? 0 : number);
     }
   },
   methods: {
@@ -260,12 +367,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   mounted: function mounted() {
     var vm = this;
     vm.profileSteps = {
-      'medicals': vm.$page.user.has_completed_medicals,
-      'emergency': vm.$page.user.has_completed_emergency,
-      'identity': vm.$page.user.has_completed_identity,
-      'travel': vm.$page.user.has_completed_travel,
-      'persona': vm.$page.user.has_completed_persona,
-      'social': vm.$page.user.has_completed_social
+      medicals: vm.$page.user.has_completed_medicals,
+      emergency: vm.$page.user.has_completed_emergency,
+      identity: vm.$page.user.has_completed_identity,
+      travel: vm.$page.user.has_completed_travel,
+      persona: vm.$page.user.has_completed_persona,
+      social: vm.$page.user.has_completed_social
     };
     this.getCountries().then(function (country) {
       vm.countries = country["default"];
@@ -307,7 +414,7 @@ var render = function () {
       1
     ),
     _vm._v(" "),
-    _c("section", { staticClass: "flex flex-wrap md:flex-no-wrap " }, [
+    _c("section", { staticClass: "flex flex-wrap md:flex-no-wrap" }, [
       _c(
         "div",
         { staticClass: "md:w-4/12 w-full mb-10 md:mr-10" },
@@ -319,13 +426,16 @@ var render = function () {
             _vm._v(" "),
             _c("div", { staticClass: "mb-5" }, [
               _c("h6", { staticClass: "uppercase text-xs tracking-widest" }, [
-                _vm._v("Competition"),
+                _vm._v(
+                  "\n                        Competition\n                    "
+                ),
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "text-gray-900" }, [
                 _vm._v(
-                  "Miss May Day Pageant " +
-                    _vm._s(_vm.competitionData.year || "2020")
+                  "\n                        Miss May Day Pageant\n                        " +
+                    _vm._s(_vm.competitionData.year || "2020") +
+                    "\n                    "
                 ),
               ]),
             ]),
@@ -338,7 +448,11 @@ var render = function () {
                     _c(
                       "h6",
                       { staticClass: "uppercase text-xs tracking-widest" },
-                      [_vm._v("Position")]
+                      [
+                        _vm._v(
+                          "\n                        Position\n                    "
+                        ),
+                      ]
                     ),
                     _vm._v(" "),
                     _c("p", { staticClass: "text-gray-900" }, [
@@ -356,12 +470,20 @@ var render = function () {
                   _c(
                     "h6",
                     { staticClass: "uppercase text-xs tracking-widest" },
-                    [_vm._v("Payment Status")]
+                    [
+                      _vm._v(
+                        "\n                            Payment Status\n                        "
+                      ),
+                    ]
                   ),
                   _vm._v(" "),
                   _c("p", { staticClass: "text-gray-900" }, [
                     _vm._v(
-                      _vm._s(_vm.$page.user.has_paid === 1 ? "Paid" : "Unpaid")
+                      "\n                            " +
+                        _vm._s(
+                          _vm.$page.user.has_paid === 1 ? "Paid" : "Unpaid"
+                        ) +
+                        "\n                        "
                     ),
                   ]),
                 ]),
@@ -399,11 +521,19 @@ var render = function () {
                   _c(
                     "h6",
                     { staticClass: "uppercase text-xs tracking-widest" },
-                    [_vm._v("Profile stage")]
+                    [
+                      _vm._v(
+                        "\n                            Profile stage\n                        "
+                      ),
+                    ]
                   ),
                   _vm._v(" "),
                   _c("p", { staticClass: "text-gray-900 capitalize" }, [
-                    _vm._v(_vm._s(_vm.$page.user.profile_stage)),
+                    _vm._v(
+                      "\n                            " +
+                        _vm._s(_vm.$page.user.profile_stage) +
+                        "\n                        "
+                    ),
                   ]),
                 ]
               ),
@@ -442,7 +572,7 @@ var render = function () {
                 _vm._v(" "),
                 _c("p", { staticClass: "text-sm" }, [
                   _vm._v(
-                    "Below is a list of profile update steps which should be completed to enable\n                        you\n                        stand a chance of being accpted for the competition"
+                    "\n                        Below is a list of profile update steps which should\n                        be completed to enable you stand a chance of being\n                        accpted for the competition\n                    "
                   ),
                 ]),
               ]),
@@ -467,7 +597,7 @@ var render = function () {
                         },
                         [
                           _c("span", { staticClass: "mr-2" }, [
-                            _vm._v("View Profile"),
+                            _vm._v("View and Edit Profile"),
                           ]),
                           _vm._v(" "),
                           _c("iconify-icon", {
@@ -518,12 +648,16 @@ var render = function () {
                           staticClass:
                             "text-2xl md:text-3xl mb-1 text-black font-bold",
                         },
-                        [_vm._v("Please Make Payment")]
+                        [
+                          _vm._v(
+                            "\n                            Please Make Payment\n                        "
+                          ),
+                        ]
                       ),
                       _vm._v(" "),
                       _c("p", { staticClass: "text-black text-sm" }, [
                         _vm._v(
-                          "Paying for the contest gives you access to update your profile\n                            which in turn increases your chances of being selected for the competition\n                        "
+                          "\n                            Paying for the contest gives you access to\n                            update your profile which in turn increases your\n                            chances of being selected for the competition\n                        "
                         ),
                       ]),
                     ]),
@@ -556,7 +690,8 @@ var render = function () {
                           [
                             _vm._v(
                               "\n                            " +
-                                _vm._s(country.name)
+                                _vm._s(country.name) +
+                                "\n                        "
                             ),
                           ]
                         )
@@ -630,7 +765,11 @@ var render = function () {
                     _c(
                       "h6",
                       { staticClass: "uppercase text-xs tracking-widest" },
-                      [_vm._v("Payment Status")]
+                      [
+                        _vm._v(
+                          "\n                            Payment Status\n                        "
+                        ),
+                      ]
                     ),
                     _vm._v(" "),
                     _c("p", { staticClass: "text-green-500" }, [
@@ -642,19 +781,22 @@ var render = function () {
                     _c(
                       "h6",
                       { staticClass: "uppercase text-xs tracking-widest" },
-                      [_vm._v("Amount")]
+                      [
+                        _vm._v(
+                          "\n                            Amount\n                        "
+                        ),
+                      ]
                     ),
                     _vm._v(" "),
                     _c("p", { staticClass: "text-gray-900" }, [
                       _vm._v(
-                        _vm._s(
-                          _vm.transactionData.currency == "ngn" ? "₦" : "$"
-                        ) +
+                        "\n                            ₦" +
                           _vm._s(
                             _vm._f("changeNumberFormat")(
                               _vm.transactionData.amount
                             )
-                          )
+                          ) +
+                          "\n                        "
                       ),
                     ]),
                   ]),
@@ -663,7 +805,11 @@ var render = function () {
                     _c(
                       "h6",
                       { staticClass: "uppercase text-xs tracking-widest" },
-                      [_vm._v("Payment Gateway")]
+                      [
+                        _vm._v(
+                          "\n                            Payment Gateway\n                        "
+                        ),
+                      ]
                     ),
                     _vm._v(" "),
                     _c("p", { staticClass: "text-gray-900" }, [
@@ -675,11 +821,19 @@ var render = function () {
                     _c(
                       "h6",
                       { staticClass: "uppercase text-xs tracking-widest" },
-                      [_vm._v("Date of Payment")]
+                      [
+                        _vm._v(
+                          "\n                            Date of Payment\n                        "
+                        ),
+                      ]
                     ),
                     _vm._v(" "),
                     _c("p", { staticClass: "text-gray-900" }, [
-                      _vm._v(_vm._s(_vm.transactionData.human_date_of_payment)),
+                      _vm._v(
+                        "\n                            " +
+                          _vm._s(_vm.transactionData.human_date_of_payment) +
+                          "\n                        "
+                      ),
                     ]),
                   ]),
                 ]),
