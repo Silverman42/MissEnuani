@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"user_page":"user_page","layout_comps":"layout_comps","settings_page~user_list_comps":"settings_page~user_list_comps","user_list_comps":"user_list_comps","profile_comps":"profile_comps","settings_page":"settings_page"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"user_page":"user_page","layout_comps":"layout_comps","settings_page~user_list_comps":"settings_page~user_list_comps","user_list_comps":"user_list_comps","profile_comps":"profile_comps","settings_page":"settings_page","components":"components"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -20197,26 +20197,36 @@ var map = {
 		0,
 		21
 	],
+	"./Client/AccessControl": [
+		"./resources/js/pages/Client/AccessControl.vue",
+		41,
+		42
+	],
+	"./Client/AccessControl.vue": [
+		"./resources/js/pages/Client/AccessControl.vue",
+		41,
+		42
+	],
 	"./Client/Dashboard": [
 		"./resources/js/pages/Client/Dashboard.vue",
 		3,
-		2,
+		41,
 		14
 	],
 	"./Client/Dashboard.vue": [
 		"./resources/js/pages/Client/Dashboard.vue",
 		3,
-		2,
+		41,
 		14
 	],
 	"./Client/Invoice": [
 		"./resources/js/pages/Client/Invoice.vue",
-		2,
+		41,
 		15
 	],
 	"./Client/Invoice.vue": [
 		"./resources/js/pages/Client/Invoice.vue",
-		2,
+		41,
 		15
 	],
 	"./Client/InvoiceComp": [
@@ -20229,12 +20239,12 @@ var map = {
 	],
 	"./Client/Profile": [
 		"./resources/js/pages/Client/Profile.vue",
-		2,
+		41,
 		9
 	],
 	"./Client/Profile.vue": [
 		"./resources/js/pages/Client/Profile.vue",
-		2,
+		41,
 		9
 	],
 	"./Dashboard": [

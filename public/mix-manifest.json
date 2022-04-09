@@ -6,5 +6,6 @@
     "/settings_page.js": "/settings_page.js",
     "/settings_page~user_list_comps.js": "/settings_page~user_list_comps.js",
     "/user_list_comps.js": "/user_list_comps.js",
-    "/user_page.js": "/user_page.js"
+    "/user_page.js": "/user_page.js",
+    "/components.js": "/components.js"
 }

@@ -133,7 +133,7 @@ class StartUp extends Command
         $competition->reg_end_date = "2022-6-13";
         $competition->event_date = "2022-8-13";
         $competition->is_current = true;
-        $competition->free_slot = 0;
+        $competition->free_slot = 30;
         $competition->id = 998867;
         $competition->save();
         $setting = Settings::first();

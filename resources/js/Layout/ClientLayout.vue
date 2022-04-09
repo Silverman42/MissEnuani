@@ -17,7 +17,7 @@
                 <iconify-icon v-else :icon="icons.error" />
             </alert>
         </alert-container>
-        <header class=" bg-primary-500 pt-3 pb-24">
+        <header class="bg-primary-500 pt-3 pb-24">
             <div class="xl:w-9/12 w-11/12 mx-auto">
                 <div class="flex justify-between items-center py-4">
                     <div class="w-20 flex items-center">
@@ -31,29 +31,12 @@
                         </p>
                     </div>
                     <div class="flex items-center justify-end">
-                        <div class="mr-3">
-                            <a
-                                href="#"
-                                class="text-white"
-                                @click.prevent="logout"
-                                >Logout</a
-                            >
-                            <form
-                                method="POST"
-                                :action="$route.url('logout')"
-                                hidden
-                                id="logoutForm"
-                            >
-                                <input
-                                    type="hidden"
-                                    name="_token"
-                                    :value="$page.auth.csrf_token"
-                                />
-                            </form>
-                        </div>
-                        <p class="text-white">
-                            Profile
-                        </p>
+                        <inertia-link
+                            :href="$route.relativePath('client.ac_view')"
+                            class="inline-block border-4 rounded-full border-primary-300 hover:border-primary-400"
+                        >
+                            <avatar size="sm" :src="$page.user.avatar || ''" />
+                        </inertia-link>
                     </div>
                 </div>
                 <nav class="w-full">
@@ -67,7 +50,9 @@
                             <inertia-link
                                 class="nav-link"
                                 :class="{
-                                    active: $route.isCurrent('client.dashboard')
+                                    active: $route.isCurrent(
+                                        'client.dashboard'
+                                    ),
                                 }"
                                 :href="$route.relativePath('client.dashboard')"
                                 >Dashboard</inertia-link
@@ -82,7 +67,7 @@
                                 :class="{
                                     active: $route.isCurrent(
                                         'client.profile.index'
-                                    )
+                                    ),
                                 }"
                                 :href="
                                     $route.relativePath('client.profile.index')
@@ -97,7 +82,7 @@
                             <inertia-link
                                 class="nav-link"
                                 :class="{
-                                    active: $route.isCurrent('client.invoice')
+                                    active: $route.isCurrent('client.invoice'),
                                 }"
                                 :href="$route.relativePath('client.invoice')"
                                 >Invoice</inertia-link
@@ -128,16 +113,18 @@ export default {
         AlertContainer: () =>
             import(
                 /* webpackChunkName: "layout_comps" */ "../components/AlertContainer"
-            )
+            ),
+        Avatar: () =>
+            import(/* webpackChunkName: "components" */ "../components/Avatar"),
     },
     data() {
         return {
             icons: {
                 success,
-                error
+                error,
             },
             alertList: [],
-            logo_link: "img/dashboard_logo.svg"
+            logo_link: "img/dashboard_logo.svg",
         };
     },
     watch: {
@@ -145,8 +132,8 @@ export default {
             handler() {
                 this.pushNewAlert();
             },
-            deep: true
-        }
+            deep: true,
+        },
     },
     methods: {
         logout() {
@@ -172,15 +159,15 @@ export default {
                             ? "green"
                             : "red",
                     message: vm.$page.auth.alert_message,
-                    heading: vm.$page.auth.alert_heading
+                    heading: vm.$page.auth.alert_heading,
                 });
                 this.alertList = alertList;
             }
-        }
+        },
     },
     mounted() {
         this.pushNewAlert();
-    }
+    },
 };
 </script>
 

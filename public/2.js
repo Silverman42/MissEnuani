@@ -166,6 +166,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -176,6 +181,9 @@ __webpack_require__.r(__webpack_exports__);
     },
     AlertContainer: function AlertContainer() {
       return __webpack_require__.e(/*! import() | layout_comps */ "layout_comps").then(__webpack_require__.bind(null, /*! ../components/AlertContainer */ "./resources/js/components/AlertContainer.vue"));
+    },
+    Avatar: function Avatar() {
+      return __webpack_require__.e(/*! import() | components */ "components").then(__webpack_require__.bind(null, /*! ../components/Avatar */ "./resources/js/components/Avatar.vue"));
     }
   },
   data: function data() {
@@ -334,7 +342,7 @@ var render = function () {
         1
       ),
       _vm._v(" "),
-      _c("header", { staticClass: " bg-primary-500 pt-3 pb-24" }, [
+      _c("header", { staticClass: "bg-primary-500 pt-3 pb-24" }, [
         _c("div", { staticClass: "xl:w-9/12 w-11/12 mx-auto" }, [
           _c("div", { staticClass: "flex justify-between items-center py-4" }, [
             _c("div", { staticClass: "w-20 flex items-center" }, [
@@ -355,48 +363,62 @@ var render = function () {
               ]),
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "flex items-center justify-end" }, [
-              _c("div", { staticClass: "mr-3" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "text-white",
-                    attrs: { href: "#" },
-                    on: {
-                      click: function ($event) {
-                        $event.preventDefault()
-                        return _vm.logout($event)
+            _c(
+              "div",
+              { staticClass: "flex items-center justify-end" },
+              [
+                _c("div", { staticClass: "mr-3" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "text-white",
+                      attrs: { href: "#" },
+                      on: {
+                        click: function ($event) {
+                          $event.preventDefault()
+                          return _vm.logout($event)
+                        },
                       },
                     },
-                  },
-                  [_vm._v("Logout")]
-                ),
+                    [_vm._v("Logout")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "form",
+                    {
+                      attrs: {
+                        method: "POST",
+                        action: _vm.$route.url("logout"),
+                        hidden: "",
+                        id: "logoutForm",
+                      },
+                    },
+                    [
+                      _c("input", {
+                        attrs: { type: "hidden", name: "_token" },
+                        domProps: { value: _vm.$page.auth.csrf_token },
+                      }),
+                    ]
+                  ),
+                ]),
                 _vm._v(" "),
                 _c(
-                  "form",
+                  "inertia-link",
                   {
-                    attrs: {
-                      method: "POST",
-                      action: _vm.$route.url("logout"),
-                      hidden: "",
-                      id: "logoutForm",
-                    },
+                    staticClass:
+                      "inline-block border-4 rounded-full border-primary-300 hover:border-primary-400",
+                    attrs: { href: _vm.$route.url("ac_view") },
                   },
                   [
-                    _c("input", {
-                      attrs: { type: "hidden", name: "_token" },
-                      domProps: { value: _vm.$page.auth.csrf_token },
+                    _c("avatar", {
+                      attrs: { size: "sm", src: _vm.$page.user.avatar || "" },
                     }),
-                  ]
+                  ],
+                  1
                 ),
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "text-white" }, [
-                _vm._v(
-                  "\n                        Profile\n                    "
-                ),
-              ]),
-            ]),
+              ],
+              1
+            ),
           ]),
           _vm._v(" "),
           _c("nav", { staticClass: "w-full" }, [

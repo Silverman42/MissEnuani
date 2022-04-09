@@ -26,41 +26,41 @@ class MedicalRequest extends FormRequest
     public function rules()
     {
         return [
-            'height'=> 'string|required',
-            'weight'=> 'string|required',
+            'height' => 'string|nullable',
+            'weight' => 'string|nullable',
             'shoe_size' => 'numeric|max:50|required',
-            'dress_size'=> [
+            'dress_size' => [
                 'string',
-                Rule::in(['xxl','xl','l','m','s']),
+                Rule::in(['xxl', 'xl', 'l', 'm', 's']),
+                'nullable'
+            ],
+            'waist_size' => [
+                'string',
+                Rule::in(['xxl', 'xl', 'l', 'm', 's']),
                 'required'
             ],
-            'waist_size'=> [
+            'bust_size' => [
                 'string',
-                Rule::in(['xxl','xl','l','m','s']),
+                Rule::in(['xxl', 'xl', 'l', 'm', 's']),
                 'required'
             ],
-            'bust_size'=> [
+            'skin_color' => [
                 'string',
-                Rule::in(['xxl','xl','l','m','s']),
+                Rule::in(['Pale White', "Fair", "Light Brown", "Moderate Brown", "Dark Brown", "Black"]),
                 'required'
             ],
-            'skin_color'=> [
+            'blood_type' => [
                 'string',
-                Rule::in(['Pale White',"Fair","Light Brown","Moderate Brown","Dark Brown","Black"]),
+                Rule::in(['A+', "A-", "B+", "B-", "O+", "O-", "AB+", "AB-"]),
                 'required'
             ],
-            'blood_type'=> [
-                'string',
-                Rule::in(['A+',"A-","B+","B-","O+","O-","AB+","AB-"]),
-                'required'
-            ],
-            'is_vegetarian'=> ['nullable','boolean'],
-            'can_smoke'=> ['nullable','boolean'],
-            'dietary_needs'=> 'string|max:200|nullable',
-            'surgeries'=> 'string|max:220|nullable',
-            'recent_sickness'=> 'string|max:220|nullable',
-            'medications'=> 'string|max:220|nullable',
-            'allergies'=> 'string|max:220|nullable',    
+            'is_vegetarian' => ['nullable', 'boolean'],
+            'can_smoke' => ['nullable', 'boolean'],
+            'dietary_needs' => 'string|max:200|nullable',
+            'surgeries' => 'string|max:220|nullable',
+            'recent_sickness' => 'string|max:220|nullable',
+            'medications' => 'string|max:220|nullable',
+            'allergies' => 'string|max:220|nullable',
         ];
     }
 }

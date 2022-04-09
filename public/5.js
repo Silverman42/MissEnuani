@@ -65,19 +65,84 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Identity',
+  name: "Identity",
   data: function data() {
     return {
-      age: '',
-      address: '',
-      nationality: '',
-      firstName: '',
-      lastName: '',
-      placeOfBirth: '',
-      dateOfBirth: '',
-      signature: '',
-      avatar: '',
+      age: "",
+      address: "",
+      nationality: "",
+      firstName: "",
+      lastName: "",
+      placeOfBirth: "",
+      dateOfBirth: "",
+      youtube_link: "",
+      signature: "",
+      avatar: "",
       countries: []
     };
   },
@@ -112,26 +177,28 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       }))();
     },
     assignDefaults: function assignDefaults() {
-      this.firstName = this.$page.user.first_name || '';
-      this.lastName = this.$page.user.last_name || '';
-      this.age = this.$page.user.age || '';
-      this.placeOfBirth = this.$page.user.placeOfBirth || '';
-      this.nationality = this.$page.user.nationality || '';
-      this.dateOfBirth = this.$page.user.dateOfBirth || '';
-      this.address = this.$page.user.address || '';
+      this.firstName = this.$page.user.first_name || "";
+      this.lastName = this.$page.user.last_name || "";
+      this.age = this.$page.user.age || "";
+      this.youtube_link = this.$page.user.youtube_link || "";
+      this.placeOfBirth = this.$page.user.placeOfBirth || "";
+      this.nationality = this.$page.user.nationality || "";
+      this.dateOfBirth = this.$page.user.dateOfBirth || "";
+      this.address = this.$page.user.address || "";
     },
     submitForm: function submitForm() {
       var form = new FormData();
-      form.append('first_name', this.firstName);
-      form.append('last_name', this.lastName);
-      form.append('age', this.age);
-      form.append('place_of_birth', this.placeOfBirth);
-      form.append('nationality', this.nationality);
-      form.append('signature', this.signature);
-      form.append('avatar', this.avatar);
-      form.append('date_of_birth', this.dateOfBirth);
-      form.append('address', this.address);
-      this.$inertia.post(this.$route.relativePath('client.profile.update.identity'), form);
+      form.append("first_name", this.firstName);
+      form.append("last_name", this.lastName);
+      form.append("age", this.age);
+      form.append("place_of_birth", this.placeOfBirth);
+      form.append("nationality", this.nationality);
+      form.append("signature", this.signature);
+      form.append("avatar", this.avatar);
+      form.append("date_of_birth", this.dateOfBirth);
+      form.append("address", this.address);
+      form.append("youtube_link", this.youtube_link);
+      this.$inertia.post(this.$route.relativePath("client.profile.update.identity"), form);
     }
   },
   mounted: function mounted() {
@@ -244,7 +311,13 @@ var render = function () {
               return _c(
                 "option",
                 { key: index, domProps: { value: country.name } },
-                [_vm._v("\n                " + _vm._s(country.name))]
+                [
+                  _vm._v(
+                    "\n                " +
+                      _vm._s(country.name) +
+                      "\n            "
+                  ),
+                ]
               )
             }),
             0
@@ -269,6 +342,29 @@ var render = function () {
                 _vm.address = $$v
               },
               expression: "address",
+            },
+          }),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mb-3" },
+        [
+          _c("text-input", {
+            attrs: {
+              type: "text",
+              label: "Youtube video link",
+              error: _vm.$page.errors.youtube_link,
+              form: "identity",
+            },
+            model: {
+              value: _vm.youtube_link,
+              callback: function ($$v) {
+                _vm.youtube_link = $$v
+              },
+              expression: "youtube_link",
             },
           }),
         ],
@@ -392,7 +488,7 @@ var render = function () {
             width: "w-full",
           },
         },
-        [_vm._v("Update\n        Identity ")]
+        [_vm._v("Update Identity\n    ")]
       ),
     ],
     1

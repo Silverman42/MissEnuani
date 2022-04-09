@@ -3,7 +3,9 @@
 namespace App\Services;
 
 use App\Models\User;
+use App\Models\Statistics;
 use App\Models\Competitions;
+use App\Models\Transactions;
 
 /**
  * This services checks if there is free registration slot available
@@ -25,6 +27,7 @@ class FreeSlotService
             return null;
         }
         $competition->free_slot--;
+        $this->createTransactionEntry($user);
         $competition->save();
         $this->updateUserStatus($user);
     }
@@ -34,5 +37,19 @@ class FreeSlotService
         $user->has_paid = true;
         $user->profile_stage = 'audition';
         $user->save();
+    }
+
+    public function createTransactionEntry($user)
+    {
+        $transactions = new Transactions;
+        $transactions->is_completed = true;
+        $transactions->amount = 0;
+        $transactions->transactable_type = User::class;
+        $transactions->transactable_id = $user->id;
+        $transactions->competitions_id = settings()['current_competition_id'];
+        $transactions->email = $user->email;
+        $transactions->balance = Statistics::first()->naira_balance ?? 0;
+        $transactions->reference_id = paystack()->genTranxRef();
+        $transactions->save();
     }
 }

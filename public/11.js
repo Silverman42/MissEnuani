@@ -328,22 +328,22 @@ __webpack_require__.r(__webpack_exports__);
       return Promise.all(/*! import() | user_list_comps */[__webpack_require__.e("settings_page~user_list_comps"), __webpack_require__.e("user_list_comps")]).then(__webpack_require__.bind(null, /*! ../../components/ProfileCard2 */ "./resources/js/components/ProfileCard2.vue"));
     },
     IdentityTab: function IdentityTab() {
-      return Promise.all(/*! import() | profile_comps */[__webpack_require__.e(3), __webpack_require__.e(6), __webpack_require__.e(4), __webpack_require__.e(5), __webpack_require__.e("profile_comps")]).then(__webpack_require__.bind(null, /*! ../Profile/Tabs/Identity */ "./resources/js/pages/Profile/Tabs/Identity.vue"));
+      return Promise.all(/*! import() | profile_comps */[__webpack_require__.e(3), __webpack_require__.e(6), __webpack_require__.e(5), __webpack_require__.e(4), __webpack_require__.e("profile_comps")]).then(__webpack_require__.bind(null, /*! ../Profile/Tabs/Identity */ "./resources/js/pages/Profile/Tabs/Identity.vue"));
     },
     MedicalsTab: function MedicalsTab() {
-      return Promise.all(/*! import() | profile_comps */[__webpack_require__.e(3), __webpack_require__.e(6), __webpack_require__.e(4), __webpack_require__.e(5), __webpack_require__.e("profile_comps")]).then(__webpack_require__.bind(null, /*! ../Profile/Tabs/Medicals */ "./resources/js/pages/Profile/Tabs/Medicals.vue"));
+      return Promise.all(/*! import() | profile_comps */[__webpack_require__.e(3), __webpack_require__.e(6), __webpack_require__.e(5), __webpack_require__.e(4), __webpack_require__.e("profile_comps")]).then(__webpack_require__.bind(null, /*! ../Profile/Tabs/Medicals */ "./resources/js/pages/Profile/Tabs/Medicals.vue"));
     },
     EmergencyTab: function EmergencyTab() {
-      return Promise.all(/*! import() | profile_comps */[__webpack_require__.e(3), __webpack_require__.e(6), __webpack_require__.e(4), __webpack_require__.e(5), __webpack_require__.e("profile_comps")]).then(__webpack_require__.bind(null, /*! ../Profile/Tabs/Emergency */ "./resources/js/pages/Profile/Tabs/Emergency.vue"));
+      return Promise.all(/*! import() | profile_comps */[__webpack_require__.e(3), __webpack_require__.e(6), __webpack_require__.e(5), __webpack_require__.e(4), __webpack_require__.e("profile_comps")]).then(__webpack_require__.bind(null, /*! ../Profile/Tabs/Emergency */ "./resources/js/pages/Profile/Tabs/Emergency.vue"));
     },
     SocialTab: function SocialTab() {
-      return Promise.all(/*! import() | profile_comps */[__webpack_require__.e(3), __webpack_require__.e(6), __webpack_require__.e(4), __webpack_require__.e(5), __webpack_require__.e("profile_comps")]).then(__webpack_require__.bind(null, /*! ../Profile/Tabs/Social */ "./resources/js/pages/Profile/Tabs/Social.vue"));
+      return Promise.all(/*! import() | profile_comps */[__webpack_require__.e(3), __webpack_require__.e(6), __webpack_require__.e(5), __webpack_require__.e(4), __webpack_require__.e("profile_comps")]).then(__webpack_require__.bind(null, /*! ../Profile/Tabs/Social */ "./resources/js/pages/Profile/Tabs/Social.vue"));
     },
     TravelTab: function TravelTab() {
-      return Promise.all(/*! import() | profile_comps */[__webpack_require__.e(3), __webpack_require__.e(6), __webpack_require__.e(4), __webpack_require__.e(5), __webpack_require__.e("profile_comps")]).then(__webpack_require__.bind(null, /*! ../Profile/Tabs/Travel */ "./resources/js/pages/Profile/Tabs/Travel.vue"));
+      return Promise.all(/*! import() | profile_comps */[__webpack_require__.e(3), __webpack_require__.e(6), __webpack_require__.e(5), __webpack_require__.e(4), __webpack_require__.e("profile_comps")]).then(__webpack_require__.bind(null, /*! ../Profile/Tabs/Travel */ "./resources/js/pages/Profile/Tabs/Travel.vue"));
     },
     PersonaTab: function PersonaTab() {
-      return Promise.all(/*! import() | profile_comps */[__webpack_require__.e(3), __webpack_require__.e(6), __webpack_require__.e(4), __webpack_require__.e(5), __webpack_require__.e("profile_comps")]).then(__webpack_require__.bind(null, /*! ../Profile/Tabs/Persona */ "./resources/js/pages/Profile/Tabs/Persona.vue"));
+      return Promise.all(/*! import() | profile_comps */[__webpack_require__.e(3), __webpack_require__.e(6), __webpack_require__.e(5), __webpack_require__.e(4), __webpack_require__.e("profile_comps")]).then(__webpack_require__.bind(null, /*! ../Profile/Tabs/Persona */ "./resources/js/pages/Profile/Tabs/Persona.vue"));
     }
   },
   mounted: function mounted() {}
