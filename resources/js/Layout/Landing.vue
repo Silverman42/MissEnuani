@@ -28,7 +28,7 @@
                     />
                 </inertia-link>
                 <nav
-                    class="flex justify-end items-center overflow-x-auto lg:overflow-visible"
+                    class="flex justify-end w-full lg:w-auto items-center overflow-x-auto lg:overflow-visible"
                 >
                     <inertia-link
                         class="inline-block text-black hover:text-yellow-500 font-medium"
