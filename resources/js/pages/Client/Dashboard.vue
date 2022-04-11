@@ -161,7 +161,7 @@
                             }}</span
                         >
                     </div>
-                    <div>
+                    <!-- <div>
                         <primary-btn
                             type="submit"
                             form="payment"
@@ -171,7 +171,7 @@
                         >
                             Pay and Update Profile</primary-btn
                         >
-                    </div>
+                    </div> -->
                 </card-bg>
                 <card-bg v-if="$page.user.has_paid === 1" extend="mb-10">
                     <h3 class="text-lg font-bold mb-5">Payment Summary</h3>
