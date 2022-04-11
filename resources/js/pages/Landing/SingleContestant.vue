@@ -32,12 +32,12 @@
         >
             <div class="w-full md:w-4/12 mb-10 md:mb-0">
                 <h1 class="text-3xl md:text-6xl secondary-font text-white">
-                    Ngozi <br />
-                    Mary <br />
+                    {{ $page.contestant.first_name }} <br />
+                    {{ $page.contestant.last_name }} <br />
                     <span
                         class="inline-block text-yellow-500 uppercase tracking-widest text-lg"
                     >
-                        MISS ISSELE-UKU
+                        MISS {{ $page.contestant.town }}
                     </span>
                 </h1>
                 <div class="py-5">
@@ -51,16 +51,22 @@
                         Corrupti temporibus, maxime
                     </p>
                 </div>
-                <div class="py-5">
+                <div
+                    v-if="$page.contestant.profile_stage === 'finals'"
+                    class="py-5"
+                >
                     <span
                         class="inline-block text-gray-500 uppercase tracking-widest text-xs"
                     >
                         Position
                     </span>
-                    <p class="mt-3 text-gray-300">1</p>
+                    <p class="mt-3 text-gray-300">
+                        {{ $page.contestant.position }}
+                    </p>
                 </div>
                 <div class="py-5">
                     <button
+                        v-if="$page.contestant.profile_stage === 'audition'"
                         @click="openModal"
                         class="inline-block uppercase tracking-widest py-4 px-8 text-md leading-3 text-sm bg-yellow-400 hover:bg-yellow-600 text-black mt-4"
                     >
@@ -69,11 +75,7 @@
                 </div>
             </div>
             <div class="w-full md:w-6/12">
-                <img
-                    :src="`${$page.auth.settings.app_url}/assets/img/hero.jpg`"
-                    class="w-full"
-                    alt=""
-                />
+                <img :src="$page.contestant.avatar" class="w-full" alt="" />
             </div>
         </section>
         <section
@@ -85,7 +87,9 @@
                 >
                     Height
                 </span>
-                <p class="text-gray-900 text-lg">2.ft</p>
+                <p class="text-gray-900 text-lg">
+                    {{ $page.contestant.height }}ft
+                </p>
             </div>
             <div>
                 <span
@@ -93,15 +97,49 @@
                 >
                     Hobbies
                 </span>
-                <p class="text-gray-900 text-lg">Reading, Swimming</p>
+                <p class="text-gray-900 text-lg">
+                    {{ $page.contestant.hobbies }}
+                </p>
             </div>
             <div>
                 <span
                     class="inline-block text-gray-800 uppercase tracking-widest text-sm"
                 >
-                    Favorite meal
+                    Profession
                 </span>
-                <p class="text-gray-900 text-lg">Jollof Rice</p>
+                <p class="text-gray-900 text-lg">
+                    {{ $page.contestant.profession }}
+                </p>
+            </div>
+            <div>
+                <span
+                    class="inline-block text-gray-800 uppercase tracking-widest text-sm"
+                >
+                    Facebook handle
+                </span>
+                <p class="text-gray-900 text-lg">
+                    {{ $page.contestant.facebook_url }}
+                </p>
+            </div>
+            <div>
+                <span
+                    class="inline-block text-gray-800 uppercase tracking-widest text-sm"
+                >
+                    Instagram handle
+                </span>
+                <p class="text-gray-900 text-lg">
+                    {{ $page.contestant.instagram_url }}
+                </p>
+            </div>
+            <div>
+                <span
+                    class="inline-block text-gray-800 uppercase tracking-widest text-sm"
+                >
+                    Twitter handle
+                </span>
+                <p class="text-gray-900 text-lg">
+                    {{ $page.contestant.twitter_url }}
+                </p>
             </div>
         </section>
     </div>

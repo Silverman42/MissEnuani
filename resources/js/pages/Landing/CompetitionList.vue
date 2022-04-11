@@ -48,28 +48,64 @@
             <h1 class="text-lg text-primary-600">No competition found</h1>
             <p class="text-gray-600 text-xs">Please check again</p>
         </div>
-        <div class="mt-16">
+        <div class="mt-16" v-if="$page.competitions.data.length > 0">
             <div class="mx-auto flex justify-between w-56">
-                <button
-                    class="bg-gray-800 p-4 py-2 text-white hover:text-yellow-500"
+                <a
+                    :href="$page.competitions.prev_page_url || '#'"
+                    class="bg-gray-800 p-4 py-2 text-white inline-block hover:text-yellow-500"
                 >
                     Previous
-                </button>
+                </a>
+                <a
+                    v-if="
+                        $page.competitions.from !==
+                        $page.competitions.current_page
+                    "
+                    :href="$page.competitions.first_page_url || '#'"
+                    class="p-4 py-2 inline-block border border-transparent hover:border-gray-600"
+                >
+                    {{ $page.competitions.from }}
+                </a>
                 <div
+                    v-if="
+                        $page.competitions.from !==
+                        $page.competitions.current_page
+                    "
                     class="p-4 py-2 border border-transparent hover:border-gray-600"
                 >
-                    1
+                    ...
                 </div>
                 <div
                     class="p-4 py-2 border border-transparent hover:border-gray-600"
                 >
-                    2
+                    {{ $page.competitions.current_page }}
                 </div>
-                <button
+
+                <div
+                    v-if="
+                        $page.competitions.last_page !==
+                        $page.competitions.current_page
+                    "
+                    class="p-4 py-2 border border-transparent hover:border-gray-600"
+                >
+                    ...
+                </div>
+                <a
+                    v-if="
+                        $page.competitions.last_page !==
+                        $page.competitions.current_page
+                    "
+                    :href="$page.competitions.last_page_url || '#'"
+                    class="p-4 py-2 inline-block border border-transparent hover:border-gray-600"
+                >
+                    {{ $page.competitions.last_page }}
+                </a>
+                <a
+                    :href="$page.competitions.next_page_url || '#'"
                     class="bg-gray-800 p-4 py-2 text-white hover:text-yellow-500"
                 >
                     Next
-                </button>
+                </a>
             </div>
         </div>
     </div>

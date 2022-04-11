@@ -15,5 +15,8 @@ mix.js('resources/js/app.js', 'public/js').postCss('resources/css/app.css','publ
   require('tailwindcss')
 ])
   // .sass('resources/sass/app.scss', 'public/css');
+if (mix.inProduction()) {
+    mix.version();
+}
 mix.browserSync('enuani.test')
 

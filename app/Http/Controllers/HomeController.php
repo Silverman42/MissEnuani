@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Competitions;
 use App\Models\User;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
@@ -52,7 +51,7 @@ class HomeController extends Controller
     {
         $contestant = User::where([
             'id' => $id,
-            'is_admin' => 0
+            'is_admin' => false
         ])->firstOrFail();
         return Inertia::render('Landing/SingleContestant', [
             'contestant' => $contestant

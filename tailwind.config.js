@@ -2,7 +2,7 @@ const { colors } = require('tailwindcss/defaultTheme')
 module.exports = {
   theme: {
     fontFamily:{
-      'body': ['Circular Std Book']
+      'body': ['Source Sans Pro']
     },
     extend: {
       colors:{

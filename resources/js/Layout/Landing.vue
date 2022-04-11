@@ -28,7 +28,7 @@
                     />
                 </inertia-link>
                 <nav
-                    class="inline-flex justify-end items-center overflow-x-auto lg:overflow-visible"
+                    class="flex justify-end items-center overflow-x-auto lg:overflow-visible"
                 >
                     <inertia-link
                         class="inline-block text-black hover:text-yellow-500 font-medium"
@@ -42,7 +42,7 @@
                     >
                     <a
                         class="inline-block ml-6 text-black hover:text-yellow-500 font-medium"
-                        href="#"
+                        href="/#about"
                         >About</a
                     >
                     <a
@@ -148,7 +148,7 @@
                             >Twitter</a
                         >
                         <a
-                            href="https://instagram.com/missenuanibeautypageant"
+                            href="https://instagram.com/MissEnuani"
                             target="_blank"
                             class="inline-block mr-5 mb-5 text-sm uppercase"
                             >Instagram</a

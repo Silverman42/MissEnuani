@@ -27,6 +27,7 @@
             </div>
         </section>
         <section
+            id="about"
             class="mt-16 py-10 flex flex-wrap justify-between items-center"
         >
             <div class="w-full md:w-5/12 mb-5 md:mb-0">

@@ -50,56 +50,105 @@
             </div>
             <div class="w-full lg:w-8/12">
                 <div
+                    v-if="$page.contestants.data.length > 0"
                     class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:grid-cols-4"
                 >
                     <inertia-link
-                        v-for="(count, index) in 12"
+                        v-for="(contestant, index) in $page.contestants.data"
                         :key="index"
                         :href="
-                            $route.relativePath('landing.one_contestant', 10001)
+                            $route.relativePath(
+                                'landing.one_contestant',
+                                contestant.id
+                            )
                         "
                         class="border border-gray-500 hover:shadow-lg hover:border-yellow-600 p-3 py-8 flex flex-col items-center"
                     >
                         <img
-                            :src="``"
+                            :src="contestant.avatar"
                             class="w-full h-32 mb-3 object-cover object-center bg-gray-400"
                             alt="crown"
                         />
                         <p
                             class="text-center text-lg uppercase tracking-wider text-gray-800"
                         >
-                            NGOZI <br />
-                            VERONICA
+                            {{ contestant.first_name }} <br />
+                            {{ contestant.last_name }}
                         </p>
                         <p
                             class="text-center text-primary-700 text-xs uppercase font-bold"
                         >
-                            MISS ISSELE-UKu
+                            MISS {{ contestant.town }}
                         </p>
                     </inertia-link>
                 </div>
-                <div class="mt-8">
+                <div v-else class="text-center">
+                    <h1 class="text-lg text-primary-600">
+                        No contestant finalist
+                    </h1>
+                    <p class="text-gray-600 text-xs">
+                        No contestant finalist chosen at the moment, Please
+                        check again
+                    </p>
+                </div>
+                <div class="mt-8" v-if="$page.contestants.data.length > 0">
                     <div class="mx-auto flex justify-between w-56">
-                        <button
-                            class="bg-gray-800 p-4 py-2 text-white hover:text-yellow-500"
+                        <a
+                            :href="$page.contestants.prev_page_url || '#'"
+                            class="bg-gray-800 p-4 py-2 text-white inline-block hover:text-yellow-500"
                         >
                             Previous
-                        </button>
+                        </a>
+                        <a
+                            v-if="
+                                $page.contestants.from !==
+                                $page.contestants.current_page
+                            "
+                            :href="$page.contestants.first_page_url || '#'"
+                            class="p-4 py-2 inline-block border border-transparent hover:border-gray-600"
+                        >
+                            {{ $page.contestants.from }}
+                        </a>
                         <div
+                            v-if="
+                                $page.contestants.from !==
+                                $page.contestants.current_page
+                            "
                             class="p-4 py-2 border border-transparent hover:border-gray-600"
                         >
-                            1
+                            ...
                         </div>
                         <div
                             class="p-4 py-2 border border-transparent hover:border-gray-600"
                         >
-                            2
+                            {{ $page.contestants.current_page }}
                         </div>
-                        <button
+
+                        <div
+                            v-if="
+                                $page.contestants.last_page !==
+                                $page.contestants.current_page
+                            "
+                            class="p-4 py-2 border border-transparent hover:border-gray-600"
+                        >
+                            ...
+                        </div>
+                        <a
+                            v-if="
+                                $page.contestants.last_page !==
+                                $page.contestants.current_page
+                            "
+                            :href="$page.contestants.last_page_url || '#'"
+                            class="p-4 py-2 inline-block border border-transparent hover:border-gray-600"
+                        >
+                            {{ $page.contestants.last_page }}
+                        </a>
+                        <a
+                            :href="$page.contestants.next_page_url || '#'"
                             class="bg-gray-800 p-4 py-2 text-white hover:text-yellow-500"
                         >
                             Next
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -112,6 +161,9 @@ import Layout from "../../Layout/Landing.vue";
 export default {
     layout: Layout,
     name: "CompetitionView",
+    mounted() {
+        console.log(this.$page.contestants);
+    },
 };
 </script>
 
