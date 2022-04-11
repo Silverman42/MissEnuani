@@ -135,7 +135,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="mb-5">
+                    <!-- <div class="mb-5">
                         <select-input
                             name="nationality"
                             form="payment"
@@ -151,7 +151,7 @@
                                 {{ country.name }}
                             </option>
                         </select-input>
-                    </div>
+                    </div> -->
                     <div class="flex mb-5 justify-between items-center">
                         <h6 class="">Regisration Fee</h6>
                         <span class="text-2xl text-black font-bold md:text-4xl"

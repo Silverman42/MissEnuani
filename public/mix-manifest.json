@@ -1,11 +1,10 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
+    "/components.js": "/components.js",
     "/layout_comps.js": "/layout_comps.js",
     "/profile_comps.js": "/profile_comps.js",
     "/settings_page.js": "/settings_page.js",
-    "/settings_page~user_list_comps.js": "/settings_page~user_list_comps.js",
     "/user_list_comps.js": "/user_list_comps.js",
-    "/user_page.js": "/user_page.js",
-    "/components.js": "/components.js"
+    "/user_page.js": "/user_page.js"
 }

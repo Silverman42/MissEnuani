@@ -104,7 +104,9 @@
                             Miss Enuani Beauty <br />
                             Peagent
                         </p>
-                        <span class="text-xs text-gray-500">2020</span>
+                        <span class="text-xs text-gray-500">{{
+                            getYear()
+                        }}</span>
                     </div>
                 </div>
                 <div class="mb-10">
@@ -134,22 +136,26 @@
                     </h2>
                     <div class="flex flex-wrap mt-5">
                         <a
-                            href=""
+                            href="https://web.facebook.com/Missenuanibeautypagaent"
+                            target="_blank"
                             class="inline-block mr-5 mb-5 text-sm uppercase"
                             >Facebook</a
                         >
                         <a
-                            href=""
+                            href="https://twitter.com/MissEnuani"
+                            target="_blank"
                             class="inline-block mr-5 mb-5 text-sm uppercase"
                             >Twitter</a
                         >
                         <a
-                            href=""
+                            href="https://instagram.com/missenuanibeautypageant"
+                            target="_blank"
                             class="inline-block mr-5 mb-5 text-sm uppercase"
                             >Instagram</a
                         >
                         <a
-                            href=""
+                            href="https://wa.me/2347054520815"
+                            target="_blank"
                             class="inline-block mr-5 mb-5 text-sm uppercase"
                             >Whatsapp</a
                         >
@@ -161,7 +167,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+    methods: {
+        getYear() {
+            var date = new Date();
+            return date.getFullYear();
+        },
+    },
+};
 </script>
 
 <style>

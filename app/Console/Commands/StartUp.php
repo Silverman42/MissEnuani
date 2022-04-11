@@ -96,7 +96,7 @@ class StartUp extends Command
         $admin->first_name = 'Super';
         $admin->last_name = 'Admin';
         $admin->is_admin = true;
-        $admin->email = 'admin@enuani.com';
+        $admin->email = 'snkeze9@gmail.com';
         $admin->id = 998867;
         $admin->save();
         $this->setAdminPermissions($admin);

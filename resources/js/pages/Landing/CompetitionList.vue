@@ -14,11 +14,19 @@
             </h1>
         </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:grid-cols-5 mt-16">
+        <div
+            v-if="$page.competitions.data.length > 0"
+            class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:grid-cols-5 mt-16"
+        >
             <inertia-link
-                v-for="(count, index) in 20"
+                v-for="(competition, index) in $page.competitions.data"
                 :key="index"
-                :href="$route.relativePath('landing.competition_view', 10001)"
+                :href="
+                    $route.relativePath(
+                        'landing.competition_view',
+                        competition.id
+                    )
+                "
                 class="border border-gray-500 hover:shadow-lg hover:border-yellow-600 p-3 py-8 flex flex-col items-center"
             >
                 <img
@@ -32,9 +40,13 @@
                     Miss Enuani Beauty Pageant
                 </p>
                 <p class="text-center text-primary-700 text-xl font-bold">
-                    2022
+                    {{ competition.year }}
                 </p>
             </inertia-link>
+        </div>
+        <div v-else class="text-center">
+            <h1 class="text-lg text-primary-600">No competition found</h1>
+            <p class="text-gray-600 text-xs">Please check again</p>
         </div>
         <div class="mt-16">
             <div class="mx-auto flex justify-between w-56">
@@ -68,6 +80,7 @@ import Layout from "../../Layout/Landing.vue";
 export default {
     layout: Layout,
     name: "CompetitionList",
+    mounted() {},
 };
 </script>
 

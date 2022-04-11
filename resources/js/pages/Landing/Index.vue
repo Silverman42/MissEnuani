@@ -8,9 +8,8 @@
                     Beauty, Hardwork and Virtue
                 </h1>
                 <p class="mt-10 text-gray-300">
-                    The Miss May Day Beauty Peagent is a celebration of elegance
-                    and commitment to human development made possible by
-                    humanitarians from all works of life
+                    The Miss Enuani Beauty Peagent is a celebration of elegance,
+                    rich culture and beauty of the Enuani people of Delta State
                 </p>
                 <a
                     href="/register"
@@ -39,13 +38,15 @@
                 </h1>
                 <p class="mt-10 text-gray-700">
                     <span class="text-black"
-                        >The Miss May Day Beauty Peagent</span
+                        >The Miss Enuani Beauty Pageant</span
                     >
-                    is designed to celebrate workers across the globe while
-                    providing a platform that discovers , encourage and empower
-                    young ladies to empower others from different nations
-                    towards noble attainments/achievements through diligence and
-                    hard work.
+                    Miss enuani focuses on exploring and developing the overall
+                    talents of participants <br /><br />
+                    Miss Enuani is now in its third year, as an annual event it
+                    is opened to all all beautiful young girls of age 17-29 who
+                    are talented and hungry to explore their inner talents and
+                    beauty who also ready to project image of Enuani people
+                    positively
                 </p>
             </div>
             <div class="w-full md:w-6/12 shadow-offset shadow-offset_yellow">
@@ -78,10 +79,8 @@
                     A Two Part Memorable Event
                 </h2>
                 <p class="mt-10 text-gray-700">
-                    The MMDBP show is a two part event that consist of the
-                    beauty peagent show and an award night. Both events occur on
-                    the
-                    <span class="text-gray-800">1st day of May every year</span>
+                    The MEBP is a two part event that consists of beauty pageant
+                    show and an award night
                 </p>
                 <div class="mt-10 grid grid-cols-1 md:grid-cols-2 col-gap-4">
                     <div class="mb-5 md:mb-0">
@@ -98,14 +97,11 @@
                             The Beauty Peagent
                         </h3>
                         <p class="text-gray-700">
-                            MMDI has been designed to be a 6day event. A
+                            MEBP has been designed to be a 6day event. A
                             compulsory 5 days camping for contestants, in which
                             they are made to engaged in numerous activities
                             culminating on the Grand finale which is on the 6th
                             and final day of the event
-                            <span class="text-black"
-                                >(1st of May Annually)</span
-                            >
                         </p>
                     </div>
                     <div>
@@ -119,14 +115,14 @@
                             />
                         </span>
                         <h3 class="text-xl text-gray-900 font-medium mb-3">
-                            Labor Excellence Award
+                            Enuani Achievers Award
                         </h3>
                         <p class="text-gray-700">
-                            Labor Excellence Award will be celebrated on the 1st
-                            of May annually, being International workers’ day
-                            Celebration. It will be a single gathering where
-                            diligence and hard work is celebrated in all sectors
-                            of the economy.
+                            The enuani achievers award is design to give special
+                            recognition to outstanding individuals from all
+                            works of life who have immensely contributed their
+                            quota in projecting our people positively in their
+                            fields of endeavor
                         </p>
                     </div>
                 </div>
@@ -156,7 +152,9 @@
                         Fill in your full name, email and password in the
                         registration page. <br />
                         Click
-                        <a class="text-black hover:text-yellow-500" href="#"
+                        <a
+                            class="text-black hover:text-yellow-500"
+                            href="/register"
                             >here</a
                         >
                         to begin registration

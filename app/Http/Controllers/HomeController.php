@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use Competitions;
+use App\Models\User;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
+use App\Models\Competitions as ModelsCompetitions;
 
 class HomeController extends Controller
 {
@@ -29,17 +32,31 @@ class HomeController extends Controller
     // Competition page
     public function competition_list()
     {
-        return Inertia::render('Landing/CompetitionList');
+        $competitions = ModelsCompetitions::paginate(20);
+        return Inertia::render('Landing/CompetitionList', [
+            'competitions' => $competitions
+        ]);
     }
 
-    public function competition_view()
+    public function competition_view($competition_id)
     {
-        return Inertia::render('Landing/CompetitionView');
+        $competition = ModelsCompetitions::where('id', $competition_id)->firstOrFail();
+        $contestants = User::where('competition_id', $competition->id)->paginate(24);
+        return Inertia::render('Landing/CompetitionView', [
+            'competition' => $competition,
+            'contestants' => $contestants
+        ]);
     }
 
-    public function one_contestant()
+    public function one_contestant($id)
     {
-        return Inertia::render('Landing/SingleContestant');
+        $contestant = User::where([
+            'id' => $id,
+            'is_admin' => 0
+        ])->firstOrFail();
+        return Inertia::render('Landing/SingleContestant', [
+            'contestant' => $contestant
+        ]);
     }
 
     public function vote_success()
