@@ -1,1 +1,296 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[30],{34:function(t,e,r){"use strict";r.r(e);var o={name:"Social",data:function(){return{facebook_url:"",twitter_url:"",phone_number:""}},methods:{assignDefault:function(){this.facebook_url=this.$page.user.facebook_url||"",this.twitter_url=this.$page.user.twitter_url||"",this.phone_number=this.$page.user.phone_number||""},submitForm:function(){var t=this.facebook_url,e=this.twitter_url,r=this.phone_number;this.$inertia.post(this.$route.relativePath("client.profile.update.social"),{facebook_url:t,twitter_url:e,phone_number:r})}},mounted:function(){this.assignDefault()}},i=r(0),a=Object(i.a)(o,(function(){var t=this,e=t.$createElement,r=t._self._c||e;return r("div",[t._m(0),t._v(" "),r("form",{attrs:{action:"",id:"social"},on:{submit:function(e){return e.preventDefault(),t.submitForm(e)}}}),t._v(" "),r("div",{staticClass:"mb-3"},[r("text-input",{attrs:{form:"social",error:t.$page.errors.facebook_url,label:"Facebook link"},model:{value:t.facebook_url,callback:function(e){t.facebook_url=e},expression:"facebook_url"}})],1),t._v(" "),r("div",{staticClass:"mb-3"},[r("text-input",{attrs:{form:"social",error:t.$page.errors.twitter_url,label:"Twitter link"},model:{value:t.twitter_url,callback:function(e){t.twitter_url=e},expression:"twitter_url"}})],1),t._v(" "),r("div",{staticClass:"mb-10"},[r("text-input",{attrs:{type:"number",form:"social",error:t.$page.errors.phone_number,label:"Phone Number (with call code)"},model:{value:t.phone_number,callback:function(e){t.phone_number=e},expression:"phone_number"}})],1),t._v(" "),r("primary-btn",{attrs:{type:"submit",form:"social",width:"w-full",color:"yellow",fontColor:"text-black"}},[t._v("Update Social Data")])],1)}),[function(){var t=this.$createElement,e=this._self._c||t;return e("div",{staticClass:"mb-5"},[e("h3",{staticClass:"text-lg font-bold"},[this._v("Social")]),this._v(" "),e("p",{staticClass:"text-sm"},[this._v("Social media links and contact")])])}],!1,null,null,null);e.default=a.exports}}]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[30],{
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Profile/Emergency.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Profile/Emergency.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'Emergency',
+  data: function data() {
+    return {
+      emergency_name: '',
+      emergency_relationship: '',
+      emergency_phone_number: '',
+      emergency_email: ''
+    };
+  },
+  methods: {
+    assignDefaults: function assignDefaults() {
+      this.emergency_name = this.$page.user.emergency_name || '';
+      this.emergency_relationship = this.$page.user.emergency_relationship || '';
+      this.emergency_email = this.$page.user.emergency_email || '';
+      this.emergency_phone_number = this.$page.user.emergency_phone_number || '';
+    },
+    submitForm: function submitForm() {
+      var emergency_name = this.emergency_name,
+          emergency_relationship = this.emergency_relationship,
+          emergency_email = this.emergency_email,
+          emergency_phone_number = this.emergency_phone_number;
+      this.$inertia.post(this.$route.relativePath('client.profile.update.emergency'), {
+        emergency_name: emergency_name,
+        emergency_relationship: emergency_relationship,
+        emergency_email: emergency_email,
+        emergency_phone_number: emergency_phone_number
+      });
+    }
+  },
+  mounted: function mounted() {
+    this.assignDefaults();
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Profile/Emergency.vue?vue&type=template&id=b9291e5c&":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Profile/Emergency.vue?vue&type=template&id=b9291e5c& ***!
+  \***************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("form", {
+        attrs: { action: "", id: "emergency" },
+        on: {
+          submit: function ($event) {
+            $event.preventDefault()
+            return _vm.submitForm($event)
+          },
+        },
+      }),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mb-3" },
+        [
+          _c("text-input", {
+            attrs: {
+              label: "Name of Emergency Contact",
+              error: _vm.$page.errors.emergency_name || "",
+              form: "emergency",
+            },
+            model: {
+              value: _vm.emergency_name,
+              callback: function ($$v) {
+                _vm.emergency_name = $$v
+              },
+              expression: "emergency_name",
+            },
+          }),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mb-3" },
+        [
+          _c("text-input", {
+            attrs: {
+              label: "Emergency Phone Number",
+              error: _vm.$page.errors.emergency_phone_number || "",
+              form: "emergency",
+            },
+            model: {
+              value: _vm.emergency_phone_number,
+              callback: function ($$v) {
+                _vm.emergency_phone_number = $$v
+              },
+              expression: "emergency_phone_number",
+            },
+          }),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mb-3" },
+        [
+          _c("text-input", {
+            attrs: {
+              label: "Relationship with Emergency Contact",
+              error: _vm.$page.errors.emergency_relationship || "",
+              form: "emergency",
+            },
+            model: {
+              value: _vm.emergency_relationship,
+              callback: function ($$v) {
+                _vm.emergency_relationship = $$v
+              },
+              expression: "emergency_relationship",
+            },
+          }),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mb-10" },
+        [
+          _c("text-input", {
+            attrs: {
+              label: "Emergency Contact Email",
+              error: _vm.$page.errors.emergency_email || "",
+              form: "emergency",
+            },
+            model: {
+              value: _vm.emergency_email,
+              callback: function ($$v) {
+                _vm.emergency_email = $$v
+              },
+              expression: "emergency_email",
+            },
+          }),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "primary-btn",
+        {
+          attrs: {
+            type: "submit",
+            color: "yellow",
+            fontColor: "text-black",
+            width: "w-full",
+            form: "emergency",
+          },
+        },
+        [_vm._v("Update Emergency")]
+      ),
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mb-5" }, [
+      _c("h3", { staticClass: "text-lg font-bold" }, [_vm._v("Emergency")]),
+      _vm._v(" "),
+      _c("p", { staticClass: "text-sm" }, [
+        _vm._v("Information about your emergency contact"),
+      ]),
+    ])
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./resources/js/pages/Profile/Emergency.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/pages/Profile/Emergency.vue ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Emergency_vue_vue_type_template_id_b9291e5c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Emergency.vue?vue&type=template&id=b9291e5c& */ "./resources/js/pages/Profile/Emergency.vue?vue&type=template&id=b9291e5c&");
+/* harmony import */ var _Emergency_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Emergency.vue?vue&type=script&lang=js& */ "./resources/js/pages/Profile/Emergency.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Emergency_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Emergency_vue_vue_type_template_id_b9291e5c___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Emergency_vue_vue_type_template_id_b9291e5c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/pages/Profile/Emergency.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/pages/Profile/Emergency.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/pages/Profile/Emergency.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Emergency_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Emergency.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Profile/Emergency.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Emergency_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/pages/Profile/Emergency.vue?vue&type=template&id=b9291e5c&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/pages/Profile/Emergency.vue?vue&type=template&id=b9291e5c& ***!
+  \*********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Emergency_vue_vue_type_template_id_b9291e5c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Emergency.vue?vue&type=template&id=b9291e5c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Profile/Emergency.vue?vue&type=template&id=b9291e5c&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Emergency_vue_vue_type_template_id_b9291e5c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Emergency_vue_vue_type_template_id_b9291e5c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ })
+
+}]);

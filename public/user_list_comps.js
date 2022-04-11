@@ -1,1 +1,274 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[43,24,39],{147:function(t,e,s){"use strict";s.r(e);s(96);var a={props:{extend:String,firstName:String,lastName:String,active:{default:!0,type:Boolean},avatar:String},components:{Avatar:function(){return s.e(43).then(s.bind(null,96))}}},i=s(0),r=Object(i.a)(a,(function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("div",{staticClass:"w-full overflow-hidden rounded-md shadow-sm",class:[t.extend],staticStyle:{"--delay":"0.1s"}},[s("div",{staticClass:"h-20 w-full bg-primary-900"}),t._v(" "),s("div",{staticClass:"p-10 md:p-12 bg-white"},[s("div",{staticClass:"flex items-center flex-col",staticStyle:{"margin-top":"-90px"}},[s("picture",{staticClass:"inline-block rounded-full border-4 border-white mx-auto"},[s("avatar",{attrs:{size:"md",src:t.avatar}})],1),t._v(" "),s("p",{staticClass:"font-bold text-center text-sm"},[t._v(t._s(t.firstName||"Firstname")),s("br"),t._v(t._s(t.lastName||"Lastname")+" ")]),t._v(" "),s("div",{staticClass:"flex justify-center mt-5"},[s("span",{staticClass:"inline-block rounded-md text-xs  px-2 py-1 mr-2",class:{"bg-yellow-300":!0===t.active,"bg-red-300":!1===t.active}},[t._v("\n                    "+t._s(!0===t.active?"Active":"Inactive")+"\n                ")]),t._v(" "),s("span",{staticClass:"inline-flex rounded-md text-xs px-2 py-1 mr-2 border"},[t._t("default")],2)])])])])}),[],!1,null,null,null);e.default=r.exports},26:function(t,e,s){var a=s(95);"string"==typeof a&&(a=[[t.i,a,""]]);var i={hmr:!0,transform:void 0,insertInto:void 0};s(2)(a,i);a.locals&&(t.exports=a.locals)},27:function(t,e){e.__esModule=!0,e.default={body:'<g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></g>',width:24,height:24}},30:function(t,e,s){"use strict";s.r(e);var a={name:"InvoiceComp",props:{invoice:{type:Object,default:function(){return{}}},auth:{type:Object,default:function(){return{}}}},computed:{getCurrency:function(){return"ngn"===this.invoice.currency?"₦":"$"},paymentWasCompleted:function(){return 1===this.invoice.is_completed}},filters:{changeNumberFormat:function(t){return new Intl.NumberFormat("en-US").format(t)}}},i=s(0),r=Object(i.a)(a,(function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("div",{staticClass:"flex flex-wrap"},[s("div",{staticClass:"w-full md:w-6/12 mb-6 md:mb-10 md:pr-2"},[s("h6",{staticClass:"text-2xl font-bold capitalize"},[t._v(t._s(t.auth.first_name)+" "+t._s(t.auth.last_name))]),t._v(" "),s("p",{staticClass:"text-xs"},[t._v(t._s(t.invoice.email))])]),t._v(" "),s("div",{staticClass:"w-full md:w-6/12 md:text-right md:mb-10 mb-6 md:pr-2"},[s("h6",{staticClass:"uppercase text-xs tracking-widest"},[t._v("Amount")]),t._v(" "),s("p",{staticClass:"text-gray-900 text-3xl"},[s("sup",{staticClass:"text-xs text-yellow-600"},[t._v(t._s(t.getCurrency)+"\n            ")]),t._v(t._s(t._f("changeNumberFormat")(t.invoice.amount))),s("sup",{staticClass:"text-xs text-yellow-600"},[t._v(" .00")])])]),t._v(" "),s("div",{staticClass:"w-full md:w-4/12 mb-6 md:pr-2"},[s("h6",{staticClass:"uppercase text-xs tracking-widest"},[t._v("Payment Status")]),t._v(" "),s("p",{staticClass:"inline-block w-auto px-4 py-1 rounded-md",class:{"bg-green-300":!0===t.paymentWasCompleted,"bg-red-300":!1===t.paymentWasCompleted}},[t._v("\n            "+t._s(!0===t.paymentWasCompleted?"Paid":"Unpaid"))])]),t._v(" "),t._m(0),t._v(" "),s("div",{staticClass:"w-full md:w-4/12 mb-6 md:pr-2"},[s("h6",{staticClass:"uppercase text-xs tracking-widest"},[t._v("Transaction reference")]),t._v(" "),s("p",{staticClass:"text-gray-900"},[t._v(t._s(t.invoice.reference_id))])]),t._v(" "),s("div",{staticClass:"w-full md:w-4/12 mb-6 md:pr-2"},[s("h6",{staticClass:"uppercase text-xs tracking-widest"},[t._v("Competition")]),t._v(" "),s("p",{staticClass:"text-gray-900"},[t._v("Miss May Day Beauty Pageant "),s("span",{staticClass:"text-yellow-600"},[t._v(t._s(t.invoice.competitions.year))])])]),t._v(" "),s("div",{staticClass:"w-full md:w-4/12 mb-6  md:pr-2"},[s("h6",{staticClass:"uppercase text-xs tracking-widest"},[t._v("Date of Payment")]),t._v(" "),s("p",{staticClass:"text-gray-900"},[t._v(t._s(t.invoice.human_date_of_payment))])])])}),[function(){var t=this.$createElement,e=this._self._c||t;return e("div",{staticClass:"w-full md:w-4/12 mb-6 md:pr-2"},[e("h6",{staticClass:"uppercase text-xs tracking-widest"},[this._v("Payment Gateway")]),this._v(" "),e("p",{staticClass:"text-gray-900"},[this._v("Paystack")])])}],!1,null,null,null);e.default=r.exports},94:function(t,e,s){"use strict";s(26)},95:function(t,e,s){(t.exports=s(1)(!1)).push([t.i,".lg[data-v-7b7627e4]{width:10rem;height:10rem}.md[data-v-7b7627e4]{width:5rem;height:5rem}.sm[data-v-7b7627e4]{width:2.5rem;height:2.5rem}",""])},96:function(t,e,s){"use strict";s.r(e);var a=s(27),i=s.n(a),r={props:{src:{default:"",type:String},alt:String,size:{default:"sm",type:String}},data:function(){return{user:i.a}},computed:{defaultAvatarSize:function(){return"sm"===this.size?20:"md"===this.size?40:"lg"===this.size?70:void 0}}},n=(s(94),s(0)),l=Object(n.a)(r,(function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("figure",{staticClass:"overflow-hidden rounded-full bg-primaryBg-300",class:{md:"md"==t.size,lg:"lg"==t.size,sm:"sm"==t.size}},[""==t.src?s("div",{staticClass:"flex items-center justify-center w-full h-full"},[s("iconify-icon",{attrs:{width:t.defaultAvatarSize,height:t.defaultAvatarSize,icon:t.user}})],1):s("img",{staticClass:"block object-center object-fill w-full",attrs:{src:""+t.src,alt:t.alt}})])}),[],!1,null,"7b7627e4",null);e.default=l.exports}}]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["user_list_comps"],{
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Client/InvoiceComp.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Client/InvoiceComp.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'InvoiceComp',
+  props: {
+    invoice: {
+      type: Object,
+      "default": function _default() {
+        return {};
+      }
+    },
+    auth: {
+      type: Object,
+      "default": function _default() {
+        return {};
+      }
+    }
+  },
+  computed: {
+    getCurrency: function getCurrency() {
+      return this.invoice.currency === 'ngn' ? '₦' : '$';
+    },
+    paymentWasCompleted: function paymentWasCompleted() {
+      return this.invoice.is_completed === 1 ? true : false;
+    }
+  },
+  filters: {
+    changeNumberFormat: function changeNumberFormat(number) {
+      return new Intl.NumberFormat('en-US').format(number);
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Client/InvoiceComp.vue?vue&type=template&id=1bb9bcc1&":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Client/InvoiceComp.vue?vue&type=template&id=1bb9bcc1& ***!
+  \****************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "flex flex-wrap" }, [
+    _c("div", { staticClass: "w-full md:w-6/12 mb-6 md:mb-10 md:pr-2" }, [
+      _c("h6", { staticClass: "text-2xl font-bold capitalize" }, [
+        _vm._v(_vm._s(_vm.auth.first_name) + " " + _vm._s(_vm.auth.last_name)),
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "text-xs" }, [_vm._v(_vm._s(_vm.invoice.email))]),
+    ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "w-full md:w-6/12 md:text-right md:mb-10 mb-6 md:pr-2" },
+      [
+        _c("h6", { staticClass: "uppercase text-xs tracking-widest" }, [
+          _vm._v("Amount"),
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "text-gray-900 text-3xl" }, [
+          _c("sup", { staticClass: "text-xs text-yellow-600" }, [
+            _vm._v(_vm._s(_vm.getCurrency) + "\n            "),
+          ]),
+          _vm._v(_vm._s(_vm._f("changeNumberFormat")(_vm.invoice.amount))),
+          _c("sup", { staticClass: "text-xs text-yellow-600" }, [
+            _vm._v(" .00"),
+          ]),
+        ]),
+      ]
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "w-full md:w-4/12 mb-6 md:pr-2" }, [
+      _c("h6", { staticClass: "uppercase text-xs tracking-widest" }, [
+        _vm._v("Payment Status"),
+      ]),
+      _vm._v(" "),
+      _c(
+        "p",
+        {
+          staticClass: "inline-block w-auto px-4 py-1 rounded-md",
+          class: {
+            "bg-green-300": _vm.paymentWasCompleted === true,
+            "bg-red-300": _vm.paymentWasCompleted === false,
+          },
+        },
+        [
+          _vm._v(
+            "\n            " +
+              _vm._s(_vm.paymentWasCompleted === true ? "Paid" : "Unpaid")
+          ),
+        ]
+      ),
+    ]),
+    _vm._v(" "),
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "w-full md:w-4/12 mb-6 md:pr-2" }, [
+      _c("h6", { staticClass: "uppercase text-xs tracking-widest" }, [
+        _vm._v("Transaction reference"),
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "text-gray-900" }, [
+        _vm._v(_vm._s(_vm.invoice.reference_id)),
+      ]),
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "w-full md:w-4/12 mb-6 md:pr-2" }, [
+      _c("h6", { staticClass: "uppercase text-xs tracking-widest" }, [
+        _vm._v("Competition"),
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "text-gray-900" }, [
+        _vm._v("Miss May Day Beauty Pageant "),
+        _c("span", { staticClass: "text-yellow-600" }, [
+          _vm._v(_vm._s(_vm.invoice.competitions.year)),
+        ]),
+      ]),
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "w-full md:w-4/12 mb-6  md:pr-2" }, [
+      _c("h6", { staticClass: "uppercase text-xs tracking-widest" }, [
+        _vm._v("Date of Payment"),
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "text-gray-900" }, [
+        _vm._v(_vm._s(_vm.invoice.human_date_of_payment)),
+      ]),
+    ]),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "w-full md:w-4/12 mb-6 md:pr-2" }, [
+      _c("h6", { staticClass: "uppercase text-xs tracking-widest" }, [
+        _vm._v("Payment Gateway"),
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "text-gray-900" }, [_vm._v("Paystack")]),
+    ])
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./resources/js/pages/Client/InvoiceComp.vue":
+/*!***************************************************!*\
+  !*** ./resources/js/pages/Client/InvoiceComp.vue ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _InvoiceComp_vue_vue_type_template_id_1bb9bcc1___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./InvoiceComp.vue?vue&type=template&id=1bb9bcc1& */ "./resources/js/pages/Client/InvoiceComp.vue?vue&type=template&id=1bb9bcc1&");
+/* harmony import */ var _InvoiceComp_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./InvoiceComp.vue?vue&type=script&lang=js& */ "./resources/js/pages/Client/InvoiceComp.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _InvoiceComp_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _InvoiceComp_vue_vue_type_template_id_1bb9bcc1___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _InvoiceComp_vue_vue_type_template_id_1bb9bcc1___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/pages/Client/InvoiceComp.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/pages/Client/InvoiceComp.vue?vue&type=script&lang=js&":
+/*!****************************************************************************!*\
+  !*** ./resources/js/pages/Client/InvoiceComp.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_InvoiceComp_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./InvoiceComp.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Client/InvoiceComp.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_InvoiceComp_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/pages/Client/InvoiceComp.vue?vue&type=template&id=1bb9bcc1&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/pages/Client/InvoiceComp.vue?vue&type=template&id=1bb9bcc1& ***!
+  \**********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InvoiceComp_vue_vue_type_template_id_1bb9bcc1___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./InvoiceComp.vue?vue&type=template&id=1bb9bcc1& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Client/InvoiceComp.vue?vue&type=template&id=1bb9bcc1&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InvoiceComp_vue_vue_type_template_id_1bb9bcc1___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InvoiceComp_vue_vue_type_template_id_1bb9bcc1___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ })
+
+}]);
