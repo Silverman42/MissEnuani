@@ -38,6 +38,7 @@ class PaymentController extends Controller
             'amount' => $charge,
             'currency' => $currency,
             'reference' => $trans_reference,
+            'callback_url' => settings()['app_url'] . "/client/payment/callback",
             'metadata' => json_encode([
                 'first_name' => $request->first_name,
                 'last_name' => $request->last_name,
