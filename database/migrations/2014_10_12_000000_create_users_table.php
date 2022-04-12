@@ -21,8 +21,9 @@ class CreateUsersTable extends Migration
             $table->string('twitter_url', 120)->nullable();
             $table->string('instagram_url', 120)->nullable();
             $table->string('phone_number', 16)->nullable();
-            $table->string('nationality', 120)->nullable();
+            $table->string('nationality', 120)->default('Nigeria');
             $table->string('town', 120)->nullable();
+            $table->longText('bio')->nullable();
             $table->longText('address')->nullable();
             $table->string('avatar')->nullable();
             $table->string('avatar_id', 120)->nullable();
@@ -38,10 +39,10 @@ class CreateUsersTable extends Migration
             $table->unsignedFloat('height')->default(0.00);
             $table->unsignedFloat('weight')->default(0.00);
             $table->unsignedInteger('shoe_size')->default(0);
-            $table->enum('dress_size', ['xxl', 'xl', 'l', 'm', 's'])->default('l');
-            $table->enum('bust_size', ['xxl', 'xl', 'l', 'm', 's'])->default('l');
-            $table->enum('waist_size', ['xxl', 'xl', 'l', 'm', 's'])->default('l');
-            $table->enum('skin_color', ['Pale White', "Fair", "Light Brown", "Moderate Brown", "Dark Brown", "Black"])->default("Dark Brown");
+            $table->enum('dress_size', ['xxl', 'xl', 'l', 'm', 's', 'none'])->default('none');
+            $table->enum('bust_size', ['xxl', 'xl', 'l', 'm', 's', 'none'])->default('none');
+            $table->enum('waist_size', ['xxl', 'xl', 'l', 'm', 's', 'none'])->default('none');
+            $table->enum('skin_color', ['Pale White', "Fair", "Light Brown", "Moderate Brown", "Dark Brown", "Black", "None"])->default("None");
             $table->enum('blood_type', ['A+', "A-", "B+", "B-", "O+", "O-", "AB+", "AB-"])->default("A+");
             $table->boolean('can_smoke')->default(false);
             $table->boolean('is_vegetarian')->default(false);

@@ -26,32 +26,32 @@ class MedicalRequest extends FormRequest
     public function rules()
     {
         return [
-            'height' => 'string|nullable',
-            'weight' => 'string|nullable',
+            'height' => 'string|required',
+            'weight' => 'string|required',
             'shoe_size' => 'numeric|max:50|required',
             'dress_size' => [
                 'string',
-                Rule::in(['xxl', 'xl', 'l', 'm', 's']),
+                Rule::in(['xxl', 'xl', 'l', 'm', 's', 'none']),
                 'nullable'
             ],
             'waist_size' => [
                 'string',
-                Rule::in(['xxl', 'xl', 'l', 'm', 's']),
-                'required'
+                Rule::in(['xxl', 'xl', 'l', 'm', 's', 'none']),
+                'nullable'
             ],
             'bust_size' => [
                 'string',
-                Rule::in(['xxl', 'xl', 'l', 'm', 's']),
-                'required'
+                Rule::in(['xxl', 'xl', 'l', 'm', 's', 'none']),
+                'nullable'
             ],
             'skin_color' => [
                 'string',
-                Rule::in(['Pale White', "Fair", "Light Brown", "Moderate Brown", "Dark Brown", "Black"]),
-                'required'
+                Rule::in(['Pale White', "Fair", "Light Brown", "Moderate Brown", "Dark Brown", "Black", 'None']),
+                'nullable'
             ],
             'blood_type' => [
                 'string',
-                Rule::in(['A+', "A-", "B+", "B-", "O+", "O-", "AB+", "AB-"]),
+                Rule::in(['A+', "A-", "B+", "B-", "O+", "O-", "AB+", "AB-", 'None']),
                 'required'
             ],
             'is_vegetarian' => ['nullable', 'boolean'],

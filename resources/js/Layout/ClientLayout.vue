@@ -35,7 +35,7 @@
                             :href="$route.relativePath('client.ac_view')"
                             class="inline-block border-4 rounded-full border-primary-300 hover:border-primary-400"
                         >
-                            <avatar size="sm" :src="$page.user.avatar || ''" />
+                            <avatar size="sm" :src="$page.auth.avatar || ''" />
                         </inertia-link>
                     </div>
                 </div>

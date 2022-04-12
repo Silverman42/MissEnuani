@@ -15,22 +15,24 @@ use Illuminate\Support\Facades\Request as FacadesRequest;
 class PaymentController extends Controller
 {
 
-    private function validateInput(Request $request)
-    {
-        return $request->validate([
-            'nationality' => 'string|max:30|'
-        ]);
-    }
+    // private function validateInput(Request $request)
+    // {
+    //     return $request->validate([
+    //         'nationality' => 'string|max:30|'
+    //     ]);
+    // }
 
-    private function updateClientNationality(Request $request)
-    {
-        return $request->user()->update(['nationality' => $request->nationality]);
-    }
+    // private function updateClientNationality(Request $request)
+    // {
+    //     return $request->user()->update(['nationality' => '$request->nationality']);
+    // }
 
     private function mergeRequest(Request $request, string $trans_reference)
     {
-        $charge = $request->nationality === 'Nigeria' ? settings()['naira_charge'] * 100 : settings()['dollar_charge'] * 100;
-        $currency = $request->nationality === 'Nigeria' ? 'NGN' : 'USD';
+        // $charge = $request->nationality === 'Nigeria' ? settings()['naira_charge'] * 100 : settings()['dollar_charge'] * 100;
+        // $currency = $request->nationality === 'Nigeria' ? 'NGN' : 'USD';
+        $charge = settings()['naira_charge'] * 100;
+        $currency = 'NGN';
         $request->merge([
             'email' => $request->user()->email,
             'amount' => $charge,
@@ -46,9 +48,9 @@ class PaymentController extends Controller
     public function redirectToGateway(Request $request)
     {
         $trans_reference = paystack()->genTranxRef();
-        $this->validateInput($request);
+        // $this->validateInput($request);
         $this->mergeRequest($request, $trans_reference);
-        $this->updateClientNationality($request);
+        // $this->updateClientNationality($request);
         $this->setPaymentParameters($request);
         try {
             return Paystack::getAuthorizationUrl()->redirectNow();

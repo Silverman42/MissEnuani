@@ -40,6 +40,7 @@ class AppServiceProvider extends ServiceProvider
                     'loading' => false,
                     'csrf_token' => csrf_token(),
                     'id' => Auth::user()->id,
+                    'avatar' => Auth::user()->avatar,
                     'first_name' => Auth::user()->first_name,
                     'last_name' => Auth::user()->last_name,
                     'app_url' => env('APP_URL', 'http://localhost:3000'),

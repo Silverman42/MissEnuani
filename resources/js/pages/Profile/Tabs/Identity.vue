@@ -52,6 +52,33 @@
                 <h3 class="uppercase text-xs tracking-widest">Address</h3>
                 <p class="capitalize">{{ user.address || "No address" }}</p>
             </div>
+            <div class="break-words">
+                <h3 class="uppercase text-xs tracking-widest">
+                    Representing Town
+                </h3>
+                <p class="capitalize">{{ user.town || "No town" }}</p>
+            </div>
+            <div class="break-words">
+                <h3 class="uppercase text-xs tracking-widest">Date of birth</h3>
+                <p class="capitalize">
+                    {{ user.date_of_birth || "No date of birth" }}
+                </p>
+            </div>
+            <div class="break-words">
+                <h3 class="uppercase text-xs tracking-widest">
+                    Youtube video link
+                </h3>
+                <a
+                    :href="user.youtube_link || '#'"
+                    target="_blank"
+                    class="capitalize"
+                    >{{ user.youtube_link || "No link" }}</a
+                >
+            </div>
+            <div class="break-words lg:col-span-2 col-span-1">
+                <h3 class="uppercase text-xs tracking-widest">About me</h3>
+                <p class="text-sm">{{ user.bio || "No bio" }}</p>
+            </div>
         </div>
     </div>
 </template>

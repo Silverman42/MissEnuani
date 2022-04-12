@@ -12,6 +12,7 @@
                 :error="$page.errors.first_name"
                 form="identity"
             >
+                Required
             </text-input>
         </div>
         <div class="mb-3">
@@ -21,6 +22,7 @@
                 :error="$page.errors.last_name"
                 form="identity"
             >
+                Required
             </text-input>
         </div>
         <div class="mb-3">
@@ -31,13 +33,15 @@
                 v-model="nationality"
                 form="identity"
             >
-                <option
+                <template slot="detail"> Required </template>
+                <!-- <option
                     v-for="(country, index) in countries"
                     :key="index"
-                    :value="country.name"
+                    value="country.name"
                 >
                     {{ country.name }}
-                </option>
+                </option> -->
+                <option value="nigeria">Nigeria</option>
             </select-input>
         </div>
         <div class="mb-3">
@@ -46,7 +50,29 @@
                 :error="$page.errors.address"
                 v-model="address"
                 form="identity"
-            ></textarea-input>
+            >
+                <template slot="detail"> Required </template>
+            </textarea-input>
+        </div>
+        <div class="mb-3">
+            <textarea-input
+                label="Bio (About me)"
+                :error="$page.errors.bio"
+                v-model="bio"
+                form="identity"
+            >
+            </textarea-input>
+        </div>
+        <div class="mb-3">
+            <text-input
+                type="text"
+                label="Representing town"
+                :error="$page.errors.town"
+                v-model="town"
+                form="identity"
+            >
+                Required
+            </text-input>
         </div>
         <div class="mb-3">
             <text-input
@@ -55,7 +81,9 @@
                 :error="$page.errors.youtube_link"
                 v-model="youtube_link"
                 form="identity"
-            ></text-input>
+            >
+                Required
+            </text-input>
         </div>
         <div class="mb-3">
             <text-input
@@ -64,7 +92,9 @@
                 :error="$page.errors.age"
                 v-model="age"
                 form="identity"
-            ></text-input>
+            >
+                Required
+            </text-input>
         </div>
         <div class="mb-3">
             <text-input
@@ -73,7 +103,8 @@
                 :error="$page.errors.date_of_birth"
                 @input="changeDateOfBirth($event)"
                 form="identity"
-            ></text-input>
+                >Required
+            </text-input>
         </div>
         <div class="mb-3">
             <text-input
@@ -81,7 +112,8 @@
                 :error="$page.errors.place_of_birth"
                 v-model="placeOfBirth"
                 form="identity"
-            ></text-input>
+                >Required</text-input
+            >
         </div>
         <div class="mb-3">
             <file-input
@@ -125,6 +157,8 @@ export default {
             youtube_link: "",
             signature: "",
             avatar: "",
+            town: "",
+            bio: "",
             countries: [],
         };
     },
@@ -150,6 +184,8 @@ export default {
             this.nationality = this.$page.user.nationality || "";
             this.dateOfBirth = this.$page.user.dateOfBirth || "";
             this.address = this.$page.user.address || "";
+            this.town = this.$page.user.town || "";
+            this.bio = this.$page.user.bio || "";
         },
         submitForm() {
             const form = new FormData();
@@ -160,6 +196,8 @@ export default {
             form.append("nationality", this.nationality);
             form.append("signature", this.signature);
             form.append("avatar", this.avatar);
+            form.append("town", this.town);
+            form.append("bio", this.bio);
             form.append("date_of_birth", this.dateOfBirth);
             form.append("address", this.address);
             form.append("youtube_link", this.youtube_link);

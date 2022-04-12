@@ -25,7 +25,7 @@ class TravelRequest extends FormRequest
     {
         return [
             "departure_airport_code" => 'string|nullable|max:120',
-            "passport_number"=> 'string|required|max:120',
+            "passport_number" => 'string|nullable|max:120',
         ];
     }
 }

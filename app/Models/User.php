@@ -22,11 +22,11 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'first_name', 'competitions_id', 'last_name', 'email', 'is_active', 'facebook_url', 'twitter_url', 'phone_number', 'avatar',
+        'first_name', 'competitions_id', 'last_name', 'email', 'is_active', 'facebook_url', 'instagram_url', 'twitter_url', 'phone_number', 'avatar',
         //Emergency
         'emergency_name', 'emergency_phone_number', 'emergency_email', 'emergency_relationship',
         // Identity
-        'nationality', 'town', 'address', 'youtube_link', 'age', 'date_of_birth', 'place_of_birth', 'signature',
+        'nationality', 'town', 'bio', 'address', 'youtube_link', 'age', 'date_of_birth', 'place_of_birth', 'signature',
         // Medicals
         'height', 'weight', 'shoe_size', 'dress_size', 'hip_size', 'waist_size', 'bust_size', 'skin_color', 'blood_type',
         'is_vegetarian', 'can_smoke', 'dietary_needs', 'surgeries', 'recent_sickness', 'medications', 'allergies',

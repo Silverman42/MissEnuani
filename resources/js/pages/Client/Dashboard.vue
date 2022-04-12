@@ -135,23 +135,7 @@
                             </p>
                         </div>
                     </div>
-                    <!-- <div class="mb-5">
-                        <select-input
-                            name="nationality"
-                            form="payment"
-                            :value="selectedCountry"
-                            label="Nationality"
-                            @input="selectCountry($event)"
-                        >
-                            <option
-                                v-for="(country, index) in countries"
-                                :key="index"
-                                :value="country.name"
-                            >
-                                {{ country.name }}
-                            </option>
-                        </select-input>
-                    </div> -->
+
                     <div class="flex mb-5 justify-between items-center">
                         <h6 class="">Regisration Fee</h6>
                         <span class="text-2xl text-black font-bold md:text-4xl"
@@ -161,7 +145,7 @@
                             }}</span
                         >
                     </div>
-                    <!-- <div>
+                    <div>
                         <primary-btn
                             type="submit"
                             form="payment"
@@ -171,7 +155,7 @@
                         >
                             Pay and Update Profile</primary-btn
                         >
-                    </div> -->
+                    </div>
                 </card-bg>
                 <card-bg v-if="$page.user.has_paid === 1" extend="mb-10">
                     <h3 class="text-lg font-bold mb-5">Payment Summary</h3>

@@ -25,13 +25,13 @@ class PersonaRequest extends FormRequest
     public function rules()
     {
         return [
-            "hobbies" => 'string|required|max:120',
-            "profession" => 'string|required|max:120',
+            "hobbies" => 'string|nullable|max:120',
+            "profession" => 'string|nullable|max:120',
             "educational_cert" => [
                 'required',
-                Rule::in(['Secondary School Certificate',"Bachelor Degree","Master Degree (MSC)","Doctrorate Degree (PhD)"])
+                Rule::in(['Secondary School Certificate', "Bachelor Degree", "Master Degree (MSC)", "Doctrorate Degree (PhD)"])
             ],
-            "ambition" => 'string|required|max:120'
+            "ambition" => 'string|nullable|max:120'
         ];
     }
 }

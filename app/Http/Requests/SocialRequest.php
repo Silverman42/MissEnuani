@@ -26,6 +26,7 @@ class SocialRequest extends FormRequest
         return [
             "facebook_url" => 'url|nullable|max:120',
             "twitter_url" => 'url|nullable|max:120',
+            "instagram_url" => 'url|nullable|max:120',
             'phone_number' => 'required|digits_between:11,16'
         ];
     }
