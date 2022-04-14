@@ -93,10 +93,8 @@
                         </p>
                     </inertia-link>
                 </div>
-                <div v-else class="text-center">
-                    <h1 class="text-lg text-primary-600">
-                        No contestant finalist
-                    </h1>
+                <div v-else class="text-center py-6 px-3">
+                    <h1 class="text-lg text-primary-600">No finalist found</h1>
                     <p class="text-gray-600 text-xs">
                         No contestant finalist chosen at the moment, Please
                         check again

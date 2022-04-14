@@ -42,7 +42,7 @@ class HomeController extends Controller
     public function competition_view($competition_id)
     {
         $competition = ModelsCompetitions::where('id', $competition_id)->firstOrFail();
-        $contestants = User::where('competitions_id', $competition->id)->paginate(24);
+        $contestants = User::where(['competitions_id' => $competition->id, 'profile_stage' => 'finals'])->paginate(24);
         return Inertia::render('Landing/CompetitionView', [
             'competition' => $competition,
             'hasExpired' => $competition->hasExpired,
