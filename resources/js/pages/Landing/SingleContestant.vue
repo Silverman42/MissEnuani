@@ -44,11 +44,10 @@
                     <span
                         class="inline-block text-gray-500 uppercase tracking-widest text-xs"
                     >
-                        Bio
+                        About me
                     </span>
                     <p class="mt-3 text-gray-300">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Corrupti temporibus, maxime
+                        {{ $page.contestant.bio || "No bio found" }}
                     </p>
                 </div>
                 <div
