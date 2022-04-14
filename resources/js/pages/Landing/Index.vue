@@ -161,7 +161,10 @@
                     >
                         <div>Age 17 - 29 (Gradutes and Undergraduates)</div>
                         <div>Audition: Strictly Online</div>
-                        <div>Free form for first 30 Applicants</div>
+                        <div>
+                            Free form for first
+                            <b>{{ $page.competition.free_slot }}</b> Applicants
+                        </div>
                     </div>
                 </div>
                 <div class="mt-5 w-full">

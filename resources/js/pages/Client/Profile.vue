@@ -144,12 +144,12 @@
                         </p>
                     </div>
                     <a
-                        :href="`${$page.auth.app_url}/contestant/${$page.user.id}`"
+                        :href="`${$page.auth.settings.app_url}/contestant/${$page.user.id}`"
                         target="_blank"
                         class="p-4 rounded-lg bg-gray-100 border hover:bg-gray-200 block"
                     >
                         {{
-                            `${$page.auth.app_url}/contestant/${$page.user.id}`
+                            `${$page.auth.settings.app_url}/contestant/${$page.user.id}`
                         }}
                     </a>
                 </card-bg>
