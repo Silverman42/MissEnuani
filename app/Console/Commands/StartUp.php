@@ -131,7 +131,7 @@ class StartUp extends Command
         $competition->year = '2022';
         $competition->reg_start_date = "2022-1-13";
         $competition->reg_end_date = "2022-6-13";
-        $competition->event_date = "2022-8-13";
+        $competition->event_date = null;
         $competition->is_current = true;
         $competition->free_slot = 30;
         $competition->id = 998867;

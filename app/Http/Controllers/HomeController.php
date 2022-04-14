@@ -25,7 +25,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Landing/Index');
+        return Inertia::render('Landing/Index', [
+            'competition' => ModelsCompetitions::where('is_current', true)->first()
+        ]);
     }
 
     // Competition page
@@ -43,6 +45,7 @@ class HomeController extends Controller
         $contestants = User::where('competitions_id', $competition->id)->paginate(24);
         return Inertia::render('Landing/CompetitionView', [
             'competition' => $competition,
+            'hasExpired' => $competition->hasExpired,
             'contestants' => $contestants
         ]);
     }

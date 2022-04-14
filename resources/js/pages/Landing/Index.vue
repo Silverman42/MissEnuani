@@ -129,6 +129,72 @@
                 </div>
             </div>
         </section>
+        <section
+            class="mt-16 lg:mt-32 px-5 py-10 flex flex-wrap md:flex-no-wrap shadow-offset bg-primary-700 shadow-offset_yellow justify-between items-end"
+        >
+            <div class="lg:mr-3 mb-5 lg:mb-0">
+                <span
+                    class="inline-block text-yellow-500 tracking-widest text-xs"
+                    >2022 EVENT</span
+                >
+                <div class="text-3xl md:text-6xl text-white secondary-font">
+                    Miss Enuani <br />
+                    2022
+                </div>
+                <div class="mt-3">
+                    <span
+                        class="inline-block mb-2 text-gray-100 uppercase tracking-widest text-xs"
+                        >Theme</span
+                    >
+                    <p class="text-white text-base">
+                        The Woman King <br />
+                        (Specially dedicated to the OMU instituion)
+                    </p>
+                </div>
+                <div class="mt-5 w-full">
+                    <span
+                        class="inline-block mb-2 text-gray-100 uppercase tracking-widest text-xs"
+                        >Entry Requirement</span
+                    >
+                    <div
+                        class="grid grid-cols-1 text-white md:grid-cols-2 lg:grid-cols-3 col-gap-1 row-gap-2"
+                    >
+                        <div>Age 17 - 29 (Gradutes and Undergraduates)</div>
+                        <div>Audition: Strictly Online</div>
+                        <div>Free form for first 30 Applicants</div>
+                    </div>
+                </div>
+                <div class="mt-5 w-full">
+                    <span
+                        class="inline-block mb-2 text-gray-100 uppercase tracking-widest text-xs"
+                        >Prize</span
+                    >
+                    <div>
+                        <span class="inline-block text-yellow-400">
+                            <iconify-icon width="39" :icon="gift" />
+                        </span>
+                        <div class="text-white">
+                            Prize worth <b>₦1,000,000</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5 w-full">
+                    <inertia-link
+                        :href="`/competition/${$page.competition.id}`"
+                        class="inline-block uppercase tracking-widest py-4 px-8 text-md leading-3 text-sm bg-yellow-400 hover:bg-yellow-600 text-black mt-4"
+                    >
+                        Visit competition page
+                    </inertia-link>
+                </div>
+            </div>
+            <div class="lg:w-7/12 w-full relative">
+                <img
+                    class="lg:absolute bottom-0 w-full"
+                    :src="`${$page.auth.settings.app_url}/assets/img/competition_img.jpeg`"
+                    alt=""
+                />
+            </div>
+        </section>
         <section class="mt-16 py-10">
             <div class="mb-10">
                 <span class="inline-block tracking-widest text-xs uppercase"
@@ -210,9 +276,15 @@
 
 <script>
 import Layout from "../../Layout/Landing.vue";
+import gift from "@iconify/icons-feather/award";
 export default {
     name: "Index",
     layout: Layout,
+    data() {
+        return {
+            gift,
+        };
+    },
 };
 </script>
 

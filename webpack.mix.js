@@ -16,6 +16,11 @@ mix.js('resources/js/app.js', 'public/js').postCss('resources/css/app.css','publ
 ])
   // .sass('resources/sass/app.scss', 'public/css');
 if (mix.inProduction()) {
+  mix.webpackConfig({
+    output: {
+        chunkFilename: '[name].js?id=[chunkhash]',
+    }
+});
     mix.version();
 }
 mix.browserSync('enuani.test')

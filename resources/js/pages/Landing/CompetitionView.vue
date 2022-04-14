@@ -15,18 +15,29 @@
                         Venue
                     </span>
                     <p class="mt-3 text-gray-300">
-                        Life church, Idumu-Ogbo <br />
-                        Asaba <br />
-                        Delta State
+                        {{ $page.competition.venue || "To be relesed soon" }}
                     </p>
                 </div>
                 <div class="py-5">
                     <span
                         class="inline-block text-gray-500 uppercase tracking-widest text-xs"
                     >
-                        Date
+                        Event Date
                     </span>
-                    <p class="mt-3 text-gray-300">20th December 2019</p>
+                    <p class="mt-3 text-gray-300">
+                        {{ $page.competition.event_date || "Coming Soon" }}
+                    </p>
+                </div>
+                <div
+                    class="py-5"
+                    v-if="$page.competition.has_expired === false"
+                >
+                    <a
+                        href="/register"
+                        class="inline-block uppercase tracking-widest py-4 px-8 text-md leading-3 text-sm bg-yellow-400 hover:bg-yellow-600 text-black mt-4"
+                    >
+                        Register now
+                    </a>
                 </div>
             </div>
             <div class="w-full md:w-6/12">
@@ -162,7 +173,7 @@ export default {
     layout: Layout,
     name: "CompetitionView",
     mounted() {
-        console.log(this.$page.contestants);
+        console.log(this.$page.competition);
     },
 };
 </script>

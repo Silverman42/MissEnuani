@@ -58,7 +58,7 @@ class User extends Authenticatable
 
     public function competitions()
     {
-        return $this->belongsTo('App\Models\Competitions', 'competitions_id');
+        return $this->belongsTo('App\Models\Competitions', 'competitions_id')->orderBy('year', 'desc');
     }
 
     public function transactions()

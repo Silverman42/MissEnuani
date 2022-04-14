@@ -55,6 +55,7 @@
                         form="user_search"
                     />
                 </div>
+
                 <secondary-btn type="submit" form="user_search">
                     Search
                 </secondary-btn>
@@ -94,7 +95,7 @@
                         v-for="(user, index) in getUsers"
                         :delay="index"
                         :key="index"
-                        :is_active="user.is_active == 1 ? true : false"
+                        :is_admin="user.is_admin == 1 ? true : false"
                         :firstName="user.first_name"
                         :lastName="user.last_name"
                         :email="user.email"
@@ -105,7 +106,11 @@
                         @removeUser="removeUser(user.id)"
                         @deactivateUser="deactivateUser(user.id)"
                         @activateUser="activateUser(user.id)"
-                    />
+                    >
+                        <span v-if="user.is_admin === 0"
+                            >MEBP {{ user.competitions.year || "" }}</span
+                        >
+                    </user-list>
                 </div>
                 <div class="flex items-center justify-end">
                     <secondary-btn

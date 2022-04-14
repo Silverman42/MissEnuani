@@ -180,12 +180,13 @@ export default {
                 phone_number: this.$page.user.phone_number,
             },
             permissions: {
-                "modify-subjects": false,
-                "modify-topics": false,
-                "modify-questions": false,
-                "modify-collection": false,
-                "modify-users": false,
-                "modify-settings": false,
+                modify_tickets: this.$page.user?.permissions?.modify_tickets,
+                modify_transactions:
+                    this.$page.user?.permissions?.modify_transactions,
+                modify_competitions:
+                    this.$page.user?.permissions?.modify_competitions,
+                modify_users: this.$page.user?.permissions?.modify_users,
+                modify_settings: this.$page.user?.permissions?.modify_settings,
             },
             userRole: "admin",
         };

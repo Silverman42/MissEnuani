@@ -64,13 +64,21 @@
                         {{ $page.contestant.position }}
                     </p>
                 </div>
-                <div class="py-5">
+                <!-- <div class="py-5">
                     <button
                         v-if="$page.contestant.profile_stage === 'audition'"
                         @click="openModal"
                         class="inline-block uppercase tracking-widest py-4 px-8 text-md leading-3 text-sm bg-yellow-400 hover:bg-yellow-600 text-black mt-4"
                     >
                         Vote for me
+                    </button>
+                </div> -->
+                <div class="py-5">
+                    <button
+                        v-if="$page.contestant.profile_stage === 'audition'"
+                        class="inline-block uppercase tracking-widest py-4 px-8 text-md leading-3 text-sm bg-yellow-400 hover:bg-yellow-600 text-black mt-4"
+                    >
+                        Voting starts soon !!
                     </button>
                 </div>
             </div>

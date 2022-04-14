@@ -74,7 +74,6 @@
                             <identity-tab
                                 :user="$page.user"
                                 :canEdit="false"
-                                :hasCompleted="hasCompletedIdentity"
                                 @updateProfile="showUpdateView('identity')"
                             ></identity-tab>
                         </template>
@@ -82,7 +81,6 @@
                             <medicals-tab
                                 :user="$page.user"
                                 :canEdit="false"
-                                :hasCompleted="hasCompletedMedicals"
                                 @updateProfile="showUpdateView('medicals')"
                             ></medicals-tab>
                         </template>
@@ -90,7 +88,6 @@
                             <social-tab
                                 :user="$page.user"
                                 :canEdit="false"
-                                :hasCompleted="hasCompletedSocial"
                                 @updateProfile="showUpdateView('social')"
                             ></social-tab>
                         </template>
@@ -98,7 +95,6 @@
                             <emergency-tab
                                 :user="$page.user"
                                 :canEdit="false"
-                                :hasCompleted="hasCompletedEmergency"
                                 @updateProfile="showUpdateView('emergency')"
                             ></emergency-tab>
                         </template>
@@ -106,7 +102,6 @@
                             <persona-tab
                                 :user="$page.user"
                                 :canEdit="false"
-                                :hasCompleted="hasCompletedPersona"
                                 @updateProfile="showUpdateView('persona')"
                             ></persona-tab>
                         </template>
@@ -114,7 +109,6 @@
                             <travel-tab
                                 :user="$page.user"
                                 :canEdit="false"
-                                :hasCompleted="hasCompletedTravel"
                                 @updateProfile="showUpdateView('travel')"
                             ></travel-tab>
                         </template>
@@ -127,7 +121,11 @@
                     <h2 class="text-lg text-gray-800 font-bold py-2">
                         Competition Information
                     </h2>
-                    <form action="" id="update_comp_info"></form>
+                    <form
+                        action=""
+                        @submit="updateCompetitionInfo()"
+                        id="update_comp_info"
+                    ></form>
                     <div
                         class="grid grid-cols-1 md:grid-cols-2 col-gap-5 row-gap-8"
                     >
@@ -203,8 +201,17 @@ import phone from "@iconify/icons-feather/phone-call";
 export default {
     name: "ShowUsers",
     layout: Layout,
+    watch: {
+        $page: {
+            handler() {
+                this.loading = false;
+            },
+            deep: true,
+        },
+    },
     data() {
         return {
+            loading: false,
             tabs: [
                 "identity",
                 "medicals",
@@ -238,7 +245,9 @@ export default {
             userRole: "",
         };
     },
-    methods: {},
+    methods: {
+        updateCompetionInfo() {},
+    },
     components: {
         ProfileCard: () =>
             import(

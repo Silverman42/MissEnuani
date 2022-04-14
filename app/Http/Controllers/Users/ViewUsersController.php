@@ -35,11 +35,15 @@ class ViewUsersController extends Controller
     private function builder(Request $request)
     {
         if ($request->has('search')) {
-            return User::where('first_name', 'LIKE', "%$request->search%")
+            return User::with('competitions')->where('first_name', 'LIKE', "%$request->search%")
                 ->orWhere('last_name', 'LIKE', "%$request->search%")
+                ->orWhereHas('competitions', function ($query) use ($request) {
+                    $query->where('year', $request->search);
+                })
+                ->orWhere('is_admin', $request->search === 'admin' ? true : false)
                 ->simplePaginate(50);
         }
-        return User::simplePaginate(50);
+        return User::with('competitions')->simplePaginate(50);
     }
 
     /**
