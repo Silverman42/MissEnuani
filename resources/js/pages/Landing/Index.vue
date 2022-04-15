@@ -32,7 +32,7 @@
         >
             <div class="w-full md:w-5/12 mb-5 md:mb-0">
                 <span class="inline-block tracking-widest text-xs"
-                    >ABOUT MMDBP</span
+                    >ABOUT MEBP</span
                 >
                 <h1 class="text-3xl md:text-6xl text-gray-900 secondary-font">
                     Discovers and Empower Young Ladies
@@ -41,8 +41,8 @@
                     <span class="text-black"
                         >The Miss Enuani Beauty Pageant</span
                     >
-                    Miss enuani focuses on exploring and developing the overall
-                    talents of participants <br /><br />
+                    focuses on exploring and developing the overall talents of
+                    participants <br /><br />
                     Miss Enuani is now in its third year, as an annual event it
                     is opened to all all beautiful young girls of age 17-29 who
                     are talented and hungry to explore their inner talents and

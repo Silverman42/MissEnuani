@@ -64,13 +64,13 @@ Route::group(['prefix' => 'settings', 'middleware' => ['auth', 'is_admin']], fun
  */
 Route::group(['prefix' => 'users', 'middleware' => ['auth', 'is_admin']], function () {
     Route::get('/', 'Users\ViewUsersController@index')->name('users.view');
-    Route::get('/{id}', 'Users\ViewUsersController@show')->name('users.show');
     Route::get('/trash', 'Users\RecycleViewController')->name('users.recycle');
     Route::post('remove/{id}', 'Users\UserPresenceController@remove')->name('users.remove');
     Route::post('restore/{id}', 'Users\UserPresenceController@restore')->name('users.restore');
     Route::post('destory/{id}', 'Users\UserPresenceController@forceDestroy')->name('users.destroy');
     Route::post('deactivate/{id}', 'Users\UserPresenceController@deactivate')->name('users.deactivate');
     Route::post('activate/{id}', 'Users\UserPresenceController@activate')->name('users.activate');
+    Route::get('/{id}', 'Users\ViewUsersController@show')->name('users.show');
 });
 
 Route::group(['prefix' => 'users/contestant', 'middleware' => ['auth', 'is_admin']], function () {

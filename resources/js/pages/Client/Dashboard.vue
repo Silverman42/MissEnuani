@@ -17,7 +17,7 @@
                             Competition
                         </h6>
                         <p class="text-gray-900">
-                            Miss May Day Pageant
+                            Miss Enuani Beauty Pageant
                             {{ competitionData.year || "2020" }}
                         </p>
                     </div>

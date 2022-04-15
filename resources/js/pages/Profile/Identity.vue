@@ -33,15 +33,7 @@
                 v-model="nationality"
                 form="identity"
             >
-                <template slot="detail"> Required </template>
-                <!-- <option
-                    v-for="(country, index) in countries"
-                    :key="index"
-                    value="country.name"
-                >
-                    {{ country.name }}
-                </option> -->
-                <option value="nigeria">Nigeria</option>
+                <option value="Nigeria">Nigeria</option>
             </select-input>
         </div>
         <div class="mb-3">
@@ -101,7 +93,7 @@
                 type="date"
                 label="Date of Birth"
                 :error="$page.errors.date_of_birth"
-                @input="changeDateOfBirth($event)"
+                v-model="dateOfBirth"
                 form="identity"
                 >Required
             </text-input>
@@ -149,7 +141,7 @@ export default {
         return {
             age: "",
             address: "",
-            nationality: "",
+            nationality: this.$page.user.nationality,
             firstName: "",
             lastName: "",
             placeOfBirth: "",
@@ -166,9 +158,6 @@ export default {
         changeAvatar(file) {
             this.avatar = file;
         },
-        changeDateOfBirth(value) {
-            this.dateOfBirth = value;
-        },
         changeSignature(file) {
             this.signature = file;
         },
@@ -180,9 +169,9 @@ export default {
             this.lastName = this.$page.user.last_name || "";
             this.age = this.$page.user.age || "";
             this.youtube_link = this.$page.user.youtube_link || "";
-            this.placeOfBirth = this.$page.user.placeOfBirth || "";
-            this.nationality = this.$page.user.nationality || "";
-            this.dateOfBirth = this.$page.user.dateOfBirth || "";
+            this.placeOfBirth = this.$page.user.place_of_birth || "";
+            this.nationality = this.$page.user.nationality;
+            this.dateOfBirth = this.$page.user.date_of_birth || "";
             this.address = this.$page.user.address || "";
             this.town = this.$page.user.town || "";
             this.bio = this.$page.user.bio || "";

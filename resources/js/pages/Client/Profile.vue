@@ -6,9 +6,9 @@
                     Info
                 </h6>
                 <p>
-                    Your profile data cannot be editted after update. This is to
-                    maintain data integrity on our database. Please send a
-                    message to
+                    Your profile data cannot be editted if you have been made a
+                    finalist. This is to maintain data integrity on our
+                    database. Please send a message to
                     <a
                         class="text-primary-600 hover:text-primary-700"
                         href="mailto:admin@missenuanipageant.ng"
@@ -92,35 +92,35 @@
                         <template v-slot:tab-body-identity>
                             <identity-tab
                                 :user="$page.user"
-                                :hasCompleted="hasCompletedIdentity"
+                                :hasCompleted="isFinalist"
                                 @updateProfile="showUpdateView('identity')"
                             ></identity-tab>
                         </template>
                         <template v-slot:tab-body-medicals>
                             <medicals-tab
                                 :user="$page.user"
-                                :hasCompleted="hasCompletedMedicals"
+                                :hasCompleted="isFinalist"
                                 @updateProfile="showUpdateView('medicals')"
                             ></medicals-tab>
                         </template>
                         <template v-slot:tab-body-social>
                             <social-tab
                                 :user="$page.user"
-                                :hasCompleted="hasCompletedSocial"
+                                :hasCompleted="isFinalist"
                                 @updateProfile="showUpdateView('social')"
                             ></social-tab>
                         </template>
                         <template v-slot:tab-body-emergency>
                             <emergency-tab
                                 :user="$page.user"
-                                :hasCompleted="hasCompletedEmergency"
+                                :hasCompleted="isFinalist"
                                 @updateProfile="showUpdateView('emergency')"
                             ></emergency-tab>
                         </template>
                         <template v-slot:tab-body-persona>
                             <persona-tab
                                 :user="$page.user"
-                                :hasCompleted="hasCompletedPersona"
+                                :hasCompleted="isFinalist"
                                 @updateProfile="showUpdateView('persona')"
                             ></persona-tab>
                         </template>
@@ -214,6 +214,9 @@ export default {
                 persona: this.$page.user.has_completed_persona,
                 social: this.$page.user.has_completed_social,
             };
+        },
+        isFinalist() {
+            return this.$page.user.profile_page === "finals";
         },
         hasCompletedEmergency() {
             return this.$page.user.has_completed_emergency == 1 ? true : false;

@@ -36,7 +36,7 @@ class IdentityRequest extends FormRequest
             'date_of_birth' => 'date|date_format:Y-m-d|required|before:' . $eighteenYearBack,
             'place_of_birth' => 'string|max:88|required',
             'signature' => 'file|mimetypes:image/jpg,image/jpeg,image/png|mimes:jpeg,jpg,png|max:500|nullable',
-            'avatar' => 'file|mimetypes:image/jpg,image/jpeg,image/png|mimes:jpeg,jpg,png|max:500|required'
+            'avatar' => 'file|mimetypes:image/jpg,image/jpeg,image/png|mimes:jpeg,jpg,png|max:500|nullable'
         ];
     }
 }
